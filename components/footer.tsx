@@ -10,19 +10,19 @@ export function Footer() {
             <h3 className="text-lg font-bold">Paideia Hosting</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">Cloud for Science, Solutions for Knowledge</p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-500 hover:text-primary">
+              <Link href="https://www.facebook.com/paideiastudio" className="text-gray-500 hover:text-primary">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
+              <Link href="https://www.youtube.com/channel/UC5N-U5k1_2o3r8f_jwJdM3g" className="text-gray-500 hover:text-primary">
+                 <Youtube className="h-5 w-5" />
+                <span className="sr-only">YouTube</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary">
+              <Link href="https://www.linkedin.com/company/paideia-studio" className="text-gray-500 hover:text-primary">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary">
+              <Link href="https://github.com/PaideiaPublishingServices" className="text-gray-500 hover:text-primary">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
