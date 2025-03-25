@@ -10,18 +10,10 @@ export function Header() {
       <div className="container flex h-16 items-center">
       <Link href="/" className="flex items-center">
           <div className="relative h-10 w-auto">
-            <Image
-              src="/images/logo.png"
-              alt="Paideia Hosting"
-              width={180}
-              height={50}
-              priority
-              className="h-auto w-auto"
-              onError={(e) => {
-                // Si la imagen falla, mostrar el texto como respaldo
-                e.currentTarget.style.display = "none"
-                e.currentTarget.nextElementSibling?.classList.remove("hidden")
-              }}
+            <img 
+              src="/images/logo.png" 
+              alt="Paideia Hosting" 
+              className="h-10 w-auto"
             />
             <span className="hidden text-xl font-bold">Paideia Hosting</span>
           </div>
