@@ -92,7 +92,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-sm text-gray-500 hover:text-primary dark:text-gray-400">
+                <Link href="#" className="text-sm text-gray-500 hover:text-primary dark:text-gray-400">
                   Careers
                 </Link>
               </li>
@@ -108,15 +108,15 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 text-gray-500 dark:text-gray-400" />
-                <span className="text-sm text-gray-500 dark:text-gray-400">123 Academic Street, Research City</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">Italia 147, Córdoba, 6132, Argentina | 2810 North Church Street, Wilmington, DE 19802, US</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-gray-500 dark:text-gray-400" />
-                <span className="text-sm text-gray-500 dark:text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">+39 (351) 7576248</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-gray-500 dark:text-gray-400" />
-                <span className="text-sm text-gray-500 dark:text-gray-400">info@paideiahosting.net</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">contact@paideiahosting.net</span>
               </li>
             </ul>
           </div>
@@ -126,10 +126,10 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Paideia Hosting. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="/terms" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
+            <Link href="https://paideiastudio.net/terminos-y-condiciones/" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
               Terms of Service
             </Link>
-            <Link href="/privacy" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
+            <Link href="https://paideiastudio.net/privacidad/" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
               Privacy Policy
             </Link>
           </div>
