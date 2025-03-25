@@ -8,8 +8,23 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-        <Link href="/" className="flex items-center">
-          <span className="text-xl font-bold">Paideia Hosting</span>
+      <Link href="/" className="flex items-center">
+          <div className="relative h-10 w-auto">
+            <Image
+              src="/images/logo.png"
+              alt="Paideia Hosting"
+              width={180}
+              height={50}
+              priority
+              className="h-auto w-auto"
+              onError={(e) => {
+                // Si la imagen falla, mostrar el texto como respaldo
+                e.currentTarget.style.display = "none"
+                e.currentTarget.nextElementSibling?.classList.remove("hidden")
+              }}
+            />
+            <span className="hidden text-xl font-bold">Paideia Hosting</span>
+          </div>
         </Link>
         <nav className="ml-auto hidden md:flex gap-6">
           <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
