@@ -11,7 +11,7 @@ export function Header() {
       <Link href="/" className="flex items-center">
           <div className="relative h-10 w-auto">
             <img 
-              src="/images/logo.png" 
+              src="/public/logo.png" 
               alt="Paideia Hosting" 
               className="h-10 w-auto"
             />
