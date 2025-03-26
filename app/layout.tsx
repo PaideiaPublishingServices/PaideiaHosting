@@ -11,7 +11,12 @@ export const metadata = {
   title: "Paideia Hosting - Cloud for Science, Solutions for Knowledge",
   description:
     "Specialized hosting for academic applications. Reliable, secure, and optimized for research and educational institutions.",
-  generator: "v0.dev",
+  generator: "Paideia Studio",
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png',
+    shortcut: '/favicon-16x16.png'
+  }
 }
 
 export default function RootLayout({
