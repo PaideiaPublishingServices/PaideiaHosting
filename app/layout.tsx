@@ -13,7 +13,7 @@ export const metadata = {
     "Specialized hosting for academic applications. Reliable, secure, and optimized for research and educational institutions.",
   generator: "Paideia Studio",
   icons: {
-    icon: '/favicon.ico',
+    icon: 'https://www.paideiahosting.net/favicon.ico',
     apple: '/apple-icon.png',
     shortcut: '/favicon-16x16.png'
   }
