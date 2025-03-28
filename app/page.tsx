@@ -38,15 +38,19 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="flex items-center justify-center">
-                <Image
-                  src="/banner-home.jpg?height=400&width=500"
-                  width={500}
-                  height={400}
-                  alt="Paideia Hosting"
-                  className="rounded-lg object-cover"
-                />
-                 <p className="text-xs text-gray-500 mt-1 italic">Photo by NASA on Unsplash</p>
+              <div className="flex flex-col items-center justify-center">
+                <div className="relative">
+                  <Image
+                    src="/banner-home.jpg?height=400&width=500"
+                    width={500}
+                    height={400}
+                    alt="Paideia Hosting"
+                    className="rounded-lg object-cover"
+                  />
+                </div>
+                <p className="text-xs text-gray-500 mt-1 self-end">
+                  Photo by NASA on Unsplash
+                </p>
               </div>
             </div>
           </div>
