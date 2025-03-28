@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import Script from "next/script" // Importa el componente Script
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -34,6 +35,13 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+        
+        {/* Script de Trustpilot */}
+        <Script
+          id="trustpilot-widget"
+          src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
