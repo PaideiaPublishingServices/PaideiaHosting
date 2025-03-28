@@ -46,6 +46,7 @@ export default function Home() {
                   alt="Paideia Hosting"
                   className="rounded-lg object-cover"
                 />
+                 <p className="text-xs text-gray-500 mt-1 italic">Photo by NASA on Unsplash</p>
               </div>
             </div>
           </div>
