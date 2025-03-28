@@ -193,21 +193,19 @@ export default function Home() {
               <TestimonialCard
                 quote="We have been working with Paideia from Spain for a few months now.
                 We are delighted with the service. Despite the time difference, they always respond very quickly, they are agile in the resolution of requests and development of the work.
-                The truth is, there couldn't be a better service.
-                We trust their judgment. And they also offer suggestions so that we can continue to grow.
-                Thank you for being great professionals!"
+                The truth is, there couldn't be a better service. We trust their judgment (...)"
                 author="Carolina Murabe"
                 institution="Asociación Española de Personalismo"
               />
               <TestimonialCard
-                quote="The specialized Dataverse hosting has made our research data management so much easier. Highly recommended for any research institution."
-                author="Prof. Michael Chen"
-                institution="Institute of Data Science"
+                quote="In Paideia Studio they are always very attentive and very quick to answer any questions that may arise regarding editorial issues. They give you personalized attention to your situation. I highly recommend them!"
+                author="Elias Ruiz Hernandez"
+                institution="Instituto Tecnológico Superior del Oriente del Estado de Hidalgo"
               />
               <TestimonialCard
-                quote="We've been using their VPS solutions for our institution for over 2 years now. The performance and reliability are outstanding."
-                author="Dr. Emily Rodriguez"
-                institution="National Research Center"
+                quote="We have worked with Paideia Studio in the migration of our Journals Portal in OJS 2 to the latest version of this software. It is a portal with a lot of content and all the information was migrated perfectly. They also provided us with access to training courses for our editors (...)"
+                author="Claudia Fernandez"
+                institution="Universidad Católica Argentina"
               />
             </div>
             {/* Nota de atribución y enlace a Trustpilot */}
