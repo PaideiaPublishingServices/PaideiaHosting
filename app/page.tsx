@@ -211,19 +211,23 @@ export default function Home() {
               />
             </div>
             {/* Nota de atribución y enlace a Trustpilot */}
-            <div className="text-center mt-4 text-sm text-gray-500">
-              <p>Algunas reseñas han sido traducidas por nuestro equipo.</p>
-              <p className="mt-1">
-                Ver más opiniones en{" "}
-                <a 
-                  href="https://es.trustpilot.com/review/paideiastudio.net" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  Trustpilot
-                </a>
-              </p>
+          <div 
+              className="trustpilot-widget" 
+              data-locale="en-US" 
+              data-template-id="5419b6a8b0d04a076446a9ad" 
+              data-businessunit-id="636a9800c5c1c21fb560f7ee" 
+              data-style-height="24px" 
+              data-style-width="100%" 
+              data-min-review-count="0" 
+              data-style-alignment="center"
+            >
+              <a 
+                href="https://www.trustpilot.com/review/paideiastudio.net" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Trustpilot
+              </a>
             </div>
           </div>
         </section>
