@@ -130,8 +130,9 @@ export default function Home() {
                   Why Choose Paideia Hosting?
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  We understand the unique needs of academic institutions and provide specialized solutions to meet
-                  them.
+                 We understand the unique needs of academic institutions and provide specialized solutions to meet
+                  them. Powered by Paideia Publishing Services and enriched by the expertise from Paideia Studio, 
+                  Paideia Editorial, and LatArXiv environments.
                 </p>
                 <ul className="grid gap-4">
                   <li className="flex items-center gap-2">
@@ -190,9 +191,13 @@ export default function Home() {
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
               <TestimonialCard
-                quote="Paideia Hosting has transformed how we manage our academic journals. Their OJS hosting is reliable and their support team is exceptional."
-                author="Dr. Sarah Johnson"
-                institution="University Research Department"
+                quote="We have been working with Paideia from Spain for a few months now.
+                We are delighted with the service. Despite the time difference, they always respond very quickly, they are agile in the resolution of requests and development of the work.
+                The truth is, there couldn't be a better service.
+                We trust their judgment. And they also offer suggestions so that we can continue to grow.
+                Thank you for being great professionals!"
+                author="Carolina Murabe"
+                institution="Asociación Española de Personalismo"
               />
               <TestimonialCard
                 quote="The specialized Dataverse hosting has made our research data management so much easier. Highly recommended for any research institution."
@@ -204,6 +209,21 @@ export default function Home() {
                 author="Dr. Emily Rodriguez"
                 institution="National Research Center"
               />
+            </div>
+            {/* Nota de atribución y enlace a Trustpilot */}
+            <div className="text-center mt-4 text-sm text-gray-500">
+              <p>Algunas reseñas han sido traducidas por nuestro equipo.</p>
+              <p className="mt-1">
+                Ver más opiniones en{" "}
+                <a 
+                  href="https://es.trustpilot.com/review/paideiastudio.net" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  Trustpilot
+                </a>
+              </p>
             </div>
           </div>
         </section>
