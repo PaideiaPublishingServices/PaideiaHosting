@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -10,11 +10,16 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
       
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -29,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
         
-      - name: Build
+      - name: Build with Next.js
         run: pnpm build
         
       - name: Upload artifact
@@ -47,29 +52,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-```
-
-## 4. configurar GitHub Pages
-
-1. Sube tu código a GitHub
-2. Ve a tu repositorio → **Settings** → **Pages**
-3. En "Source", selecciona **GitHub Actions**
-
-## 5. eliminar de Vercel
-
-Una vez que GitHub Pages esté funcionando:
-
-1. Ve a tu proyecto en Vercel
-2. Settings → General → Delete Project
-
-## 6. configurar el dominio en Cloudflare
-
-Ahora en Cloudflare:
-
-1. Ve a DNS
-2. Cambia el registro que apunta a Vercel por uno que apunte a GitHub Pages:
-```
-Type: CNAME
-Name: paideiahosting (o @)
-Content: TU-USUARIO.github.io
-Proxy: ✅ Proxied (naranja)
