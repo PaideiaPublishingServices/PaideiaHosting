@@ -21,8 +21,8 @@ const formSchema = z.object({
     message: "Please enter a valid email address.",
   }),
   phone: z.string().optional(),
-  inquiryType: z.string({
-    required_error: "Please select an inquiry type.",
+  inquiryType: z.string().min(1, {
+    message: "Please select an inquiry type.",
   }),
   message: z.string().min(10, {
     message: "Message must be at least 10 characters.",
