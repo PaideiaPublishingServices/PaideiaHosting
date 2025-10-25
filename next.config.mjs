@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Vercel maneja automáticamente la optimización de imágenes y el despliegue
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/' : '',
 };
 
 export default nextConfig;
