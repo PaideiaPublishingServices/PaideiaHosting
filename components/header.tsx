@@ -24,6 +24,9 @@ export function Header() {
           <Link href="/services" className="text-sm font-medium transition-colors hover:text-primary">
             Services
           </Link>
+          <Link href="/plugins" className="text-sm font-medium transition-colors hover:text-primary">
+            Plugins
+          </Link>
           <Link href="/pricing" className="text-sm font-medium transition-colors hover:text-primary">
             Pricing
           </Link>
@@ -61,6 +64,11 @@ export function Header() {
                 <SheetClose asChild>
                   <Link href="/services" className="text-sm font-medium transition-colors hover:text-primary">
                     Services
+                  </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Link href="/plugins" className="text-sm font-medium transition-colors hover:text-primary">
+                    Plugins
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
