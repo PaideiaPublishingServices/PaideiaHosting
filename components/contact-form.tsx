@@ -46,21 +46,74 @@ export function ContactForm() {
     },
   })
 
-  function onSubmit(values: FormValues) {
+  async function onSubmit(values: FormValues) {
     setIsSubmitting(true)
 
-    // This is where you would normally send the form data to your backend
-    // For now, we'll simulate a submission with a timeout
-    setTimeout(() => {
-      console.log(values)
+    try {
+      // Web3Forms integration
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          // Your Web3Forms access key
+          access_key: '194037d0-d506-44a0-8c7f-64dd6b72273c',
+
+          // Form data
+          name: values.name,
+          email: values.email,
+          phone: values.phone || 'Not provided',
+          inquiry_type: values.inquiryType,
+          message: values.message,
+
+          // Email configuration
+          subject: `New ${values.inquiryType} inquiry from ${values.name} - Paideia Hosting`,
+          from_name: 'Paideia Hosting - Contact Form',
+
+          // Optional fields
+          _template: 'table',
+          _captcha: false,
+
+          // Auto-response configuration
+          _autoresponse: true,
+          _autoresponse_subject: 'We received your inquiry - Paideia Hosting',
+          _autoresponse_message: `Hello ${values.name},\n\nThank you for contacting Paideia Hosting. We have received your inquiry regarding ${values.inquiryType} and will get back to you within 24 hours.\n\nBest regards,\nPaideia Hosting Team\ninfo@paideiahosting.net`,
+
+          // Metadata
+          source: 'Website Contact Form',
+          timestamp: new Date().toISOString(),
+          page_url: typeof window !== 'undefined' ? window.location.href : '',
+        }),
+      })
+
+      const result = await response.json()
+
+      if (response.ok && result.success) {
+        setIsSubmitting(false)
+        form.reset()
+
+        toast({
+          title: "Message sent successfully!",
+          description: "We'll get back to you as soon as possible. Check your email for confirmation.",
+        })
+      } else {
+        throw new Error(result.message || 'Failed to send message')
+      }
+
+    } catch (error: any) {
+      console.error('Error sending form:', error)
       setIsSubmitting(false)
-      form.reset()
 
       toast({
-        title: "Message sent!",
-        description: "We'll get back to you as soon as possible.",
+        title: "Error sending message",
+        description: error.message?.includes('access_key')
+          ? "Service configuration error. Please try again later or contact us directly."
+          : "Failed to send message. Please try again or contact us at info@paideiahosting.net",
+        variant: "destructive",
       })
-    }, 1500)
+    }
   }
 
   return (
