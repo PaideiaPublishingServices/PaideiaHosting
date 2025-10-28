@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Check, Database } from "lucide-react"
+import { ServicePricing } from "@/components/service-pricing"
 
 export const metadata = {
   title: "Dataverse Hosting - Paideia Hosting",
@@ -9,6 +10,47 @@ export const metadata = {
 }
 
 export default function DataverseHostingPage() {
+  const dataversePlans = [
+    {
+      name: "Basic",
+      description: "For small research groups",
+      monthlyPrice: 49,
+      features: [
+        "1 Dataverse Installation",
+        "50GB Storage",
+        "Daily Backups",
+        "Email Support"
+      ]
+    },
+    {
+      name: "Professional",
+      description: "For research departments",
+      monthlyPrice: 129,
+      popular: true,
+      features: [
+        "1 Dataverse Installation",
+        "500GB Storage",
+        "Daily Backups",
+        "Priority Support",
+        "Custom Domain"
+      ]
+    },
+    {
+      name: "Enterprise",
+      description: "For institutions and large research centers",
+      monthlyPrice: 299,
+      features: [
+        "Multiple Dataverse Installations",
+        "2TB+ Storage",
+        "Daily Backups",
+        "24/7 Phone Support",
+        "Custom Domain & Branding",
+        "Dedicated Resources"
+      ],
+      buttonText: "Contact Sales"
+    }
+  ]
+
   return (
     <main className="flex-1">
       {/* Hero Section */}
@@ -104,148 +146,11 @@ export default function DataverseHostingPage() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Simple, Transparent Pricing</h2>
-              <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Choose the plan that fits your research data needs
-              </p>
-            </div>
-          </div>
-          <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 md:grid-cols-3">
-            {/* Basic Plan */}
-            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
-              <div className="space-y-2">
-                <h3 className="text-2xl font-bold">Basic</h3>
-                <p className="text-gray-500 dark:text-gray-400">For small research groups</p>
-              </div>
-              <div className="mt-4 flex items-baseline">
-                <span className="text-3xl font-bold">$49</span>
-                <span className="ml-1 text-gray-500 dark:text-gray-400">/month</span>
-              </div>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>1 Dataverse Installation</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>50GB Storage</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Daily Backups</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Email Support</span>
-                </li>
-              </ul>
-              <div className="mt-6">
-                <Link
-                  href="/contact"
-                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                >
-                  Get Started
-                </Link>
-              </div>
-            </div>
-
-            {/* Professional Plan */}
-            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm relative">
-              <div className="absolute -top-4 left-0 right-0 mx-auto w-fit rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                Popular
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-2xl font-bold">Professional</h3>
-                <p className="text-gray-500 dark:text-gray-400">For research departments</p>
-              </div>
-              <div className="mt-4 flex items-baseline">
-                <span className="text-3xl font-bold">$129</span>
-                <span className="ml-1 text-gray-500 dark:text-gray-400">/month</span>
-              </div>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>1 Dataverse Installation</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>500GB Storage</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Daily Backups</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Priority Support</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Custom Domain</span>
-                </li>
-              </ul>
-              <div className="mt-6">
-                <Link
-                  href="/contact"
-                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                >
-                  Get Started
-                </Link>
-              </div>
-            </div>
-
-            {/* Enterprise Plan */}
-            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
-              <div className="space-y-2">
-                <h3 className="text-2xl font-bold">Enterprise</h3>
-                <p className="text-gray-500 dark:text-gray-400">For institutions and large research centers</p>
-              </div>
-              <div className="mt-4 flex items-baseline">
-                <span className="text-3xl font-bold">$299</span>
-                <span className="ml-1 text-gray-500 dark:text-gray-400">/month</span>
-              </div>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Multiple Dataverse Installations</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>2TB+ Storage</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Daily Backups</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>24/7 Phone Support</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Custom Domain & Branding</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Dedicated Resources</span>
-                </li>
-              </ul>
-              <div className="mt-6">
-                <Link
-                  href="/contact"
-                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                >
-                  Contact Sales
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServicePricing
+        title="Simple, Transparent Pricing"
+        subtitle="Choose the plan that fits your research data needs"
+        plans={dataversePlans}
+      />
 
       {/* FAQ Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">

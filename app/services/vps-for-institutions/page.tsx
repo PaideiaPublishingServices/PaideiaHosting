@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Check, Server, Cpu } from "lucide-react"
+import { ServicePricing } from "@/components/service-pricing"
 
 export const metadata = {
   title: "VPS for Institutions - Paideia Hosting",
@@ -9,6 +10,49 @@ export const metadata = {
 }
 
 export default function VPSForInstitutionsPage() {
+  const vpsPlans = [
+    {
+      name: "Standard",
+      description: "For small departments and projects",
+      monthlyPrice: 79,
+      features: [
+        "2 vCPUs",
+        "4GB RAM",
+        "80GB SSD Storage",
+        "2TB Bandwidth",
+        "Email Support"
+      ]
+    },
+    {
+      name: "Advanced",
+      description: "For academic departments and research groups",
+      monthlyPrice: 149,
+      popular: true,
+      features: [
+        "4 vCPUs",
+        "8GB RAM",
+        "160GB SSD Storage",
+        "4TB Bandwidth",
+        "Priority Support",
+        "Daily Backups"
+      ]
+    },
+    {
+      name: "Enterprise",
+      description: "For large institutions and research centers",
+      monthlyPrice: 299,
+      features: [
+        "8 vCPUs",
+        "16GB RAM",
+        "320GB SSD Storage",
+        "8TB Bandwidth",
+        "24/7 Phone Support",
+        "Managed Services Included"
+      ],
+      buttonText: "Contact Sales"
+    }
+  ]
+
   return (
     <main className="flex-1">
       {/* Hero Section */}
@@ -108,156 +152,11 @@ export default function VPSForInstitutionsPage() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Simple, Transparent Pricing</h2>
-              <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Choose the VPS plan that fits your institution's needs
-              </p>
-            </div>
-          </div>
-          <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 md:grid-cols-3">
-            {/* Basic Plan */}
-            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
-              <div className="space-y-2">
-                <h3 className="text-2xl font-bold">Standard</h3>
-                <p className="text-gray-500 dark:text-gray-400">For small departments and projects</p>
-              </div>
-              <div className="mt-4 flex items-baseline">
-                <span className="text-3xl font-bold">$79</span>
-                <span className="ml-1 text-gray-500 dark:text-gray-400">/month</span>
-              </div>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>2 vCPUs</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>4GB RAM</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>80GB SSD Storage</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>2TB Bandwidth</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Email Support</span>
-                </li>
-              </ul>
-              <div className="mt-6">
-                <Link
-                  href="/contact"
-                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                >
-                  Get Started
-                </Link>
-              </div>
-            </div>
-
-            {/* Professional Plan */}
-            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm relative">
-              <div className="absolute -top-4 left-0 right-0 mx-auto w-fit rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                Popular
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-2xl font-bold">Advanced</h3>
-                <p className="text-gray-500 dark:text-gray-400">For academic departments and research groups</p>
-              </div>
-              <div className="mt-4 flex items-baseline">
-                <span className="text-3xl font-bold">$149</span>
-                <span className="ml-1 text-gray-500 dark:text-gray-400">/month</span>
-              </div>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>4 vCPUs</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>8GB RAM</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>160GB SSD Storage</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>4TB Bandwidth</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Priority Support</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Daily Backups</span>
-                </li>
-              </ul>
-              <div className="mt-6">
-                <Link
-                  href="/contact"
-                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                >
-                  Get Started
-                </Link>
-              </div>
-            </div>
-
-            {/* Enterprise Plan */}
-            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
-              <div className="space-y-2">
-                <h3 className="text-2xl font-bold">Enterprise</h3>
-                <p className="text-gray-500 dark:text-gray-400">For large institutions and research centers</p>
-              </div>
-              <div className="mt-4 flex items-baseline">
-                <span className="text-3xl font-bold">$299</span>
-                <span className="ml-1 text-gray-500 dark:text-gray-400">/month</span>
-              </div>
-              <ul className="mt-4 space-y-2">
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>8 vCPUs</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>16GB RAM</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>320GB SSD Storage</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>8TB Bandwidth</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>24/7 Phone Support</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-primary" />
-                  <span>Managed Services Included</span>
-                </li>
-              </ul>
-              <div className="mt-6">
-                <Link
-                  href="/contact"
-                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                >
-                  Contact Sales
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServicePricing
+        title="Simple, Transparent Pricing"
+        subtitle="Choose the VPS plan that fits your institution's needs"
+        plans={vpsPlans}
+      />
 
       {/* Use Cases Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">
