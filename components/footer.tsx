@@ -49,10 +49,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services/dataverse-hosting"
+                  href="/services/repository-hosting"
                   className="text-sm text-gray-500 hover:text-primary dark:text-gray-400"
                 >
-                  Dataverse Hosting
+                  Repository Hosting
                 </Link>
               </li>
               <li>

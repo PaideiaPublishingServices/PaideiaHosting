@@ -25,7 +25,7 @@ export function PricingClient() {
             <TabsList className="grid grid-cols-3 md:grid-cols-6 w-full max-w-3xl">
               <TabsTrigger value="ojs">OJS</TabsTrigger>
               <TabsTrigger value="omp">OMP</TabsTrigger>
-              <TabsTrigger value="dataverse">Dataverse</TabsTrigger>
+              <TabsTrigger value="dataverse">Repository</TabsTrigger>
               <TabsTrigger value="atom">AtoM</TabsTrigger>
               <TabsTrigger value="vps">VPS</TabsTrigger>
               <TabsTrigger value="custom">Custom</TabsTrigger>
@@ -311,12 +311,12 @@ export function PricingClient() {
             </div>
           </TabsContent>
 
-          {/* Dataverse Pricing */}
+          {/* Repository Pricing */}
           <TabsContent value="dataverse" className="space-y-4">
             <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold">Dataverse Hosting Plans</h2>
+              <h2 className="text-3xl font-bold">Repository Hosting Plans</h2>
               <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Secure and reliable hosting for research data repositories
+                Secure and reliable hosting for research data repositories (Dataverse & DSpace)
               </p>
             </div>
 
@@ -334,7 +334,7 @@ export function PricingClient() {
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>1 Dataverse Installation</span>
+                    <span>1 Repository Installation (Dataverse or DSpace)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -375,7 +375,7 @@ export function PricingClient() {
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>1 Dataverse Installation</span>
+                    <span>1 Repository Installation (Dataverse or DSpace)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -417,7 +417,7 @@ export function PricingClient() {
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Multiple Dataverse Installations</span>
+                    <span>Multiple Repository Installations</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
