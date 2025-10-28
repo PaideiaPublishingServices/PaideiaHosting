@@ -41,7 +41,7 @@ export default function OJSHostingPage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=500&h=400&fit=crop"
                 width={500}
                 height={400}
                 alt="OJS Hosting"

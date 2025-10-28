@@ -42,7 +42,7 @@ export default function VPSForInstitutionsPage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=400&fit=crop"
                 width={500}
                 height={400}
                 alt="VPS for Institutions"

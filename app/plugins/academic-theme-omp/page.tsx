@@ -137,7 +137,7 @@ export default function AcademicThemeOMPPage() {
               className="block"
             >
               <Image
-                src="/placeholder.svg?height=600&width=1200"
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=600&fit=crop"
                 width={1200}
                 height={600}
                 alt="Academic Theme OMP Preview"

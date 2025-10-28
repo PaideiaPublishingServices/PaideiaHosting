@@ -50,7 +50,7 @@ export default function PluginsPage() {
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="Academic Theme OMP"
@@ -103,7 +103,7 @@ export default function PluginsPage() {
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="Coming Soon"
@@ -135,7 +135,7 @@ export default function PluginsPage() {
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="Coming Soon"

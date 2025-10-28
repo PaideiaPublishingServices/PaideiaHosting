@@ -42,7 +42,7 @@ export default function AtomHostingPage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=400&fit=crop"
                 width={500}
                 height={400}
                 alt="AtoM Hosting"

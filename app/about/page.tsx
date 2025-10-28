@@ -28,7 +28,7 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=400&fit=crop"
                 width={500}
                 height={400}
                 alt="Paideia Hosting Team"
@@ -74,7 +74,7 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&h=400&fit=crop"
                 width={500}
                 height={400}
                 alt="Paideia Hosting History"
@@ -264,7 +264,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
                   alt="Team Member"
@@ -283,7 +283,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
                   alt="Team Member"
@@ -301,7 +301,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
                   alt="Team Member"
@@ -319,7 +319,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
                   alt="Team Member"
@@ -337,7 +337,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
                   alt="Team Member"
@@ -355,7 +355,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
                   alt="Team Member"
@@ -388,7 +388,7 @@ export default function AboutPage() {
             {/* Client/Partner Logos - Replace with actual logos */}
             <div className="grayscale hover:grayscale-0 transition-all">
               <Image
-                src="/placeholder.svg?height=80&width=160"
+                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
                 width={160}
                 height={80}
                 alt="Client Logo"
@@ -397,7 +397,7 @@ export default function AboutPage() {
             </div>
             <div className="grayscale hover:grayscale-0 transition-all">
               <Image
-                src="/placeholder.svg?height=80&width=160"
+                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
                 width={160}
                 height={80}
                 alt="Client Logo"
@@ -406,7 +406,7 @@ export default function AboutPage() {
             </div>
             <div className="grayscale hover:grayscale-0 transition-all">
               <Image
-                src="/placeholder.svg?height=80&width=160"
+                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
                 width={160}
                 height={80}
                 alt="Client Logo"
@@ -415,7 +415,7 @@ export default function AboutPage() {
             </div>
             <div className="grayscale hover:grayscale-0 transition-all">
               <Image
-                src="/placeholder.svg?height=80&width=160"
+                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
                 width={160}
                 height={80}
                 alt="Client Logo"
@@ -424,7 +424,7 @@ export default function AboutPage() {
             </div>
             <div className="grayscale hover:grayscale-0 transition-all">
               <Image
-                src="/placeholder.svg?height=80&width=160"
+                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
                 width={160}
                 height={80}
                 alt="Client Logo"
@@ -433,7 +433,7 @@ export default function AboutPage() {
             </div>
             <div className="grayscale hover:grayscale-0 transition-all">
               <Image
-                src="/placeholder.svg?height=80&width=160"
+                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
                 width={160}
                 height={80}
                 alt="Client Logo"

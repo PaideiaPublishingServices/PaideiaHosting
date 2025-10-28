@@ -42,7 +42,7 @@ export default function CustomSolutionsPage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=400&fit=crop"
                 width={500}
                 height={400}
                 alt="Custom Solutions"
