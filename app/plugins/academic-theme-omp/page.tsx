@@ -15,26 +15,26 @@ export default function AcademicThemeOMPPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="inline-block bg-green-500/20 text-white px-4 py-2 rounded-full text-sm font-medium border border-white/20 mb-4">
-              Nuevo lanzamiento 2025
+              New Release 2025
             </div>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-white">
               Academic Theme OMP
             </h1>
             <p className="max-w-[700px] text-gray-200 md:text-xl">
-              El tema más completo y profesional para tu editorial universitaria en Open Monograph Press
+              The most complete and professional theme for your university press on Open Monograph Press
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row mt-8">
               <Link
                 href="#pricing"
                 className="inline-flex h-10 items-center justify-center rounded-md bg-green-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
-                Ver Planes y Precios
+                View Plans & Pricing
               </Link>
               <Link
                 href="#features"
                 className="inline-flex h-10 items-center justify-center rounded-md border border-white/30 bg-transparent px-8 text-sm font-medium text-white shadow-sm transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
-                Explorar Características
+                Explore Features
               </Link>
             </div>
           </div>
@@ -47,10 +47,10 @@ export default function AcademicThemeOMPPage() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                ¿Por qué elegir Academic Theme OMP?
+                Why Choose Academic Theme OMP?
               </h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Diseñado específicamente para editoriales universitarias con las características que realmente necesitas
+                Specifically designed for university presses with the features you really need
               </p>
             </div>
           </div>
@@ -59,10 +59,9 @@ export default function AcademicThemeOMPPage() {
               <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-green-500 to-green-600 text-white">
                 <Layout className="h-7 w-7" />
               </div>
-              <h3 className="text-xl font-bold">Diseño Profesional</h3>
+              <h3 className="text-xl font-bold">Professional Design</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Header amplio con gradiente, navegación centrada y diseño responsive optimizado para todos los
-                dispositivos.
+                Wide header with gradient, centered navigation and responsive design optimized for all devices.
               </p>
             </div>
 
@@ -70,9 +69,9 @@ export default function AcademicThemeOMPPage() {
               <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-green-500 to-green-600 text-white">
                 <Palette className="h-7 w-7" />
               </div>
-              <h3 className="text-xl font-bold">Hero Banner Premium</h3>
+              <h3 className="text-xl font-bold">Premium Hero Banner</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Banner principal con imagen de fondo, título, descripción y botones CTA completamente configurables.
+                Main banner with background image, title, description and fully customizable CTA buttons.
               </p>
             </div>
 
@@ -80,9 +79,9 @@ export default function AcademicThemeOMPPage() {
               <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-green-500 to-green-600 text-white">
                 <Sliders className="h-7 w-7" />
               </div>
-              <h3 className="text-xl font-bold">Slider Avanzado</h3>
+              <h3 className="text-xl font-bold">Advanced Slider</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Sistema de 3 slides con imagen, título, texto y botones. Navegación automática y controles intuitivos.
+                System of 3 slides with image, title, text and buttons. Automatic navigation and intuitive controls.
               </p>
             </div>
 
@@ -90,10 +89,9 @@ export default function AcademicThemeOMPPage() {
               <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-green-500 to-green-600 text-white">
                 <Smartphone className="h-7 w-7" />
               </div>
-              <h3 className="text-xl font-bold">Personalización Total</h3>
+              <h3 className="text-xl font-bold">Total Customization</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Adapta completamente el tema a la identidad visual de tu institución con colores y tipografías
-                personalizadas.
+                Fully adapt the theme to your institution's visual identity with custom colors and typography.
               </p>
             </div>
 
@@ -101,9 +99,9 @@ export default function AcademicThemeOMPPage() {
               <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-green-500 to-green-600 text-white">
                 <Type className="h-7 w-7" />
               </div>
-              <h3 className="text-xl font-bold">Tipografías Premium</h3>
+              <h3 className="text-xl font-bold">Premium Typography</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Inter, Source Serif Pro y Crimson Text. Fuentes profesionales optimizadas para contenido académico.
+                Inter, Source Serif Pro and Crimson Text. Professional fonts optimized for academic content.
               </p>
             </div>
 
@@ -111,10 +109,9 @@ export default function AcademicThemeOMPPage() {
               <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-gradient-to-br from-green-500 to-green-600 text-white">
                 <Lock className="h-7 w-7" />
               </div>
-              <h3 className="text-xl font-bold">Sistema de Licencias</h3>
+              <h3 className="text-xl font-bold">Licensing System</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Gestión profesional de licencias con activación simple, soporte técnico incluido y actualizaciones
-                automáticas.
+                Professional license management with simple activation, included technical support and automatic updates.
               </p>
             </div>
           </div>
@@ -126,9 +123,9 @@ export default function AcademicThemeOMPPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Vista Previa del Tema</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Theme Preview</h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Explora Academic Theme OMP en acción y descubre cómo puede transformar tu editorial
+                Explore Academic Theme OMP in action and discover how it can transform your press
               </p>
             </div>
           </div>
@@ -140,7 +137,7 @@ export default function AcademicThemeOMPPage() {
               className="block"
             >
               <Image
-                src="/placeholder.svg?height=600&width=1200"
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=600&fit=crop"
                 width={1200}
                 height={600}
                 alt="Academic Theme OMP Preview"
@@ -154,7 +151,7 @@ export default function AcademicThemeOMPPage() {
                 rel="noopener noreferrer"
                 className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
-                Ver Demo en Vivo
+                View Live Demo
               </a>
             </div>
           </div>
@@ -167,17 +164,17 @@ export default function AcademicThemeOMPPage() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Planes y Precios de Academic Theme OMP
+                Academic Theme OMP Plans & Pricing
               </h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Elige el plan que mejor se adapte a las necesidades de tu editorial universitaria
+                Choose the plan that best fits your university press needs
               </p>
             </div>
           </div>
 
           {/* Toggle Annual/Lifetime */}
           <div className="flex justify-center items-center gap-4 my-12">
-            <span className="text-sm font-medium text-gray-700">Facturación:</span>
+            <span className="text-sm font-medium text-gray-700">Billing:</span>
             <button
               onClick={() => setIsLifetime(!isLifetime)}
               className="relative inline-flex h-11 w-44 items-center rounded-full bg-gray-200 transition-colors"
@@ -201,108 +198,108 @@ export default function AcademicThemeOMPPage() {
               <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm transition-all hover:shadow-lg hover:border-green-600">
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">Individual</h3>
-                  <p className="text-gray-500 dark:text-gray-400">Perfecto para una editorial</p>
+                  <p className="text-gray-500 dark:text-gray-400">Perfect for one press</p>
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-4xl font-bold text-green-600">$99</span>
-                  <span className="ml-2 text-gray-500 dark:text-gray-400">/año</span>
+                  <span className="ml-2 text-gray-500 dark:text-gray-400">/year</span>
                 </div>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">Renovación anual</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">Annual renewal</p>
                 <ul className="space-y-3 mb-6 flex-1">
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Hero banner personalizable</span>
+                    <span className="text-sm">Customizable hero banner</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Slider con 3 slides configurables</span>
+                    <span className="text-sm">Slider with 3 configurable slides</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Footer de 3 columnas editables</span>
+                    <span className="text-sm">3-column editable footer</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Tipografías premium (3 opciones)</span>
+                    <span className="text-sm">Premium typography (3 options)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">1 sitio web / dominio</span>
+                    <span className="text-sm">1 website / domain</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Actualizaciones incluidas</span>
+                    <span className="text-sm">Updates included</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Soporte técnico prioritario</span>
+                    <span className="text-sm">Priority technical support</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Documentación completa</span>
+                    <span className="text-sm">Complete documentation</span>
                   </li>
                 </ul>
                 <Link
                   href="/contact"
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-green-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
-                  Comprar Plan Anual
+                  Purchase Annual Plan
                 </Link>
               </div>
 
               {/* Professional Plan - Featured */}
               <div className="flex flex-col rounded-lg border-2 border-green-600 bg-background p-6 shadow-lg relative">
                 <div className="absolute -top-4 left-0 right-0 mx-auto w-fit rounded-full bg-green-600 px-3 py-1 text-xs font-medium text-white">
-                  Más Popular
+                  Most Popular
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">Professional</h3>
-                  <p className="text-gray-500 dark:text-gray-400">Para múltiples proyectos</p>
+                  <p className="text-gray-500 dark:text-gray-400">For multiple projects</p>
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-4xl font-bold text-green-600">$299</span>
-                  <span className="ml-2 text-gray-500 dark:text-gray-400">/año</span>
+                  <span className="ml-2 text-gray-500 dark:text-gray-400">/year</span>
                 </div>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">Ahorra con múltiples sitios</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">Save with multiple sites</p>
                 <ul className="space-y-3 mb-6 flex-1">
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Todo de plan Individual</span>
+                    <span className="text-sm">Everything from Individual plan</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Hasta 5 sitios web / dominios</span>
+                    <span className="text-sm">Up to 5 websites / domains</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Actualizaciones prioritarias</span>
+                    <span className="text-sm">Priority updates</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Soporte técnico premium</span>
+                    <span className="text-sm">Premium technical support</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Instalación asistida incluida</span>
+                    <span className="text-sm">Assisted installation included</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Personalización básica de código</span>
+                    <span className="text-sm">Basic code customization</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Documentación extendida</span>
+                    <span className="text-sm">Extended documentation</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Descuentos en futuros plugins</span>
+                    <span className="text-sm">Discounts on future plugins</span>
                   </li>
                 </ul>
                 <Link
                   href="/contact"
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-green-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
-                  Comprar Plan Anual
+                  Purchase Annual Plan
                 </Link>
               </div>
 
@@ -310,52 +307,52 @@ export default function AcademicThemeOMPPage() {
               <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm transition-all hover:shadow-lg hover:border-green-600">
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">Institutional</h3>
-                  <p className="text-gray-500 dark:text-gray-400">Para grandes instituciones</p>
+                  <p className="text-gray-500 dark:text-gray-400">For large institutions</p>
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-4xl font-bold text-green-600">$699</span>
-                  <span className="ml-2 text-gray-500 dark:text-gray-400">/año</span>
+                  <span className="ml-2 text-gray-500 dark:text-gray-400">/year</span>
                 </div>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">Sitios ilimitados</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">Unlimited sites</p>
                 <ul className="space-y-3 mb-6 flex-1">
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Todo de plan Professional</span>
+                    <span className="text-sm">Everything from Professional plan</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Sitios web ilimitados</span>
+                    <span className="text-sm">Unlimited websites</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Soporte prioritario 24/7</span>
+                    <span className="text-sm">24/7 priority support</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Instalación completa incluida</span>
+                    <span className="text-sm">Complete installation included</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Personalización avanzada</span>
+                    <span className="text-sm">Advanced customization</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Capacitación en línea para staff</span>
+                    <span className="text-sm">Online training for staff</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Actualizaciones inmediatas</span>
+                    <span className="text-sm">Immediate updates</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Licencia institucional transferible</span>
+                    <span className="text-sm">Transferable institutional license</span>
                   </li>
                 </ul>
                 <Link
                   href="/contact"
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-green-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
-                  Comprar Plan Anual
+                  Purchase Annual Plan
                 </Link>
               </div>
             </div>
@@ -366,63 +363,63 @@ export default function AcademicThemeOMPPage() {
             <div className="mx-auto max-w-2xl py-12">
               <div className="flex flex-col rounded-lg border-2 border-green-600 bg-background p-8 shadow-lg relative">
                 <div className="absolute -top-4 left-0 right-0 mx-auto w-fit rounded-full bg-green-600 px-3 py-1 text-xs font-medium text-white">
-                  Pago Único
+                  One-Time Payment
                 </div>
                 <div className="space-y-2 text-center">
                   <h3 className="text-3xl font-bold">Lifetime</h3>
-                  <p className="text-gray-500 dark:text-gray-400">Acceso de por vida, sin renovaciones</p>
+                  <p className="text-gray-500 dark:text-gray-400">Lifetime access, no renewals</p>
                 </div>
                 <div className="mt-6 flex items-baseline justify-center">
                   <span className="text-5xl font-bold text-green-600">$1,599</span>
                 </div>
-                <p className="text-center text-sm text-gray-500 dark:text-gray-400 mb-8">Pago único, para siempre</p>
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400 mb-8">One-time payment, forever</p>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Todas las características premium</span>
+                    <span className="text-sm">All premium features</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Sitios web ilimitados</span>
+                    <span className="text-sm">Unlimited websites</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Sin renovación anual nunca más</span>
+                    <span className="text-sm">No annual renewal ever</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Actualizaciones de por vida</span>
+                    <span className="text-sm">Lifetime updates</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Soporte técnico permanente</span>
+                    <span className="text-sm">Permanent technical support</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Nuevas características gratis</span>
+                    <span className="text-sm">New features free</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Acceso a versiones beta</span>
+                    <span className="text-sm">Access to beta versions</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Personalización avanzada incluida</span>
+                    <span className="text-sm">Advanced customization included</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Capacitación completa</span>
+                    <span className="text-sm">Complete training</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Máximo ahorro a largo plazo</span>
+                    <span className="text-sm">Maximum long-term savings</span>
                   </li>
                 </ul>
                 <Link
                   href="/contact"
                   className="inline-flex h-12 w-full items-center justify-center rounded-md bg-green-600 px-8 text-base font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
-                  Comprar Lifetime
+                  Purchase Lifetime
                 </Link>
               </div>
             </div>
@@ -430,12 +427,12 @@ export default function AcademicThemeOMPPage() {
 
           {/* Comparison Table */}
           <div className="mt-16 rounded-lg border bg-background p-8 shadow-sm">
-            <h3 className="text-2xl font-bold text-center mb-8">Comparación Detallada de Características</h3>
+            <h3 className="text-2xl font-bold text-center mb-8">Detailed Feature Comparison</h3>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
                   <tr className="border-b">
-                    <th className="text-left py-4 px-4">Característica</th>
+                    <th className="text-left py-4 px-4">Feature</th>
                     <th className="text-center py-4 px-4">Individual</th>
                     <th className="text-center py-4 px-4">Professional</th>
                     <th className="text-center py-4 px-4">Institutional</th>
@@ -443,7 +440,7 @@ export default function AcademicThemeOMPPage() {
                 </thead>
                 <tbody className="text-sm">
                   <tr className="border-b">
-                    <td className="py-3 px-4">Diseño moderno responsive</td>
+                    <td className="py-3 px-4">Modern responsive design</td>
                     <td className="text-center py-3 px-4">
                       <Check className="h-5 w-5 text-green-600 inline" />
                     </td>
@@ -455,7 +452,7 @@ export default function AcademicThemeOMPPage() {
                     </td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-3 px-4">Colores personalizables</td>
+                    <td className="py-3 px-4">Customizable colors</td>
                     <td className="text-center py-3 px-4">
                       <Check className="h-5 w-5 text-green-600 inline" />
                     </td>
@@ -467,7 +464,7 @@ export default function AcademicThemeOMPPage() {
                     </td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-3 px-4">Hero banner premium</td>
+                    <td className="py-3 px-4">Premium hero banner</td>
                     <td className="text-center py-3 px-4">
                       <Check className="h-5 w-5 text-green-600 inline" />
                     </td>
@@ -479,7 +476,7 @@ export default function AcademicThemeOMPPage() {
                     </td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-3 px-4">Slider con 3 slides</td>
+                    <td className="py-3 px-4">Slider with 3 slides</td>
                     <td className="text-center py-3 px-4">
                       <Check className="h-5 w-5 text-green-600 inline" />
                     </td>
@@ -491,7 +488,7 @@ export default function AcademicThemeOMPPage() {
                     </td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-3 px-4">Footer 3 columnas</td>
+                    <td className="py-3 px-4">3-column footer</td>
                     <td className="text-center py-3 px-4">
                       <Check className="h-5 w-5 text-green-600 inline" />
                     </td>
@@ -503,7 +500,7 @@ export default function AcademicThemeOMPPage() {
                     </td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-3 px-4">Tipografías premium</td>
+                    <td className="py-3 px-4">Premium typography</td>
                     <td className="text-center py-3 px-4">
                       <Check className="h-5 w-5 text-green-600 inline" />
                     </td>
@@ -515,19 +512,19 @@ export default function AcademicThemeOMPPage() {
                     </td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-3 px-4">Número de sitios</td>
+                    <td className="py-3 px-4">Number of sites</td>
                     <td className="text-center py-3 px-4 text-gray-600">1</td>
                     <td className="text-center py-3 px-4 text-gray-600">5</td>
-                    <td className="text-center py-3 px-4 text-gray-600">Ilimitado</td>
+                    <td className="text-center py-3 px-4 text-gray-600">Unlimited</td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-3 px-4">Soporte técnico</td>
-                    <td className="text-center py-3 px-4 text-gray-600">Prioritario</td>
+                    <td className="py-3 px-4">Technical support</td>
+                    <td className="text-center py-3 px-4 text-gray-600">Priority</td>
                     <td className="text-center py-3 px-4 text-gray-600">Premium</td>
                     <td className="text-center py-3 px-4 text-gray-600">24/7</td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-3 px-4">Instalación asistida</td>
+                    <td className="py-3 px-4">Assisted installation</td>
                     <td className="text-center py-3 px-4">
                       <span className="text-gray-300">✗</span>
                     </td>
@@ -539,17 +536,17 @@ export default function AcademicThemeOMPPage() {
                     </td>
                   </tr>
                   <tr className="border-b">
-                    <td className="py-3 px-4">Personalización avanzada</td>
+                    <td className="py-3 px-4">Advanced customization</td>
                     <td className="text-center py-3 px-4">
                       <span className="text-gray-300">✗</span>
                     </td>
-                    <td className="text-center py-3 px-4 text-gray-600">Básica</td>
+                    <td className="text-center py-3 px-4 text-gray-600">Basic</td>
                     <td className="text-center py-3 px-4">
                       <Check className="h-5 w-5 text-green-600 inline" />
                     </td>
                   </tr>
                   <tr>
-                    <td className="py-3 px-4">Capacitación incluida</td>
+                    <td className="py-3 px-4">Training included</td>
                     <td className="text-center py-3 px-4">
                       <span className="text-gray-300">✗</span>
                     </td>
@@ -573,10 +570,10 @@ export default function AcademicThemeOMPPage() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                ¿Listo para transformar tu editorial?
+                Ready to Transform Your Press?
               </h2>
               <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed opacity-90">
-                Únete a las instituciones académicas que ya confían en Academic Theme OMP
+                Join the academic institutions that already trust Academic Theme OMP
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -584,7 +581,7 @@ export default function AcademicThemeOMPPage() {
                 href="#pricing"
                 className="inline-flex h-10 items-center justify-center rounded-md bg-green-600 text-white px-8 text-sm font-medium shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
-                Comprar Licencia Ahora
+                Purchase License Now
               </Link>
               <a
                 href="https://docs.paideiastudio.net/AcademicTheme/AcademicTheme.html"
@@ -592,7 +589,7 @@ export default function AcademicThemeOMPPage() {
                 rel="noopener noreferrer"
                 className="inline-flex h-10 items-center justify-center rounded-md border border-white/30 bg-transparent px-8 text-sm font-medium text-white shadow-sm transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
-                Ver Documentación
+                View Documentation
               </a>
             </div>
           </div>

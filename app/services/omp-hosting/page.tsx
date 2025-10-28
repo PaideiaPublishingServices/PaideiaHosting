@@ -40,7 +40,7 @@ export default function OMPHostingPage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&h=400&fit=crop"
                 width={500}
                 height={400}
                 alt="OMP Hosting"

@@ -97,7 +97,7 @@ export default function ContactPage() {
 
               <div className="rounded-lg overflow-hidden border">
                 <Image
-                  src="/placeholder.svg?height=300&width=600"
+                  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=300&fit=crop"
                   width={600}
                   height={300}
                   alt="Office Location Map"

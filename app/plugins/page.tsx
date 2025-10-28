@@ -3,9 +3,9 @@ import Image from "next/image"
 import { Palette, Code } from "lucide-react"
 
 export const metadata = {
-  title: "Plugins y Temas - Paideia Hosting",
+  title: "Plugins & Themes - Paideia Hosting",
   description:
-    "Plugins y temas premium para OJS y OMP. Mejora tu plataforma de publicación académica con nuestras soluciones profesionales.",
+    "Premium plugins and themes for OJS and OMP. Enhance your academic publishing platform with our professional solutions.",
 }
 
 export default function PluginsPage() {
@@ -17,10 +17,10 @@ export default function PluginsPage() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                Plugins y Temas Premium
+                Premium Plugins & Themes
               </h1>
               <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Soluciones profesionales para mejorar tu plataforma de publicación académica OJS y OMP
+                Professional solutions to enhance your OJS and OMP academic publishing platform
               </p>
             </div>
           </div>
@@ -32,9 +32,9 @@ export default function PluginsPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Nuestros Productos</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Products</h2>
               <p className="max-w-[700px] text-gray-500 md:text-lg dark:text-gray-400">
-                Temas y plugins diseñados específicamente para editoriales académicas
+                Themes and plugins specifically designed for academic publishers
               </p>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function PluginsPage() {
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="Academic Theme OMP"
@@ -59,36 +59,36 @@ export default function PluginsPage() {
               </div>
               <div className="mt-4 flex-1">
                 <p className="text-gray-500 dark:text-gray-400 mb-4">
-                  El tema más completo y profesional para tu editorial universitaria en Open Monograph Press.
+                  The most complete and professional theme for your university press on Open Monograph Press.
                 </p>
                 <ul className="text-sm text-gray-600 space-y-2">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-0.5">✓</span>
-                    <span>Hero banner personalizable</span>
+                    <span>Customizable hero banner</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-0.5">✓</span>
-                    <span>Slider avanzado con 3 slides</span>
+                    <span>Advanced slider with 3 slides</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-0.5">✓</span>
-                    <span>Tipografías premium</span>
+                    <span>Premium typography</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-0.5">✓</span>
-                    <span>Sistema de licencias profesional</span>
+                    <span>Professional licensing system</span>
                   </li>
                 </ul>
               </div>
               <div className="mt-6 flex flex-col gap-2">
                 <div className="text-sm text-gray-500 dark:text-gray-400">
-                  Desde <span className="text-2xl font-bold text-primary">$99</span>/año
+                  Starting at <span className="text-2xl font-bold text-primary">$99</span>/year
                 </div>
                 <Link
                   href="/plugins/academic-theme-omp"
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
-                  Ver Detalles y Precios
+                  View Details & Pricing
                 </Link>
               </div>
             </div>
@@ -99,20 +99,20 @@ export default function PluginsPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
                   <Code className="h-6 w-6 text-gray-400" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-400">Próximamente</h2>
+                <h2 className="text-2xl font-bold text-gray-400">Coming Soon</h2>
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
-                  alt="Próximamente"
+                  alt="Coming Soon"
                   className="rounded-lg object-cover w-full h-48 opacity-50"
                 />
               </div>
               <div className="mt-4 flex-1">
                 <p className="text-gray-400">
-                  Estamos desarrollando más plugins y temas para mejorar tu experiencia con OJS y OMP.
+                  We are developing more plugins and themes to enhance your OJS and OMP experience.
                 </p>
               </div>
               <div className="mt-6">
@@ -120,7 +120,7 @@ export default function PluginsPage() {
                   disabled
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-gray-200 px-8 text-sm font-medium text-gray-400 shadow cursor-not-allowed"
                 >
-                  Próximamente
+                  Coming Soon
                 </button>
               </div>
             </div>
@@ -131,20 +131,20 @@ export default function PluginsPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
                   <Code className="h-6 w-6 text-gray-400" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-400">Próximamente</h2>
+                <h2 className="text-2xl font-bold text-gray-400">Coming Soon</h2>
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
-                  alt="Próximamente"
+                  alt="Coming Soon"
                   className="rounded-lg object-cover w-full h-48 opacity-50"
                 />
               </div>
               <div className="mt-4 flex-1">
                 <p className="text-gray-400">
-                  Estamos desarrollando más plugins y temas para mejorar tu experiencia con OJS y OMP.
+                  We are developing more plugins and themes to enhance your OJS and OMP experience.
                 </p>
               </div>
               <div className="mt-6">
@@ -152,7 +152,7 @@ export default function PluginsPage() {
                   disabled
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-gray-200 px-8 text-sm font-medium text-gray-400 shadow cursor-not-allowed"
                 >
-                  Próximamente
+                  Coming Soon
                 </button>
               </div>
             </div>
@@ -166,10 +166,10 @@ export default function PluginsPage() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                ¿Por qué elegir nuestros plugins?
+                Why Choose Our Plugins?
               </h2>
               <p className="max-w-[700px] text-gray-500 md:text-lg dark:text-gray-400">
-                Desarrollados por expertos en publicación académica
+                Developed by experts in academic publishing
               </p>
             </div>
           </div>
@@ -191,9 +191,9 @@ export default function PluginsPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Calidad Profesional</h3>
+              <h3 className="text-xl font-bold">Professional Quality</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Código limpio, optimizado y siguiendo las mejores prácticas de desarrollo
+                Clean, optimized code following development best practices
               </p>
             </div>
 
@@ -213,9 +213,9 @@ export default function PluginsPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Soporte Dedicado</h3>
+              <h3 className="text-xl font-bold">Dedicated Support</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Asistencia técnica experta para resolver cualquier inconveniente
+                Expert technical assistance to resolve any issue
               </p>
             </div>
 
@@ -235,9 +235,9 @@ export default function PluginsPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Actualizaciones Constantes</h3>
+              <h3 className="text-xl font-bold">Regular Updates</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Mejoras continuas y compatibilidad con las últimas versiones de OJS/OMP
+                Continuous improvements and compatibility with latest OJS/OMP versions
               </p>
             </div>
 
@@ -257,9 +257,9 @@ export default function PluginsPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Documentación Completa</h3>
+              <h3 className="text-xl font-bold">Complete Documentation</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Guías detalladas paso a paso para instalación y configuración
+                Detailed step-by-step guides for installation and configuration
               </p>
             </div>
 
@@ -279,9 +279,9 @@ export default function PluginsPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Personalización</h3>
+              <h3 className="text-xl font-bold">Customization</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Adapta cada plugin a la identidad visual de tu institución
+                Adapt each plugin to your institution's visual identity
               </p>
             </div>
 
@@ -301,9 +301,9 @@ export default function PluginsPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold">Alto Rendimiento</h3>
+              <h3 className="text-xl font-bold">High Performance</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Optimizados para carga rápida y experiencia de usuario fluida
+                Optimized for fast loading and smooth user experience
               </p>
             </div>
           </div>
@@ -315,9 +315,9 @@ export default function PluginsPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">¿Necesitas ayuda?</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Need Help?</h2>
               <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Nuestro equipo está listo para ayudarte a elegir e implementar la mejor solución para tu editorial
+                Our team is ready to help you choose and implement the best solution for your press
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -325,13 +325,13 @@ export default function PluginsPage() {
                 href="/contact"
                 className="inline-flex h-10 items-center justify-center rounded-md bg-white text-primary px-8 text-sm font-medium shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
-                Contactar Soporte
+                Contact Support
               </Link>
               <Link
                 href="/services"
                 className="inline-flex h-10 items-center justify-center rounded-md border border-white bg-transparent px-8 text-sm font-medium text-white shadow-sm transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
-                Ver Servicios de Hosting
+                View Hosting Services
               </Link>
             </div>
           </div>

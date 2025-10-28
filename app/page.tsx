@@ -167,7 +167,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=500"
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&h=400&fit=crop"
                   width={500}
                   height={400}
                   alt="Paideia Hosting Features"

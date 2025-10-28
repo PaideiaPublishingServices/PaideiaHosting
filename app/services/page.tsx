@@ -41,7 +41,7 @@ export default function ServicesPage() {
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="OJS Hosting"
@@ -74,7 +74,7 @@ export default function ServicesPage() {
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="OMP Hosting"
@@ -106,7 +106,7 @@ export default function ServicesPage() {
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="Dataverse Hosting"
@@ -139,7 +139,7 @@ export default function ServicesPage() {
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="AtoM Hosting"
@@ -172,7 +172,7 @@ export default function ServicesPage() {
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="VPS for Institutions"
@@ -205,7 +205,7 @@ export default function ServicesPage() {
               </div>
               <div className="mt-4">
                 <Image
-                  src="/placeholder.svg?height=200&width=400"
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="Custom Solutions"
