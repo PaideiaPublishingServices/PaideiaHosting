@@ -46,7 +46,7 @@ export default function ContactPage() {
                     <h3 className="font-bold">Email Us</h3>
                     <p className="text-gray-500 dark:text-gray-400">For general inquiries:</p>
                     <a href="mailto:info@paideiahosting.net" className="text-primary hover:underline">
-                      info@paideiahosting.net
+                      contact@paideiahosting.net
                     </a>
                     <p className="text-gray-500 dark:text-gray-400 mt-2">For technical support:</p>
                     <a href="mailto:support@paideiahosting.net" className="text-primary hover:underline">
@@ -59,9 +59,9 @@ export default function ContactPage() {
                   <Phone className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-bold">Call Us</h3>
-                    <p className="text-gray-500 dark:text-gray-400">Monday to Friday, 9am to 6pm EST</p>
-                    <a href="tel:+15551234567" className="text-primary hover:underline">
-                      +1 (555) 123-4567
+                    <p className="text-gray-500 dark:text-gray-400">Monday to Friday, 10am to 5pm UTC−03:00</p>
+                    <a href="tel:+393517576248" className="text-primary hover:underline">
+                      +39 (351) 757-6248
                     </a>
                   </div>
                 </div>
@@ -71,9 +71,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold">Visit Us</h3>
                     <p className="text-gray-500 dark:text-gray-400">
-                      123 Academic Street
+                      2810 North Church Street
                       <br />
-                      Research City, RC 10101
+                      Wilmington, DE 19802
                       <br />
                       United States
                     </p>
@@ -85,9 +85,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold">Business Hours</h3>
                     <p className="text-gray-500 dark:text-gray-400">
-                      Monday - Friday: 9:00 AM - 6:00 PM EST
+                      Monday - Friday: 10:00 AM - 5:00 PM UTC−03:00
                       <br />
-                      Saturday: 10:00 AM - 2:00 PM EST
+                      Saturday: 10:00 AM - 2:00 PM UTC−03:00
                       <br />
                       Sunday: Closed
                     </p>
@@ -140,14 +140,14 @@ export default function ContactPage() {
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-primary" />
-                  <a href="mailto:sales@paideiahosting.net" className="text-primary hover:underline">
-                    sales@paideiahosting.net
+                  <a href="mailto:contact@paideiahosting.net" className="text-primary hover:underline">
+                    contact@paideiahosting.net
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4 text-primary" />
-                  <a href="tel:+15551234568" className="text-primary hover:underline">
-                    +1 (555) 123-4568
+                  <a href="tel:+393517576248" className="text-primary hover:underline">
+                    +39 (351) 757-6248
                   </a>
                 </div>
               </div>
@@ -167,8 +167,8 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4 text-primary" />
-                  <a href="tel:+15551234569" className="text-primary hover:underline">
-                    +1 (555) 123-4569
+                  <a href="tel:+393517576248" className="text-primary hover:underline">
+                    +39 (351) 757-6248
                   </a>
                 </div>
               </div>
@@ -182,14 +182,14 @@ export default function ContactPage() {
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-primary" />
-                  <a href="mailto:solutions@paideiahosting.net" className="text-primary hover:underline">
-                    solutions@paideiahosting.net
+                  <a href="mailto:contact@paideiahosting.net" className="text-primary hover:underline">
+                    contact@paideiahosting.net
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4 text-primary" />
-                  <a href="tel:+15551234570" className="text-primary hover:underline">
-                    +1 (555) 123-4570
+                  <a href="tel:+393517576248" className="text-primary hover:underline">
+                    +39 (351) 757-6248
                   </a>
                 </div>
               </div>
@@ -215,7 +215,7 @@ export default function ContactPage() {
               <h3 className="text-xl font-bold">What is your typical response time?</h3>
               <p className="text-gray-500 dark:text-gray-400">
                 We aim to respond to all inquiries within 24 hours during business days. For urgent technical support,
-                our response time is typically under 4 hours.
+                our response time is typically under 12 hours.
               </p>
             </div>
 
@@ -230,7 +230,7 @@ export default function ContactPage() {
             <div className="space-y-2">
               <h3 className="text-xl font-bold">Can I schedule a consultation call?</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                You can request a consultation call through our contact form or by emailing sales@paideiahosting.net
+                You can request a consultation call through our contact form or by emailing contact@paideiahosting.net
                 with your preferred date and time.
               </p>
             </div>
