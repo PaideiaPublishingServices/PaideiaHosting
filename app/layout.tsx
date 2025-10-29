@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ChatBot } from "@/components/chat-bot"
 import Script from "next/script" // Importa el componente Script
 
 const inter = Inter({ subsets: ["latin"] })
@@ -55,6 +56,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
+            <ChatBot />
           </div>
         </ThemeProvider>
 
