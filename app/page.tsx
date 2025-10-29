@@ -94,10 +94,10 @@ export default function Home() {
                 link="/services/omp-hosting"
               />
               <ServiceCard
-                title="Dataverse Hosting"
-                description="Secure and reliable hosting for research data repositories."
+                title="Repository Hosting"
+                description="Secure and reliable hosting for research data repositories (Dataverse & DSpace)."
                 icon={<Database className="h-10 w-10 text-primary" />}
-                link="/services/dataverse-hosting"
+                link="/services/repository-hosting"
               />
               <ServiceCard
                 title="AtoM Hosting"
