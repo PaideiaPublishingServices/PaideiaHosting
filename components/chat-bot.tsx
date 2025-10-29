@@ -68,46 +68,50 @@ export function ChatBot() {
 
   return (
     <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-md px-4">
-      <div className="bg-white border border-gray-200 rounded-lg shadow-lg">
-        {response && (
-          <div className="p-3 border-b bg-gray-50 rounded-t-lg">
-            <div className="flex items-start justify-between">
-              <p className="text-sm text-gray-700 flex-1">{response}</p>
+      <div className="gradient-border shadow-lg">
+        <div className="gradient-border-content">
+          {response && (
+            <div className="p-3 border-b bg-gray-50 rounded-t-md">
+              <div className="flex items-start justify-between">
+                <p className="text-sm text-gray-700 flex-1">{response}</p>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setResponse("")}
+                  className="ml-2 h-6 w-6 p-0"
+                >
+                  <X className="h-3 w-3" />
+                </Button>
+              </div>
+            </div>
+          )}
+          <div className="p-3">
+            <div className="flex items-center space-x-2">
+              <Input
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyPress={handleKeyPress}
+                placeholder="Ask about our services..."
+                disabled={isLoading}
+                className="flex-1 bg-black text-white border-gray-600 placeholder:text-gray-400"
+              />
               <Button
+                onClick={sendMessage}
+                disabled={!input.trim() || isLoading}
+                size="sm"
+                className="bg-black text-white hover:bg-gray-800"
+              >
+                {isLoading ? "..." : <Send className="h-4 w-4" />}
+              </Button>
+              <Button
+                onClick={() => setIsCollapsed(true)}
                 variant="ghost"
                 size="sm"
-                onClick={() => setResponse("")}
-                className="ml-2 h-6 w-6 p-0"
+                className="hover:bg-gray-100"
               >
-                <X className="h-3 w-3" />
+                <X className="h-4 w-4" />
               </Button>
             </div>
-          </div>
-        )}
-        <div className="p-3">
-          <div className="flex items-center space-x-2">
-            <Input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyPress={handleKeyPress}
-              placeholder="Ask about our services..."
-              disabled={isLoading}
-              className="flex-1"
-            />
-            <Button
-              onClick={sendMessage}
-              disabled={!input.trim() || isLoading}
-              size="sm"
-            >
-              {isLoading ? "..." : <Send className="h-4 w-4" />}
-            </Button>
-            <Button
-              onClick={() => setIsCollapsed(true)}
-              variant="ghost"
-              size="sm"
-            >
-              <X className="h-4 w-4" />
-            </Button>
           </div>
         </div>
       </div>
