@@ -1,15 +1,34 @@
 "use client"
 
-import { useState } from "react"
-import { Send, X, ChevronDown } from "lucide-react"
+import { useState, useEffect } from "react"
+import { Send, X, ChevronDown, ChevronUp, MessageSquare } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
+interface Message {
+  id: string
+  text: string
+  isUser: boolean
+  timestamp: Date
+}
+
+let messageCounter = 0
+
 export function ChatBot() {
   const [isCollapsed, setIsCollapsed] = useState(false)
+  const [showHistory, setShowHistory] = useState(false)
   const [input, setInput] = useState("")
   const [isLoading, setIsLoading] = useState(false)
-  const [response, setResponse] = useState("")
+  const [messages, setMessages] = useState<Message[]>([])
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
 
   const query = async (question: string) => {
     const response = await fetch(
@@ -29,19 +48,42 @@ export function ChatBot() {
   const sendMessage = async () => {
     if (!input.trim() || isLoading) return
 
+    const userMessage: Message = {
+      id: `msg-${++messageCounter}`,
+      text: input,
+      isUser: true,
+      timestamp: new Date()
+    }
+
+    setMessages(prev => [...prev, userMessage])
     setIsLoading(true)
     const question = input
     setInput("")
 
     try {
       const result = await query(question)
-      setResponse(result.text || result.answer || "I'm sorry, I couldn't process your request.")
+      const botMessage: Message = {
+        id: `msg-${++messageCounter}`,
+        text: result.text || result.answer || "I'm sorry, I couldn't process your request.",
+        isUser: false,
+        timestamp: new Date()
+      }
+      setMessages(prev => [...prev, botMessage])
     } catch (error) {
-      setResponse("Sorry, I'm having trouble connecting. Please try again later.")
+      const errorMessage: Message = {
+        id: `msg-${++messageCounter}`,
+        text: "Sorry, I'm having trouble connecting. Please try again later.",
+        isUser: false,
+        timestamp: new Date()
+      }
+      setMessages(prev => [...prev, errorMessage])
     } finally {
       setIsLoading(false)
     }
   }
+
+  const lastUserMessage = messages.filter(m => m.isUser).slice(-1)[0]
+  const lastBotMessage = messages.filter(m => !m.isUser).slice(-1)[0]
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" && !e.shiftKey) {
@@ -70,23 +112,53 @@ export function ChatBot() {
     <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-md px-4">
       <div className="gradient-border shadow-lg">
         <div className="gradient-border-content">
-          {response && (
-            <div className="p-3 border-b bg-gray-50 rounded-t-md">
-              <div className="flex items-start justify-between">
-                <p className="text-sm text-gray-700 flex-1">{response}</p>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setResponse("")}
-                  className="ml-2 h-6 w-6 p-0"
-                >
-                  <X className="h-3 w-3" />
-                </Button>
-              </div>
+          {showHistory && messages.length > 0 && (
+            <div className="max-h-60 overflow-y-auto p-3 border-b bg-gray-50 rounded-t-md space-y-2">
+              {messages.map((message) => (
+                <div key={message.id} className={`flex ${message.isUser ? "justify-end" : "justify-start"}`}>
+                  <div className={`max-w-[80%] p-2 rounded-lg text-xs ${
+                    message.isUser
+                      ? "bg-black text-white"
+                      : "bg-white text-gray-700 border"
+                  }`}>
+                    {message.text}
+                  </div>
+                </div>
+              ))}
             </div>
           )}
+          
+          {!showHistory && (lastUserMessage || lastBotMessage) && (
+            <div className="p-3 border-b bg-gray-50 rounded-t-md space-y-2">
+              {lastUserMessage && (
+                <div className="flex justify-end">
+                  <div className="max-w-[80%] p-2 rounded-lg text-xs bg-black text-white">
+                    You: {lastUserMessage.text}
+                  </div>
+                </div>
+              )}
+              {lastBotMessage && (
+                <div className="flex justify-start">
+                  <div className="max-w-[80%] p-2 rounded-lg text-xs bg-white text-gray-700 border">
+                    {lastBotMessage.text}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+          
           <div className="p-3">
             <div className="flex items-center space-x-2">
+              {messages.length > 0 && (
+                <Button
+                  onClick={() => setShowHistory(!showHistory)}
+                  variant="ghost"
+                  size="sm"
+                  className="hover:bg-gray-100"
+                >
+                  {showHistory ? <ChevronDown className="h-4 w-4" /> : <MessageSquare className="h-4 w-4" />}
+                </Button>
+              )}
               <Input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
