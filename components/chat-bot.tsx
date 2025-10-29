@@ -32,7 +32,7 @@ export function ChatBot() {
 
   const query = async (question: string) => {
     const response = await fetch(
-      "https://flowise.paideiastudio.net/api/v1/prediction/24fd6735-221f-4219-bd96-f231b28ea31d",
+      "https://flowise.paideiastudio.net/api/v1/prediction/8a28827a-5d5f-47bf-9332-4d51a9cafb2e",
       {
         method: "POST",
         headers: {
@@ -60,6 +60,15 @@ export function ChatBot() {
     const question = input
     setInput("")
 
+    // Add typing indicator
+    const typingMessage: Message = {
+      id: "typing-indicator",
+      text: "typing",
+      isUser: false,
+      timestamp: new Date()
+    }
+    setMessages(prev => [...prev, typingMessage])
+
     try {
       const result = await query(question)
       const botMessage: Message = {
@@ -68,7 +77,7 @@ export function ChatBot() {
         isUser: false,
         timestamp: new Date()
       }
-      setMessages(prev => [...prev, botMessage])
+      setMessages(prev => prev.filter(m => !m.text.includes("typing")).concat(botMessage))
     } catch (error) {
       const errorMessage: Message = {
         id: `msg-${++messageCounter}`,
@@ -76,7 +85,7 @@ export function ChatBot() {
         isUser: false,
         timestamp: new Date()
       }
-      setMessages(prev => [...prev, errorMessage])
+      setMessages(prev => prev.filter(m => !m.text.includes("typing")).concat(errorMessage))
     } finally {
       setIsLoading(false)
     }
@@ -116,12 +125,18 @@ export function ChatBot() {
             <div className="max-h-60 overflow-y-auto p-3 border-b bg-gray-50 rounded-t-md space-y-2">
               {messages.map((message) => (
                 <div key={message.id} className={`flex ${message.isUser ? "justify-end" : "justify-start"}`}>
-                  <div className={`max-w-[80%] p-2 rounded-lg text-xs ${
+                  <div className={`max-w-[80%] p-2 rounded-lg text-[15px] ${
                     message.isUser
                       ? "bg-black text-white"
                       : "bg-white text-gray-700 border"
                   }`}>
-                    {message.text}
+                    {message.text === "typing" ? (
+                      <div className="flex gap-1">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '0ms'}}></div>
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '150ms'}}></div>
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '300ms'}}></div>
+                      </div>
+                    ) : message.text}
                   </div>
                 </div>
               ))}
@@ -132,15 +147,21 @@ export function ChatBot() {
             <div className="p-3 border-b bg-gray-50 rounded-t-md space-y-2">
               {lastUserMessage && (
                 <div className="flex justify-end">
-                  <div className="max-w-[80%] p-2 rounded-lg text-xs bg-black text-white">
+                  <div className="max-w-[80%] p-2 rounded-lg text-[15px] bg-black text-white">
                     You: {lastUserMessage.text}
                   </div>
                 </div>
               )}
               {lastBotMessage && (
                 <div className="flex justify-start">
-                  <div className="max-w-[80%] p-2 rounded-lg text-xs bg-white text-gray-700 border">
-                    {lastBotMessage.text}
+                  <div className="max-w-[80%] p-2 rounded-lg text-[15px] bg-white text-gray-700 border">
+                    {lastBotMessage.text === "typing" ? (
+                      <div className="flex gap-1">
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '0ms'}}></div>
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '150ms'}}></div>
+                        <div className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '300ms'}}></div>
+                      </div>
+                    ) : lastBotMessage.text}
                   </div>
                 </div>
               )}
