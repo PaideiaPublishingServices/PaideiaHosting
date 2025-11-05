@@ -24,7 +24,7 @@ export function ServicePricing({ title, subtitle, plans }: ServicePricingProps) 
   const [isAnnual, setIsAnnual] = useState(false)
 
   const calculatePrice = (monthlyPrice: number) => {
-    return isAnnual ? Math.round(monthlyPrice * 0.8) : monthlyPrice
+    return isAnnual ? Math.round(monthlyPrice * 0.9) : monthlyPrice
   }
 
   return (

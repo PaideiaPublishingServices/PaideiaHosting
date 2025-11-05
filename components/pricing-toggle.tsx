@@ -34,7 +34,7 @@ export function PricingToggle({ onToggle, className = "" }: PricingToggleProps) 
       >
         Annual
         <span className="ml-1 text-xs bg-green-100 text-green-800 px-1.5 py-0.5 rounded-full">
-          Save 20%
+          Save 10%
         </span>
       </Button>
     </div>

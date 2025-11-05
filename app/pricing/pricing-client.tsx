@@ -12,7 +12,7 @@ export function PricingClient() {
   const [activeTab, setActiveTab] = useState("ojs")
 
   const calculatePrice = (monthlyPrice: number) => {
-    return isAnnual ? Math.round(monthlyPrice * 0.8) : monthlyPrice
+    return isAnnual ? Math.round(monthlyPrice * 0.9) : monthlyPrice
   }
 
   const showPricingToggle = activeTab !== "custom"
