@@ -36,7 +36,7 @@ export function PricingClient() {
           {/* OJS Pricing */}
           <TabsContent value="ojs" className="space-y-4">
             {!isAnnual && (
-              <div className="bg-gradient-to-r from-slate-50 to-gray-50 border border-gray-200 rounded-lg p-2 mb-4 text-center">
+              <div className="max-w-md mx-auto bg-gradient-to-r from-slate-50 to-gray-50 border border-gray-200 rounded-lg p-2 mb-4 text-center">
                 <div className="flex items-center justify-center gap-1">
                   <svg className="h-4 w-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
@@ -85,6 +85,10 @@ export function PricingClient() {
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
                     <span>Email Support</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Free Installation</span>
                   </li>
                 </ul>
                 <div className="mt-6">
@@ -137,6 +141,10 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
+                    <span>Free Installation</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
                     <span>1 Upgrade per year</span>
                   </li>
                 </ul>
@@ -185,7 +193,11 @@ export function PricingClient() {
                     <Check className="h-4 w-4 text-primary" />
                     <span>Priority Email Support | Phone Support</span>
                   </li>
-                   <li className="flex items-center gap-2">
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Free Installation</span>
+                  </li>
+                  <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
                     <span>1 Upgrade per year</span>
                   </li>
@@ -217,7 +229,7 @@ export function PricingClient() {
           {/* OMP Pricing */}
           <TabsContent value="omp" className="space-y-4">
             {!isAnnual && (
-              <div className="bg-gradient-to-r from-slate-50 to-gray-50 border border-gray-200 rounded-lg p-2 mb-4 text-center">
+              <div className="max-w-md mx-auto bg-gradient-to-r from-slate-50 to-gray-50 border border-gray-200 rounded-lg p-2 mb-4 text-center">
                 <div className="flex items-center justify-center gap-1">
                   <svg className="h-4 w-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
@@ -267,6 +279,10 @@ export function PricingClient() {
                     <Check className="h-4 w-4 text-primary" />
                     <span>Email Support</span>
                   </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Free Installation</span>
+                  </li>
                 </ul>
                 <div className="mt-6">
                   <Link
@@ -315,6 +331,10 @@ export function PricingClient() {
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
                     <span>Priority Email Support</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Free Installation</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -368,6 +388,10 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
+                    <span>Free Installation</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
                     <span>1 Upgrade per year</span>
                   </li>
                   {isAnnual && (
@@ -398,7 +422,7 @@ export function PricingClient() {
           {/* Repository Pricing */}
           <TabsContent value="dataverse" className="space-y-4">
             {!isAnnual && (
-              <div className="bg-gradient-to-r from-slate-50 to-gray-50 border border-gray-200 rounded-lg p-2 mb-4 text-center">
+              <div className="max-w-md mx-auto bg-gradient-to-r from-slate-50 to-gray-50 border border-gray-200 rounded-lg p-2 mb-4 text-center">
                 <div className="flex items-center justify-center gap-1">
                   <svg className="h-4 w-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
@@ -438,35 +462,31 @@ export function PricingClient() {
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>1 Repository Installation (Dataverse or DSpace)</span>
+                    <span>Repository (Dataverse or DSpace)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Installation fee extra</span>
+                    <span>50GB Storage</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>500GB Storage</span>
+                    <span>SSL included</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Daily Backups | 7 days</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Email Support</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
                     <span>Additional storage available</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>S3 configuration available</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>Priority Support</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>Custom Domain</span>
+                    <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
+                    <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Installation included' : 'Installation fee extra'}</span>
                   </li>
                 </ul>
                 <div className="mt-6">
@@ -492,7 +512,7 @@ export function PricingClient() {
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Multiple Repository Installations</span>
+                    <span>Repository (Dataverse or DSpace)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -500,27 +520,31 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>2TB+ Storage</span>
+                    <span>100GB Storage</span>
                   </li>
                   <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>SSL included</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Mail box included</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>S3 configuration included (Not included additional fee S3)</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Daily Backups | 7 days</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Priority Email Support</span>
+                  </li>
+                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
                     <span>Additional storage available</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>S3 configuration available</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>24/7 Phone Support</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>Custom Domain & Branding</span>
                   </li>
                   {isAnnual && (
                     <li className="flex items-center gap-2">
@@ -528,10 +552,6 @@ export function PricingClient() {
                       <span className="text-green-700 font-medium">Crossref membership (Annual only)</span>
                     </li>
                   )}
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>Dedicated Resources</span>
-                  </li>
                 </ul>
                 <div className="mt-6">
                   <Link
