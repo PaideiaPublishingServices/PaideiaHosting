@@ -35,6 +35,16 @@ export function PricingClient() {
 
           {/* OJS Pricing */}
           <TabsContent value="ojs" className="space-y-4">
+            {!isAnnual && (
+              <div className="bg-gradient-to-r from-slate-50 to-gray-50 border border-gray-200 rounded-lg p-2 mb-4 text-center">
+                <div className="flex items-center justify-center gap-1">
+                  <svg className="h-4 w-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                  </svg>
+                  <p className="text-gray-700 text-sm">Switch to Annual billing for exclusive benefits and save 10%</p>
+                </div>
+              </div>
+            )}
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold">OJS Hosting Plans</h2>
               <p className="text-gray-500 dark:text-gray-400 mt-2">Specialized hosting for Open Journal Systems</p>
@@ -127,7 +137,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>1 Upgrade per billed annually</span>
+                    <span>1 Upgrade per year</span>
                   </li>
                 </ul>
                 <div className="mt-6">
@@ -177,16 +187,20 @@ export function PricingClient() {
                   </li>
                    <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>1 Upgrade per billed annually</span>
+                    <span>1 Upgrade per year</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>Crossref memberships</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>PrePrints server memberships</span>
-                  </li>
+                  {isAnnual && (
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      <span className="text-green-700 font-medium">Crossref memberships (Annual only)</span>
+                    </li>
+                  )}
+                  {isAnnual && (
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      <span className="text-green-700 font-medium">PrePrints server memberships (Annual only)</span>
+                    </li>
+                  )}
                 </ul>
                 <div className="mt-6">
                   <Link
@@ -202,6 +216,16 @@ export function PricingClient() {
 
           {/* OMP Pricing */}
           <TabsContent value="omp" className="space-y-4">
+            {!isAnnual && (
+              <div className="bg-gradient-to-r from-slate-50 to-gray-50 border border-gray-200 rounded-lg p-2 mb-4 text-center">
+                <div className="flex items-center justify-center gap-1">
+                  <svg className="h-4 w-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                  </svg>
+                  <p className="text-gray-700 text-sm">Switch to Annual billing for exclusive benefits and save 10%</p>
+                </div>
+              </div>
+            )}
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold">OMP Hosting Plans</h2>
               <p className="text-gray-500 dark:text-gray-400 mt-2">Specialized hosting for Open Monograph Press</p>
@@ -212,16 +236,16 @@ export function PricingClient() {
               <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">Basic</h3>
-                  <p className="text-gray-500 dark:text-gray-400">For small publishers just getting started</p>
+                  <p className="text-gray-500 dark:text-gray-400">For emerging publishers seeking stability, basic support, and initial technical control</p>
                 </div>
                 <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(39)}</span>
+                  <span className="text-3xl font-bold">${calculatePrice(42)}</span>
                   <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>1 OMP Installation</span>
+                    <span>Single Press</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -229,7 +253,15 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups</span>
+                    <span>Daily Backups | 5 days</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>1 mail box</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>SSL included</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -256,29 +288,37 @@ export function PricingClient() {
                   <p className="text-gray-500 dark:text-gray-400">For established academic publishers</p>
                 </div>
                 <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(89)}</span>
+                  <span className="text-3xl font-bold">${calculatePrice(79)}</span>
                   <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>3 OMP Installations</span>
+                    <span>Multi-press in 1 OMP Installation</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>30GB Storage</span>
+                    <span>20GB Storage</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups</span>
+                    <span>Daily Backups | 7 days</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Priority Support</span>
+                    <span>5 mail box</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Custom Domain</span>
+                    <span>SSL included</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Priority Email Support</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>1 Upgrade per year</span>
                   </li>
                 </ul>
                 <div className="mt-6">
@@ -298,34 +338,50 @@ export function PricingClient() {
                   <p className="text-gray-500 dark:text-gray-400">For institutions with multiple publications</p>
                 </div>
                 <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(219)}</span>
+                  <span className="text-3xl font-bold">${calculatePrice(99)}</span>
                   <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>10 OMP Installations</span>
+                    <span>Multi-press in Multi-installations</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>150GB Storage</span>
+                    <span>30GB Storage</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups</span>
+                    <span>Daily Backups | 15 days</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>24/7 Phone Support</span>
+                    <span>Unlimited mailbox</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Custom Domain</span>
+                    <span>SSL included</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Dedicated Resources</span>
+                    <span>Priority Email Support | Phone Support</span>
                   </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>1 Upgrade per year</span>
+                  </li>
+                  {isAnnual && (
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      <span className="text-green-700 font-medium">Crossref memberships (Annual only)</span>
+                    </li>
+                  )}
+                  {isAnnual && (
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      <span className="text-green-700 font-medium">PrePrints server memberships (Annual only)</span>
+                    </li>
+                  )}
                 </ul>
                 <div className="mt-6">
                   <Link
@@ -341,52 +397,31 @@ export function PricingClient() {
 
           {/* Repository Pricing */}
           <TabsContent value="dataverse" className="space-y-4">
+            {!isAnnual && (
+              <div className="bg-gradient-to-r from-slate-50 to-gray-50 border border-gray-200 rounded-lg p-2 mb-4 text-center">
+                <div className="flex items-center justify-center gap-1">
+                  <svg className="h-4 w-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                  </svg>
+                  <p className="text-gray-700 text-sm">Switch to Annual billing for exclusive benefits and save 10%</p>
+                </div>
+              </div>
+            )}
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold">Repository Hosting Plans</h2>
               <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Secure and reliable hosting for research data repositories (Dataverse & DSpace)
+                Secure and reliable hosting for research data repositories (Dataverse & DSpace) on AWS infrastructure
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-3">
-              {/* Basic Plan */}
-              <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Basic</h3>
-                  <p className="text-gray-500 dark:text-gray-400">For small research groups</p>
-                </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(49)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
-                </div>
-                <ul className="mt-4 space-y-2 flex-1">
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>1 Repository Installation (Dataverse or DSpace)</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>50GB Storage</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>Email Support</span>
-                  </li>
-                </ul>
-                <div className="mt-6">
-                  <Link
-                    href="/contact"
-                    className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                  >
-                    Get Started
-                  </Link>
-                </div>
+            <div className="flex items-center justify-center mb-6">
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <span>Hosted on</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/330px-Amazon_Web_Services_Logo.svg.png" alt="AWS" className="h-6" />
               </div>
-
+            </div>
+            
+            <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
               {/* Professional Plan */}
               <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm relative">
                 <div className="absolute -top-4 left-0 right-0 mx-auto w-fit rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
@@ -397,7 +432,7 @@ export function PricingClient() {
                   <p className="text-gray-500 dark:text-gray-400">For research departments</p>
                 </div>
                 <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(129)}</span>
+                  <span className="text-3xl font-bold">${calculatePrice(170)}</span>
                   <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
@@ -407,7 +442,19 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
+                    <span>Installation fee extra</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
                     <span>500GB Storage</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Additional storage available</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>S3 configuration available</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -439,7 +486,7 @@ export function PricingClient() {
                   <p className="text-gray-500 dark:text-gray-400">For institutions and large research centers</p>
                 </div>
                 <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(299)}</span>
+                  <span className="text-3xl font-bold">${calculatePrice(280)}</span>
                   <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
@@ -449,7 +496,19 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
+                    <span>Installation included</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
                     <span>2TB+ Storage</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Additional storage available</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>S3 configuration available</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -463,6 +522,12 @@ export function PricingClient() {
                     <Check className="h-4 w-4 text-primary" />
                     <span>Custom Domain & Branding</span>
                   </li>
+                  {isAnnual && (
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      <span className="text-green-700 font-medium">Crossref membership (Annual only)</span>
+                    </li>
+                  )}
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
                     <span>Dedicated Resources</span>
