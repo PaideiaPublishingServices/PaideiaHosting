@@ -53,7 +53,7 @@ export function ServicePricing({ title, subtitle, plans }: ServicePricingProps) 
               </div>
               <div className="mt-4 flex items-baseline">
                 <span className="text-3xl font-bold">${calculatePrice(plan.monthlyPrice)}</span>
-                <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
               </div>
               <ul className="mt-4 space-y-2 flex-1">
                 {plan.features.map((feature, featureIndex) => (

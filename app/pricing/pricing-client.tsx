@@ -49,7 +49,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(42)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -98,7 +98,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(79)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -127,7 +127,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>1 Upgrade per year - Billed annually</span>
+                    <span>1 Upgrade per billed annually</span>
                   </li>
                 </ul>
                 <div className="mt-6">
@@ -148,7 +148,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(99)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -177,7 +177,7 @@ export function PricingClient() {
                   </li>
                    <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>1 Upgrade per year - Billed annually</span>
+                    <span>1 Upgrade per billed annually</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -216,7 +216,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(39)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -257,7 +257,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(89)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -299,7 +299,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(219)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -357,7 +357,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(49)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -398,7 +398,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(129)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -440,7 +440,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(299)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -498,7 +498,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(59)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -539,7 +539,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(149)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -581,7 +581,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(349)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -639,7 +639,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(79)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -684,7 +684,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(149)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -730,7 +730,7 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4 flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(299)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'year - Billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
