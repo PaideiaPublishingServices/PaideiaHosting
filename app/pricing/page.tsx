@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Check, HelpCircle } from "lucide-react"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { PricingClient } from "./pricing-client"
 
 export const metadata = {
@@ -32,7 +33,7 @@ export default function PricingPage() {
       {/* Pricing Tabs Section */}
       <PricingClient />
 
-      {/* Comparison Section */}
+      {/* Plan Comparison */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
@@ -44,93 +45,210 @@ export default function PricingPage() {
             </div>
           </div>
 
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="border-b">
-                  <th className="p-4 text-left font-medium">Feature</th>
-                  <th className="p-4 text-center font-medium">Basic/Standard</th>
-                  <th className="p-4 text-center font-medium">Professional/Advanced</th>
-                  <th className="p-4 text-center font-medium">Enterprise</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b">
-                  <td className="p-4 font-medium">Support</td>
-                  <td className="p-4 text-center">Email Support</td>
-                  <td className="p-4 text-center">Priority Support</td>
-                  <td className="p-4 text-center">24/7 Phone Support</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-4 font-medium">Backups</td>
-                  <td className="p-4 text-center">Daily</td>
-                  <td className="p-4 text-center">Daily</td>
-                  <td className="p-4 text-center">Daily + Point-in-time Recovery</td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-4 font-medium">Custom Domain</td>
-                  <td className="p-4 text-center">
-                    <TooltipProvider>
-                      <Tooltip>
-                        <TooltipTrigger>
-                          <div className="flex justify-center">
-                            <HelpCircle className="h-5 w-5 text-gray-400" />
-                          </div>
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>Available as an add-on</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </td>
-                  <td className="p-4 text-center">
-                    <Check className="h-5 w-5 text-primary mx-auto" />
-                  </td>
-                  <td className="p-4 text-center">
-                    <Check className="h-5 w-5 text-primary mx-auto" />
-                  </td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-4 font-medium">Security Updates</td>
-                  <td className="p-4 text-center">
-                    <Check className="h-5 w-5 text-primary mx-auto" />
-                  </td>
-                  <td className="p-4 text-center">
-                    <Check className="h-5 w-5 text-primary mx-auto" />
-                  </td>
-                  <td className="p-4 text-center">
-                    <Check className="h-5 w-5 text-primary mx-auto" />
-                  </td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-4 font-medium">SSL Certificate</td>
-                  <td className="p-4 text-center">
-                    <Check className="h-5 w-5 text-primary mx-auto" />
-                  </td>
-                  <td className="p-4 text-center">
-                    <Check className="h-5 w-5 text-primary mx-auto" />
-                  </td>
-                  <td className="p-4 text-center">
-                    <Check className="h-5 w-5 text-primary mx-auto" />
-                  </td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-4 font-medium">Dedicated Resources</td>
-                  <td className="p-4 text-center">-</td>
-                  <td className="p-4 text-center">-</td>
-                  <td className="p-4 text-center">
-                    <Check className="h-5 w-5 text-primary mx-auto" />
-                  </td>
-                </tr>
-                <tr className="border-b">
-                  <td className="p-4 font-medium">Custom Branding</td>
-                  <td className="p-4 text-center">-</td>
-                  <td className="p-4 text-center">Basic</td>
-                  <td className="p-4 text-center">Advanced</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <Tabs defaultValue="ojs-omp" className="w-full max-w-6xl mx-auto">
+            <div className="flex justify-center mb-8">
+              <TabsList className="grid w-full max-w-md grid-cols-2">
+                <TabsTrigger value="ojs-omp">OJS & OMP</TabsTrigger>
+                <TabsTrigger value="repository-atom">Repository & AtoM</TabsTrigger>
+              </TabsList>
+            </div>
+
+            <TabsContent value="ojs-omp" className="space-y-4">
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="border-b">
+                      <th className="p-4 text-left font-medium">Feature</th>
+                      <th className="p-4 text-center font-medium">Basic</th>
+                      <th className="p-4 text-center font-medium">Professional</th>
+                      <th className="p-4 text-center font-medium">Enterprise</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Price (Monthly)</td>
+                      <td className="p-4 text-center">$42</td>
+                      <td className="p-4 text-center">$79</td>
+                      <td className="p-4 text-center">$99</td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Storage</td>
+                      <td className="p-4 text-center">10GB</td>
+                      <td className="p-4 text-center">20GB</td>
+                      <td className="p-4 text-center">30GB</td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Installations</td>
+                      <td className="p-4 text-center">Single Journal/Press</td>
+                      <td className="p-4 text-center">Multi in 1 Installation</td>
+                      <td className="p-4 text-center">Multi-installations</td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Backups</td>
+                      <td className="p-4 text-center">Daily | 5 days</td>
+                      <td className="p-4 text-center">Daily | 7 days</td>
+                      <td className="p-4 text-center">Daily | 15 days</td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Email Support</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Priority Support</td>
+                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Phone Support</td>
+                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">SSL Certificate</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Migration Services (Annual)</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-green-600 mx-auto" />
+                      </td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-green-600 mx-auto" />
+                      </td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-green-600 mx-auto" />
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Crossref Membership (Annual)</td>
+                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-green-600 mx-auto" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="repository-atom" className="space-y-4">
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="border-b">
+                      <th className="p-4 text-left font-medium">Feature</th>
+                      <th className="p-4 text-center font-medium">Professional</th>
+                      <th className="p-4 text-center font-medium">Enterprise</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Price (Monthly)</td>
+                      <td className="p-4 text-center">$170</td>
+                      <td className="p-4 text-center">$280</td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Storage</td>
+                      <td className="p-4 text-center">50GB</td>
+                      <td className="p-4 text-center">100GB</td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Installation</td>
+                      <td className="p-4 text-center">Repository/AtoM</td>
+                      <td className="p-4 text-center">Repository/AtoM</td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Backups</td>
+                      <td className="p-4 text-center">Daily | 7 days</td>
+                      <td className="p-4 text-center">Daily | 7 days</td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Email Support</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Priority Support</td>
+                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">SSL Certificate</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Mail Box</td>
+                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">S3 Configuration</td>
+                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Installation (Annual)</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-green-600 mx-auto" />
+                      </td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                      </td>
+                    </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Migration Services (Annual)</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-green-600 mx-auto" />
+                      </td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-green-600 mx-auto" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 

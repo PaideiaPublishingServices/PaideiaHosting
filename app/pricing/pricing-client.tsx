@@ -50,6 +50,13 @@ export function PricingClient() {
               <p className="text-gray-500 dark:text-gray-400 mt-2">Specialized hosting for Open Journal Systems</p>
             </div>
 
+            <div className="flex items-center justify-center mb-10">
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <span>Hosted on</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/330px-Amazon_Web_Services_Logo.svg.png" alt="AWS" className="h-6" />
+              </div>
+            </div>
+
             <div className="grid gap-6 md:grid-cols-3">
               {/* Basic Plan */}
               <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
@@ -274,6 +281,13 @@ export function PricingClient() {
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold">OMP Hosting Plans</h2>
               <p className="text-gray-500 dark:text-gray-400 mt-2">Specialized hosting for Open Monograph Press</p>
+            </div>
+
+            <div className="flex items-center justify-center mb-10">
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <span>Hosted on</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/330px-Amazon_Web_Services_Logo.svg.png" alt="AWS" className="h-6" />
+              </div>
             </div>
 
             <div className="grid gap-6 md:grid-cols-3">
