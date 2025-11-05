@@ -55,11 +55,18 @@ export function PricingClient() {
               <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">Basic</h3>
-                  <p className="text-gray-500 dark:text-gray-400">For emerging journals seeking stability, basic support, and initial technical control</p>
+                  <p className="text-gray-500 dark:text-gray-400">For emerging journals</p>
                 </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(42)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                <div className="mt-4">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl font-bold">${calculatePrice(42)}</span>
+                    <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                  </div>
+                  {isAnnual && (
+                    <div className="text-sm text-gray-400 mt-1">
+                      ${(calculatePrice(42) * 12).toFixed(0)} per year
+                    </div>
+                  )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -90,6 +97,10 @@ export function PricingClient() {
                     <Check className="h-4 w-4 text-primary" />
                     <span>Free Installation</span>
                   </li>
+                  <li className="flex items-center gap-2">
+                    <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
+                    <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
+                  </li>
                 </ul>
                 <div className="mt-6">
                   <Link
@@ -110,9 +121,16 @@ export function PricingClient() {
                   <h3 className="text-2xl font-bold">Professional</h3>
                   <p className="text-gray-500 dark:text-gray-400">For established academic journals</p>
                 </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(79)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                <div className="mt-4">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl font-bold">${calculatePrice(79)}</span>
+                    <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                  </div>
+                  {isAnnual && (
+                    <div className="text-sm text-gray-400 mt-1">
+                      ${(calculatePrice(79) * 12).toFixed(0)} per year
+                    </div>
+                  )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -147,6 +165,10 @@ export function PricingClient() {
                     <Check className="h-4 w-4 text-primary" />
                     <span>1 Upgrade per year</span>
                   </li>
+                  <li className="flex items-center gap-2">
+                    <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
+                    <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
+                  </li>
                 </ul>
                 <div className="mt-6">
                   <Link
@@ -164,9 +186,16 @@ export function PricingClient() {
                   <h3 className="text-2xl font-bold">Enterprise</h3>
                   <p className="text-gray-500 dark:text-gray-400">For institutions with multiple journals</p>
                 </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(99)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                <div className="mt-4">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl font-bold">${calculatePrice(99)}</span>
+                    <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                  </div>
+                  {isAnnual && (
+                    <div className="text-sm text-gray-400 mt-1">
+                      ${(calculatePrice(99) * 12).toFixed(0)} per year
+                    </div>
+                  )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -200,6 +229,10 @@ export function PricingClient() {
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
                     <span>1 Upgrade per year</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
+                    <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
                   </li>
                   {isAnnual && (
                     <li className="flex items-center gap-2">
@@ -248,11 +281,18 @@ export function PricingClient() {
               <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">Basic</h3>
-                  <p className="text-gray-500 dark:text-gray-400">For emerging publishers seeking stability, basic support, and initial technical control</p>
+                  <p className="text-gray-500 dark:text-gray-400">For emerging publishers</p>
                 </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(42)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                <div className="mt-4">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl font-bold">${calculatePrice(42)}</span>
+                    <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                  </div>
+                  {isAnnual && (
+                    <div className="text-sm text-gray-400 mt-1">
+                      ${(calculatePrice(42) * 12).toFixed(0)} per year
+                    </div>
+                  )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -283,6 +323,10 @@ export function PricingClient() {
                     <Check className="h-4 w-4 text-primary" />
                     <span>Free Installation</span>
                   </li>
+                  <li className="flex items-center gap-2">
+                    <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
+                    <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
+                  </li>
                 </ul>
                 <div className="mt-6">
                   <Link
@@ -303,9 +347,16 @@ export function PricingClient() {
                   <h3 className="text-2xl font-bold">Professional</h3>
                   <p className="text-gray-500 dark:text-gray-400">For established academic publishers</p>
                 </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(79)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                <div className="mt-4">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl font-bold">${calculatePrice(79)}</span>
+                    <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                  </div>
+                  {isAnnual && (
+                    <div className="text-sm text-gray-400 mt-1">
+                      ${(calculatePrice(79) * 12).toFixed(0)} per year
+                    </div>
+                  )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -340,6 +391,10 @@ export function PricingClient() {
                     <Check className="h-4 w-4 text-primary" />
                     <span>1 Upgrade per year</span>
                   </li>
+                  <li className="flex items-center gap-2">
+                    <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
+                    <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
+                  </li>
                 </ul>
                 <div className="mt-6">
                   <Link
@@ -357,9 +412,16 @@ export function PricingClient() {
                   <h3 className="text-2xl font-bold">Enterprise</h3>
                   <p className="text-gray-500 dark:text-gray-400">For institutions with multiple publications</p>
                 </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(99)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                <div className="mt-4">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl font-bold">${calculatePrice(99)}</span>
+                    <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                  </div>
+                  {isAnnual && (
+                    <div className="text-sm text-gray-400 mt-1">
+                      ${(calculatePrice(99) * 12).toFixed(0)} per year
+                    </div>
+                  )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -393,6 +455,10 @@ export function PricingClient() {
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
                     <span>1 Upgrade per year</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
+                    <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
                   </li>
                   {isAnnual && (
                     <li className="flex items-center gap-2">
@@ -455,9 +521,16 @@ export function PricingClient() {
                   <h3 className="text-2xl font-bold">Professional</h3>
                   <p className="text-gray-500 dark:text-gray-400">For research departments</p>
                 </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(170)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                <div className="mt-4">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl font-bold">${calculatePrice(170)}</span>
+                    <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                  </div>
+                  {isAnnual && (
+                    <div className="text-sm text-gray-400 mt-1">
+                      ${(calculatePrice(170) * 12).toFixed(0)} per year
+                    </div>
+                  )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -488,6 +561,10 @@ export function PricingClient() {
                     <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
                     <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Installation included' : 'Installation fee extra'}</span>
                   </li>
+                  <li className="flex items-center gap-2">
+                    <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
+                    <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
+                  </li>
                 </ul>
                 <div className="mt-6">
                   <Link
@@ -505,9 +582,16 @@ export function PricingClient() {
                   <h3 className="text-2xl font-bold">Enterprise</h3>
                   <p className="text-gray-500 dark:text-gray-400">For institutions and large research centers</p>
                 </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(280)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                <div className="mt-4">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl font-bold">${calculatePrice(280)}</span>
+                    <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                  </div>
+                  {isAnnual && (
+                    <div className="text-sm text-gray-400 mt-1">
+                      ${(calculatePrice(280) * 12).toFixed(0)} per year
+                    </div>
+                  )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
@@ -549,6 +633,12 @@ export function PricingClient() {
                   {isAnnual && (
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
+                      <span className="text-green-700 font-medium">Migration services included</span>
+                    </li>
+                  )}
+                  {isAnnual && (
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
                       <span className="text-green-700 font-medium">Crossref membership (Annual only)</span>
                     </li>
                   )}
@@ -567,6 +657,16 @@ export function PricingClient() {
 
           {/* AtoM Pricing */}
           <TabsContent value="atom" className="space-y-4">
+            {!isAnnual && (
+              <div className="max-w-md mx-auto bg-gradient-to-r from-slate-50 to-gray-50 border border-gray-200 rounded-lg p-2 mb-4 text-center">
+                <div className="flex items-center justify-center gap-1">
+                  <svg className="h-4 w-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
+                  </svg>
+                  <p className="text-gray-700 text-sm">Switch to Annual billing for exclusive benefits and save 10%</p>
+                </div>
+              </div>
+            )}
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold">AtoM Hosting Plans</h2>
               <p className="text-gray-500 dark:text-gray-400 mt-2">
@@ -574,45 +674,14 @@ export function PricingClient() {
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-3">
-              {/* Basic Plan */}
-              <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Basic</h3>
-                  <p className="text-gray-500 dark:text-gray-400">For small archives and collections</p>
-                </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(59)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
-                </div>
-                <ul className="mt-4 space-y-2 flex-1">
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>1 AtoM Installation</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>50GB Storage</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span>Email Support</span>
-                  </li>
-                </ul>
-                <div className="mt-6">
-                  <Link
-                    href="/contact"
-                    className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-                  >
-                    Get Started
-                  </Link>
-                </div>
+            <div className="flex items-center justify-center mb-6">
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <span>Hosted on</span>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/330px-Amazon_Web_Services_Logo.svg.png" alt="AWS" className="h-6" />
               </div>
-
+            </div>
+            
+            <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
               {/* Professional Plan */}
               <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm relative">
                 <div className="absolute -top-4 left-0 right-0 mx-auto w-fit rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
@@ -620,32 +689,51 @@ export function PricingClient() {
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold">Professional</h3>
-                  <p className="text-gray-500 dark:text-gray-400">For medium-sized archives</p>
+                  <p className="text-gray-500 dark:text-gray-400">For archives and cultural institutions</p>
                 </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(149)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                <div className="mt-4">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl font-bold">${calculatePrice(170)}</span>
+                    <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                  </div>
+                  {isAnnual && (
+                    <div className="text-sm text-gray-400 mt-1">
+                      ${(calculatePrice(170) * 12).toFixed(0)} per year
+                    </div>
+                  )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>1 AtoM Installation</span>
+                    <span>AtoM Installation</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>250GB Storage</span>
+                    <span>50GB Storage</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups</span>
+                    <span>SSL included</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Priority Support</span>
+                    <span>Daily Backups | 7 days</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Custom Domain</span>
+                    <span>Email Support</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Additional storage available</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
+                    <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Installation included' : 'Installation fee extra'}</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
+                    <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
                   </li>
                 </ul>
                 <div className="mt-6">
@@ -664,35 +752,60 @@ export function PricingClient() {
                   <h3 className="text-2xl font-bold">Enterprise</h3>
                   <p className="text-gray-500 dark:text-gray-400">For large institutions and national archives</p>
                 </div>
-                <div className="mt-4 flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(349)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                <div className="mt-4">
+                  <div className="flex items-baseline">
+                    <span className="text-3xl font-bold">${calculatePrice(280)}</span>
+                    <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                  </div>
+                  {isAnnual && (
+                    <div className="text-sm text-gray-400 mt-1">
+                      ${(calculatePrice(280) * 12).toFixed(0)} per year
+                    </div>
+                  )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Multiple AtoM Installations</span>
+                    <span>AtoM Installation</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>1TB+ Storage</span>
+                    <span>Installation included</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups</span>
+                    <span>100GB Storage</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>24/7 Phone Support</span>
+                    <span>SSL included</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Custom Domain & Theming</span>
+                    <span>Mail box included</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Dedicated Resources</span>
+                    <span>S3 configuration included (Not included additional fee S3)</span>
                   </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Daily Backups | 7 days</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Priority Email Support</span>
+                  </li>
+                   <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Additional storage available</span>
+                  </li>
+                  {isAnnual && (
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      <span className="text-green-700 font-medium">Migration services included</span>
+                    </li>
+                  )}
                 </ul>
                 <div className="mt-6">
                   <Link
