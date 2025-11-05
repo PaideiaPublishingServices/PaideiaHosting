@@ -62,7 +62,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups | 7 days</span>
+                    <span>Daily Backups | 5 days</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -103,7 +103,7 @@ export function PricingClient() {
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>3 OJS Installations</span>
+                    <span>Multi-journal in 1 OJS Installations</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -111,15 +111,23 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups</span>
+                    <span>Daily Backups | 7 days</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Priority Support</span>
+                    <span>5 mail box</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Custom Domain</span>
+                    <span>SSL included</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Priority Email Support</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>1 Upgrade per year</span>
                   </li>
                 </ul>
                 <div className="mt-6">
@@ -145,27 +153,39 @@ export function PricingClient() {
                 <ul className="mt-4 space-y-2 flex-1">
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>10 OJS Installations</span>
+                    <span>Multi-journal in Multi-installations</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>100GB Storage</span>
+                    <span>30GB Storage</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups</span>
+                    <span>Daily Backups | 15 days</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>24/7 Phone Support</span>
+                    <span>Unlimited mailbox</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Custom Domain</span>
+                    <span>SSL included</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Dedicated Resources</span>
+                    <span>Priority Email Support | Phone Support</span>
+                  </li>
+                   <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>1 Upgrade per year</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>Crossref memberships</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span>PrePrints server memberships</span>
                   </li>
                 </ul>
                 <div className="mt-6">
