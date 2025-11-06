@@ -39,7 +39,14 @@ export function ServicePricing({ title, subtitle, plans }: ServicePricingProps) 
           </div>
           <PricingToggle onToggle={setIsAnnual} className="mt-6" />
         </div>
-        <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 md:grid-cols-3">
+        
+        <div className="flex items-center justify-center mb-6 mt-10">
+          <div className="flex items-center gap-2 text-sm text-gray-600">
+            <span>Hosted on</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/330px-Amazon_Web_Services_Logo.svg.png" alt="AWS" className="h-6" />
+          </div>
+        </div>
+        <div className={`mx-auto grid max-w-5xl items-start gap-6 py-6 ${plans.length === 2 ? 'md:grid-cols-2 max-w-4xl' : 'md:grid-cols-3'}`}>
           {plans.map((plan, index) => (
             <div key={index} className={`flex flex-col rounded-lg border bg-background p-6 shadow-sm ${plan.popular ? 'relative' : ''}`}>
               {plan.popular && (

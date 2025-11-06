@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Check, Server, Cpu } from "lucide-react"
-import { ServicePricing } from "@/components/service-pricing"
+import { VPSPricing } from "./vps-pricing"
 
 export const metadata = {
   title: "VPS for Institutions - Paideia Hosting",
@@ -10,48 +10,6 @@ export const metadata = {
 }
 
 export default function VPSForInstitutionsPage() {
-  const vpsPlans = [
-    {
-      name: "Standard",
-      description: "For small departments and projects",
-      monthlyPrice: 79,
-      features: [
-        "2 vCPUs",
-        "4GB RAM",
-        "80GB SSD Storage",
-        "2TB Bandwidth",
-        "Email Support"
-      ]
-    },
-    {
-      name: "Advanced",
-      description: "For academic departments and research groups",
-      monthlyPrice: 149,
-      popular: true,
-      features: [
-        "4 vCPUs",
-        "8GB RAM",
-        "160GB SSD Storage",
-        "4TB Bandwidth",
-        "Priority Support",
-        "Daily Backups"
-      ]
-    },
-    {
-      name: "Enterprise",
-      description: "For large institutions and research centers",
-      monthlyPrice: 299,
-      features: [
-        "8 vCPUs",
-        "16GB RAM",
-        "320GB SSD Storage",
-        "8TB Bandwidth",
-        "24/7 Phone Support",
-        "Managed Services Included"
-      ],
-      buttonText: "Contact Sales"
-    }
-  ]
 
   return (
     <main className="flex-1">
@@ -152,11 +110,7 @@ export default function VPSForInstitutionsPage() {
       </section>
 
       {/* Pricing Section */}
-      <ServicePricing
-        title="Simple, Transparent Pricing"
-        subtitle="Choose the VPS plan that fits your institution's needs"
-        plans={vpsPlans}
-      />
+      <VPSPricing />
 
       {/* Use Cases Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">

@@ -58,7 +58,189 @@ export default function CustomSolutionsPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Custom Services</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">AWS-Powered Custom Solutions</h2>
+              <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                Tailored hosting solutions for specific academic needs
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-center mb-6">
+            <div className="flex items-center gap-2 text-sm text-gray-600">
+              <span>Powered by</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/330px-Amazon_Web_Services_Logo.svg.png" alt="AWS" className="h-6" />
+            </div>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {/* High-Performance VPS */}
+            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
+              <h3 className="text-xl font-bold mb-2">High-Performance VPS</h3>
+              <p className="text-gray-500 dark:text-gray-400 mb-4 text-sm">Enterprise-grade instances for demanding workloads</p>
+              <ul className="space-y-2 flex-1">
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">EC2 instances up to 96 vCPUs</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Up to 768GB RAM</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">GPU instances available</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Auto-scaling capabilities</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Storage & CDN */}
+            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
+              <h3 className="text-xl font-bold mb-2">Storage & CDN</h3>
+              <p className="text-gray-500 dark:text-gray-400 mb-4 text-sm">Scalable storage and global content delivery</p>
+              <ul className="space-y-2 flex-1">
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">S3 integration & management</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">CloudFront CDN setup</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Unlimited storage capacity</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Global edge locations</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Load Balancing */}
+            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
+              <h3 className="text-xl font-bold mb-2">Load Balancing</h3>
+              <p className="text-gray-500 dark:text-gray-400 mb-4 text-sm">High availability and traffic distribution</p>
+              <ul className="space-y-2 flex-1">
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Application Load Balancer</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Multi-AZ deployment</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Health monitoring</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">SSL termination</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Database Services */}
+            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
+              <h3 className="text-xl font-bold mb-2">Database Services</h3>
+              <p className="text-gray-500 dark:text-gray-400 mb-4 text-sm">Managed database solutions</p>
+              <ul className="space-y-2 flex-1">
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">RDS (MySQL, PostgreSQL)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">DynamoDB NoSQL</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Automated backups</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Read replicas</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* AI Integration */}
+            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
+              <h3 className="text-xl font-bold mb-2">AI Integration</h3>
+              <p className="text-gray-500 dark:text-gray-400 mb-4 text-sm">Advanced AI and machine learning capabilities</p>
+              <ul className="space-y-2 flex-1">
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Amazon Q integration</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Bedrock AI models</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Custom AI workflows</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Research data analysis</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Enterprise Solutions */}
+            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
+              <h3 className="text-xl font-bold mb-2">Enterprise Solutions</h3>
+              <p className="text-gray-500 dark:text-gray-400 mb-4 text-sm">Complete infrastructure management</p>
+              <ul className="space-y-2 flex-1">
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">VPC custom networks</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Security compliance</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">24/7 monitoring</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span className="text-sm">Disaster recovery</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <div className="max-w-2xl mx-auto">
+              <h3 className="text-xl font-bold mb-4">Custom Pricing</h3>
+              <p className="text-gray-500 dark:text-gray-400 mb-6">
+                All solutions are tailored to your specific requirements. Pricing varies based on usage, scale, and selected AWS services.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              >
+                Request a Quote
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Traditional Services Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Additional Custom Services</h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Specialized solutions tailored to your academic institution's unique requirements
               </p>

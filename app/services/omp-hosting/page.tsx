@@ -12,39 +12,52 @@ export default function OMPHostingPage() {
   const ompPlans = [
     {
       name: "Basic",
-      description: "For small publishers just getting started",
-      monthlyPrice: 39,
+      description: "For emerging publishers",
+      monthlyPrice: 42,
       features: [
-        "1 OMP Installation",
+        "Single Press",
         "10GB Storage",
-        "Daily Backups",
-        "Email Support"
+        "Daily Backups | 5 days",
+        "1 mail box",
+        "SSL included",
+        "Email Support",
+        "Free Installation",
+        "Migration services fee extra"
       ]
     },
     {
       name: "Professional",
       description: "For established academic publishers",
-      monthlyPrice: 89,
+      monthlyPrice: 79,
       popular: true,
       features: [
-        "3 OMP Installations",
-        "30GB Storage",
-        "Daily Backups",
-        "Priority Support",
-        "Custom Domain"
+        "Multi-press in 1 OMP Installation",
+        "20GB Storage",
+        "Daily Backups | 7 days",
+        "5 mail box",
+        "SSL included",
+        "Priority Email Support",
+        "Free Installation",
+        "1 Upgrade per year",
+        "Migration services fee extra"
       ]
     },
     {
       name: "Enterprise",
       description: "For institutions with multiple publications",
-      monthlyPrice: 219,
+      monthlyPrice: 99,
       features: [
-        "10 OMP Installations",
-        "150GB Storage",
-        "Daily Backups",
-        "24/7 Phone Support",
-        "Custom Domain",
-        "Dedicated Resources"
+        "Multi-press in Multi-installations",
+        "30GB Storage",
+        "Daily Backups | 15 days",
+        "Unlimited mailbox",
+        "SSL included",
+        "Priority Email Support | Phone Support",
+        "Free Installation",
+        "1 Upgrade per year",
+        "Migration services fee extra",
+        "Crossref memberships (Annual only)",
+        "PrePrints server memberships (Annual only)"
       ],
       buttonText: "Contact Sales"
     }

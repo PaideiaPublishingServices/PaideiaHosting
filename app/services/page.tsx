@@ -96,32 +96,31 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* Dataverse Hosting */}
+            {/* Repository Hosting */}
             <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                   <Database className="h-6 w-6 text-primary" />
                 </div>
-                <h2 className="text-2xl font-bold">Dataverse Hosting</h2>
+                <h2 className="text-2xl font-bold">Repository Hosting</h2>
               </div>
               <div className="mt-4">
                 <Image
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
-                  alt="Dataverse Hosting"
+                  alt="Repository Hosting"
                   className="rounded-lg object-cover w-full h-48"
                 />
               </div>
               <div className="mt-4 flex-1">
                 <p className="text-gray-500 dark:text-gray-400">
-                  Secure and reliable hosting for research data repositories. Perfect for academic institutions and
-                  research centers.
+                  Secure and reliable hosting for research data repositories (Dataverse & DSpace) on AWS infrastructure.
                 </p>
               </div>
               <div className="mt-6">
                 <Link
-                  href="/services/dataverse-hosting"
+                  href="/services/repository-hosting"
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
                   Learn More
@@ -139,7 +138,7 @@ export default function ServicesPage() {
               </div>
               <div className="mt-4">
                 <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=200&fit=crop"
+                  src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="AtoM Hosting"
@@ -148,8 +147,7 @@ export default function ServicesPage() {
               </div>
               <div className="mt-4 flex-1">
                 <p className="text-gray-500 dark:text-gray-400">
-                  Professional hosting for Access to Memory (AtoM) archival software. Ideal for libraries, archives, and
-                  cultural institutions.
+                  Professional hosting for Access to Memory (AtoM) archival software on AWS infrastructure.
                 </p>
               </div>
               <div className="mt-6">

@@ -38,7 +38,7 @@ export function Header() {
           </Link>
         </nav>
         <div className="ml-auto md:ml-4 flex items-center gap-4">
-          <Link href="/login" className="text-sm font-medium transition-colors hover:text-primary hidden md:block">
+          <Link href="/my-account" className="text-sm font-medium transition-colors hover:text-primary hidden md:block">
             Log in
           </Link>
           <Link href="/contact">

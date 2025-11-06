@@ -13,13 +13,17 @@ export default function OJSHostingPage() {
   const ojsPlans = [
     {
       name: "Basic",
-      description: "For small journals just getting started",
-      monthlyPrice: 29,
+      description: "For emerging journals",
+      monthlyPrice: 42,
       features: [
-        "1 OJS Installation",
-        "5GB Storage",
-        "Daily Backups",
-        "Email Support"
+        "Single Journal",
+        "10GB Storage",
+        "Daily Backups | 5 days",
+        "1 mail box",
+        "SSL included",
+        "Email Support",
+        "Free Installation",
+        "Migration services fee extra"
       ]
     },
     {
@@ -28,24 +32,33 @@ export default function OJSHostingPage() {
       monthlyPrice: 79,
       popular: true,
       features: [
-        "3 OJS Installations",
+        "Multi-journal in 1 OJS Installations",
         "20GB Storage",
-        "Daily Backups",
-        "Priority Support",
-        "Custom Domain"
+        "Daily Backups | 7 days",
+        "5 mail box",
+        "SSL included",
+        "Priority Email Support",
+        "Free Installation",
+        "1 Upgrade per year",
+        "Migration services fee extra"
       ]
     },
     {
       name: "Enterprise",
       description: "For institutions with multiple journals",
-      monthlyPrice: 199,
+      monthlyPrice: 99,
       features: [
-        "10 OJS Installations",
-        "100GB Storage",
-        "Daily Backups",
-        "24/7 Phone Support",
-        "Custom Domain",
-        "Dedicated Resources"
+        "Multi-journal in Multi-installations",
+        "30GB Storage",
+        "Daily Backups | 15 days",
+        "Unlimited mailbox",
+        "SSL included",
+        "Priority Email Support | Phone Support",
+        "Free Installation",
+        "1 Upgrade per year",
+        "Migration services fee extra",
+        "Crossref memberships (Annual only)",
+        "PrePrints server memberships (Annual only)"
       ],
       buttonText: "Contact Sales"
     }

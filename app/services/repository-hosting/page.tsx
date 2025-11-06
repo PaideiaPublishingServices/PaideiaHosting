@@ -12,40 +12,37 @@ export const metadata = {
 export default function RepositoryHostingPage() {
   const repositoryPlans = [
     {
-      name: "Basic",
-      description: "For small research groups",
-      monthlyPrice: 49,
-      features: [
-        "1 Repository Installation (Dataverse or DSpace)",
-        "50GB Storage",
-        "Daily Backups",
-        "Email Support"
-      ]
-    },
-    {
       name: "Professional",
       description: "For research departments",
-      monthlyPrice: 129,
+      monthlyPrice: 170,
       popular: true,
       features: [
-        "1 Repository Installation (Dataverse or DSpace)",
-        "500GB Storage",
-        "Daily Backups",
-        "Priority Support",
-        "Custom Domain"
+        "Repository (Dataverse or DSpace)",
+        "50GB Storage",
+        "SSL included",
+        "Daily Backups | 7 days",
+        "Email Support",
+        "Additional storage available",
+        "Installation fee extra",
+        "Migration services fee extra"
       ]
     },
     {
       name: "Enterprise",
       description: "For institutions and large research centers",
-      monthlyPrice: 299,
+      monthlyPrice: 280,
       features: [
-        "Multiple Repository Installations",
-        "2TB+ Storage",
-        "Daily Backups",
-        "24/7 Phone Support",
-        "Custom Domain & Branding",
-        "Dedicated Resources"
+        "Repository (Dataverse or DSpace)",
+        "Installation included",
+        "100GB Storage",
+        "SSL included",
+        "Mail box included",
+        "S3 configuration included (Not included additional fee S3)",
+        "Daily Backups | 7 days",
+        "Priority Email Support",
+        "Additional storage available",
+        "Migration services included (Annual only)",
+        "Crossref membership (Annual only)"
       ],
       buttonText: "Contact Sales"
     }
@@ -185,7 +182,7 @@ export default function RepositoryHostingPage() {
             <div className="space-y-2">
               <h3 className="text-xl font-bold">Do you support DOI integration?</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Yes, we provide full support for DOI integration with services like DataCite to ensure your datasets are
+                Yes, we provide full support for DOI integration with services like Crossref to ensure your datasets are
                 properly cited.
               </p>
             </div>

@@ -12,40 +12,36 @@ export const metadata = {
 export default function AtomHostingPage() {
   const atomPlans = [
     {
-      name: "Basic",
-      description: "For small archives and collections",
-      monthlyPrice: 59,
-      features: [
-        "1 AtoM Installation",
-        "50GB Storage",
-        "Daily Backups",
-        "Email Support"
-      ]
-    },
-    {
       name: "Professional",
-      description: "For medium-sized archives",
-      monthlyPrice: 149,
+      description: "For archives and cultural institutions",
+      monthlyPrice: 170,
       popular: true,
       features: [
-        "1 AtoM Installation",
-        "250GB Storage",
-        "Daily Backups",
-        "Priority Support",
-        "Custom Domain"
+        "AtoM Installation",
+        "50GB Storage",
+        "SSL included",
+        "Daily Backups | 7 days",
+        "Email Support",
+        "Additional storage available",
+        "Installation fee extra",
+        "Migration services fee extra"
       ]
     },
     {
       name: "Enterprise",
       description: "For large institutions and national archives",
-      monthlyPrice: 349,
+      monthlyPrice: 280,
       features: [
-        "Multiple AtoM Installations",
-        "1TB+ Storage",
-        "Daily Backups",
-        "24/7 Phone Support",
-        "Custom Domain & Theming",
-        "Dedicated Resources"
+        "AtoM Installation",
+        "Installation included",
+        "100GB Storage",
+        "SSL included",
+        "Mail box included",
+        "S3 configuration included (Not included additional fee S3)",
+        "Daily Backups | 7 days",
+        "Priority Email Support",
+        "Additional storage available",
+        "Migration services included (Annual only)"
       ],
       buttonText: "Contact Sales"
     }
@@ -84,7 +80,7 @@ export default function AtomHostingPage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=400&fit=crop"
+                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500&h=400&fit=crop"
                 width={500}
                 height={400}
                 alt="AtoM Hosting"
