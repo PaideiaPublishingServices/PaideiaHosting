@@ -109,7 +109,7 @@ export function Footer() {
                 <li className="flex items-start space-x-2">
                   <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-gray-500 dark:text-gray-400" />
                   <div>
-                    <p className="text-sm font-medium">Argentina Office:</p>
+                    <p className="text-sm font-medium">Latin America Office:</p>
                     <span className="text-sm text-gray-500 dark:text-gray-400">Italia 147, Córdoba, 6132, Argentina</span>
                   </div>
                 </li>

@@ -58,7 +58,7 @@ export default function ContactPage() {
                 <div className="flex items-start space-x-4">
                   <Phone className="h-6 w-6 text-primary mt-1" />
                   <div>
-                    <h3 className="font-bold">Call Us</h3>
+                    <h3 className="font-bold">WhatsApp</h3>
                     <p className="text-gray-500 dark:text-gray-400">Monday to Friday, 10am to 5pm UTC−03:00</p>
                     <a href="tel:+393517576248" className="text-primary hover:underline">
                       +39 (351) 757-6248
@@ -69,7 +69,7 @@ export default function ContactPage() {
                 <div className="flex items-start space-x-4">
                   <MapPin className="h-6 w-6 text-primary mt-1" />
                   <div>
-                    <h3 className="font-bold">Visit Us</h3>
+                    <h3 className="font-bold">Office</h3>
                     <p className="text-gray-500 dark:text-gray-400">
                       2810 North Church Street
                       <br />
@@ -87,9 +87,7 @@ export default function ContactPage() {
                     <p className="text-gray-500 dark:text-gray-400">
                       Monday - Friday: 10:00 AM - 5:00 PM UTC−03:00
                       <br />
-                      Saturday: 10:00 AM - 2:00 PM UTC−03:00
-                      <br />
-                      Sunday: Closed
+                      Saturday - Sunday: Closed
                     </p>
                   </div>
                 </div>
@@ -167,8 +165,8 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4 text-primary" />
-                  <a href="tel:+393517576248" className="text-primary hover:underline">
-                    +39 (351) 757-6248
+                  <a href="tel:+13024153857" className="text-primary hover:underline">
+                    +1 (302) 415-3857
                   </a>
                 </div>
               </div>
