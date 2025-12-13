@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ChatBot } from "@/components/chat-bot"
+import { Toaster } from "@/components/ui/toaster"
 import Script from "next/script" // Importa el componente Script
 
 const inter = Inter({ subsets: ["latin"] })
@@ -58,6 +59,7 @@ export default function RootLayout({
             <Footer />
             <ChatBot />
           </div>
+          <Toaster />
         </ThemeProvider>
 
         {/* Script de Trustpilot */}

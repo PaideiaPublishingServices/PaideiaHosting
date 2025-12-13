@@ -50,53 +50,30 @@ export function ContactForm() {
     setIsSubmitting(true)
 
     try {
-      // Web3Forms integration
+      const formData = new FormData()
+      formData.append('access_key', '194037d0-d506-44a0-8c7f-64dd6b72273c')
+      formData.append('name', values.name)
+      formData.append('email', values.email)
+      formData.append('phone', values.phone || 'Not provided')
+      formData.append('inquiry_type', values.inquiryType)
+      formData.append('message', values.message)
+      formData.append('subject', `New ${values.inquiryType} inquiry from ${values.name} - Paideia Hosting`)
+      formData.append('from_name', 'Paideia Hosting - Contact Form')
+      formData.append('_template', 'table')
+      formData.append('_captcha', 'false')
+
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          // Your Web3Forms access key
-          access_key: '194037d0-d506-44a0-8c7f-64dd6b72273c',
-
-          // Form data
-          name: values.name,
-          email: values.email,
-          phone: values.phone || 'Not provided',
-          inquiry_type: values.inquiryType,
-          message: values.message,
-
-          // Email configuration
-          subject: `New ${values.inquiryType} inquiry from ${values.name} - Paideia Hosting`,
-          from_name: 'Paideia Hosting - Contact Form',
-
-          // Optional fields
-          _template: 'table',
-          _captcha: false,
-
-          // Auto-response configuration
-          _autoresponse: true,
-          _autoresponse_subject: 'We received your inquiry - Paideia Hosting',
-          _autoresponse_message: `Hello ${values.name},\n\nThank you for contacting Paideia Hosting. We have received your inquiry regarding ${values.inquiryType} and will get back to you within 24 hours.\n\nBest regards,\nPaideia Hosting Team\ncontact@paideiahosting.net`,
-
-          // Metadata
-          source: 'Website Contact Form',
-          timestamp: new Date().toISOString(),
-          page_url: typeof window !== 'undefined' ? window.location.href : '',
-        }),
+        body: formData
       })
 
       const result = await response.json()
 
       if (response.ok && result.success) {
-        setIsSubmitting(false)
         form.reset()
-
         toast({
           title: "Message sent successfully!",
-          description: "We'll get back to you as soon as possible. Check your email for confirmation.",
+          description: "We'll get back to you as soon as possible.",
         })
       } else {
         throw new Error(result.message || 'Failed to send message')
@@ -104,15 +81,13 @@ export function ContactForm() {
 
     } catch (error: any) {
       console.error('Error sending form:', error)
-      setIsSubmitting(false)
-
       toast({
         title: "Error sending message",
-        description: error.message?.includes('access_key')
-          ? "Service configuration error. Please try again later or contact us directly."
-          : "Failed to send message. Please try again or contact us at contact@paideiahosting.net",
+        description: "Failed to send message. Please try again or contact us at contact@paideiahosting.net",
         variant: "destructive",
       })
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
@@ -214,6 +189,11 @@ export function ContactForm() {
             "Send Message"
           )}
         </Button>
+        
+        {/* Debug info - remove in production */}
+        <div className="text-xs text-muted-foreground text-center">
+          Form status: {isSubmitting ? 'Submitting...' : 'Ready'}
+        </div>
       </form>
     </Form>
   )
