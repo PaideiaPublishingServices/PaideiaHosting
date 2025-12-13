@@ -61,6 +61,11 @@ export function ContactForm() {
       formData.append('from_name', 'Paideia Hosting - Contact Form')
       formData.append('_template', 'table')
       formData.append('_captcha', 'false')
+      
+      // Auto-response to client
+      formData.append('_autoresponse', 'true')
+      formData.append('_autoresponse_subject', 'We received your inquiry - Paideia Hosting')
+      formData.append('_autoresponse_message', `Hello ${values.name},\n\nThank you for contacting Paideia Hosting. We have received your inquiry regarding ${values.inquiryType} and will get back to you within 24 hours.\n\nBest regards,\nPaideia Hosting Team\ncontact@paideiahosting.net`)
 
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -73,7 +78,7 @@ export function ContactForm() {
         form.reset()
         toast({
           title: "Message sent successfully!",
-          description: "We'll get back to you as soon as possible.",
+          description: "We'll get back to you as soon as possible. Check your email for confirmation.",
         })
       } else {
         throw new Error(result.message || 'Failed to send message')
