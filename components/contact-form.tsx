@@ -79,7 +79,7 @@ export function ContactForm() {
           // Auto-response configuration
           _autoresponse: true,
           _autoresponse_subject: 'We received your inquiry - Paideia Hosting',
-          _autoresponse_message: `Hello ${values.name},\n\nThank you for contacting Paideia Hosting. We have received your inquiry regarding ${values.inquiryType} and will get back to you within 24 hours.\n\nBest regards,\nPaideia Hosting Team\ninfo@paideiahosting.net`,
+          _autoresponse_message: `Hello ${values.name},\n\nThank you for contacting Paideia Hosting. We have received your inquiry regarding ${values.inquiryType} and will get back to you within 24 hours.\n\nBest regards,\nPaideia Hosting Team\ncontact@paideiahosting.net`,
 
           // Metadata
           source: 'Website Contact Form',
@@ -110,7 +110,7 @@ export function ContactForm() {
         title: "Error sending message",
         description: error.message?.includes('access_key')
           ? "Service configuration error. Please try again later or contact us directly."
-          : "Failed to send message. Please try again or contact us at info@paideiahosting.net",
+          : "Failed to send message. Please try again or contact us at contact@paideiahosting.net",
         variant: "destructive",
       })
     }
