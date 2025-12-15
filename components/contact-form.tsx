@@ -132,7 +132,7 @@ export function ContactForm() {
           name="whatsapp"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>WhatsApp (Optional)</FormLabel>
+              <FormLabel>WhatsApp</FormLabel>
               <FormControl>
                 <Input placeholder="+1 (555) 123-4567" {...field} />
               </FormControl>
