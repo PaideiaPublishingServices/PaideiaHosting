@@ -20,7 +20,6 @@ const formSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
-  phone: z.string().optional(),
   whatsapp: z.string().optional(),
   inquiryType: z.string().min(1, {
     message: "Please select an inquiry type.",
@@ -41,7 +40,6 @@ export function ContactForm() {
     defaultValues: {
       name: "",
       email: "",
-      phone: "",
       whatsapp: "",
       inquiryType: "",
       message: "",
@@ -56,7 +54,6 @@ export function ContactForm() {
       formData.append('access_key', '194037d0-d506-44a0-8c7f-64dd6b72273c')
       formData.append('name', values.name)
       formData.append('email', values.email)
-      formData.append('phone', values.phone || 'Not provided')
       formData.append('whatsapp', values.whatsapp || 'Not provided')
       formData.append('inquiry_type', values.inquiryType)
       formData.append('message', values.message)
@@ -124,20 +121,6 @@ export function ContactForm() {
               <FormLabel>Email</FormLabel>
               <FormControl>
                 <Input placeholder="john.doe@example.com" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="phone"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Phone (Optional)</FormLabel>
-              <FormControl>
-                <Input placeholder="+1 (555) 123-4567" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
