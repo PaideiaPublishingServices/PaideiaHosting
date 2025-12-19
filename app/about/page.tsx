@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { BookOpen, Server, Database, Code, Users, Award, Globe, BookMarked } from "lucide-react"
+import { BookOpen, Server, Database, Code, Users, Award, Globe, BookMarked, Linkedin } from "lucide-react"
 
 export const metadata = {
   title: "About Us - Paideia Hosting",
@@ -264,7 +264,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/02/06162158/perfil-scaled.jpg"
                   width={200}
                   height={200}
                   alt="Patricio Pantaleo"
@@ -273,6 +273,16 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold">Patricio Pantaleo</h3>
               <p className="text-primary">Founder & CEO</p>
+              <div className="flex justify-center mt-2 mb-2">
+                <Link
+                  href="https://www.linkedin.com/in/patricio-pantaleo-55402318a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary/80"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </Link>
+              </div>
               <p className="text-gray-500 dark:text-gray-400 mt-2">
                 OJS specialist and Open Access advisor. History graduate (UNRC) with a postgraduate degree in Philosophy (UCC). Founded and directed Kimün in 2015. Since then, he has been dedicated to editorial and academic consulting.
               </p>
@@ -282,7 +292,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/02/06162156/WhatsApp-Image-2023-02-28-at-14.41.08-150x150.jpeg"
                   width={200}
                   height={200}
                   alt="Guillermo Suruguay"
@@ -300,7 +310,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/03/06162154/1625173536554-300x300.jpg"
                   width={200}
                   height={200}
                   alt="Geraldine Trujillo"
@@ -318,7 +328,7 @@ export default function AboutPage() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2024/09/18103108/avatar-150x150.webp"
                   width={200}
                   height={200}
                   alt="Gonzalo Ortellado"
@@ -385,65 +395,136 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
             {/* Universidad Nacional de Tucumán */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">Universidad Nacional de Tucumán</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2024/05/31144021/logo-unt-300x152.png"
+                width={160}
+                height={80}
+                alt="Universidad Nacional de Tucumán"
+                className="object-contain"
+              />
             </div>
             
             {/* Universidad de Piura */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">Universidad de Piura</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/05/07114006/logo-udep-footer.svg"
+                width={160}
+                height={80}
+                alt="Universidad de Piura"
+                className="object-contain"
+              />
             </div>
             
             {/* CONICET */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">CONICET</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/11/06161950/800px-Conicet_Logo_con_letras-300x172.png"
+                width={160}
+                height={80}
+                alt="CONICET"
+                className="object-contain"
+              />
             </div>
             
             {/* Universidad Autónoma Agraria Antonio Narro */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">Universidad Autónoma Agraria Antonio Narro</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/06/06162108/logoUAAAN-300x76.jpg"
+                width={160}
+                height={80}
+                alt="Universidad Autónoma Agraria Antonio Narro"
+                className="object-contain"
+              />
             </div>
             
             {/* Asociación Europea de Profesores de Español */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">Asociación Europea de Profesores de Español</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/06/06162109/pageHeaderLogoImage_es_ES-300x129.png"
+                width={160}
+                height={80}
+                alt="Asociación Europea de Profesores de Español"
+                className="object-contain"
+              />
             </div>
             
             {/* Hospital Italiano */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">Hospital Italiano</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2024/05/31143735/hospital-300x118.png"
+                width={160}
+                height={80}
+                alt="Hospital Italiano"
+                className="object-contain"
+              />
             </div>
             
             {/* Universidad Católica Argentina */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">Universidad Católica Argentina</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/07094914/Universidad_Catolica_Argentina-300x300.png"
+                width={160}
+                height={80}
+                alt="Universidad Católica Argentina"
+                className="object-contain"
+              />
             </div>
             
             {/* Universidad Técnica de Cotopaxi */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">Universidad Técnica de Cotopaxi</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180136/universidad_def-300x106.png"
+                width={160}
+                height={80}
+                alt="Universidad Técnica de Cotopaxi"
+                className="object-contain"
+              />
             </div>
             
             {/* Asociación Española de Personalismo */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">Asociación Española de Personalismo</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/07095030/logo-web-144.png"
+                width={160}
+                height={80}
+                alt="Asociación Española de Personalismo"
+                className="object-contain"
+              />
             </div>
             
             {/* Universidad Nacional Agraria de la Selva */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">Universidad Nacional Agraria de la Selva</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180017/logo-unas.png"
+                width={160}
+                height={80}
+                alt="Universidad Nacional Agraria de la Selva"
+                className="object-contain"
+              />
             </div>
             
             {/* Editorial CLIE */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">Editorial CLIE</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180237/editorialclie-1-300x68.png"
+                width={160}
+                height={80}
+                alt="Editorial CLIE"
+                className="object-contain"
+              />
             </div>
             
             {/* Universidad de Xalapa */}
-            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
-              <span className="text-sm text-center font-medium text-gray-600">Universidad de Xalapa</span>
+            <div className="grayscale hover:grayscale-0 transition-all">
+              <Image
+                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180324/UXLogo-200px.png"
+                width={160}
+                height={80}
+                alt="Universidad de Xalapa"
+                className="object-contain"
+              />
             </div>
-          </div>
         </div>
       </section>
 
