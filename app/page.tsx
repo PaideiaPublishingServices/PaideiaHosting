@@ -80,7 +80,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mx-auto grid max-w-6xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-4">
               <ServiceCard
                 title="OJS Hosting"
                 description="Optimized hosting for Open Journal Systems. Perfect for academic publishing."

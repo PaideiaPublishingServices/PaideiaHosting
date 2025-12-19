@@ -30,7 +30,7 @@ export default function ServicesPage() {
       {/* Services Archive Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {/* OJS Hosting */}
             <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
               <div className="flex items-center gap-4">
