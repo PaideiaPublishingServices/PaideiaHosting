@@ -178,7 +178,7 @@ export default function AboutPage() {
                 including journal management, editorial workflow optimization, and publishing consultancy.
               </p>
               <Link
-                href="https://paideiaeditorial.net"
+                href="https://paideiastudio.net"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline flex items-center"
@@ -260,112 +260,111 @@ export default function AboutPage() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {/* Team Member 1 */}
+            {/* Patricio Pantaleo */}
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
-                  alt="Team Member"
+                  alt="Patricio Pantaleo"
                   className="rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold">Dr. María Rodríguez</h3>
+              <h3 className="text-xl font-bold">Patricio Pantaleo</h3>
               <p className="text-primary">Founder & CEO</p>
               <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Former academic publisher with 15+ years of experience in scholarly communication and digital
-                publishing.
+                OJS specialist and Open Access advisor. History graduate (UNRC) with a postgraduate degree in Philosophy (UCC). Founded and directed Kimün in 2015. Since then, he has been dedicated to editorial and academic consulting.
               </p>
             </div>
 
-            {/* Team Member 2 */}
+            {/* Guillermo Suruguay */}
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
-                  alt="Team Member"
+                  alt="Guillermo Suruguay"
                   className="rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold">Carlos Mendoza</h3>
-              <p className="text-primary">CTO</p>
+              <h3 className="text-xl font-bold">Guillermo Suruguay</h3>
+              <p className="text-primary">Developer</p>
               <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Systems engineer with extensive experience in academic software platforms and cloud infrastructure.
+                FullStack Web Developer and QA Automation Engineer. Has specialization in sales and marketing. Has coordinated ventures and developments in different countries.
               </p>
             </div>
 
-            {/* Team Member 3 */}
+            {/* Geraldine Trujillo */}
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
-                  alt="Team Member"
+                  alt="Geraldine Trujillo"
                   className="rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold">Dr. Alejandro Morales</h3>
-              <p className="text-primary">Academic Director</p>
+              <h3 className="text-xl font-bold">Geraldine Trujillo</h3>
+              <p className="text-primary">Copywriting & SEO</p>
               <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Former university professor and journal editor with deep knowledge of academic publishing workflows.
+                Writer, Copywriter and SEO Writer. Graduated as a Spanish, literature and Latin teacher; has a master's degree in ELE teaching. Currently dedicated to digital content writing and virtual assistance for SMEs and Latin American entrepreneurs.
               </p>
             </div>
 
-            {/* Team Member 4 */}
+            {/* Gonzalo Ortellado */}
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
-                  alt="Team Member"
+                  alt="Gonzalo Ortellado"
                   className="rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold">Laura Sánchez</h3>
-              <p className="text-primary">Client Success Manager</p>
+              <h3 className="text-xl font-bold">Gonzalo Ortellado</h3>
+              <p className="text-primary">Developer</p>
               <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Specialist in academic publishing with experience in training and supporting editorial teams.
+                Database and server specialist. At Paideia Studio supports server updates and management.
               </p>
             </div>
 
-            {/* Team Member 5 */}
+            {/* Ezequiel Esposito */}
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
-                  alt="Team Member"
+                  alt="Ezequiel Esposito"
                   className="rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold">Miguel Torres</h3>
-              <p className="text-primary">Lead Systems Administrator</p>
+              <h3 className="text-xl font-bold">Ezequiel Esposito</h3>
+              <p className="text-primary">Editorial Advisor - Open Access - OJS</p>
               <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Expert in OJS, OMP, and Dataverse configuration, optimization, and maintenance.
+                Dedicated to supporting editorial teams in policy services and index applications. Specialist in OJS, OMP and Crossref services management.
               </p>
             </div>
 
-            {/* Team Member 6 */}
+            {/* Ailin Austrich */}
             <div className="flex flex-col items-center text-center">
               <div className="mb-4">
                 <Image
                   src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
                   width={200}
                   height={200}
-                  alt="Team Member"
+                  alt="Ailin Austrich"
                   className="rounded-full object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold">Ana Gómez</h3>
-              <p className="text-primary">Technical Support Lead</p>
+              <h3 className="text-xl font-bold">Ailin Austrich</h3>
+              <p className="text-primary">XML-JATS Specialist</p>
               <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Specialized in providing technical support for academic publishing platforms and repositories.
+                XML-JATS specialist and academic content structuring expert for digital publications.
               </p>
             </div>
           </div>
@@ -385,60 +384,64 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-            {/* Client/Partner Logos - Replace with actual logos */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
-                width={160}
-                height={80}
-                alt="Client Logo"
-                className="object-contain"
-              />
+            {/* Universidad Nacional de Tucumán */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">Universidad Nacional de Tucumán</span>
             </div>
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
-                width={160}
-                height={80}
-                alt="Client Logo"
-                className="object-contain"
-              />
+            
+            {/* Universidad de Piura */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">Universidad de Piura</span>
             </div>
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
-                width={160}
-                height={80}
-                alt="Client Logo"
-                className="object-contain"
-              />
+            
+            {/* CONICET */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">CONICET</span>
             </div>
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
-                width={160}
-                height={80}
-                alt="Client Logo"
-                className="object-contain"
-              />
+            
+            {/* Universidad Autónoma Agraria Antonio Narro */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">Universidad Autónoma Agraria Antonio Narro</span>
             </div>
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
-                width={160}
-                height={80}
-                alt="Client Logo"
-                className="object-contain"
-              />
+            
+            {/* Asociación Europea de Profesores de Español */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">Asociación Europea de Profesores de Español</span>
             </div>
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=160&h=80&fit=crop"
-                width={160}
-                height={80}
-                alt="Client Logo"
-                className="object-contain"
-              />
+            
+            {/* Hospital Italiano */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">Hospital Italiano</span>
+            </div>
+            
+            {/* Universidad Católica Argentina */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">Universidad Católica Argentina</span>
+            </div>
+            
+            {/* Universidad Técnica de Cotopaxi */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">Universidad Técnica de Cotopaxi</span>
+            </div>
+            
+            {/* Asociación Española de Personalismo */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">Asociación Española de Personalismo</span>
+            </div>
+            
+            {/* Universidad Nacional Agraria de la Selva */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">Universidad Nacional Agraria de la Selva</span>
+            </div>
+            
+            {/* Editorial CLIE */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">Editorial CLIE</span>
+            </div>
+            
+            {/* Universidad de Xalapa */}
+            <div className="grayscale hover:grayscale-0 transition-all flex items-center justify-center h-20">
+              <span className="text-sm text-center font-medium text-gray-600">Universidad de Xalapa</span>
             </div>
           </div>
         </div>
