@@ -525,6 +525,7 @@ export default function AboutPage() {
                 className="object-contain"
               />
             </div>
+          </div>
         </div>
       </section>
 
@@ -558,4 +559,3 @@ export default function AboutPage() {
     </main>
   )
 }
-
