@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Check, Server, Database, BookOpen, Code } from "lucide-react"
+import { Check, Server, Database, BookOpen, Code, Shield, Palette } from "lucide-react"
 import { DomainSearch } from "@/components/domain-search"
 import { ServiceCard } from "@/components/service-card"
 import { TestimonialCard } from "@/components/testimonial-card"
@@ -116,6 +116,18 @@ export default function Home() {
                 description="Tailored hosting solutions for specific academic needs."
                 icon={<Code className="h-10 w-10 text-primary" />}
                 link="/services/custom-solutions"
+              />
+              <ServiceCard
+                title="Backup Solutions"
+                description="Enterprise-grade backup and digital preservation powered by AWS."
+                icon={<Shield className="h-10 w-10 text-primary" />}
+                link="/services/backup-solutions"
+              />
+              <ServiceCard
+                title="Plugins & Themes"
+                description="Premium plugins and themes for OJS and OMP platforms."
+                icon={<Palette className="h-10 w-10 text-primary" />}
+                link="/plugins"
               />
             </div>
           </div>

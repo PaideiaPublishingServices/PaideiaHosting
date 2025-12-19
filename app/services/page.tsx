@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { BookOpen, Database, Archive, Server, Code } from "lucide-react"
+import { BookOpen, Database, Archive, Server, Code, Shield, Palette } from "lucide-react"
 
 export const metadata = {
   title: "Academic Hosting Services - Paideia Hosting",
@@ -219,6 +219,70 @@ export default function ServicesPage() {
               <div className="mt-6">
                 <Link
                   href="/services/custom-solutions"
+                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+
+            {/* Backup Solutions */}
+            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
+              <div className="flex items-center gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                  <Shield className="h-6 w-6 text-primary" />
+                </div>
+                <h2 className="text-2xl font-bold">Backup Solutions</h2>
+              </div>
+              <div className="mt-4">
+                <Image
+                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=200&fit=crop"
+                  width={400}
+                  height={200}
+                  alt="Backup Solutions"
+                  className="rounded-lg object-cover w-full h-48"
+                />
+              </div>
+              <div className="mt-4 flex-1">
+                <p className="text-gray-500 dark:text-gray-400">
+                  Enterprise-grade backup and digital preservation solutions powered by AWS infrastructure with flexible retention policies.
+                </p>
+              </div>
+              <div className="mt-6">
+                <Link
+                  href="/services/backup-solutions"
+                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+
+            {/* Plugins & Themes */}
+            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
+              <div className="flex items-center gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                  <Palette className="h-6 w-6 text-primary" />
+                </div>
+                <h2 className="text-2xl font-bold">Plugins & Themes</h2>
+              </div>
+              <div className="mt-4">
+                <Image
+                  src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop"
+                  width={400}
+                  height={200}
+                  alt="Plugins & Themes"
+                  className="rounded-lg object-cover w-full h-48"
+                />
+              </div>
+              <div className="mt-4 flex-1">
+                <p className="text-gray-500 dark:text-gray-400">
+                  Premium plugins and themes for OJS and OMP. Enhance your academic publishing platform with professional solutions.
+                </p>
+              </div>
+              <div className="mt-6">
+                <Link
+                  href="/plugins"
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
                   Learn More
