@@ -259,9 +259,9 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {/* Patricio Pantaleo */}
-            <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center justify-center space-y-8">
+            {/* Patricio Pantaleo - Featured */}
+            <div className="flex flex-col items-center text-center max-w-md">
               <div className="mb-4">
                 <Image
                   src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/02/06162158/perfil-scaled.jpg"
@@ -288,94 +288,52 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Guillermo Suruguay */}
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4">
-                <Image
-                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/02/06162156/WhatsApp-Image-2023-02-28-at-14.41.08-150x150.jpeg"
-                  width={200}
-                  height={200}
-                  alt="Guillermo Suruguay"
-                  className="rounded-full object-cover"
-                />
+            {/* Rest of the team - Text only */}
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-4xl">
+              {/* Guillermo Suruguay */}
+              <div className="text-center">
+                <h3 className="text-lg font-bold">Guillermo Suruguay</h3>
+                <p className="text-primary text-sm">Developer</p>
+                <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+                  FullStack Web Developer and QA Automation Engineer. Has specialization in sales and marketing. Has coordinated ventures and developments in different countries.
+                </p>
               </div>
-              <h3 className="text-xl font-bold">Guillermo Suruguay</h3>
-              <p className="text-primary">Developer</p>
-              <p className="text-gray-500 dark:text-gray-400 mt-2">
-                FullStack Web Developer and QA Automation Engineer. Has specialization in sales and marketing. Has coordinated ventures and developments in different countries.
-              </p>
-            </div>
 
-            {/* Geraldine Trujillo */}
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4">
-                <Image
-                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/03/06162154/1625173536554-300x300.jpg"
-                  width={200}
-                  height={200}
-                  alt="Geraldine Trujillo"
-                  className="rounded-full object-cover"
-                />
+              {/* Geraldine Trujillo */}
+              <div className="text-center">
+                <h3 className="text-lg font-bold">Geraldine Trujillo</h3>
+                <p className="text-primary text-sm">Copywriting & SEO</p>
+                <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+                  Writer, Copywriter and SEO Writer. Graduated as a Spanish, literature and Latin teacher; has a master's degree in ELE teaching. Currently dedicated to digital content writing and virtual assistance for SMEs and Latin American entrepreneurs.
+                </p>
               </div>
-              <h3 className="text-xl font-bold">Geraldine Trujillo</h3>
-              <p className="text-primary">Copywriting & SEO</p>
-              <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Writer, Copywriter and SEO Writer. Graduated as a Spanish, literature and Latin teacher; has a master's degree in ELE teaching. Currently dedicated to digital content writing and virtual assistance for SMEs and Latin American entrepreneurs.
-              </p>
-            </div>
 
-            {/* Gonzalo Ortellado */}
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4">
-                <Image
-                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2024/09/18103108/avatar-150x150.webp"
-                  width={200}
-                  height={200}
-                  alt="Gonzalo Ortellado"
-                  className="rounded-full object-cover"
-                />
+              {/* Gonzalo Ortellado */}
+              <div className="text-center">
+                <h3 className="text-lg font-bold">Gonzalo Ortellado</h3>
+                <p className="text-primary text-sm">Developer</p>
+                <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+                  Database and server specialist. At Paideia Studio supports server updates and management.
+                </p>
               </div>
-              <h3 className="text-xl font-bold">Gonzalo Ortellado</h3>
-              <p className="text-primary">Developer</p>
-              <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Database and server specialist. At Paideia Studio supports server updates and management.
-              </p>
-            </div>
 
-            {/* Ezequiel Esposito */}
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4">
-                <Image
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
-                  width={200}
-                  height={200}
-                  alt="Ezequiel Esposito"
-                  className="rounded-full object-cover"
-                />
+              {/* Ezequiel Esposito */}
+              <div className="text-center">
+                <h3 className="text-lg font-bold">Ezequiel Esposito</h3>
+                <p className="text-primary text-sm">Editorial Advisor - Open Access - OJS</p>
+                <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+                  Dedicated to supporting editorial teams in policy services and index applications. Specialist in OJS, OMP and Crossref services management.
+                </p>
               </div>
-              <h3 className="text-xl font-bold">Ezequiel Esposito</h3>
-              <p className="text-primary">Editorial Advisor - Open Access - OJS</p>
-              <p className="text-gray-500 dark:text-gray-400 mt-2">
-                Dedicated to supporting editorial teams in policy services and index applications. Specialist in OJS, OMP and Crossref services management.
-              </p>
-            </div>
 
-            {/* Ailin Austrich */}
-            <div className="flex flex-col items-center text-center">
-              <div className="mb-4">
-                <Image
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop"
-                  width={200}
-                  height={200}
-                  alt="Ailin Austrich"
-                  className="rounded-full object-cover"
-                />
+              {/* Ailin Austrich */}
+              <div className="text-center">
+                <h3 className="text-lg font-bold">Ailin Austrich</h3>
+                <p className="text-primary text-sm">XML-JATS Specialist</p>
+                <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+                  XML-JATS specialist and academic content structuring expert for digital publications.
+                </p>
               </div>
-              <h3 className="text-xl font-bold">Ailin Austrich</h3>
-              <p className="text-primary">XML-JATS Specialist</p>
-              <p className="text-gray-500 dark:text-gray-400 mt-2">
-                XML-JATS specialist and academic content structuring expert for digital publications.
-              </p>
             </div>
           </div>
         </div>
@@ -393,137 +351,158 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-            {/* Universidad Nacional de Tucumán */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2024/05/31144021/logo-unt-300x152.png"
-                width={160}
-                height={80}
-                alt="Universidad Nacional de Tucumán"
-                className="object-contain"
-              />
-            </div>
-            
-            {/* Universidad de Piura */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/05/07114006/logo-udep-footer.svg"
-                width={160}
-                height={80}
-                alt="Universidad de Piura"
-                className="object-contain"
-              />
-            </div>
-            
-            {/* CONICET */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/11/06161950/800px-Conicet_Logo_con_letras-300x172.png"
-                width={160}
-                height={80}
-                alt="CONICET"
-                className="object-contain"
-              />
-            </div>
-            
-            {/* Universidad Autónoma Agraria Antonio Narro */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/06/06162108/logoUAAAN-300x76.jpg"
-                width={160}
-                height={80}
-                alt="Universidad Autónoma Agraria Antonio Narro"
-                className="object-contain"
-              />
-            </div>
-            
-            {/* Asociación Europea de Profesores de Español */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/06/06162109/pageHeaderLogoImage_es_ES-300x129.png"
-                width={160}
-                height={80}
-                alt="Asociación Europea de Profesores de Español"
-                className="object-contain"
-              />
-            </div>
-            
-            {/* Hospital Italiano */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2024/05/31143735/hospital-300x118.png"
-                width={160}
-                height={80}
-                alt="Hospital Italiano"
-                className="object-contain"
-              />
-            </div>
-            
-            {/* Universidad Católica Argentina */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/07094914/Universidad_Catolica_Argentina-300x300.png"
-                width={160}
-                height={80}
-                alt="Universidad Católica Argentina"
-                className="object-contain"
-              />
-            </div>
-            
-            {/* Universidad Técnica de Cotopaxi */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180136/universidad_def-300x106.png"
-                width={160}
-                height={80}
-                alt="Universidad Técnica de Cotopaxi"
-                className="object-contain"
-              />
-            </div>
-            
-            {/* Asociación Española de Personalismo */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/07095030/logo-web-144.png"
-                width={160}
-                height={80}
-                alt="Asociación Española de Personalismo"
-                className="object-contain"
-              />
-            </div>
-            
-            {/* Universidad Nacional Agraria de la Selva */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180017/logo-unas.png"
-                width={160}
-                height={80}
-                alt="Universidad Nacional Agraria de la Selva"
-                className="object-contain"
-              />
-            </div>
-            
-            {/* Editorial CLIE */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180237/editorialclie-1-300x68.png"
-                width={160}
-                height={80}
-                alt="Editorial CLIE"
-                className="object-contain"
-              />
-            </div>
-            
-            {/* Universidad de Xalapa */}
-            <div className="grayscale hover:grayscale-0 transition-all">
-              <Image
-                src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180324/UXLogo-200px.png"
-                width={160}
-                height={80}
-                alt="Universidad de Xalapa"
-                className="object-contain"
-              />
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll space-x-8 items-center">
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2024/05/31144021/logo-unt-300x152.png"
+                  width={120}
+                  height={60}
+                  alt="Universidad Nacional de Tucumán"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/05/07114006/logo-udep-footer.svg"
+                  width={120}
+                  height={60}
+                  alt="Universidad de Piura"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/11/06161950/800px-Conicet_Logo_con_letras-300x172.png"
+                  width={120}
+                  height={60}
+                  alt="CONICET"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/06/06162108/logoUAAAN-300x76.jpg"
+                  width={120}
+                  height={60}
+                  alt="Universidad Autónoma Agraria Antonio Narro"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/06/06162109/pageHeaderLogoImage_es_ES-300x129.png"
+                  width={120}
+                  height={60}
+                  alt="Asociación Europea de Profesores de Español"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2024/05/31143735/hospital-300x118.png"
+                  width={120}
+                  height={60}
+                  alt="Hospital Italiano"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/07094914/Universidad_Catolica_Argentina-300x300.png"
+                  width={120}
+                  height={60}
+                  alt="Universidad Católica Argentina"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180136/universidad_def-300x106.png"
+                  width={120}
+                  height={60}
+                  alt="Universidad Técnica de Cotopaxi"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/07095030/logo-web-144.png"
+                  width={120}
+                  height={60}
+                  alt="Asociación Española de Personalismo"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180017/logo-unas.png"
+                  width={120}
+                  height={60}
+                  alt="Universidad Nacional Agraria de la Selva"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180237/editorialclie-1-300x68.png"
+                  width={120}
+                  height={60}
+                  alt="Editorial CLIE"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2025/05/05180324/UXLogo-200px.png"
+                  width={120}
+                  height={60}
+                  alt="Universidad de Xalapa"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              {/* Duplicate for seamless loop */}
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2024/05/31144021/logo-unt-300x152.png"
+                  width={120}
+                  height={60}
+                  alt="Universidad Nacional de Tucumán"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/05/07114006/logo-udep-footer.svg"
+                  width={120}
+                  height={60}
+                  alt="Universidad de Piura"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
+              
+              <div className="flex-shrink-0 grayscale hover:grayscale-0 transition-all">
+                <Image
+                  src="https://d1ng31t6m9h8vv.cloudfront.net/wp-content/uploads/2023/11/06161950/800px-Conicet_Logo_con_letras-300x172.png"
+                  width={120}
+                  height={60}
+                  alt="CONICET"
+                  className="object-contain h-12 w-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -556,6 +535,23 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-scroll {
+          animation: scroll 30s linear infinite;
+        }
+        .animate-scroll:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
     </main>
   )
 }
