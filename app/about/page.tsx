@@ -289,7 +289,7 @@ export default function AboutPage() {
             </div>
 
             {/* Rest of the team - Text only */}
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-4xl">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full mt-16">
               {/* Guillermo Suruguay */}
               <div className="text-center">
                 <h3 className="text-lg font-bold">Guillermo Suruguay</h3>
