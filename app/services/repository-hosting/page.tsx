@@ -15,6 +15,8 @@ export default function RepositoryHostingPage() {
       name: "Professional",
       description: "For research departments",
       monthlyPrice: 170,
+      monthlyUrl: "https://shop.paideiahosting.net/shop/repo-pro-m-repository-hosting-professional-monthly-158",
+      annualUrl: "https://shop.paideiahosting.net/shop/repo-pro-a-repository-hosting-professional-annual-160",
       popular: true,
       features: [
         "Repository (Dataverse or DSpace)",
@@ -31,6 +33,8 @@ export default function RepositoryHostingPage() {
       name: "Enterprise",
       description: "For institutions and large research centers",
       monthlyPrice: 280,
+      monthlyUrl: "https://shop.paideiahosting.net/shop/repo-ent-m-repository-hosting-enterprise-monthly-159",
+      annualUrl: "https://shop.paideiahosting.net/shop/repo-ent-a-repository-hosting-enterprise-annual-161",
       features: [
         "Repository (Dataverse or DSpace)",
         "Installation included",

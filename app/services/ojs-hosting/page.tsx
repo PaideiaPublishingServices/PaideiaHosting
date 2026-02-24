@@ -15,6 +15,8 @@ export default function OJSHostingPage() {
       name: "Basic",
       description: "For emerging journals",
       monthlyPrice: 42,
+      monthlyUrl: "https://shop.paideiahosting.net/shop/ojs-basic-m-ojs-hosting-basic-monthly-146",
+      annualUrl: "https://shop.paideiahosting.net/shop/ojs-basic-a-ojs-hosting-basic-annual-149",
       features: [
         "Single Journal",
         "10GB Storage",
@@ -31,6 +33,8 @@ export default function OJSHostingPage() {
       description: "For established academic journals",
       monthlyPrice: 79,
       popular: true,
+      monthlyUrl: "https://shop.paideiahosting.net/shop/ojs-pro-m-ojs-hosting-professional-monthly-147",
+      annualUrl: "https://shop.paideiahosting.net/shop/ojs-pro-a-ojs-hosting-professional-annual-150",
       features: [
         "Multi-journal in 1 OJS Installations",
         "20GB Storage",
@@ -47,6 +51,8 @@ export default function OJSHostingPage() {
       name: "Enterprise",
       description: "For institutions with multiple journals",
       monthlyPrice: 99,
+      monthlyUrl: "https://shop.paideiahosting.net/shop/ojs-ent-m-ojs-hosting-enterprise-monthly-148",
+      annualUrl: "https://shop.paideiahosting.net/shop/ojs-ent-a-ojs-hosting-enterprise-annual-151",
       features: [
         "Multi-journal in Multi-installations",
         "30GB Storage",

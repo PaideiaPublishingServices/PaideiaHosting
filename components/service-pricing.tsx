@@ -12,6 +12,8 @@ interface PricingPlan {
   features: string[]
   popular?: boolean
   buttonText?: string
+  monthlyUrl?: string
+  annualUrl?: string
 }
 
 interface ServicePricingProps {
@@ -72,7 +74,7 @@ export function ServicePricing({ title, subtitle, plans }: ServicePricingProps) 
               </ul>
               <div className="mt-6">
                 <Link
-                  href="/contact"
+                  href={plan.monthlyUrl && plan.annualUrl ? (isAnnual ? plan.annualUrl : plan.monthlyUrl) : "/contact"}
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
                   {plan.buttonText || 'Get Started'}

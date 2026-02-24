@@ -12,6 +12,8 @@ export function VPSPricing() {
       name: "Professional",
       description: "For academic departments",
       monthlyPrice: 170,
+        monthlyUrl: "https://shop.paideiahosting.net/shop/vps-ls-pro-m-vps-lightsail-professional-monthly-166",
+        annualUrl: "https://shop.paideiahosting.net/shop/vps-ls-pro-a-vps-lightsail-professional-annual-168",
       popular: true,
       features: [
         "2 vCPUs",
@@ -29,6 +31,8 @@ export function VPSPricing() {
       name: "Enterprise",
       description: "For large institutions and research centers",
       monthlyPrice: 280,
+        monthlyUrl: "https://shop.paideiahosting.net/shop/vps-ls-ent-m-vps-lightsail-enterprise-monthly-167",
+        annualUrl: "https://shop.paideiahosting.net/shop/vps-ls-ent-a-vps-lightsail-enterprise-annual-169",
       features: [
         "4 vCPUs",
         "16GB RAM",
@@ -49,6 +53,8 @@ export function VPSPricing() {
       name: "Professional",
       description: "For academic departments (t3.large)",
       monthlyPrice: 190,
+        monthlyUrl: "https://shop.paideiahosting.net/shop/vps-ec2-pro-m-vps-ec2-professional-t3large-monthly-170",
+        annualUrl: "https://shop.paideiahosting.net/shop/vps-ec2-pro-a-vps-ec2-professional-t3large-annual-172",
       popular: true,
       features: [
         "2 vCPUs",
@@ -66,6 +72,8 @@ export function VPSPricing() {
       name: "Enterprise",
       description: "For large institutions (t3.xlarge)",
       monthlyPrice: 299,
+        monthlyUrl: "https://shop.paideiahosting.net/shop/vps-ec2-ent-m-vps-ec2-enterprise-t3xlarge-monthly-171",
+        annualUrl: "https://shop.paideiahosting.net/shop/vps-ec2-ent-a-vps-ec2-enterprise-t3xlarge-annual-173",
       features: [
         "4 vCPUs",
         "16GB RAM",
