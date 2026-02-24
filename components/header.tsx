@@ -38,7 +38,7 @@ export function Header() {
           </Link>
         </nav>
         <div className="ml-auto md:ml-4 flex items-center gap-4">
-          <Link href="/my-account" className="text-sm font-medium transition-colors hover:text-primary hidden md:block">
+          <Link href="https://shop.paideiahosting.net/my" className="text-sm font-medium transition-colors hover:text-primary hidden md:block">
             Log in
           </Link>
           <Link href="/contact">
@@ -87,7 +87,7 @@ export function Header() {
                   </Link>
                 </SheetClose>
                 <SheetClose asChild>
-                  <Link href="/login" className="text-sm font-medium transition-colors hover:text-primary">
+                  <Link href="https://shop.paideiahosting.net/my" className="text-sm font-medium transition-colors hover:text-primary">
                     Log in
                   </Link>
                 </SheetClose>

@@ -112,7 +112,7 @@ export function PricingClient() {
                 </ul>
                 <div className="mt-6">
                   <Link
-                    href="/contact"
+                    href={isAnnual ? "https://shop.paideiahosting.net/shop/ojs-basic-a-ojs-hosting-basic-annual-149" : "https://shop.paideiahosting.net/shop/ojs-basic-m-ojs-hosting-basic-monthly-146"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
                     Get Started
@@ -180,7 +180,7 @@ export function PricingClient() {
                 </ul>
                 <div className="mt-6">
                   <Link
-                    href="/contact"
+                    href={isAnnual ? "https://shop.paideiahosting.net/shop/ojs-pro-a-ojs-hosting-professional-annual-150" : "https://shop.paideiahosting.net/shop/ojs-pro-m-ojs-hosting-professional-monthly-147"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
                     Get Started
@@ -257,7 +257,7 @@ export function PricingClient() {
                 </ul>
                 <div className="mt-6">
                   <Link
-                    href="/contact"
+                    href={isAnnual ? "https://shop.paideiahosting.net/shop/ojs-ent-a-ojs-hosting-enterprise-annual-151" : "https://shop.paideiahosting.net/shop/ojs-ent-m-ojs-hosting-enterprise-monthly-148"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
                     Contact Sales
@@ -345,7 +345,7 @@ export function PricingClient() {
                 </ul>
                 <div className="mt-6">
                   <Link
-                    href="/contact"
+                    href={isAnnual ? "https://shop.paideiahosting.net/shop/omp-basic-a-omp-hosting-basic-annual-155" : "https://shop.paideiahosting.net/shop/omp-basic-m-omp-hosting-basic-monthly-152"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
                     Get Started
@@ -413,7 +413,7 @@ export function PricingClient() {
                 </ul>
                 <div className="mt-6">
                   <Link
-                    href="/contact"
+                    href={isAnnual ? "https://shop.paideiahosting.net/shop/omp-pro-a-omp-hosting-professional-annual-156" : "https://shop.paideiahosting.net/shop/omp-pro-m-omp-hosting-professional-monthly-153"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
                     Get Started
@@ -490,7 +490,7 @@ export function PricingClient() {
                 </ul>
                 <div className="mt-6">
                   <Link
-                    href="/contact"
+                    href={isAnnual ? "https://shop.paideiahosting.net/shop/omp-ent-a-omp-hosting-enterprise-annual-157" : "https://shop.paideiahosting.net/shop/omp-ent-m-omp-hosting-enterprise-monthly-154"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
                     Contact Sales
@@ -583,7 +583,7 @@ export function PricingClient() {
                 </ul>
                 <div className="mt-6">
                   <Link
-                    href="/contact"
+                    href={isAnnual ? "https://shop.paideiahosting.net/shop/repo-pro-a-repository-hosting-professional-annual-160" : "https://shop.paideiahosting.net/shop/repo-pro-m-repository-hosting-professional-monthly-158"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
                     Get Started
@@ -660,7 +660,7 @@ export function PricingClient() {
                 </ul>
                 <div className="mt-6">
                   <Link
-                    href="/contact"
+                    href={isAnnual ? "https://shop.paideiahosting.net/shop/repo-ent-a-repository-hosting-enterprise-annual-161" : "https://shop.paideiahosting.net/shop/repo-ent-m-repository-hosting-enterprise-monthly-159"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
                     Contact Sales
@@ -753,7 +753,7 @@ export function PricingClient() {
                 </ul>
                 <div className="mt-6">
                   <Link
-                    href="/contact"
+                    href={isAnnual ? "https://shop.paideiahosting.net/shop/atom-pro-a-atom-hosting-professional-annual-164" : "https://shop.paideiahosting.net/shop/atom-pro-m-atom-hosting-professional-monthly-162"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
                     Get Started
@@ -824,7 +824,7 @@ export function PricingClient() {
                 </ul>
                 <div className="mt-6">
                   <Link
-                    href="/contact"
+                    href={isAnnual ? "https://shop.paideiahosting.net/shop/atom-ent-a-atom-hosting-enterprise-annual-165" : "https://shop.paideiahosting.net/shop/atom-ent-m-atom-hosting-enterprise-monthly-163"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
                     Contact Sales
@@ -937,7 +937,7 @@ export function PricingClient() {
                   </ul>
                   <div className="mt-6">
                     <Link
-                      href="/contact"
+                      href={isAnnual ? "https://shop.paideiahosting.net/shop/vps-ls-pro-a-vps-lightsail-professional-annual-168" : "https://shop.paideiahosting.net/shop/vps-ls-pro-m-vps-lightsail-professional-monthly-166"}
                       className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                     >
                       Get Started
@@ -1002,7 +1002,7 @@ export function PricingClient() {
                   </ul>
                   <div className="mt-6">
                     <Link
-                      href="/contact"
+                      href={isAnnual ? "https://shop.paideiahosting.net/shop/vps-ls-ent-a-vps-lightsail-enterprise-annual-169" : "https://shop.paideiahosting.net/shop/vps-ls-ent-m-vps-lightsail-enterprise-monthly-167"}
                       className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                     >
                       Contact Sales
@@ -1072,7 +1072,7 @@ export function PricingClient() {
                   </ul>
                   <div className="mt-6">
                     <Link
-                      href="/contact"
+                      href={isAnnual ? "https://shop.paideiahosting.net/shop/vps-ec2-pro-a-vps-ec2-professional-t3large-annual-172" : "https://shop.paideiahosting.net/shop/vps-ec2-pro-m-vps-ec2-professional-t3large-monthly-170"}
                       className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                     >
                       Get Started
@@ -1137,7 +1137,7 @@ export function PricingClient() {
                   </ul>
                   <div className="mt-6">
                     <Link
-                      href="/contact"
+                      href={isAnnual ? "https://shop.paideiahosting.net/shop/vps-ec2-ent-a-vps-ec2-enterprise-t3xlarge-annual-173" : "https://shop.paideiahosting.net/shop/vps-ec2-ent-m-vps-ec2-enterprise-t3xlarge-monthly-171"}
                       className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                     >
                       Contact Sales

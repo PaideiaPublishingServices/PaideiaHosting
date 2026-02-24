@@ -133,7 +133,7 @@ export function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-gray-500 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} Paideia Hosting. All rights reserved.
+            &copy; 2026 Paideia Hosting. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="https://paideiastudio.net/terminos-y-condiciones/" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
