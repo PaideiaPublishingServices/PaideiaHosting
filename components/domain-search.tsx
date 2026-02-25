@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Search, CheckCircle2, Info } from "lucide-react"
+import { Search, Info } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
@@ -38,24 +38,26 @@ export function DomainSearch() {
       </form>
 
       {showMessage && domain && (
-        <Card className="border-green-200 bg-green-50">
+        <Card className="border-blue-200 bg-blue-50">
           <CardContent className="p-6">
             <div className="flex items-start gap-3">
-              <CheckCircle2 className="h-6 w-6 text-green-600 mt-0.5 flex-shrink-0" />
+              <Info className="h-6 w-6 text-blue-600 mt-0.5 flex-shrink-0" />
               <div className="space-y-3 flex-1">
                 <div>
-                  <p className="font-semibold text-green-900">
-                    Great choice! Domain "{domain}" looks available.
+                  <p className="font-semibold text-blue-900">
+                    Domain registration for "{domain}"
                   </p>
-                  <p className="text-sm text-green-700 mt-1">
-                    You can register this domain when you purchase any of our hosting packages.
+                  <p className="text-sm text-blue-700 mt-2">
+                    We will verify availability and register this domain for you. If it's not available, we'll present alternative options.
                   </p>
                 </div>
                 
-                <div className="flex items-center gap-2 p-3 bg-blue-50 border border-blue-200 rounded-md">
-                  <Info className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                  <p className="text-sm text-blue-900">
-                    Domain registration is included with all our annual hosting plans
+                <div className="p-3 bg-white border border-blue-200 rounded-md space-y-2">
+                  <p className="text-sm font-medium text-gray-900">
+                    💰 Domain cost: $40 USD/year (additional to any hosting plan)
+                  </p>
+                  <p className="text-sm text-gray-700">
+                    📝 Please leave a note when purchasing your hosting plan or contact our team directly.
                   </p>
                 </div>
 
@@ -67,7 +69,7 @@ export function DomainSearch() {
                   </Link>
                   <Link href="/contact" className="flex-1">
                     <Button variant="outline" className="w-full">
-                      Contact Sales
+                      Contact Team
                     </Button>
                   </Link>
                 </div>
