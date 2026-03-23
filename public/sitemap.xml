@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Páginas principales -->
+  <url><loc>https://paideiahosting.net/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://paideiahosting.net/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://paideiahosting.net/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://paideiahosting.net/pricing</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Servicios -->
+  <url><loc>https://paideiahosting.net/services</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://paideiahosting.net/services/ojs-hosting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://paideiahosting.net/services/omp-hosting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://paideiahosting.net/services/repository-hosting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://paideiahosting.net/services/atom-hosting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://paideiahosting.net/services/vps-for-institutions</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://paideiahosting.net/services/custom-solutions</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://paideiahosting.net/services/backup-solutions</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Plugins -->
+  <url><loc>https://paideiahosting.net/plugins</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://paideiahosting.net/plugins/academic-theme-omp</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://paideiahosting.net/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://paideiahosting.net/blog/academic-hosting-platforms-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://paideiahosting.net/blog/dspace-vs-dataverse</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://paideiahosting.net/blog/migrate-archival-data-to-atom</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://paideiahosting.net/blog/migrating-ojs-journals-to-aws</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://paideiahosting.net/blog/ojs-hosting-whats-included</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://paideiahosting.net/blog/real-cost-dspace-self-hosting</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://paideiahosting.net/blog/self-hosted-vs-managed-atom-hosting</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://paideiahosting.net/blog/what-is-atom-hosting</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://paideiahosting.net/blog/what-is-research-data-repository</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+</urlset>

@@ -9,8 +9,7 @@
     "lint": "next lint",
     "export": "next build",
     "type-check": "tsc --noEmit",
-    "type-check:watch": "tsc --noEmit --watch",
-    "postbuild": "next-sitemap"
+    "type-check:watch": "tsc --noEmit --watch"
   },
   "dependencies": {
     "@hookform/resolvers": "latest",
@@ -52,7 +51,6 @@
     "lucide-react": "^0.454.0",
     "next": "15.1.0",
     "next-mdx-remote": "^6.0.0",
-    "next-sitemap": "^4.2.3",
     "next-themes": "latest",
     "react": "^19",
     "react-day-picker": "8.10.1",
