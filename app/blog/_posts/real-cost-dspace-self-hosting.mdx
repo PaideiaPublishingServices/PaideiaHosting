@@ -1,0 +1,49 @@
+---
+title: "The real cost of running DSpace on your own servers"
+date: "2026-02-25"
+description: "Server costs are just the beginning. A realistic breakdown of what self-hosted DSpace actually costs institutions in staff time, risk, and operational overhead."
+keywords: ["dspace managed hosting", "dspace aws", "dspace self hosting cost", "dspace hosting"]
+slug: "real-cost-dspace-self-hosting"
+---
+
+## The number that's easy to calculate
+
+When institutions consider DSpace hosting, the first number they reach for is the server bill. A VPS with enough resources to run DSpace comfortably — say, 4 vCPUs, 8GB RAM, 100GB SSD — costs somewhere between $60 and $120 per month on AWS, Azure, or DigitalOcean. That's $720 to $1,440 per year.
+
+Compared to a managed hosting plan, self-hosting looks attractive on paper. But the server bill is only a fraction of the real cost.
+
+## Staff time: the cost that doesn't appear on an invoice
+
+Every hour a systems administrator, IT staff member, or technically capable librarian spends on DSpace infrastructure is an hour not spent on something else. That time has a cost — even if it doesn't appear as a line item anywhere.
+
+Consider what running DSpace on your own servers actually requires over the course of a year. Initial installation and configuration of the full stack (Java, PostgreSQL, Solr, Apache or Nginx, SSL) takes several days for someone who hasn't done it before. DSpace releases updates roughly every six months; each upgrade requires testing, backup verification, and rollout — call it half a day per upgrade when it goes smoothly, more when it doesn't. Solr requires periodic maintenance: index optimization, heap tuning, restarting when it falls over. Storage management becomes a recurring task as datasets accumulate. And when something breaks — and something always eventually breaks — diagnosis and recovery takes time that's hard to predict.
+
+A conservative estimate for a well-managed self-hosted DSpace installation is 4 to 8 hours of staff time per month on average, higher during upgrades or incidents. At a fully-loaded cost of $50/hour for a systems administrator or senior library staff member, that's $2,400 to $4,800 per year in staff time — before counting any actual incidents.
+
+## Risk: the cost you hope never materializes
+
+Self-hosted systems carry risks that managed hosting transfers to the provider. Some of the common failure modes for self-hosted DSpace installations include disk space exhaustion taking the system offline without warning, Solr indexing failures making search stop working while the deposit interface still appears functional (so deposits succeed but nothing is discoverable), SSL certificate expiration causing browser security warnings that make the repository appear compromised, failed upgrades that require rollback procedures most institutions haven't tested, and backup failures discovered only at the moment of recovery.
+
+Each of these can be prevented with proper monitoring and maintenance. But prevention requires someone actively looking. Without dedicated attention, these problems don't announce themselves — they surface at inconvenient moments, often during grant reviews, institutional audits, or peak research periods.
+
+The cost of a serious incident — a week of downtime, a partial data loss, a security breach — is hard to quantify but easy to underestimate. Reputational damage to a repository that researchers depend on for data access compounds over time.
+
+## What managed hosting actually costs
+
+A properly scoped managed DSpace hosting plan from a provider with specific DSpace expertise costs between $150 and $300 per month, depending on storage requirements and support level. That's $1,800 to $3,600 per year — more than the server bill alone, but in the same range as the realistic total cost of self-hosting once staff time is counted.
+
+What managed hosting buys is not just infrastructure — it's transferred risk and recovered staff time. The provider monitors the system, applies updates, manages backups and tests them, and handles incidents. Your staff can focus on content acquisition, metadata quality, and researcher support.
+
+## When the math tips toward self-hosting
+
+Self-hosting can still make economic sense in specific situations: when your institution has dedicated IT staff whose explicit job includes managing application servers, when institutional policy requires data to remain on-premises or within a specific cloud environment, or when you have enough DSpace deployments to justify the internal expertise. A university running five DSpace installations can amortize that expertise; a single-repository institution generally cannot.
+
+## Running the numbers for your institution
+
+The simplest exercise is to estimate honestly: how many staff hours per month go toward DSpace server management, and what does that time cost? Add the server bill. Compare that to a managed hosting quote. Include a rough estimate of the cost of one medium-severity incident per year. For most single-repository institutions, the managed hosting option comes out ahead or within range — with significantly less operational risk.
+
+Our [repository hosting plans](/services/repository-hosting) are built around AWS infrastructure with daily backups, proactive monitoring, and support from a team with extensive DSpace experience. [Get in touch](/contact) if you'd like a concrete comparison for your institution's situation.
+
+---
+
+*Related: [DSpace vs. Dataverse: choosing the right repository for your institution](/blog/dspace-vs-dataverse).*

@@ -1,0 +1,53 @@
+---
+title: "Self-hosted vs. managed AtoM hosting: what institutions should consider"
+date: "2026-03-18"
+description: "Running AtoM on your own servers seems straightforward until it isn't. A practical comparison of self-hosted and managed hosting for archival institutions."
+keywords: ["atom managed hosting", "atom dedicated server", "access to memory hosting", "atom hosting"]
+slug: "self-hosted-vs-managed-atom-hosting"
+---
+
+## The decision most institutions delay too long
+
+When an archival institution decides to implement AtoM, the hosting question often comes second. The priority is getting the system running, loading the data, and publishing the finding aids. How the server is managed tends to be an afterthought — until something breaks.
+
+The choice between self-hosted and managed AtoM hosting has real consequences for staff time, institutional risk, and long-term sustainability. Here's what to consider before making that decision.
+
+## What self-hosted actually means
+
+Self-hosted means your institution is responsible for the full technology stack: a server (physical or cloud), Linux administration, PHP, MySQL, Elasticsearch, Node.js, Nginx or Apache, SSL certificates, firewall configuration, backups, monitoring, and upgrades. AtoM itself is free — this is what running it actually costs.
+
+Most institutions that choose self-hosting do so through one of three paths: their university or government IT department manages the server as part of a broader infrastructure, a staff member with some technical background takes on the responsibility alongside their archival duties, or an external contractor handles setup and is called when something breaks.
+
+Each of these works — until it doesn't. IT departments have competing priorities and rarely have AtoM-specific expertise. Staff members with split responsibilities can't dedicate the time that proper server maintenance requires. Contractors are reactive by nature: they fix problems after they occur, not before.
+
+## The hidden costs of self-hosting
+
+The direct cost of self-hosting is usually low: a virtual machine on AWS Lightsail or a similar provider costs between $20 and $80 per month depending on specs. What's harder to quantify is everything else.
+
+Staff time spent on server issues is time not spent on archival description. An Elasticsearch indexing failure that makes search stop working requires someone who knows what Elasticsearch is to diagnose it. A failed Ubuntu upgrade that takes AtoM offline during a grant review cycle has institutional consequences. A backup that was never tested failing during a recovery scenario is a different order of problem entirely.
+
+When you add up the realistic staff hours spent on server maintenance, troubleshooting, and upgrades over a year — and multiply by the actual cost of that staff time — self-hosting is rarely as cheap as it first appears.
+
+## What managed hosting provides
+
+A managed AtoM hosting provider takes responsibility for the server layer entirely. What that includes varies by provider, but the core is: infrastructure on reliable cloud hardware, AtoM installation and configuration optimized for performance, proactive monitoring so problems are caught before they affect users, security updates applied on a regular schedule, tested backups with a documented recovery process, and support from people who work with AtoM regularly.
+
+The distinction between "someone who manages Linux servers" and "someone who specifically knows AtoM" matters more than it might seem. AtoM has specific requirements — Elasticsearch configuration, job queue management, file permissions for digital objects — that generic hosting providers don't know to look for.
+
+## When self-hosting makes sense
+
+Self-hosting is a reasonable choice when your institution has dedicated IT staff with Linux and application server experience who can prioritize AtoM maintenance, when budget constraints make the cost difference significant and the risk acceptable, or when institutional policy requires data to remain on premises or within a specific government cloud environment.
+
+It's also a reasonable starting point for smaller implementations or pilot projects where the stakes of downtime are lower and the goal is to evaluate AtoM before committing to a longer-term infrastructure decision.
+
+## When managed hosting makes sense
+
+Managed hosting makes more sense when AtoM is central to your institution's public-facing services — researchers depend on it, it's linked from your website, grant deliverables reference it. It also makes sense when your technical staff have other primary responsibilities, when your institution has had reliability problems with self-hosted systems in the past, or when you're migrating from another system and want the transition handled professionally.
+
+For most archival institutions — where the core mission is the collection, not the infrastructure — managed hosting is the better long-term choice. It converts an unpredictable operational cost into a predictable one, and it puts the technical risk with people who are equipped to manage it.
+
+Our [AtoM hosting plans](/services/atom-hosting) are built for exactly this profile: institutions that need AtoM to work reliably without requiring internal technical expertise to keep it that way. [Reach out](/contact) if you'd like to talk through what migration from a self-hosted installation would look like.
+
+---
+
+*Next in this series: [How to migrate your archival descriptions to AtoM without losing data](/blog/migrate-archival-data-to-atom).*

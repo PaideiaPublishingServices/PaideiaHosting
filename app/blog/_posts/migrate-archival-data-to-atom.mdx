@@ -1,0 +1,55 @@
+---
+title: "How to migrate your archival descriptions to AtoM without losing data"
+date: "2026-02-04"
+description: "Migrating archival descriptions to AtoM from spreadsheets, legacy systems, or another AtoM installation requires careful preparation. Here's what to expect."
+keywords: ["atom archival hosting", "access to memory migration", "atom hosting migration", "ICA-AtoM migration"]
+slug: "migrate-archival-data-to-atom"
+---
+
+## Migration is where AtoM implementations succeed or fail
+
+Getting AtoM installed and configured is the straightforward part of a new implementation. The harder part — and the part that determines whether the system actually serves researchers well — is migrating your existing archival descriptions into it correctly.
+
+Archival descriptions that are incomplete, improperly structured, or mapped to the wrong fields in AtoM are worse than no descriptions at all. They create a discovery layer that looks functional but misleads researchers, and cleaning up bad metadata after the fact is significantly more work than getting the migration right the first time.
+
+This post covers the main migration scenarios and what each requires.
+
+## The three migration scenarios
+
+**From spreadsheets or flat files.** Many institutions maintain their archival descriptions in spreadsheets — either purpose-built finding aids or adapted from legacy paper inventories. AtoM supports CSV import for archival descriptions, authority records, and accession records. The challenge is mapping your spreadsheet columns to AtoM's data model correctly.
+
+AtoM's data model follows ISAD(G) — the international standard for archival description. If your spreadsheet wasn't designed with ISAD(G) in mind, some fields will map cleanly and others will require decisions about where the data belongs. Reference codes, dates, scope and content notes, and access conditions are usually straightforward. Creator information, related authority records, and multi-level hierarchical descriptions require more careful handling.
+
+Before importing, validate your CSV against AtoM's import template. AtoM provides sample CSV files that show the expected column headers and data format. Running a test import on a staging installation before importing to production will surface mapping issues without affecting live data.
+
+**From a legacy archival management system.** Institutions migrating from older systems — Archivists' Toolkit, Archon, earlier versions of AtoM, or proprietary systems — face the additional challenge of extracting data in a usable format. Some systems have export functions that generate EAD XML or CSV; others require database-level extraction.
+
+EAD XML is AtoM's preferred import format for complex multi-level archival descriptions. If your legacy system can export EAD, that's usually the most reliable path for preserving hierarchical structure. AtoM's EAD import maps EAD elements to ISAD(G) fields and preserves the series-subseries-file-item hierarchy that's central to archival arrangement.
+
+The common problems with EAD imports are encoding issues (non-UTF-8 characters that break the import), EAD elements that don't map directly to AtoM fields and get dropped, and large EAD files that time out on servers without adequate memory and upload limits configured.
+
+**From another AtoM installation.** Migrating between AtoM instances — for example, when moving from self-hosted to managed hosting — is the most reliable scenario because the data model is identical. The most straightforward approach is a direct database dump and restore, followed by transferring the digital objects directory.
+
+This approach preserves everything: descriptions, authority records, accession records, user accounts, themes, and system settings. The main considerations are verifying that the AtoM version on the destination server matches the source (or that the upgrade path is handled), and confirming that digital object file paths are reconfigured correctly for the new server environment.
+
+## Digital objects: the part that gets missed
+
+Archival descriptions in AtoM often link to digital objects — scanned documents, photographs, audio recordings, video files. These digital objects are stored in the AtoM files directory on the server, not in the database.
+
+A common migration mistake is transferring the database but not the digital objects directory, or transferring it to the wrong path. The result is descriptions that display correctly but show broken links where digital objects should appear.
+
+Before declaring a migration complete, verify that a representative sample of descriptions with digital objects display correctly on the destination installation. Spot-check across different series and different object types if your collection includes multiple formats.
+
+## What to do before starting a migration
+
+Several preparation steps make migrations significantly more reliable. Clean your source data before migrating — fixing encoding issues, standardizing date formats, and resolving obvious errors in the source system is much easier than correcting them in AtoM after import. Document your data model mapping explicitly, even if it seems obvious — which fields in your source system correspond to which ISAD(G) elements in AtoM, and how you're handling fields that don't map cleanly.
+
+Test the import on a staging installation before importing to production. Verify that the record count matches what you expect, that hierarchical relationships are preserved correctly, and that linked digital objects display. Plan for a verification period after the migration where archivists review a sample of records before the system goes live.
+
+If you're moving to a new hosting environment at the same time as migrating data, separate the two operations if possible — migrate first, verify, then move hosting. Combining a data migration with an infrastructure change doubles the surface area for problems.
+
+Our [AtoM hosting plans](/services/atom-hosting) include migration assistance for annual plan subscribers. [Get in touch](/contact) if you're planning a migration and want to talk through the specifics of your situation.
+
+---
+
+*Related: [Self-hosted vs. managed AtoM hosting: what institutions should consider](/blog/self-hosted-vs-managed-atom-hosting).*

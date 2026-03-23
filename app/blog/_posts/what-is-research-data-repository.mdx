@@ -1,0 +1,45 @@
+---
+title: "What is a research data repository and why does your institution need one?"
+date: "2026-02-18"
+description: "Research data repositories are becoming a standard requirement for funded research. Here's what they are, what they do, and what institutions need to consider."
+keywords: ["dataverse hosting", "research data repository", "institutional repository hosting", "dspace hosting"]
+slug: "what-is-research-data-repository"
+---
+
+## Data sharing is becoming mandatory
+
+For most of the history of academic research, sharing data was optional. You published your findings; whether you shared the underlying data was up to you. That's changing rapidly.
+
+Major funding agencies — the NIH, NSF, Wellcome Trust, European Research Council, and many national equivalents — now require data management plans as part of grant applications, and increasingly require that data be deposited in an accessible repository upon publication. Journals in many fields have adopted similar policies. The open science movement has made data sharing an expectation in disciplines where it was once rare.
+
+For institutions that want to support their researchers' compliance with these requirements — and attract the funding that comes with being able to demonstrate that support — having an institutional research data repository is becoming a practical necessity.
+
+## What a research data repository actually does
+
+A research data repository is a system for depositing, describing, preserving, and providing access to research data. At its core it does four things: it accepts deposits of research datasets in various formats, it stores those datasets reliably over the long term, it provides metadata description so datasets are discoverable, and it makes datasets accessible to other researchers — either openly or with controlled access.
+
+Beyond those basics, modern research data repositories provide DOI assignment so individual datasets can be cited in publications and have persistent identifiers that work even if the repository moves, version management so updated datasets can be deposited without losing the original, access controls for sensitive data that can't be shared openly, usage statistics so researchers can demonstrate the impact of their data, and integration with ORCID so depositing researchers are properly credited.
+
+The distinction between a research data repository and a general institutional repository is worth understanding. A general institutional repository (often built on DSpace) stores the full range of institutional output: publications, theses, reports, datasets, multimedia. A research data repository (typically Dataverse) is optimized specifically for datasets — it has better tools for data exploration, more granular metadata for different data types, and workflows designed around the research data lifecycle.
+
+## Who needs a dedicated research data repository
+
+Not every institution needs a dedicated research data repository. The decision depends on the volume and nature of research being conducted, funder requirements, and existing infrastructure.
+
+A dedicated repository makes most sense for research-intensive universities where funded research generates significant data outputs across multiple disciplines, for institutions where funder mandates require data to be deposited in a specific type of repository, for research centers where data sharing and replication are central to the institutional mission, and for institutions that want to offer data deposit as a service to affiliated researchers who lack access to discipline-specific repositories.
+
+Smaller institutions or those with a narrower research focus may be better served by discipline-specific repositories (like GenBank for genomic data or ICPSR for social science data) rather than maintaining their own infrastructure. The institutional overhead of running a repository — both technical and in terms of curation and support for depositors — is real and should be weighed against the benefits.
+
+## The infrastructure question
+
+Research data repositories have specific technical requirements. Dataverse, the most widely adopted open-source platform for this purpose, requires Java, PostgreSQL, Solr, and sufficient server resources to handle potentially large file uploads and the indexing that makes datasets searchable. Storage requirements grow over time as datasets accumulate and cannot easily be pruned — unlike a library catalog, a data repository is fundamentally a preservation system.
+
+Running this infrastructure well requires proactive monitoring, backup testing, and occasional performance tuning as usage grows. Many institutions that start with self-hosted Dataverse installations find that the operational burden grows faster than anticipated as the service becomes more used.
+
+Managed hosting transfers that operational burden to a provider with the relevant expertise, allowing library and research support staff to focus on the more valuable work of helping researchers deposit data correctly, writing data management plans, and building the service's research community.
+
+Our [repository hosting plans](/services/repository-hosting) cover both Dataverse and DSpace on AWS infrastructure, with installation, backups, monitoring, and support included. [Contact us](/contact) if you'd like to discuss what would work for your institution's research data needs.
+
+---
+
+*Related: [DSpace vs. Dataverse: choosing the right repository for your institution](/blog/dspace-vs-dataverse).*

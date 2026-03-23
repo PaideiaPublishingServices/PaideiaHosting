@@ -1,0 +1,49 @@
+---
+title: "DSpace vs. Dataverse: choosing the right repository for your institution"
+date: "2026-03-04"
+description: "DSpace and Dataverse are both open-source institutional repositories, but they serve different purposes. Here's how to choose between them."
+keywords: ["dspace hosting", "dataverse hosting", "institutional repository", "dspace vs dataverse"]
+slug: "dspace-vs-dataverse"
+---
+
+## Two platforms, different origins
+
+DSpace and Dataverse are both open-source, widely adopted, and used by universities and research institutions around the world. They're often mentioned in the same breath, and both can serve as institutional repositories. But they were built with different problems in mind, and understanding that difference is the most useful starting point for choosing between them.
+
+**DSpace** was developed at MIT in 2002 as a general-purpose institutional repository — a place to archive, preserve, and provide access to the full range of an institution's intellectual output: theses, preprints, technical reports, datasets, images, administrative records. It's strong on long-term preservation, supports a wide range of content types, and has deep integration with library metadata standards.
+
+**Dataverse** was developed at Harvard in 2006 with a specific focus: research data. It was built around the concept of the "dataverse" — a collection of datasets — and designed from the ground up for data sharing, citation, and replication. It has strong support for structured data formats, built-in data exploration tools, and was designed to make datasets citable with DOIs from the start.
+
+## Where each platform excels
+
+DSpace is the better fit when your institution needs a single repository for diverse content types — publications, theses, multimedia, administrative records, and datasets in the same system. It's also the stronger choice when long-term preservation is the primary concern, when you need integration with library catalog systems and MARC records, or when your institution already has DSpace expertise in-house.
+
+Dataverse is the better fit when the primary use case is research data management and sharing, when researchers need to deposit datasets that others can download, explore, and cite, when funder mandates require a data management plan with a designated repository, or when you want built-in data exploration — Dataverse lets users run basic statistical analyses on deposited tabular data directly in the browser.
+
+## The overlap and where institutions get confused
+
+Both platforms support DOI assignment. Both can store datasets. Both have public-facing discovery interfaces. Both are used by universities as institutional repositories. This overlap is where the confusion comes from.
+
+The practical distinction is emphasis. A DSpace installation optimized for theses and publications *can* store datasets — but dataset discovery, citation, and exploration are secondary features. A Dataverse installation is purpose-built for datasets — but storing institutional publications or theses in it requires workarounds that aren't how the platform was designed to be used.
+
+Institutions with a single budget and a single repository to maintain often ask: can we use one system for everything? The honest answer is yes, but with trade-offs. DSpace handles the broader use case more naturally; Dataverse handles research data more elegantly. Some institutions run both — DSpace for publications and theses, Dataverse for datasets — with a shared discovery layer on top.
+
+## Infrastructure considerations
+
+Both platforms have similar technical requirements: a Linux server, Java, a relational database (PostgreSQL for both), and a search engine (Solr for DSpace, built into Dataverse). Both require dedicated server resources — they're not lightweight applications.
+
+DSpace 7.x introduced an Angular frontend that separates the presentation layer from the backend, adding flexibility but also complexity. Dataverse is a monolithic Java application that's generally simpler to deploy but requires more memory for the Solr indexing layer.
+
+For managed hosting purposes, the key question is whether the provider has specific experience with the platform — not just generic Linux hosting. Configuration details matter: Solr heap sizing, file storage backend configuration, background job management. Getting these wrong creates performance problems that are hard to diagnose later.
+
+## What to ask before deciding
+
+Before choosing between DSpace and Dataverse, answer these questions about your institution's needs. What types of content will go in the repository — primarily datasets, or a mix of publications, theses, and other materials? Who are the primary depositors — librarians managing institutional output, or researchers depositing data directly? Are there funder mandates specifying a particular platform or metadata standard? Do you already have a system running that would need to be migrated?
+
+If you're unsure, a consultation with someone who has deployed both platforms is more useful than trying to decide from documentation alone.
+
+Our [repository hosting plans](/services/repository-hosting) cover both DSpace and Dataverse on AWS infrastructure. [Contact us](/contact) if you'd like to talk through which platform fits your institution's situation — we've deployed both and can give you an honest assessment.
+
+---
+
+*Related: [The real cost of running DSpace on your own servers](/blog/real-cost-dspace-self-hosting).*

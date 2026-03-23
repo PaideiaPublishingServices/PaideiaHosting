@@ -1,0 +1,53 @@
+---
+title: "OJS hosting: what's included in a managed plan and what isn't"
+date: "2026-03-11"
+description: "Managed OJS hosting plans vary widely. Here's what to expect, what to ask about, and what usually costs extra — so you can compare providers accurately."
+keywords: ["ojs managed hosting", "ojs hosting service", "open journal systems hosting", "ojs hosting"]
+slug: "ojs-hosting-whats-included"
+---
+
+## Why comparing OJS hosting plans is harder than it looks
+
+When academic journals and institutions look for OJS hosting, the first thing they compare is price. A plan at $42/month and one at $40/month look similar on the surface. But what's actually included — and what gets charged as an add-on — varies significantly between providers.
+
+This post breaks down what a managed OJS hosting plan should include, what's commonly left out, and what questions to ask before signing up.
+
+## What should always be included
+
+**Installation and configuration.** A managed hosting plan should include setting up OJS on the server, configuring PHP and MySQL to the specifications OJS requires, setting up the file storage directories, and verifying that the installation works correctly before handing it over. If a provider charges extra for this, it's a red flag.
+
+**SSL certificate.** Every OJS installation should run over HTTPS. SSL certificates through Let's Encrypt are free and automatically renewable. Any provider charging for SSL on top of the hosting fee is adding unnecessary cost.
+
+**Daily backups.** Backups should run automatically, daily, and cover both the database and the files directory. The critical question isn't just whether backups exist — it's how long they're retained and whether they've been tested. A backup that's never been restored is a backup of unknown reliability.
+
+**Security updates.** OJS releases security patches periodically. A managed provider should apply these proactively, or at minimum notify you and apply them with your approval within a short window. Leaving a known vulnerability unpatched because no one is watching is one of the main risks of self-hosting.
+
+**Server monitoring.** The server should be monitored for uptime, performance, and disk space. If your journal goes down at 2am, someone should know before your editors do.
+
+## What's commonly an add-on
+
+**Migration from an existing installation.** Moving an OJS journal from one server to another — or from OJS 2 to OJS 3 — is a significant piece of work. It involves exporting the database, transferring files, reconfiguring settings, and verifying that everything transferred correctly. Reputable providers include migration in annual plans; others charge it as a one-time service fee. Ask explicitly.
+
+**Version upgrades.** There's a difference between security patches (which should be automatic) and major version upgrades — for example, from OJS 3.3 to OJS 3.4. Upgrades require testing, can break custom plugins or themes, and take time to do properly. Some providers include one upgrade per year in higher-tier plans; others charge per upgrade.
+
+**DOI registration.** OJS has built-in Crossref integration, but actually registering DOIs requires a Crossref membership and a deposit workflow. Hosting providers aren't DOI registration agencies — DOI services are a separate layer. Some hosting companies (including Paideia) offer DOI sponsorship programs alongside hosting, but it's a distinct service with its own pricing.
+
+**Custom domain configuration.** Most providers support custom domains, but verify this explicitly if you have a specific domain or subdomain requirement, especially if the DNS is managed by a university IT department with its own procedures.
+
+**ORCID, DOAJ, and indexing setup.** OJS has plugins for ORCID author verification, DOAJ metadata export, and various indexing services. Configuring these correctly is technical work that goes beyond basic hosting. Some providers include it; most don't.
+
+## Questions to ask any OJS hosting provider
+
+Before committing to a plan, ask these directly: How often are backups taken, how long are they retained, and has the restoration process been tested? Who applies security updates, and what's the typical turnaround? Is migration from our current server included, or is it a separate fee? What happens if we exceed the storage limit — is there an overage charge, or do we need to upgrade the plan? Who do we contact if something breaks, and what's the expected response time?
+
+The answers to these questions tell you more about a provider than the price on the homepage.
+
+## What Paideia includes
+
+Our [OJS hosting plans](/services/ojs-hosting) include installation, SSL, daily backups with defined retention, security monitoring, and email support on all tiers. Annual plans include migration services. Professional plans and above include one version upgrade per year. We also offer DOI registration through our Crossref sponsorship program as a separate service for journals that need it.
+
+If you're currently self-hosting or with a provider where some of the above is unclear, [reach out](/contact) — we're happy to walk through what a migration would involve.
+
+---
+
+*Related: [How we migrated 80+ OJS journals to AWS](/blog/migrating-ojs-journals-to-aws).*

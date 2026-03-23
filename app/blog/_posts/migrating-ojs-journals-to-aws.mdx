@@ -1,0 +1,67 @@
+---
+title: "How we migrated 80+ OJS journals to AWS: lessons learned"
+date: "2026-02-11"
+description: "Moving a large multi-journal OJS installation to AWS without downtime is a complex operation. Here's what we learned from doing it at scale."
+keywords: ["ojs migration", "ojs aws hosting", "open journal systems migration", "ojs managed hosting"]
+slug: "migrating-ojs-journals-to-aws"
+---
+
+## Scale changes everything
+
+Migrating a single OJS journal is a manageable task. You export the database, transfer the files directory, reconfigure the settings, test the installation, and cut over. With care and a good checklist, it takes a few hours.
+
+Migrating 80+ journals — each with its own editorial team, submission history, published issues, galley files, and custom configurations — is a different operation entirely. The technical steps are the same, but the surface area for problems is an order of magnitude larger, and the consequences of getting something wrong are proportionally more significant.
+
+Over several years of running multi-journal OJS installations on AWS, we've developed a migration process that handles scale without sacrificing reliability. This post describes the approach and what we've learned.
+
+## The pre-migration audit
+
+Before moving anything, we audit the source installation thoroughly. This means documenting the OJS version (and any plugins or custom modifications), the PHP and MySQL versions, the file storage configuration, the size of the database and the files directory, and any journals with unusual configurations — custom themes, non-standard plugins, DOI prefixes, email configurations that differ from the installation defaults.
+
+The audit almost always surfaces surprises: journals running plugins that aren't compatible with the target OJS version, custom code modifications made directly to core files that will be overwritten by an upgrade, file storage paths that differ from what the database expects. Identifying these before migration is far easier than discovering them after.
+
+For multi-journal installations, we catalog each journal's configuration separately. A shared OJS installation hosts multiple journals, but each journal has its own editorial workflow settings, email templates, user roles, and customizations that need to be verified individually after migration.
+
+## The staging environment
+
+We never migrate directly to production. Every migration goes through a staging environment first — a complete copy of the production system on AWS, inaccessible to the public, where we can verify that everything works before anyone depends on it.
+
+The staging environment serves two purposes. First, it lets us work through any technical issues without affecting the live journals. Second, it gives journal managers the opportunity to verify their specific journals look and function correctly before we commit to the cutover.
+
+For large installations, we typically run the staging environment for one to two weeks, contact the editorial team of each journal to verify access and functionality, and document any issues that need to be resolved before going live.
+
+## Database and files: the two components that matter
+
+An OJS installation consists of two things: the database (which holds all metadata — submissions, users, issues, settings) and the files directory (which holds all uploaded files — submitted manuscripts, galleys, supplementary materials, issue covers).
+
+Both need to transfer correctly. A common migration mistake is verifying that the database migrated correctly without verifying the files. The database will look fine — submissions show up, issues display — but galley files linked from published articles will return 404 errors because the files directory wasn't transferred completely or the paths were reconfigured incorrectly.
+
+Our verification process checks a sample of published articles across each journal, confirms that PDF galleys load, and verifies that the submission process works end to end with a test submission before the staging environment is signed off.
+
+## AWS infrastructure choices
+
+For multi-journal installations, the infrastructure decisions matter significantly. We run large OJS installations on AWS Lightsail instances with separate managed database instances (RDS MySQL) rather than keeping the database on the same server as the application.
+
+This separation means database backups are handled independently, database performance doesn't compete with web server processes for the same resources, and the database can be scaled independently if needed. For an installation serving 80+ journals, the database is often the performance bottleneck — separating it from the application layer makes that bottleneck easier to address.
+
+For file storage, we configure OJS to use the local filesystem rather than S3 for most installations, because OJS's S3 integration has historically had edge cases that create support overhead. Large installations with significant digital object storage are evaluated case by case.
+
+## The cutover
+
+The actual cutover — switching the live domain to point at the new server — is the highest-risk moment of any migration. Our approach is to minimize the window between the last database export from the old server and the first database import on the new server.
+
+We schedule cutovers during low-traffic periods, typically early morning on a weekday. We lower the DNS TTL 48 hours in advance so the DNS change propagates quickly. We take a final database export immediately before the cutover, apply it to the staged installation, verify once more, then switch the DNS.
+
+For installations where any downtime is unacceptable, we keep the old server running in read-only mode during the DNS propagation window, so users reaching the old server still see the journals correctly even if they can't submit.
+
+## What we've learned
+
+The patterns that cause the most problems in large OJS migrations are custom plugin code that hasn't been maintained and breaks on newer PHP versions, email configuration that uses institution-specific SMTP servers that need to be reconfigured, journals with very large files directories where transfer time is underestimated, and editorial teams who aren't notified in advance and discover the migration from a broken link.
+
+The solution to most of these is time and communication — building enough runway before the cutover to surface and resolve problems, and involving journal managers early enough that they can flag issues before they become blockers.
+
+If you're managing a large OJS installation and considering a migration to AWS infrastructure, [get in touch](/contact). We've done this enough times to know where the problems tend to hide, and we're happy to talk through what a migration would look like for your specific situation.
+
+---
+
+*Related: [OJS hosting: what's included in a managed plan and what isn't](/blog/ojs-hosting-whats-included).*
