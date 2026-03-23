@@ -5,7 +5,7 @@ import { getAllPosts, formatDate } from '@/lib/posts'
 export const metadata = {
   title: 'Blog - Paideia Hosting',
   description:
-    'Artículos y recursos sobre hosting académico, OJS, repositorios institucionales y publicación científica en acceso abierto.',
+    'Articles and resources about academic hosting, OJS, institutional repositories, and open access scholarly publishing.',
 }
 
 export default function BlogPage() {
@@ -22,8 +22,8 @@ export default function BlogPage() {
                 Blog
               </h1>
               <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Recursos, guías y novedades sobre hosting académico, OJS, repositorios
-                institucionales y publicación en acceso abierto.
+                Resources, guides, and updates on academic hosting, OJS, institutional
+                repositories, and open access publishing.
               </p>
             </div>
           </div>
@@ -34,7 +34,7 @@ export default function BlogPage() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           {posts.length === 0 ? (
-            <p className="text-center text-gray-500">No hay artículos publicados aún.</p>
+            <p className="text-center text-gray-500">No articles published yet.</p>
           ) : (
             <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
               {posts.map((post) => (
@@ -54,7 +54,7 @@ export default function BlogPage() {
                     {post.description}
                   </p>
                   <span className="mt-4 text-sm font-medium text-primary">
-                    Leer más →
+                    Read more →
                   </span>
                 </Link>
               ))}
@@ -69,17 +69,17 @@ export default function BlogPage() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                ¿Necesitás hosting académico?
+                Need academic hosting?
               </h2>
               <p className="max-w-[700px] md:text-xl/relaxed">
-                Consultanos sin compromiso. Tenemos planes para OJS, OMP, repositorios y más.
+                Get in touch with no obligation. We have plans for OJS, OMP, repositories, and more.
               </p>
             </div>
             <Link
               href="/contact"
               className="inline-flex h-10 items-center justify-center rounded-md bg-white text-primary px-8 text-sm font-medium shadow transition-colors hover:bg-gray-100"
             >
-              Contactar
+              Contact us
             </Link>
           </div>
         </div>

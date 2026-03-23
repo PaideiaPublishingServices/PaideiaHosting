@@ -71,7 +71,7 @@ export async function generateMetadata({
       keywords: post.keywords.join(', '),
     }
   } catch {
-    return { title: 'Artículo no encontrado - Paideia Hosting' }
+    return { title: 'Article not found - Paideia Hosting' }
   }
 }
 
@@ -91,7 +91,7 @@ export default async function BlogPostPage({
 
   return (
     <main className="flex-1">
-      {/* Hero del artículo */}
+      {/* Article hero */}
       <section className="w-full py-12 md:py-20 bg-gradient-to-b from-blue-50 to-white">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-3xl">
@@ -100,7 +100,7 @@ export default async function BlogPostPage({
               className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-primary mb-6 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
-              Volver al blog
+              Back to blog
             </Link>
 
             <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
@@ -133,7 +133,7 @@ export default async function BlogPostPage({
         </div>
       </section>
 
-      {/* Contenido MDX */}
+      {/* MDX content */}
       <section className="w-full py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <article className="mx-auto max-w-3xl">
@@ -142,29 +142,29 @@ export default async function BlogPostPage({
         </div>
       </section>
 
-      {/* CTA final */}
+      {/* Final CTA */}
       <section className="w-full py-12 md:py-24 bg-primary text-primary-foreground">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-3xl flex flex-col items-center text-center space-y-4">
             <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl">
-              ¿Tenés dudas o querés saber más?
+              Have questions or want to learn more?
             </h2>
             <p className="max-w-[600px] md:text-lg/relaxed opacity-90">
-              Nuestro equipo puede ayudarte a encontrar la solución de hosting ideal
-              para tu institución académica.
+              Our team can help you find the ideal hosting solution
+              for your academic institution.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link
                 href="/contact"
                 className="inline-flex h-10 items-center justify-center rounded-md bg-white text-primary px-8 text-sm font-medium shadow transition-colors hover:bg-gray-100"
               >
-                Contactar
+                Contact us
               </Link>
               <Link
                 href="/services"
                 className="inline-flex h-10 items-center justify-center rounded-md border border-white bg-transparent px-8 text-sm font-medium text-white shadow-sm transition-colors hover:bg-white/10"
               >
-                Ver servicios
+                View services
               </Link>
             </div>
           </div>
