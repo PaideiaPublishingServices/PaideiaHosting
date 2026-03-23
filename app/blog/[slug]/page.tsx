@@ -4,7 +4,6 @@ import { Calendar, Tag, ArrowLeft } from 'lucide-react'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { getAllPostSlugs, getPost, formatDate } from '@/lib/posts'
 
-// Componentes MDX con tipografía limpia y consistente con el sitio
 const mdxComponents = {
   h1: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1 className="text-3xl font-bold tracking-tight mt-10 mb-4 text-gray-900" {...props} />
@@ -58,9 +57,14 @@ export async function generateStaticParams() {
   return getAllPostSlugs().map((slug) => ({ slug }))
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
   try {
-    const post = getPost(params.slug)
+    const post = getPost(slug)
     return {
       title: `${post.title} - Paideia Hosting`,
       description: post.description,
@@ -71,10 +75,16 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+export default async function BlogPostPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+
   let post
   try {
-    post = getPost(params.slug)
+    post = getPost(slug)
   } catch {
     notFound()
   }
@@ -140,7 +150,8 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               ¿Tenés dudas o querés saber más?
             </h2>
             <p className="max-w-[600px] md:text-lg/relaxed opacity-90">
-              Nuestro equipo puede ayudarte a encontrar la solución de hosting ideal para tu institución académica.
+              Nuestro equipo puede ayudarte a encontrar la solución de hosting ideal
+              para tu institución académica.
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link
