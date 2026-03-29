@@ -44,7 +44,7 @@ export function VPSPricing() {
         "Dedicated IP",
         "Architecture Support"
       ],
-      buttonText: "Contact Sales"
+      buttonText: "Get Started"
     }
   ]
 
@@ -85,7 +85,7 @@ export function VPSPricing() {
         "Dedicated IP",
         "Architecture Support"
       ],
-      buttonText: "Contact Sales"
+      buttonText: "Get Started"
     }
   ]
 

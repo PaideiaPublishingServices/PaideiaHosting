@@ -66,7 +66,7 @@ export default function OJSHostingPage() {
         "Crossref memberships (Annual only)",
         "PrePrints server memberships (Annual only)"
       ],
-      buttonText: "Contact Sales"
+      buttonText: "Get Started"
     }
   ]
 

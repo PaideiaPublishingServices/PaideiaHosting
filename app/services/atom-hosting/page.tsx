@@ -47,7 +47,7 @@ export default function AtomHostingPage() {
         "Additional storage available",
         "Migration services included (Annual only)"
       ],
-      buttonText: "Contact Sales"
+      buttonText: "Get Started"
     }
   ]
 

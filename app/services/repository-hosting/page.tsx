@@ -48,7 +48,7 @@ export default function RepositoryHostingPage() {
         "Migration services included (Annual only)",
         "Crossref membership (Annual only)"
       ],
-      buttonText: "Contact Sales"
+      buttonText: "Get Started"
     }
   ]
 

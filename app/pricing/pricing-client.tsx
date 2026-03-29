@@ -260,7 +260,7 @@ export function PricingClient() {
                     href={isAnnual ? "https://shop.paideiahosting.net/shop/ojs-ent-a-ojs-hosting-enterprise-annual-151" : "https://shop.paideiahosting.net/shop/ojs-ent-m-ojs-hosting-enterprise-monthly-148"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
-                    Contact Sales
+                    Get Started
                   </Link>
                 </div>
               </div>
@@ -493,7 +493,7 @@ export function PricingClient() {
                     href={isAnnual ? "https://shop.paideiahosting.net/shop/omp-ent-a-omp-hosting-enterprise-annual-157" : "https://shop.paideiahosting.net/shop/omp-ent-m-omp-hosting-enterprise-monthly-154"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
-                    Contact Sales
+                    Get Started
                   </Link>
                 </div>
               </div>
@@ -663,7 +663,7 @@ export function PricingClient() {
                     href={isAnnual ? "https://shop.paideiahosting.net/shop/repo-ent-a-repository-hosting-enterprise-annual-161" : "https://shop.paideiahosting.net/shop/repo-ent-m-repository-hosting-enterprise-monthly-159"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
-                    Contact Sales
+                    Get Started
                   </Link>
                 </div>
               </div>
@@ -827,7 +827,7 @@ export function PricingClient() {
                     href={isAnnual ? "https://shop.paideiahosting.net/shop/atom-ent-a-atom-hosting-enterprise-annual-165" : "https://shop.paideiahosting.net/shop/atom-ent-m-atom-hosting-enterprise-monthly-163"}
                     className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                   >
-                    Contact Sales
+                    Get Started
                   </Link>
                 </div>
               </div>
@@ -1005,7 +1005,7 @@ export function PricingClient() {
                       href={isAnnual ? "https://shop.paideiahosting.net/shop/vps-ls-ent-a-vps-lightsail-enterprise-annual-169" : "https://shop.paideiahosting.net/shop/vps-ls-ent-m-vps-lightsail-enterprise-monthly-167"}
                       className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                     >
-                      Contact Sales
+                      Get Started
                     </Link>
                   </div>
                 </div>
@@ -1140,7 +1140,7 @@ export function PricingClient() {
                       href={isAnnual ? "https://shop.paideiahosting.net/shop/vps-ec2-ent-a-vps-ec2-enterprise-t3xlarge-annual-173" : "https://shop.paideiahosting.net/shop/vps-ec2-ent-m-vps-ec2-enterprise-t3xlarge-monthly-171"}
                       className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                     >
-                      Contact Sales
+                      Get Started
                     </Link>
                   </div>
                 </div>
