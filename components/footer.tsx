@@ -136,10 +136,10 @@ export function Footer() {
             &copy; 2026 Paideia Hosting. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="https://paideiastudio.net/terminos-y-condiciones/" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
+            <Link href="/terms" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
               Terms of Service
             </Link>
-            <Link href="https://paideiastudio.net/privacidad/" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
+            <Link href="/privacy" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
               Privacy Policy
             </Link>
           </div>
