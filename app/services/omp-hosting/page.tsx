@@ -15,7 +15,7 @@ export default function OMPHostingPage() {
       description: "For emerging publishers",
       monthlyPrice: 42,
       monthlyUrl: "https://shop.paideiahosting.net/shop/omp-basic-m-omp-hosting-basic-monthly-152",
-      annualUrl: "https://shop.paideiahosting.net/shop/omp-basic-a-omp-hosting-basic-annual-155",
+      annualUrl: "https://shop.paideiahosting.net/shop/omp-basic-m-omp-hosting-basic-monthly-152?plan_id=2",
       features: [
         "Single Press",
         "10GB Storage",
@@ -33,7 +33,7 @@ export default function OMPHostingPage() {
       monthlyPrice: 79,
       popular: true,
       monthlyUrl: "https://shop.paideiahosting.net/shop/omp-pro-m-omp-hosting-professional-monthly-153",
-      annualUrl: "https://shop.paideiahosting.net/shop/omp-pro-a-omp-hosting-professional-annual-156",
+      annualUrl: "https://shop.paideiahosting.net/shop/omp-pro-m-omp-hosting-professional-monthly-153?plan_id=2",
       features: [
         "Multi-press in 1 OMP Installation",
         "20GB Storage",
@@ -51,7 +51,7 @@ export default function OMPHostingPage() {
       description: "For institutions with multiple publications",
       monthlyPrice: 99,
       monthlyUrl: "https://shop.paideiahosting.net/shop/omp-ent-m-omp-hosting-enterprise-monthly-154",
-      annualUrl: "https://shop.paideiahosting.net/shop/omp-ent-a-omp-hosting-enterprise-annual-157",
+      annualUrl: "https://shop.paideiahosting.net/shop/omp-ent-m-omp-hosting-enterprise-monthly-154?plan_id=2",
       features: [
         "Multi-press in Multi-installations",
         "30GB Storage",

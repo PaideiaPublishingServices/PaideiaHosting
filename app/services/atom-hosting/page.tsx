@@ -16,7 +16,7 @@ export default function AtomHostingPage() {
       description: "For archives and cultural institutions",
       monthlyPrice: 170,
       monthlyUrl: "https://shop.paideiahosting.net/shop/atom-pro-m-atom-hosting-professional-monthly-162",
-      annualUrl: "https://shop.paideiahosting.net/shop/atom-pro-a-atom-hosting-professional-annual-164",
+      annualUrl: "https://shop.paideiahosting.net/shop/atom-pro-m-atom-hosting-professional-monthly-162?plan_id=2",
       popular: true,
       features: [
         "AtoM Installation",
@@ -34,7 +34,7 @@ export default function AtomHostingPage() {
       description: "For large institutions and national archives",
       monthlyPrice: 280,
       monthlyUrl: "https://shop.paideiahosting.net/shop/atom-ent-m-atom-hosting-enterprise-monthly-163",
-      annualUrl: "https://shop.paideiahosting.net/shop/atom-ent-a-atom-hosting-enterprise-annual-165",
+      annualUrl: "https://shop.paideiahosting.net/shop/atom-ent-m-atom-hosting-enterprise-monthly-163?plan_id=2",
       features: [
         "AtoM Installation",
         "Installation included",
