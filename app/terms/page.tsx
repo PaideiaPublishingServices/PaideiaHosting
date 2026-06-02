@@ -200,7 +200,7 @@ export default function TermsPage() {
           </ul>
           <p>
             All plans include daily backups of files, databases and associated configurations. Retention periods vary by
-            plan (minimum 5 days, up to 15 days). Paideia Hosting is not responsible for data loss caused by actions
+            plan (minimum 5 days, up to 7 days). Paideia Hosting is not responsible for data loss caused by actions
             taken by the contracting party.
           </p>
 

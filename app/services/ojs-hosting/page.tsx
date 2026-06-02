@@ -24,8 +24,10 @@ export default function OJSHostingPage() {
         "1 mail box",
         "SSL included",
         "Email Support",
-        "Free Installation",
-        "Migration services fee extra"
+        "Free Installation"
+      ],
+      conditionalFeatures: [
+        { monthly: "Migration services fee extra", annual: "Migration services included" }
       ]
     },
     {
@@ -43,8 +45,10 @@ export default function OJSHostingPage() {
         "SSL included",
         "Priority Email Support",
         "Free Installation",
-        "1 Upgrade per year",
-        "Migration services fee extra"
+        "1 Upgrade per year"
+      ],
+      conditionalFeatures: [
+        { monthly: "Migration services fee extra", annual: "Migration services included" }
       ]
     },
     {
@@ -56,14 +60,19 @@ export default function OJSHostingPage() {
       features: [
         "Multi-journal in Multi-installations",
         "30GB Storage",
-        "Daily Backups | 15 days",
+        "Daily Backups | 7 days",
         "Unlimited mailbox",
         "SSL included",
         "Priority Email Support | Phone Support",
         "Free Installation",
-        "1 Upgrade per year",
-        "Migration services fee extra",
+        "1 Upgrade per year"
+      ],
+      conditionalFeatures: [
+        { monthly: "Migration services fee extra", annual: "Migration services included" }
+      ],
+      annualOnlyFeatures: [
         "Crossref memberships (Annual only)",
+        "Similarity Check (Annual only)",
         "PrePrints server memberships (Annual only)"
       ],
       buttonText: "Get Started"
@@ -138,7 +147,7 @@ export default function OJSHostingPage() {
             <div className="flex flex-col items-start space-y-2">
               <Check className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Daily Backups</h3>
-              <p className="text-gray-500 dark:text-gray-400">Automatic daily backups with 30-day retention</p>
+              <p className="text-gray-500 dark:text-gray-400">Automatic daily backups with up to 7-day retention</p>
             </div>
             <div className="flex flex-col items-start space-y-2">
               <Check className="h-10 w-10 text-primary" />
@@ -164,6 +173,7 @@ export default function OJSHostingPage() {
         title="Simple, Transparent Pricing"
         subtitle="Choose the plan that fits your journal's needs"
         plans={ojsPlans}
+        footnote="* Crossref membership and Similarity Check are included only for customers in Latin America and Spain, and do not cover DOI registration or content deposits. Customers in other regions receive Crossref metadata support and service-management assistance, but must hold their own Crossref membership and deposit content directly with Crossref."
       />
 
       {/* FAQ Section */}

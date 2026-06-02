@@ -87,7 +87,7 @@ export default function PricingPage() {
                       <td className="p-4 font-medium">Backups</td>
                       <td className="p-4 text-center">Daily | 5 days</td>
                       <td className="p-4 text-center">Daily | 7 days</td>
-                      <td className="p-4 text-center">Daily | 15 days</td>
+                      <td className="p-4 text-center">Daily | 7 days</td>
                     </tr>
                     <tr className="border-b">
                       <td className="p-4 font-medium">Email Support</td>
@@ -151,8 +151,19 @@ export default function PricingPage() {
                         <Check className="h-5 w-5 text-green-600 mx-auto" />
                       </td>
                     </tr>
+                    <tr className="border-b">
+                      <td className="p-4 font-medium">Similarity Check (Annual)</td>
+                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center">
+                        <Check className="h-5 w-5 text-green-600 mx-auto" />
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
+                <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                  * Crossref membership and Similarity Check are included only for customers in Latin America and Spain, and do not cover DOI registration or content deposits. Customers in other regions receive Crossref metadata support and service-management assistance, but must hold their own Crossref membership and deposit content directly with Crossref.
+                </p>
               </div>
             </TabsContent>
 

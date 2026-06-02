@@ -10,6 +10,11 @@ interface PricingPlan {
   description: string
   monthlyPrice: number
   features: string[]
+  // Features whose label changes between monthly and annual billing (shown in both,
+  // highlighted in green when annual). Mirrors the behaviour of the /pricing page.
+  conditionalFeatures?: { monthly: string; annual: string }[]
+  // Features that are only included with annual billing (hidden on monthly, green when annual).
+  annualOnlyFeatures?: string[]
   popular?: boolean
   buttonText?: string
   monthlyUrl?: string
@@ -20,9 +25,10 @@ interface ServicePricingProps {
   title: string
   subtitle: string
   plans: PricingPlan[]
+  footnote?: string
 }
 
-export function ServicePricing({ title, subtitle, plans }: ServicePricingProps) {
+export function ServicePricing({ title, subtitle, plans, footnote }: ServicePricingProps) {
   const [isAnnual, setIsAnnual] = useState(false)
 
   const calculatePrice = (monthlyPrice: number) => {
@@ -71,6 +77,20 @@ export function ServicePricing({ title, subtitle, plans }: ServicePricingProps) 
                     <span>{feature}</span>
                   </li>
                 ))}
+                {plan.conditionalFeatures?.map((feature, featureIndex) => (
+                  <li key={`cond-${featureIndex}`} className="flex items-center gap-2">
+                    <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
+                    <span className={isAnnual ? 'text-green-700 font-medium' : ''}>
+                      {isAnnual ? feature.annual : feature.monthly}
+                    </span>
+                  </li>
+                ))}
+                {isAnnual && plan.annualOnlyFeatures?.map((feature, featureIndex) => (
+                  <li key={`annual-${featureIndex}`} className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-primary" />
+                    <span className="text-green-700 font-medium">{feature}</span>
+                  </li>
+                ))}
               </ul>
               <div className="mt-6">
                 <Link
@@ -83,6 +103,11 @@ export function ServicePricing({ title, subtitle, plans }: ServicePricingProps) 
             </div>
           ))}
         </div>
+        {footnote && (
+          <p className="mx-auto max-w-5xl mt-6 text-sm text-gray-500 dark:text-gray-400">
+            {footnote}
+          </p>
+        )}
       </div>
     </section>
   )

@@ -24,9 +24,11 @@ export default function AtomHostingPage() {
         "SSL included",
         "Daily Backups | 7 days",
         "Email Support",
-        "Additional storage available",
-        "Installation fee extra",
-        "Migration services fee extra"
+        "Additional storage available"
+      ],
+      conditionalFeatures: [
+        { monthly: "Installation fee extra", annual: "Installation included" },
+        { monthly: "Migration services fee extra", annual: "Migration services included" }
       ]
     },
     {
@@ -44,7 +46,9 @@ export default function AtomHostingPage() {
         "S3 configuration included (Not included additional fee S3)",
         "Daily Backups | 7 days",
         "Priority Email Support",
-        "Additional storage available",
+        "Additional storage available"
+      ],
+      annualOnlyFeatures: [
         "Migration services included (Annual only)"
       ],
       buttonText: "Get Started"

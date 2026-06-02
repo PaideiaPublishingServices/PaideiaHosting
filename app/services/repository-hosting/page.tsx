@@ -24,9 +24,11 @@ export default function RepositoryHostingPage() {
         "SSL included",
         "Daily Backups | 7 days",
         "Email Support",
-        "Additional storage available",
-        "Installation fee extra",
-        "Migration services fee extra"
+        "Additional storage available"
+      ],
+      conditionalFeatures: [
+        { monthly: "Installation fee extra", annual: "Installation included" },
+        { monthly: "Migration services fee extra", annual: "Migration services included" }
       ]
     },
     {
@@ -44,9 +46,12 @@ export default function RepositoryHostingPage() {
         "S3 configuration included (Not included additional fee S3)",
         "Daily Backups | 7 days",
         "Priority Email Support",
-        "Additional storage available",
+        "Additional storage available"
+      ],
+      annualOnlyFeatures: [
         "Migration services included (Annual only)",
-        "Crossref membership (Annual only)"
+        "Crossref membership (Annual only)",
+        "Similarity Check (Annual only)"
       ],
       buttonText: "Get Started"
     }
@@ -150,6 +155,7 @@ export default function RepositoryHostingPage() {
         title="Simple, Transparent Pricing"
         subtitle="Choose the plan that fits your repository needs"
         plans={repositoryPlans}
+        footnote="* Crossref membership and Similarity Check are included only for customers in Latin America and Spain, and do not cover DOI registration or content deposits. Customers in other regions receive Crossref metadata support and service-management assistance, but must hold their own Crossref membership and deposit content directly with Crossref."
       />
 
       {/* FAQ Section */}

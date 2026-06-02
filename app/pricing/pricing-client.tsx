@@ -216,7 +216,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups | 15 days</span>
+                    <span>Daily Backups | 7 days</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -246,6 +246,12 @@ export function PricingClient() {
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
                       <span className="text-green-700 font-medium">Crossref memberships (Annual only)</span>
+                    </li>
+                  )}
+                  {isAnnual && (
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      <span className="text-green-700 font-medium">Similarity Check (Annual only)</span>
                     </li>
                   )}
                   {isAnnual && (
@@ -449,7 +455,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Daily Backups | 15 days</span>
+                    <span>Daily Backups | 7 days</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -479,6 +485,12 @@ export function PricingClient() {
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
                       <span className="text-green-700 font-medium">Crossref memberships (Annual only)</span>
+                    </li>
+                  )}
+                  {isAnnual && (
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      <span className="text-green-700 font-medium">Similarity Check (Annual only)</span>
                     </li>
                   )}
                   {isAnnual && (
@@ -655,6 +667,12 @@ export function PricingClient() {
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
                       <span className="text-green-700 font-medium">Crossref membership (Annual only)</span>
+                    </li>
+                  )}
+                  {isAnnual && (
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      <span className="text-green-700 font-medium">Similarity Check (Annual only)</span>
                     </li>
                   )}
                 </ul>
@@ -1326,6 +1344,9 @@ export function PricingClient() {
             </div>
           </TabsContent>
         </Tabs>
+        <p className="mx-auto max-w-5xl mt-10 text-sm text-gray-500 dark:text-gray-400">
+          * Crossref membership and Similarity Check are included only for customers in Latin America and Spain, and do not cover DOI registration or content deposits. Customers in other regions receive Crossref metadata support and service-management assistance, but must hold their own Crossref membership and deposit content directly with Crossref.
+        </p>
       </div>
     </section>
   )
