@@ -32,7 +32,7 @@ export default function OMPHostingPage() {
     {
       name: "Professional",
       description: "For established academic publishers",
-      monthlyPrice: 79,
+      monthlyPrice: 60,
       popular: true,
       monthlyUrl: "https://shop.paideiahosting.net/shop/omp-pro-m-omp-hosting-professional-monthly-153",
       annualUrl: "https://shop.paideiahosting.net/shop/omp-pro-m-omp-hosting-professional-monthly-153?plan_id=2",

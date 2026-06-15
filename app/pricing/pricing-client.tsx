@@ -131,12 +131,12 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4">
                   <div className="flex items-baseline">
-                    <span className="text-3xl font-bold">${calculatePrice(79)}</span>
+                    <span className="text-3xl font-bold">${calculatePrice(60)}</span>
                     <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                   </div>
                   {isAnnual && (
                     <div className="text-sm text-gray-400 mt-1">
-                      ${(calculatePrice(79) * 12).toFixed(0)} per year
+                      ${(calculatePrice(60) * 12).toFixed(0)} per year
                     </div>
                   )}
                 </div>
@@ -370,12 +370,12 @@ export function PricingClient() {
                 </div>
                 <div className="mt-4">
                   <div className="flex items-baseline">
-                    <span className="text-3xl font-bold">${calculatePrice(79)}</span>
+                    <span className="text-3xl font-bold">${calculatePrice(60)}</span>
                     <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
                   </div>
                   {isAnnual && (
                     <div className="text-sm text-gray-400 mt-1">
-                      ${(calculatePrice(79) * 12).toFixed(0)} per year
+                      ${(calculatePrice(60) * 12).toFixed(0)} per year
                     </div>
                   )}
                 </div>

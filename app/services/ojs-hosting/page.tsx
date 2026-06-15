@@ -33,7 +33,7 @@ export default function OJSHostingPage() {
     {
       name: "Professional",
       description: "For established academic journals",
-      monthlyPrice: 79,
+      monthlyPrice: 60,
       popular: true,
       monthlyUrl: "https://shop.paideiahosting.net/shop/ojs-pro-m-ojs-hosting-professional-monthly-147",
       annualUrl: "https://shop.paideiahosting.net/shop/ojs-pro-m-ojs-hosting-professional-monthly-147?plan_id=2",
