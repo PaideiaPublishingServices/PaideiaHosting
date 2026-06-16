@@ -4,7 +4,7 @@ import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { ChatBot } from "@/components/chat-bot"
+// import { ChatBot } from "@/components/chat-bot" // Flowise chat widget disabled
 import { Toaster } from "@/components/ui/toaster"
 import Script from "next/script" // Importa el componente Script
 
@@ -57,7 +57,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
-            <ChatBot />
+            {/* <ChatBot /> */}  {/* Flowise chat widget disabled */}
           </div>
           <Toaster />
         </ThemeProvider>
