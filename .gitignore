@@ -1,4 +1,5 @@
 node_modules
 .next
+out
 v0-user-next.config.mjs
 *.tsbuildinfo
