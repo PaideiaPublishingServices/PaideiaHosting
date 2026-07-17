@@ -120,9 +120,13 @@ export function Footer() {
                     <span className="text-sm text-gray-500 dark:text-gray-400">2810 North Church Street, Wilmington, DE 19802, US</span>
                   </div>
                 </li>
-                <li className="flex items-center space-x-2">
-                  <Phone className="h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400" />
-                  <span className="text-sm text-gray-500 dark:text-gray-400">+39 (351) 757-6248</span>
+                <li className="flex items-start space-x-2">
+                  <Phone className="h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400 mt-0.5" />
+                  <div>
+                    <span className="block text-sm font-semibold text-gray-700 dark:text-gray-300">+1 (302) 415-3857</span>
+                    <span className="block text-xs text-gray-500 dark:text-gray-400">Immediate AI assistance, 24/7</span>
+                    <span className="block text-xs text-gray-500 dark:text-gray-400 mt-1">Business hours: +39 (351) 757-6248</span>
+                  </div>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Mail className="h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400" />
@@ -136,10 +140,10 @@ export function Footer() {
             &copy; 2026 Paideia Hosting. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="/terms" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
+            <Link href="https://paideiahosting.net/legal" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
               Terms of Service
             </Link>
-            <Link href="/privacy" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
+            <Link href="https://paideiahosting.net/legal" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
               Privacy Policy
             </Link>
           </div>

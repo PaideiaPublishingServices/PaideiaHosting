@@ -59,10 +59,13 @@ export default function ContactPage() {
                   <Phone className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-bold">WhatsApp</h3>
-                    <p className="text-gray-500 dark:text-gray-400">Monday to Friday, 10am to 5pm UTC−03:00</p>
-                    <a href="tel:+393517576248" className="text-primary hover:underline">
-                      +39 (351) 757-6248
+                    <p className="text-gray-500 dark:text-gray-400">Immediate AI assistance, available 24/7</p>
+                    <a href="tel:+13024153857" className="text-lg font-semibold text-primary hover:underline">
+                      +1 (302) 415-3857
                     </a>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                      Business hours (Mon–Fri, 10am–5pm UTC−03:00): +39 (351) 757-6248
+                    </p>
                   </div>
                 </div>
 
@@ -142,11 +145,15 @@ export default function ContactPage() {
                     contact@paideiahosting.net
                   </a>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4 text-primary" />
-                  <a href="tel:+393517576248" className="text-primary hover:underline">
-                    +39 (351) 757-6248
-                  </a>
+                <div className="flex items-start space-x-2">
+                  <Phone className="h-4 w-4 text-primary mt-0.5" />
+                  <div>
+                    <a href="tel:+13024153857" className="block font-semibold text-primary hover:underline">
+                      +1 (302) 415-3857
+                    </a>
+                    <span className="block text-xs text-gray-500 dark:text-gray-400">Immediate AI assistance, 24/7</span>
+                    <span className="block text-xs text-gray-500 dark:text-gray-400 mt-1">Business hours: +39 (351) 757-6248</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -163,11 +170,15 @@ export default function ContactPage() {
                     support@paideiahosting.net
                   </a>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4 text-primary" />
-                  <a href="tel:+13024153857" className="text-primary hover:underline">
-                    +1 (302) 415-3857
-                  </a>
+                <div className="flex items-start space-x-2">
+                  <Phone className="h-4 w-4 text-primary mt-0.5" />
+                  <div>
+                    <a href="tel:+13024153857" className="block font-semibold text-primary hover:underline">
+                      +1 (302) 415-3857
+                    </a>
+                    <span className="block text-xs text-gray-500 dark:text-gray-400">Immediate AI assistance, 24/7</span>
+                    <span className="block text-xs text-gray-500 dark:text-gray-400 mt-1">Business hours: +39 (351) 757-6248</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -184,11 +195,15 @@ export default function ContactPage() {
                     contact@paideiahosting.net
                   </a>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4 text-primary" />
-                  <a href="tel:+393517576248" className="text-primary hover:underline">
-                    +39 (351) 757-6248
-                  </a>
+                <div className="flex items-start space-x-2">
+                  <Phone className="h-4 w-4 text-primary mt-0.5" />
+                  <div>
+                    <a href="tel:+13024153857" className="block font-semibold text-primary hover:underline">
+                      +1 (302) 415-3857
+                    </a>
+                    <span className="block text-xs text-gray-500 dark:text-gray-400">Immediate AI assistance, 24/7</span>
+                    <span className="block text-xs text-gray-500 dark:text-gray-400 mt-1">Business hours: +39 (351) 757-6248</span>
+                  </div>
                 </div>
               </div>
             </div>
