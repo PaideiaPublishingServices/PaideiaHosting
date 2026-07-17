@@ -60,7 +60,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold">WhatsApp</h3>
                     <p className="text-gray-500 dark:text-gray-400">Immediate AI assistance, available 24/7</p>
-                    <a href="tel:+13024153857" className="text-lg font-semibold text-primary hover:underline">
+                    <a href="https://wa.me/13024153857" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-primary hover:underline">
                       +1 (302) 415-3857
                     </a>
                     <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
@@ -148,7 +148,7 @@ export default function ContactPage() {
                 <div className="flex items-start space-x-2">
                   <Phone className="h-4 w-4 text-primary mt-0.5" />
                   <div>
-                    <a href="tel:+13024153857" className="block font-semibold text-primary hover:underline">
+                    <a href="https://wa.me/13024153857" target="_blank" rel="noopener noreferrer" className="block font-semibold text-primary hover:underline">
                       +1 (302) 415-3857
                     </a>
                     <span className="block text-xs text-gray-500 dark:text-gray-400">Immediate AI assistance, 24/7</span>
@@ -173,7 +173,7 @@ export default function ContactPage() {
                 <div className="flex items-start space-x-2">
                   <Phone className="h-4 w-4 text-primary mt-0.5" />
                   <div>
-                    <a href="tel:+13024153857" className="block font-semibold text-primary hover:underline">
+                    <a href="https://wa.me/13024153857" target="_blank" rel="noopener noreferrer" className="block font-semibold text-primary hover:underline">
                       +1 (302) 415-3857
                     </a>
                     <span className="block text-xs text-gray-500 dark:text-gray-400">Immediate AI assistance, 24/7</span>
@@ -198,7 +198,7 @@ export default function ContactPage() {
                 <div className="flex items-start space-x-2">
                   <Phone className="h-4 w-4 text-primary mt-0.5" />
                   <div>
-                    <a href="tel:+13024153857" className="block font-semibold text-primary hover:underline">
+                    <a href="https://wa.me/13024153857" target="_blank" rel="noopener noreferrer" className="block font-semibold text-primary hover:underline">
                       +1 (302) 415-3857
                     </a>
                     <span className="block text-xs text-gray-500 dark:text-gray-400">Immediate AI assistance, 24/7</span>

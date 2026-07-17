@@ -123,7 +123,14 @@ export function Footer() {
                 <li className="flex items-start space-x-2">
                   <Phone className="h-5 w-5 flex-shrink-0 text-gray-500 dark:text-gray-400 mt-0.5" />
                   <div>
-                    <span className="block text-sm font-semibold text-gray-700 dark:text-gray-300">+1 (302) 415-3857</span>
+                    <a
+                      href="https://wa.me/13024153857"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-sm font-semibold text-gray-700 hover:text-primary dark:text-gray-300"
+                    >
+                      +1 (302) 415-3857
+                    </a>
                     <span className="block text-xs text-gray-500 dark:text-gray-400">Immediate AI assistance, 24/7</span>
                     <span className="block text-xs text-gray-500 dark:text-gray-400 mt-1">Business hours: +39 (351) 757-6248</span>
                   </div>
