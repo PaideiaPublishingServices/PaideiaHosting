@@ -64,7 +64,7 @@ export default function ContactPage() {
                       +1 (302) 415-3857
                     </a>
                     <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
-                      Business hours (Mon–Fri, 10am–5pm UTC−03:00): +39 (351) 757-6248
+                      Business hours (Mon–Fri, 09am–3pm UTC−03:00): +39 (351) 757-6248
                     </p>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold">Business Hours</h3>
                     <p className="text-gray-500 dark:text-gray-400">
-                      Monday - Friday: 10:00 AM - 5:00 PM UTC−03:00
+                      Monday - Friday: 09:00 AM - 3:00 PM UTC−03:00
                       <br />
                       Saturday - Sunday: Closed
                     </p>
