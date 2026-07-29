@@ -225,8 +225,50 @@ export default function AffiliatesPage() {
         </div>
       </section>
 
-      {/* Earnings Example Section */}
+      {/* Why Partner With Us Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <div className="container px-4 md:px-6">
+          <div className="grid gap-10 lg:grid-cols-[1fr_500px] lg:gap-16 items-center">
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter">Why Recommend Paideia Hosting</h2>
+                <p className="text-gray-500 md:text-xl dark:text-gray-400">
+                  A recommendation only pays off if the service holds up. Ours is built for the institutions you already
+                  work with.
+                </p>
+              </div>
+
+              <div className="grid gap-6 sm:grid-cols-2">
+                {advantages.map((advantage) => (
+                  <div key={advantage.title} className="flex flex-col items-start space-y-2">
+                    <advantage.icon className="h-8 w-8 text-primary" />
+                    <h3 className="text-lg font-bold">{advantage.title}</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">{advantage.body}</p>
+                  </div>
+                ))}
+              </div>
+
+              <a href={STUDIO_MAILTO} className="text-primary hover:underline inline-flex items-center font-medium">
+                Join the affiliate program
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </a>
+            </div>
+
+            <div className="flex items-center justify-center">
+              <Image
+                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1000&h=800&fit=crop"
+                width={500}
+                height={400}
+                alt="A researcher working on a laptop"
+                className="rounded-lg object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Earnings Example Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
             <div className="space-y-2">
@@ -332,48 +374,6 @@ export default function AffiliatesPage() {
               , which is always the reference. Monthly plans pay commission on one month's list price. Custom solutions
               are quoted individually and the same 5% applies.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Partner With Us Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-10 lg:grid-cols-[1fr_500px] lg:gap-16 items-center">
-            <div className="space-y-6">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter">Why Recommend Paideia Hosting</h2>
-                <p className="text-gray-500 md:text-xl dark:text-gray-400">
-                  A recommendation only pays off if the service holds up. Ours is built for the institutions you already
-                  work with.
-                </p>
-              </div>
-
-              <div className="grid gap-6 sm:grid-cols-2">
-                {advantages.map((advantage) => (
-                  <div key={advantage.title} className="flex flex-col items-start space-y-2">
-                    <advantage.icon className="h-8 w-8 text-primary" />
-                    <h3 className="text-lg font-bold">{advantage.title}</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">{advantage.body}</p>
-                  </div>
-                ))}
-              </div>
-
-              <a href={STUDIO_MAILTO} className="text-primary hover:underline inline-flex items-center font-medium">
-                Join the affiliate program
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </a>
-            </div>
-
-            <div className="flex items-center justify-center">
-              <Image
-                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1000&h=800&fit=crop"
-                width={500}
-                height={400}
-                alt="A researcher working on a laptop"
-                className="rounded-lg object-cover"
-              />
-            </div>
           </div>
         </div>
       </section>
