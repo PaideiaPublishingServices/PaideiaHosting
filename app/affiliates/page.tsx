@@ -21,7 +21,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export const metadata = {
   title: "Affiliate Program - Paideia Hosting",
   description:
-    "Recommend Paideia Hosting to your academic network. Your referrals get 5% off their first payment and you earn a 5% commission on it.",
+    "Recommend Paideia Hosting to your academic network. Your referrals get 5% off their first payment and you earn a 5% commission on the plan's list price.",
 }
 
 const MAILTO_SUBJECT = "Affiliate%20Program%20-%20Application"
@@ -42,7 +42,7 @@ const steps = [
   {
     icon: Percent,
     title: "Share it and earn",
-    body: "Everyone who buys with your code gets 5% off their first payment, and you receive a 5% commission on that same first payment.",
+    body: "Everyone who buys with your code gets 5% off their first payment, and you receive a 5% commission calculated on the plan's list price — the discount they get does not come out of what you earn.",
   },
 ]
 
@@ -50,12 +50,12 @@ const conditions = [
   {
     icon: Wallet,
     title: "Commission",
-    body: "5% of the referred customer's first payment, whether they choose a monthly or an annual plan. It is a one-time commission — it does not repeat on renewals.",
+    body: "5% of the list price of the plan the referred customer signs up for, monthly or annual. It is calculated on the published price, not on the discounted amount charged, and it is a one-time commission — it does not repeat on renewals.",
   },
   {
     icon: Percent,
     title: "Discount for your referral",
-    body: "5% off their first payment, applied automatically when they enter your code at checkout.",
+    body: "5% off their first payment, applied automatically when they enter your code at checkout. It is deducted from their invoice, never from your commission.",
   },
   {
     icon: UserPlus,
@@ -106,7 +106,7 @@ const faqs = [
   {
     question: "What is the Paideia Hosting affiliate program?",
     answer:
-      "It is a way for people who already know our work — editors, librarians, journal managers, researchers, consultants — to recommend our hosting and receive a commission for it. You get a personal discount code: whoever uses it saves 5% on their first payment, and you earn 5% of that payment. It is deliberately simple: no tiers, no points, no complicated rules.",
+      "It is a way for people who already know our work — editors, librarians, journal managers, researchers, consultants — to recommend our hosting and receive a commission for it. You get a personal discount code: whoever uses it saves 5% on their first payment, and you earn 5% of the plan's list price. Both percentages are calculated on the same published price, so the discount your referral receives never reduces your commission. It is deliberately simple: no tiers, no points, no complicated rules.",
   },
   {
     question: "How do I sign up?",
@@ -116,7 +116,7 @@ const faqs = [
   {
     question: "How much do I earn per sale?",
     answer:
-      "5% of the referred customer's first payment, for monthly and annual plans alike. Since annual plans are paid up front, they produce a larger commission than monthly ones. It is a single payment per referred customer: we do not pay commission on subsequent renewals.",
+      "5% of the list price of the plan your referral signs up for, for monthly and annual plans alike. The commission is calculated on the published price rather than on the discounted amount they actually pay, so applying your code costs you nothing. Since annual plans are paid up front, they produce a larger commission than monthly ones. It is a single payment per referred customer: we do not pay commission on subsequent renewals.",
   },
   {
     question: "Do I need a website?",
@@ -147,8 +147,8 @@ export default function AffiliatesPage() {
               </h1>
               <p className="mx-auto max-w-[750px] text-gray-500 md:text-xl dark:text-gray-400">
                 If you already recommend Paideia Hosting to journals, publishers, libraries, or research groups, this
-                program lets that recommendation work for both sides: your referral saves 5% on their first payment and
-                you receive a 5% commission on it.
+                program lets that recommendation work for both sides: your referral saves 5% on their first payment, and
+                you earn a 5% commission on the plan's full list price.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
