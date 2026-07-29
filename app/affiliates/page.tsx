@@ -1,5 +1,21 @@
 import Link from "next/link"
-import { Mail, MessageSquare, Tag, Percent, Users, Globe, CheckCircle2, Wallet, Info, ArrowRight } from "lucide-react"
+import Image from "next/image"
+import {
+  Mail,
+  Tag,
+  Percent,
+  Users,
+  Globe,
+  CheckCircle2,
+  Wallet,
+  UserPlus,
+  Banknote,
+  Server,
+  ShieldCheck,
+  GraduationCap,
+  LifeBuoy,
+  ArrowRight,
+} from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export const metadata = {
@@ -42,9 +58,9 @@ const conditions = [
     body: "5% off their first payment, applied automatically when they enter your code at checkout.",
   },
   {
-    icon: Info,
-    title: "Managed by email, for now",
-    body: "We do not have an automated affiliate portal yet. Sign-up and tracking are handled directly with our team by email, and we will tell you when a purchase is made with your code.",
+    icon: UserPlus,
+    title: "Sign-up through our team",
+    body: "You write to us, we register you as an affiliate in our system and issue your code. From then on, every purchase made with it is recorded against your account.",
   },
   {
     icon: Globe,
@@ -56,18 +72,46 @@ const conditions = [
     title: "No minimum sales",
     body: "There is no sales threshold to join and no quota to keep. One referral is a valid referral.",
   },
+  {
+    icon: Banknote,
+    title: "Paid in US dollars",
+    body: "Commissions are settled in USD, so you need to be able to receive international payments through PayPal, Stripe, or an international bank transfer.",
+  },
+]
+
+const advantages = [
+  {
+    icon: GraduationCap,
+    title: "A name your network already trusts",
+    body: "You are not recommending generic hosting. Paideia Hosting works exclusively with academic institutions, and that focus is what makes the recommendation land with an editorial committee or a library director.",
+  },
+  {
+    icon: Server,
+    title: "Infrastructure built for the platforms they use",
+    body: "OJS, OMP, DSpace, AtoM, Dataverse and institutional VPS, tuned by people who run these systems every day. Your referral gets an environment that fits their workflow instead of one they have to fight.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Your reputation stays intact",
+    body: "The people you refer are colleagues, not leads. We treat them as such: clear pricing, migrations handled by our team, and no surprises after the first invoice.",
+  },
+  {
+    icon: LifeBuoy,
+    title: "Support that speaks your field",
+    body: "Editors and journal managers talk to specialists in scholarly publishing, in Spanish and English, without having to explain what a DOI or a peer-review workflow is.",
+  },
 ]
 
 const faqs = [
   {
     question: "What is the Paideia Hosting affiliate program?",
     answer:
-      "It is a way for people who already know our work — editors, librarians, journal managers, researchers, consultants — to recommend our hosting and receive a commission for it. You get a personal discount code: whoever uses it saves 5% on their first payment, and you earn 5% of that payment. The program is new and deliberately simple; there are no tiers, no points, and no complicated rules.",
+      "It is a way for people who already know our work — editors, librarians, journal managers, researchers, consultants — to recommend our hosting and receive a commission for it. You get a personal discount code: whoever uses it saves 5% on their first payment, and you earn 5% of that payment. It is deliberately simple: no tiers, no points, no complicated rules.",
   },
   {
     question: "How do I sign up?",
     answer:
-      "By email. Write to contact@paideiastudio.net or contact@paideiahosting.net telling us who you are and how you plan to recommend Paideia Hosting. There is no form to fill in and no automated portal — a real person on our team reads your message, answers your questions, and sets up your code.",
+      "By email. Write to contact@paideiastudio.net or contact@paideiahosting.net telling us who you are and how you plan to recommend Paideia Hosting. Our team reviews your message, registers you as an affiliate in our system, and sends you your personal discount code along with anything you need to present our services accurately.",
   },
   {
     question: "How much do I earn per sale?",
@@ -82,7 +126,7 @@ const faqs = [
   {
     question: "When and how do I get paid?",
     answer:
-      "Once the referred customer's first payment has been made and confirmed, we contact you by email to agree on the payment method and settle the commission. Because the process is manual, we handle each case individually rather than on a fixed payout calendar — and we will always tell you when a purchase has been registered with your code.",
+      "Once the referred customer's first payment is confirmed, we contact you to settle the commission. Payments are made in US dollars through PayPal, Stripe, or international bank transfer, so being able to receive international payments by one of those methods is a condition for joining the program. Any transfer fees charged by the chosen method are deducted from the amount received.",
   },
 ]
 
@@ -123,8 +167,7 @@ export default function AffiliatesPage() {
               </a>
             </div>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Write to either address to request your affiliate sign-up. There is no automated portal yet — we answer
-              personally.
+              Write to either address to request your affiliate sign-up. No website and no minimum sales required.
             </p>
           </div>
         </div>
@@ -172,8 +215,50 @@ export default function AffiliatesPage() {
         </div>
       </section>
 
-      {/* Program Terms Section */}
+      {/* Why Partner With Us Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <div className="container px-4 md:px-6">
+          <div className="grid gap-10 lg:grid-cols-[1fr_500px] lg:gap-16 items-center">
+            <div className="space-y-6">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter">Why Recommend Paideia Hosting</h2>
+                <p className="text-gray-500 md:text-xl dark:text-gray-400">
+                  A recommendation only pays off if the service holds up. Ours is built for the institutions you already
+                  work with.
+                </p>
+              </div>
+
+              <div className="grid gap-6 sm:grid-cols-2">
+                {advantages.map((advantage) => (
+                  <div key={advantage.title} className="flex flex-col items-start space-y-2">
+                    <advantage.icon className="h-8 w-8 text-primary" />
+                    <h3 className="text-lg font-bold">{advantage.title}</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">{advantage.body}</p>
+                  </div>
+                ))}
+              </div>
+
+              <a href={STUDIO_MAILTO} className="text-primary hover:underline inline-flex items-center font-medium">
+                Join the affiliate program
+                <ArrowRight className="ml-1 h-4 w-4" />
+              </a>
+            </div>
+
+            <div className="flex items-center justify-center">
+              <Image
+                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1000&h=800&fit=crop"
+                width={500}
+                height={400}
+                alt="A researcher working on a laptop"
+                className="rounded-lg object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Program Terms Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
             <div className="space-y-2">
@@ -197,24 +282,11 @@ export default function AffiliatesPage() {
             ))}
           </div>
 
-          <div className="mt-10 rounded-lg border bg-background p-6 shadow-sm">
-            <div className="flex items-start gap-4">
-              <MessageSquare className="h-6 w-6 flex-shrink-0 text-primary mt-0.5" />
-              <div className="space-y-1">
-                <h3 className="text-lg font-bold">A new program, run by people</h3>
-                <p className="text-gray-500 dark:text-gray-400">
-                  We would rather say this up front: the affiliate program is new, and for the moment everything is
-                  managed manually by our team. That means no dashboard and no instant statistics — but it also means a
-                  direct line to the people who set up and maintain the hosting you are recommending.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
             <div className="space-y-2">
