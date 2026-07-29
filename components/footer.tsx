@@ -92,6 +92,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/affiliates" className="text-sm text-gray-500 hover:text-primary dark:text-gray-400">
+                  Affiliate Program
+                </Link>
+              </li>
+              <li>
                 <Link href="#" className="text-sm text-gray-500 hover:text-primary dark:text-gray-400">
                   Careers
                 </Link>
