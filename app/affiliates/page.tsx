@@ -10,6 +10,7 @@ import {
   Wallet,
   UserPlus,
   Banknote,
+  Calculator,
   Server,
   ShieldCheck,
   GraduationCap,
@@ -79,6 +80,15 @@ const conditions = [
   },
 ]
 
+const earningsTable = [
+  { plan: "OJS or OMP Hosting — Professional", annual: "$648", commission: "$32.40" },
+  { plan: "OJS or OMP Hosting — Enterprise", annual: "$1,068", commission: "$53.40" },
+  { plan: "Repository or AtoM Hosting — Professional", annual: "$1,836", commission: "$91.80" },
+  { plan: "VPS for Institutions — Professional (EC2)", annual: "$2,052", commission: "$102.60" },
+  { plan: "Repository or AtoM Hosting — Enterprise", annual: "$3,024", commission: "$151.20" },
+  { plan: "VPS for Institutions — Enterprise (EC2)", annual: "$3,228", commission: "$161.40" },
+]
+
 const advantages = [
   {
     icon: GraduationCap,
@@ -106,7 +116,7 @@ const faqs = [
   {
     question: "What is the Paideia Hosting affiliate program?",
     answer:
-      "It is a way for people who already know our work — editors, librarians, journal managers, researchers, consultants — to recommend our hosting and receive a commission for it. You get a personal discount code: whoever uses it saves 5% on their first payment, and you earn 5% of the plan's list price. Both percentages are calculated on the same published price, so the discount your referral receives never reduces your commission. It is deliberately simple: no tiers, no points, no complicated rules.",
+      "It is a way for people who already know our work — editors, librarians, journal managers, researchers, consultants — to recommend our hosting and receive a commission for it. You get a personal discount code: whoever uses it saves 5% on their first payment, and you earn 5% of the plan's list price. Both percentages are calculated on the same published price, so the discount your referral receives never reduces your commission. It covers every hosting service listed on our pricing page, and it is deliberately simple: no tiers, no points, no complicated rules.",
   },
   {
     question: "How do I sign up?",
@@ -215,8 +225,119 @@ export default function AffiliatesPage() {
         </div>
       </section>
 
-      {/* Why Partner With Us Section */}
+      {/* Earnings Example Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter">What a Referral Is Worth</h2>
+              <p className="max-w-[750px] text-gray-500 md:text-xl dark:text-gray-400">
+                Every hosting service listed on our{" "}
+                <Link href="/pricing" className="text-primary hover:underline">
+                  pricing page
+                </Link>{" "}
+                is part of the program: OJS, OMP, repository hosting for Dataverse and DSpace, AtoM, VPS for
+                institutions and custom solutions.
+              </p>
+            </div>
+          </div>
+
+          <div className="mx-auto max-w-[900px] space-y-8">
+            {/* Featured worked example */}
+            <div className="rounded-lg border-2 border-primary bg-background p-6 shadow-md md:p-8">
+              <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
+                <div className="space-y-4">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600 dark:bg-gray-800 dark:text-gray-300">
+                    <Calculator className="h-3.5 w-3.5" />
+                    Worked example
+                  </div>
+                  <div className="space-y-1">
+                    <h3 className="text-2xl font-bold">VPS for Institutions — Professional, billed annually</h3>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      A university that wants to run DSpace on a dedicated server signs up with your code.
+                    </p>
+                  </div>
+                  <dl className="space-y-2 border-t pt-4">
+                    <div className="flex items-baseline justify-between gap-4">
+                      <dt className="text-gray-500 dark:text-gray-400">List price (annual)</dt>
+                      <dd className="font-medium tabular-nums">$1,836</dd>
+                    </div>
+                    <div className="flex items-baseline justify-between gap-4">
+                      <dt className="text-gray-500 dark:text-gray-400">Their discount (5%)</dt>
+                      <dd className="font-medium tabular-nums">−$91.80 off the first invoice</dd>
+                    </div>
+                    <div className="flex items-baseline justify-between gap-4">
+                      <dt className="font-medium">Your commission (5% of the list price)</dt>
+                      <dd className="font-bold tabular-nums">$91.80</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <div className="flex flex-col items-center justify-center rounded-lg bg-gray-50 p-6 text-center md:w-56">
+                  <span className="text-4xl font-bold tracking-tighter md:text-5xl">$91.80</span>
+                  <span className="mt-1 text-sm text-gray-500 dark:text-gray-400">for one referral</span>
+                </div>
+              </div>
+
+              <div className="mt-8 grid grid-cols-3 gap-4 border-t pt-6 text-center">
+                <div>
+                  <p className="text-2xl font-bold tabular-nums">$91.80</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">1 institution</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-bold tabular-nums">$183.60</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">2 institutions</p>
+                </div>
+                <div>
+                  <p className="text-2xl font-bold tabular-nums">$275.40</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">3 institutions</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Commission by plan */}
+            <div className="rounded-lg border bg-background shadow-sm">
+              <div className="border-b px-6 py-4">
+                <h3 className="text-lg font-bold">Commission by plan, on annual billing</h3>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b text-left text-gray-500 dark:text-gray-400">
+                      <th className="px-6 py-3 font-medium">Plan</th>
+                      <th className="px-6 py-3 font-medium text-right">Annual list price</th>
+                      <th className="px-6 py-3 font-medium text-right">You earn</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {earningsTable.map((row) => (
+                      <tr key={row.plan} className="border-b last:border-0">
+                        <td className="px-6 py-3">{row.plan}</td>
+                        <td className="px-6 py-3 text-right tabular-nums text-gray-500 dark:text-gray-400">
+                          {row.annual}
+                        </td>
+                        <td className="px-6 py-3 text-right font-bold tabular-nums">{row.commission}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+              Figures based on the annual list prices published on our{" "}
+              <Link href="/pricing" className="text-primary hover:underline">
+                pricing page
+              </Link>
+              , which is always the reference. Monthly plans pay commission on one month's list price. Custom solutions
+              are quoted individually and the same 5% applies.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Partner With Us Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="grid gap-10 lg:grid-cols-[1fr_500px] lg:gap-16 items-center">
             <div className="space-y-6">
@@ -258,7 +379,7 @@ export default function AffiliatesPage() {
       </section>
 
       {/* Program Terms Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
             <div className="space-y-2">
@@ -286,7 +407,7 @@ export default function AffiliatesPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+      <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
             <div className="space-y-2">
