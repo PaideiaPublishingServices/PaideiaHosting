@@ -3,10 +3,16 @@
 import { useState } from "react"
 import Link from "next/link"
 import { Check } from "lucide-react"
+import { PricingToggle } from "@/components/pricing-toggle"
 
 export function VPSPricing() {
   const [vpsService, setVpsService] = useState("lightsail")
-  
+  const [isAnnual, setIsAnnual] = useState(false)
+
+  const calculatePrice = (monthlyPrice: number) => {
+    return isAnnual ? Math.round(monthlyPrice * 0.9) : monthlyPrice
+  }
+
   const lightsailPlans = [
     {
       name: "Professional",
@@ -122,11 +128,11 @@ export function VPSPricing() {
             >
               Lightsail
             </button>
-            <button 
+            <button
               onClick={() => setVpsService("ec2")}
               className={`px-4 py-2 text-sm font-medium rounded-md ${
-                vpsService === "ec2" 
-                  ? "bg-primary text-primary-foreground" 
+                vpsService === "ec2"
+                  ? "bg-primary text-primary-foreground"
                   : "text-gray-600 hover:text-gray-900"
               }`}
             >
@@ -134,6 +140,8 @@ export function VPSPricing() {
             </button>
           </div>
         </div>
+
+        <PricingToggle onToggle={setIsAnnual} />
 
         <div className="mx-auto grid max-w-4xl items-start gap-6 py-12 md:grid-cols-2">
           {currentPlans.map((plan, index) => (
@@ -147,9 +155,16 @@ export function VPSPricing() {
                 <h3 className="text-2xl font-bold">{plan.name}</h3>
                 <p className="text-gray-500 dark:text-gray-400">{plan.description}</p>
               </div>
-              <div className="mt-4 flex items-baseline">
-                <span className="text-3xl font-bold">${plan.monthlyPrice}</span>
-                <span className="ml-1 text-gray-500 dark:text-gray-400">/month</span>
+              <div className="mt-4">
+                <div className="flex items-baseline">
+                  <span className="text-3xl font-bold">${calculatePrice(plan.monthlyPrice)}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                </div>
+                {isAnnual && (
+                  <div className="text-sm text-gray-400 mt-1">
+                    ${(calculatePrice(plan.monthlyPrice) * 12).toFixed(0)} per year
+                  </div>
+                )}
               </div>
               <ul className="mt-4 space-y-2 flex-1">
                 {plan.features.map((feature, featureIndex) => (
@@ -161,7 +176,7 @@ export function VPSPricing() {
               </ul>
               <div className="mt-6">
                 <Link
-                  href="/contact"
+                  href={isAnnual ? plan.annualUrl : plan.monthlyUrl}
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
                   {plan.buttonText || 'Get Started'}
