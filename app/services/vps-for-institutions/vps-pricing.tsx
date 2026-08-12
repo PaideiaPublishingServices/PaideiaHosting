@@ -66,12 +66,16 @@ export function VPSPricing() {
         "2 vCPUs",
         "8GB RAM",
         "160GB SSD Storage",
-        "5TB Transfer",
+        "500 GB Transfer",
         "Server Support Included",
         "Application Support (OJS, Moodle, DSpace, AtoM)",
         "7-Day Snapshots",
         "Dedicated IP",
-        "Architecture Support"
+        "Architecture Support",
+        "Built on AWS EC2 — HIPAA-eligible infrastructure",
+        "Private VPC with custom network security (Security Groups)",
+        "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
+        "Recommended for institutions with strict compliance or data-governance requirements"
       ]
     },
     {
@@ -84,12 +88,16 @@ export function VPSPricing() {
         "4 vCPUs",
         "16GB RAM",
         "320GB SSD Storage",
-        "6TB Transfer",
+        "500 GB Transfer",
         "Server Support Included",
         "Application Support (OJS, Moodle, DSpace, AtoM)",
         "7-Day Snapshots",
         "Dedicated IP",
-        "Architecture Support"
+        "Architecture Support",
+        "Built on AWS EC2 — HIPAA-eligible infrastructure",
+        "Private VPC with custom network security (Security Groups)",
+        "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
+        "Recommended for institutions with strict compliance or data-governance requirements"
       ],
       buttonText: "Get Started"
     }
@@ -174,6 +182,9 @@ export function VPSPricing() {
                   </li>
                 ))}
               </ul>
+              {vpsService === "ec2" && (
+                <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">Additional usage billed at $0.18 USD/GB.</p>
+              )}
               <div className="mt-6">
                 <Link
                   href={isAnnual ? plan.annualUrl : plan.monthlyUrl}
