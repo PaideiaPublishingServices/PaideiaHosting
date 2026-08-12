@@ -66,7 +66,6 @@ export function VPSPricing() {
         "2 vCPUs",
         "8GB RAM",
         "160GB SSD Storage",
-        "500 GB Transfer",
         "Server Support Included",
         "Application Support (OJS, Moodle, DSpace, AtoM)",
         "7-Day Snapshots",
@@ -88,7 +87,6 @@ export function VPSPricing() {
         "4 vCPUs",
         "16GB RAM",
         "320GB SSD Storage",
-        "500 GB Transfer",
         "Server Support Included",
         "Application Support (OJS, Moodle, DSpace, AtoM)",
         "7-Day Snapshots",
@@ -182,9 +180,9 @@ export function VPSPricing() {
                   </li>
                 ))}
               </ul>
-              {vpsService === "ec2" && (
-                <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">Additional usage billed at $0.18 USD/GB.</p>
-              )}
+              <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
+                {vpsService === "ec2" ? "500 GB transfer included. " : ""}Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.
+              </p>
               <div className="mt-6">
                 <Link
                   href={isAnnual ? plan.annualUrl : plan.monthlyUrl}

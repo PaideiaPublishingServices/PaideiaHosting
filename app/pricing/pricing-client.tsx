@@ -953,6 +953,9 @@ export function PricingClient() {
                       <span>Architecture Support</span>
                     </li>
                   </ul>
+                  <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
+                    Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.
+                  </p>
                   <div className="mt-6">
                     <Link
                       href={isAnnual ? "https://shop.paideiahosting.net/shop/vps-ls-pro-m-vps-lightsail-professional-monthly-166?plan_id=2" : "https://shop.paideiahosting.net/shop/vps-ls-pro-m-vps-lightsail-professional-monthly-166"}
@@ -1018,6 +1021,9 @@ export function PricingClient() {
                       <span>Architecture Support</span>
                     </li>
                   </ul>
+                  <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
+                    Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.
+                  </p>
                   <div className="mt-6">
                     <Link
                       href={isAnnual ? "https://shop.paideiahosting.net/shop/vps-ls-ent-m-vps-lightsail-enterprise-monthly-167?plan_id=2" : "https://shop.paideiahosting.net/shop/vps-ls-ent-m-vps-lightsail-enterprise-monthly-167"}
@@ -1065,10 +1071,6 @@ export function PricingClient() {
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
-                      <span>500 GB Transfer</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
                       <span>Server Support Included</span>
                     </li>
                     <li className="flex items-center gap-2">
@@ -1104,7 +1106,9 @@ export function PricingClient() {
                       <span>Recommended for institutions with strict compliance or data-governance requirements</span>
                     </li>
                   </ul>
-                  <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">Additional usage billed at $0.18 USD/GB.</p>
+                  <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
+                    500 GB transfer included. Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.
+                  </p>
                   <div className="mt-6">
                     <Link
                       href={isAnnual ? "https://shop.paideiahosting.net/shop/vps-ec2-pro-m-vps-ec2-professional-t3large-monthly-170?plan_id=2" : "https://shop.paideiahosting.net/shop/vps-ec2-pro-m-vps-ec2-professional-t3large-monthly-170"}
@@ -1147,10 +1151,6 @@ export function PricingClient() {
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
-                      <span>500 GB Transfer</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
                       <span>Server Support Included</span>
                     </li>
                     <li className="flex items-center gap-2">
@@ -1186,7 +1186,9 @@ export function PricingClient() {
                       <span>Recommended for institutions with strict compliance or data-governance requirements</span>
                     </li>
                   </ul>
-                  <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">Additional usage billed at $0.18 USD/GB.</p>
+                  <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
+                    500 GB transfer included. Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.
+                  </p>
                   <div className="mt-6">
                     <Link
                       href={isAnnual ? "https://shop.paideiahosting.net/shop/vps-ec2-ent-m-vps-ec2-enterprise-t3xlarge-monthly-171?plan_id=2" : "https://shop.paideiahosting.net/shop/vps-ec2-ent-m-vps-ec2-enterprise-t3xlarge-monthly-171"}
