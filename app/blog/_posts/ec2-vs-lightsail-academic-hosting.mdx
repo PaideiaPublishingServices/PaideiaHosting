@@ -1,0 +1,46 @@
+---
+title: "EC2 vs. Lightsail: choosing the right AWS foundation for academic hosting"
+date: "2026-08-12"
+description: "A practical guide for journal editors, librarians, and IT staff on the difference between AWS Lightsail and EC2, and which one fits your institution's needs."
+keywords: ["vps hosting for institutions", "aws lightsail vs ec2", "hipaa eligible hosting", "academic hosting aws", "institutional vps"]
+slug: "ec2-vs-lightsail-academic-hosting"
+---
+
+If you've compared [VPS plans](/services/vps-for-institutions) for your journal, repository, or institutional platform, you've probably noticed we offer two underlying AWS technologies: **Lightsail** and **EC2**. Both run on the same reliable AWS infrastructure, but they're built for different needs — and choosing the right one can save your institution money or, in some cases, be a compliance requirement rather than a preference.
+
+Here's what actually distinguishes them, without the marketing spin.
+
+## Lightsail: simplicity, bundled pricing, and predictable costs
+
+Amazon Lightsail is AWS's simplified virtual server product. It bundles compute, storage, and a monthly data transfer allowance into one flat, predictable price. There's no need to configure networking, choose an instance family, or manage separate billing lines for storage and bandwidth — everything you need is included in a single number.
+
+For the vast majority of academic publishing platforms — a single OJS installation, an institutional repository, a small departmental site — this is the right fit. It's cost-effective, easy to reason about, and more than capable of handling the traffic patterns typical of a scholarly journal: steady visits, periodic download spikes around new issues, and moderate storage growth over time.
+
+## EC2: granular control, deeper AWS integration, and compliance eligibility
+
+Amazon EC2 is AWS's foundational compute service — the same technology used to run some of the largest applications on the internet. Instead of a single bundled price, EC2 separates compute, storage, and data transfer into distinct components, giving you (and us, as your infrastructure partner) far more control over how each is configured.
+
+That flexibility matters for a specific set of institutions:
+
+**Compliance and data governance.** Not every AWS service is eligible for every regulatory framework. Lightsail, for instance, is not on AWS's HIPAA-eligible services list, while EC2 is. If your institution handles data that falls under strict governance requirements — a medical school's affiliated journal, a research center working with sensitive datasets — EC2 is the technically appropriate foundation, not just a preference.
+
+**Network isolation and security.** EC2 runs inside a Virtual Private Cloud (VPC) with granular Security Groups, private subnets, and network access control lists. This lets us configure precisely which traffic can reach your server and from where — a level of control Lightsail's simpler firewall doesn't offer.
+
+**Room to grow.** If your platform's needs might expand — multiple journals under one infrastructure, integration with other institutional systems, or a future need for load balancing and auto-scaling across multiple servers — EC2 provides a direct path there. Lightsail is excellent for a single, self-contained server, but scaling beyond that typically means migrating to EC2 eventually anyway.
+
+## What this means for your plan
+
+Both our Professional and Enterprise VPS plans are available on either foundation. Unlike a simple "pick your engine" choice, the two options are priced according to what each one actually delivers: Lightsail plans start at $170/month (Professional) and $280/month (Enterprise), while EC2 plans — with their compliance eligibility, private VPC networking, and room to scale into load balancing and auto-scaling — start at $190/month and $299/month respectively. The CPU, RAM, and storage specifications are identical between the two; the difference in price reflects the architecture and capabilities behind each one, not a difference in raw performance.
+
+One practical difference worth knowing: because EC2 bills compute, storage, and data transfer separately (rather than as one bundle), our EC2 plans include 500 GB of monthly data transfer, with any additional usage billed transparently at a flat per-GB rate. For most institutional platforms — even ones serving thousands of PDF downloads a month — this comfortably covers real-world usage. If your platform serves unusually high volumes of large files (video, large datasets, high-resolution scans), our Lightsail plans include a larger bundled transfer allowance and may be the more economical choice. On both foundations, storage and CPU upgrades are available on demand as your platform grows.
+
+## Our recommendation
+
+If you're unsure which one your institution needs, here's the short version:
+
+- **Choose Lightsail** if you're running a standard journal, repository, or departmental platform with typical traffic and no specific compliance mandate. It's simpler, and for most of our clients, it's the better economic fit.
+- **Choose EC2** if your institution has documented compliance requirements (HIPAA-adjacent data, strict data governance policies), needs isolated network architecture, or anticipates scaling beyond a single server in the near future.
+
+Either way, both options are built on the same AWS foundation we've relied on since 2022 for OJS, DSpace, OMP, and AtoM hosting across Latin America and Spain — and both come with the same server support, application-level assistance, and backup practices you'd expect from a dedicated academic hosting partner.
+
+You can compare the full specifications and current prices side by side on our [pricing page](/pricing). Not sure which fits your case? [Reach out to our team](/contact) and we'll walk through your institution's specific requirements together.
