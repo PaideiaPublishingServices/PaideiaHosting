@@ -12,12 +12,18 @@ import Script from "next/script" // Importa el componente Script
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
+  metadataBase: new URL("https://paideiahosting.net"),
+  // "./" resolves to each route's own pathname (no query string), so every page
+  // emits an absolute https canonical unless it overrides `alternates`.
+  alternates: {
+    canonical: "./",
+  },
   title: "Paideia Hosting - Cloud for Science, Solutions for Knowledge",
   description:
     "Specialized hosting for academic applications. Reliable, secure, and optimized for research and educational institutions.",
   generator: "Paideia Studio",
   icons: {
-    icon: 'https://www.paideiahosting.net/favicon.ico',
+    icon: '/favicon.ico',
     apple: '/apple-icon.png',
     shortcut: '/favicon-16x16.png'
   }

@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Check } from "lucide-react"
 import { PricingToggle } from "@/components/pricing-toggle"
+import { HighlightedFeatureItem } from "@/components/service-pricing"
 
 export function VPSPricing() {
   const [vpsService, setVpsService] = useState("lightsail")
@@ -173,6 +174,7 @@ export function VPSPricing() {
                 )}
               </div>
               <ul className="mt-4 space-y-2 flex-1">
+                <HighlightedFeatureItem text="Crossref membership + Similarity Check included*" />
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -194,6 +196,9 @@ export function VPSPricing() {
             </div>
           ))}
         </div>
+        <p className="mx-auto max-w-4xl text-sm text-gray-500 dark:text-gray-400">
+          *For customers in Latin America and Spain. Included in all plans. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.
+        </p>
       </div>
     </section>
   )

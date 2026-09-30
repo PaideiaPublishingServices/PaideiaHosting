@@ -144,25 +144,27 @@ export default function PricingPage() {
                       </td>
                     </tr>
                     <tr className="border-b">
-                      <td className="p-4 font-medium">Crossref Membership (Annual)</td>
+                      <td className="p-4 font-medium">Crossref Membership*</td>
                       <td className="p-4 text-center">-</td>
-                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center text-sm text-muted-foreground">On request</td>
                       <td className="p-4 text-center">
-                        <Check className="h-5 w-5 text-green-600 mx-auto" />
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                        <span className="block text-xs text-muted-foreground">Annual plan</span>
                       </td>
                     </tr>
                     <tr className="border-b">
-                      <td className="p-4 font-medium">Similarity Check (Annual)</td>
+                      <td className="p-4 font-medium">Similarity Check*</td>
                       <td className="p-4 text-center">-</td>
-                      <td className="p-4 text-center">-</td>
+                      <td className="p-4 text-center text-sm text-muted-foreground">On request</td>
                       <td className="p-4 text-center">
-                        <Check className="h-5 w-5 text-green-600 mx-auto" />
+                        <Check className="h-5 w-5 text-primary mx-auto" />
+                        <span className="block text-xs text-muted-foreground">Annual plan</span>
                       </td>
                     </tr>
                   </tbody>
                 </table>
                 <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-                  * Crossref membership and Similarity Check are included only for customers in Latin America and Spain, and do not cover DOI registration or content deposits. Customers in other regions receive Crossref metadata support and service-management assistance, but must hold their own Crossref membership and deposit content directly with Crossref.
+                  *For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.
                 </p>
               </div>
             </TabsContent>

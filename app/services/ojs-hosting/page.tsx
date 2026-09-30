@@ -1,12 +1,12 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Check, BookOpen } from "lucide-react"
+import { Check, BookOpen, ShieldCheck } from "lucide-react"
 import { ServicePricing } from "@/components/service-pricing"
 
 export const metadata = {
-  title: "OJS Hosting - Paideia Hosting",
+  title: "Managed OJS Hosting | Open Journal Systems on AWS | Paideia Hosting",
   description:
-    "Specialized hosting for Open Journal Systems (OJS). Perfect for academic publishing and journal management.",
+    "Managed hosting for Open Journal Systems (OJS 3.3–3.5 LTS) on AWS. Daily backups, WAF security, upgrades, and Crossref membership on Enterprise annual plans for Latin America and Spain.",
 }
 
 export default function OJSHostingPage() {
@@ -23,7 +23,7 @@ export default function OJSHostingPage() {
         "Daily Backups | 5 days",
         "1 mail box",
         "SSL included",
-        "Email Support",
+        "Email support",
         "Free Installation"
       ],
       conditionalFeatures: [
@@ -43,13 +43,14 @@ export default function OJSHostingPage() {
         "Daily Backups | 7 days",
         "5 mail box",
         "SSL included",
-        "Priority Email Support",
+        "Priority email support",
         "Free Installation",
         "1 Upgrade per year"
       ],
       conditionalFeatures: [
         { monthly: "Migration services fee extra", annual: "Migration services included" }
-      ]
+      ],
+      highlightedFeature: { text: "Crossref membership + Similarity Check available on request*", variant: "optional" as const }
     },
     {
       name: "Enterprise",
@@ -63,7 +64,7 @@ export default function OJSHostingPage() {
         "Daily Backups | 7 days",
         "Unlimited mailbox",
         "SSL included",
-        "Priority Email Support | Phone Support",
+        "Priority email and phone support",
         "Free Installation",
         "1 Upgrade per year"
       ],
@@ -71,10 +72,9 @@ export default function OJSHostingPage() {
         { monthly: "Migration services fee extra", annual: "Migration services included" }
       ],
       annualOnlyFeatures: [
-        "Crossref memberships (Annual only)",
-        "Similarity Check (Annual only)",
         "PrePrints server memberships (Annual only)"
       ],
+      highlightedFeature: { text: "Crossref membership + Similarity Check included (annual plan)*" },
       buttonText: "Get Started"
     }
   ]
@@ -92,6 +92,9 @@ export default function OJSHostingPage() {
                 </h1>
                 <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
                   Specialized hosting for Open Journal Systems. Perfect for academic publishing and journal management.
+                </p>
+                <p className="text-sm font-medium text-gray-600 dark:text-gray-400">
+                  Trusted by 188+ academic institutions across Latin America and Spain
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -137,7 +140,7 @@ export default function OJSHostingPage() {
             <div className="flex flex-col items-start space-y-2">
               <BookOpen className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">OJS Version Support</h3>
-              <p className="text-gray-500 dark:text-gray-400">Support for OJS 3.3 and 3.4 with seamless upgrades</p>
+              <p className="text-gray-500 dark:text-gray-400">Support for OJS 3.3, 3.4 and 3.5 LTS, with managed upgrades</p>
             </div>
             <div className="flex flex-col items-start space-y-2">
               <Check className="h-10 w-10 text-primary" />
@@ -147,7 +150,7 @@ export default function OJSHostingPage() {
             <div className="flex flex-col items-start space-y-2">
               <Check className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Daily Backups</h3>
-              <p className="text-gray-500 dark:text-gray-400">Automatic daily backups with up to 7-day retention</p>
+              <p className="text-gray-500 dark:text-gray-400">Automatic daily backups, with 5 to 7-day retention depending on plan</p>
             </div>
             <div className="flex flex-col items-start space-y-2">
               <Check className="h-10 w-10 text-primary" />
@@ -157,12 +160,20 @@ export default function OJSHostingPage() {
             <div className="flex flex-col items-start space-y-2">
               <Check className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Technical Support</h3>
-              <p className="text-gray-500 dark:text-gray-400">24/7 technical support from OJS experts</p>
+              <p className="text-gray-500 dark:text-gray-400">24/7 AI assistance via WhatsApp, plus OJS expert support during business hours</p>
             </div>
             <div className="flex flex-col items-start space-y-2">
               <Check className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Custom Domain</h3>
               <p className="text-gray-500 dark:text-gray-400">Use your own domain or subdomain</p>
+            </div>
+            <div className="flex flex-col items-start space-y-2">
+              <ShieldCheck className="h-10 w-10 text-primary" />
+              <h3 className="text-xl font-bold">Web Application Firewall</h3>
+              <p className="text-gray-500 dark:text-gray-400">
+                ModSecurity with OWASP Core Rule Set and Cloudflare protection against malicious uploads, spam injection
+                and bot attacks.
+              </p>
             </div>
           </div>
         </div>
@@ -173,7 +184,7 @@ export default function OJSHostingPage() {
         title="Simple, Transparent Pricing"
         subtitle="Choose the plan that fits your journal's needs"
         plans={ojsPlans}
-        footnote="* Crossref membership and Similarity Check are included only for customers in Latin America and Spain, and do not cover DOI registration or content deposits. Customers in other regions receive Crossref metadata support and service-management assistance, but must hold their own Crossref membership and deposit content directly with Crossref."
+        footnote="*For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership."
       />
 
       {/* FAQ Section */}
@@ -191,7 +202,8 @@ export default function OJSHostingPage() {
             <div className="space-y-2">
               <h3 className="text-xl font-bold">What versions of OJS do you support?</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                We support OJS 3.3 and 3.4. We can also help you migrate from older versions.
+                We support OJS 3.3, 3.4 and 3.5 (LTS since June 2026). We can also help you migrate from earlier
+                versions, including OJS 2.x.
               </p>
             </div>
             <div className="space-y-2">
@@ -217,14 +229,15 @@ export default function OJSHostingPage() {
             <div className="space-y-2">
               <h3 className="text-xl font-bold">Can I use my own domain name?</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Yes, you can use your own domain or subdomain with our Professional and Enterprise plans.
+                Yes, all plans let you use your own domain or subdomain.
               </p>
             </div>
             <div className="space-y-2">
               <h3 className="text-xl font-bold">What kind of support do you offer?</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                We offer email support for all plans, with priority support for Professional and 24/7 phone support for
-                Enterprise customers.
+                All plans include 24/7 AI assistance via WhatsApp, plus OJS expert support during business hours: email
+                support on Basic, priority email support on Professional, and priority email and phone support on
+                Enterprise.
               </p>
             </div>
           </div>

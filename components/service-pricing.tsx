@@ -2,8 +2,32 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Check } from "lucide-react"
+import { BadgeCheck, Check, CirclePlus } from "lucide-react"
 import { PricingToggle } from "@/components/pricing-toggle"
+
+// A feature called out on a single card. "included" reads as part of the plan;
+// "optional" is deliberately quieter so it reads as an add-on. Pair a trailing "*" with the footnote.
+export interface HighlightedFeature {
+  text: string
+  variant?: "included" | "optional"
+}
+
+export function HighlightedFeatureItem({ text, variant = "included" }: HighlightedFeature) {
+  if (variant === "optional") {
+    return (
+      <li className="flex items-center gap-2">
+        <CirclePlus className="h-4 w-4 shrink-0 text-muted-foreground" />
+        <span className="text-muted-foreground">{text}</span>
+      </li>
+    )
+  }
+  return (
+    <li className="-mx-2 flex items-center gap-2 rounded-md border-l-2 border-primary bg-primary/5 px-2 py-1.5">
+      <BadgeCheck className="h-4 w-4 shrink-0 text-primary" />
+      <span className="font-semibold text-primary">{text}</span>
+    </li>
+  )
+}
 
 interface PricingPlan {
   name: string
@@ -15,6 +39,7 @@ interface PricingPlan {
   conditionalFeatures?: { monthly: string; annual: string }[]
   // Features that are only included with annual billing (hidden on monthly, green when annual).
   annualOnlyFeatures?: string[]
+  highlightedFeature?: HighlightedFeature
   popular?: boolean
   buttonText?: string
   monthlyUrl?: string
@@ -71,6 +96,9 @@ export function ServicePricing({ title, subtitle, plans, footnote }: ServicePric
                 <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
               </div>
               <ul className="mt-4 space-y-2 flex-1">
+                {plan.highlightedFeature?.variant !== "optional" && plan.highlightedFeature && (
+                  <HighlightedFeatureItem {...plan.highlightedFeature} />
+                )}
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -91,6 +119,9 @@ export function ServicePricing({ title, subtitle, plans, footnote }: ServicePric
                     <span className="text-green-700 font-medium">{feature}</span>
                   </li>
                 ))}
+                {plan.highlightedFeature?.variant === "optional" && (
+                  <HighlightedFeatureItem {...plan.highlightedFeature} />
+                )}
               </ul>
               <div className="mt-6">
                 <Link

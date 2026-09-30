@@ -6,6 +6,7 @@ import { Check, HelpCircle } from "lucide-react"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { PricingToggle } from "@/components/pricing-toggle"
+import { HighlightedFeatureItem } from "@/components/service-pricing"
 
 export function PricingClient() {
   const [isAnnual, setIsAnnual] = useState(false)
@@ -17,6 +18,15 @@ export function PricingClient() {
   }
 
   const showPricingToggle = activeTab !== "custom"
+
+  // Crossref terms differ by product; tabs without Crossref items show no footnote.
+  const crossrefFootnotes: Record<string, string> = {
+    ojs: "*For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+    omp: "*For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+    dataverse: "*For customers in Latin America and Spain. Included in all plans. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+    vps: "*For customers in Latin America and Spain. Included in all plans. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+  }
+  const crossrefFootnote = crossrefFootnotes[activeTab]
 
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
@@ -99,7 +109,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Email Support</span>
+                    <span>Email support</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -163,7 +173,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Priority Email Support</span>
+                    <span>Priority email support</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -177,6 +187,7 @@ export function PricingClient() {
                     <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
                     <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
                   </li>
+                  <HighlightedFeatureItem text="Crossref membership + Similarity Check available on request*" variant="optional" />
                 </ul>
                 <div className="mt-6">
                   <Link
@@ -228,7 +239,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Priority Email Support | Phone Support</span>
+                    <span>Priority email and phone support</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -242,18 +253,7 @@ export function PricingClient() {
                     <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
                     <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
                   </li>
-                  {isAnnual && (
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
-                      <span className="text-green-700 font-medium">Crossref memberships (Annual only)</span>
-                    </li>
-                  )}
-                  {isAnnual && (
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
-                      <span className="text-green-700 font-medium">Similarity Check (Annual only)</span>
-                    </li>
-                  )}
+                  <HighlightedFeatureItem text="Crossref membership + Similarity Check included (annual plan)*" />
                   {isAnnual && (
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
@@ -338,7 +338,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Email Support</span>
+                    <span>Email support</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -402,7 +402,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Priority Email Support</span>
+                    <span>Priority email support</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -416,6 +416,7 @@ export function PricingClient() {
                     <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
                     <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
                   </li>
+                  <HighlightedFeatureItem text="Crossref membership + Similarity Check available on request*" variant="optional" />
                 </ul>
                 <div className="mt-6">
                   <Link
@@ -467,7 +468,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Priority Email Support | Phone Support</span>
+                    <span>Priority email and phone support</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -481,18 +482,7 @@ export function PricingClient() {
                     <Check className={`h-4 w-4 ${isAnnual ? 'text-green-700' : 'text-primary'}`} />
                     <span className={isAnnual ? 'text-green-700 font-medium' : ''}>{isAnnual ? 'Migration services included' : 'Migration services fee extra'}</span>
                   </li>
-                  {isAnnual && (
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
-                      <span className="text-green-700 font-medium">Crossref memberships (Annual only)</span>
-                    </li>
-                  )}
-                  {isAnnual && (
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
-                      <span className="text-green-700 font-medium">Similarity Check (Annual only)</span>
-                    </li>
-                  )}
+                  <HighlightedFeatureItem text="Crossref membership + Similarity Check included (annual plan)*" />
                   {isAnnual && (
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
@@ -560,6 +550,7 @@ export function PricingClient() {
                   )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
+                  <HighlightedFeatureItem text="Crossref membership + Similarity Check included*" />
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
                     <span>Repository (Dataverse or DSpace)</span>
@@ -578,7 +569,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Email Support</span>
+                    <span>Email support</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -621,6 +612,7 @@ export function PricingClient() {
                   )}
                 </div>
                 <ul className="mt-4 space-y-2 flex-1">
+                  <HighlightedFeatureItem text="Crossref membership + Similarity Check included*" />
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
                     <span>Repository (Dataverse or DSpace)</span>
@@ -651,7 +643,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Priority Email Support</span>
+                    <span>Priority email support</span>
                   </li>
                    <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -661,18 +653,6 @@ export function PricingClient() {
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
                       <span className="text-green-700 font-medium">Migration services included</span>
-                    </li>
-                  )}
-                  {isAnnual && (
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
-                      <span className="text-green-700 font-medium">Crossref membership (Annual only)</span>
-                    </li>
-                  )}
-                  {isAnnual && (
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-primary" />
-                      <span className="text-green-700 font-medium">Similarity Check (Annual only)</span>
                     </li>
                   )}
                 </ul>
@@ -754,7 +734,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Email Support</span>
+                    <span>Email support</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -827,7 +807,7 @@ export function PricingClient() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
-                    <span>Priority Email Support</span>
+                    <span>Priority email support</span>
                   </li>
                    <li className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -916,6 +896,7 @@ export function PricingClient() {
                     )}
                   </div>
                   <ul className="mt-4 space-y-2 flex-1">
+                    <HighlightedFeatureItem text="Crossref membership + Similarity Check included*" />
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
                       <span>2 vCPUs</span>
@@ -984,6 +965,7 @@ export function PricingClient() {
                     )}
                   </div>
                   <ul className="mt-4 space-y-2 flex-1">
+                    <HighlightedFeatureItem text="Crossref membership + Similarity Check included*" />
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
                       <span>4 vCPUs</span>
@@ -1057,6 +1039,7 @@ export function PricingClient() {
                     )}
                   </div>
                   <ul className="mt-4 space-y-2 flex-1">
+                    <HighlightedFeatureItem text="Crossref membership + Similarity Check included*" />
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
                       <span>2 vCPUs</span>
@@ -1137,6 +1120,7 @@ export function PricingClient() {
                     )}
                   </div>
                   <ul className="mt-4 space-y-2 flex-1">
+                    <HighlightedFeatureItem text="Crossref membership + Similarity Check included*" />
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-primary" />
                       <span>4 vCPUs</span>
@@ -1380,9 +1364,11 @@ export function PricingClient() {
             </div>
           </TabsContent>
         </Tabs>
-        <p className="mx-auto max-w-5xl mt-10 text-sm text-gray-500 dark:text-gray-400">
-          * Crossref membership and Similarity Check are included only for customers in Latin America and Spain, and do not cover DOI registration or content deposits. Customers in other regions receive Crossref metadata support and service-management assistance, but must hold their own Crossref membership and deposit content directly with Crossref.
-        </p>
+        {crossrefFootnote && (
+          <p className="mx-auto max-w-5xl mt-10 text-sm text-gray-500 dark:text-gray-400">
+            {crossrefFootnote}
+          </p>
+        )}
       </div>
     </section>
   )

@@ -23,7 +23,7 @@ export default function AtomHostingPage() {
         "50GB Storage",
         "SSL included",
         "Daily Backups | 7 days",
-        "Email Support",
+        "Email support",
         "Additional storage available"
       ],
       conditionalFeatures: [
@@ -45,7 +45,7 @@ export default function AtomHostingPage() {
         "Mail box included",
         "S3 configuration included (Not included additional fee S3)",
         "Daily Backups | 7 days",
-        "Priority Email Support",
+        "Priority email support",
         "Additional storage available"
       ],
       annualOnlyFeatures: [
@@ -136,7 +136,7 @@ export default function AtomHostingPage() {
             <div className="flex flex-col items-start space-y-2">
               <Check className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Expert Support</h3>
-              <p className="text-gray-500 dark:text-gray-400">24/7 technical support from AtoM specialists</p>
+              <p className="text-gray-500 dark:text-gray-400">24/7 AI assistance via WhatsApp, plus expert support during business hours</p>
             </div>
             <div className="flex flex-col items-start space-y-2">
               <Check className="h-10 w-10 text-primary" />

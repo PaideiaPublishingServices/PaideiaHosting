@@ -325,7 +325,7 @@ export default function AcademicThemeOMPPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">24/7 priority support</span>
+                    <span className="text-sm">Priority expert support during business hours, plus 24/7 AI assistance via WhatsApp</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
@@ -521,7 +521,7 @@ export default function AcademicThemeOMPPage() {
                     <td className="py-3 px-4">Technical support</td>
                     <td className="text-center py-3 px-4 text-gray-600">Priority</td>
                     <td className="text-center py-3 px-4 text-gray-600">Premium</td>
-                    <td className="text-center py-3 px-4 text-gray-600">24/7</td>
+                    <td className="text-center py-3 px-4 text-gray-600">Priority + 24/7 AI</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 px-4">Assisted installation</td>

@@ -153,7 +153,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-5 w-5 text-primary" />
-                    <span>24/7 technical support</span>
+                    <span>24/7 AI assistance via WhatsApp, plus expert support during business hours</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <Check className="h-5 w-5 text-primary" />

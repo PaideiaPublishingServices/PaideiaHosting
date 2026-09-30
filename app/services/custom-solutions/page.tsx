@@ -438,8 +438,8 @@ export default function CustomSolutionsPage() {
             <div className="space-y-2">
               <h3 className="text-xl font-bold">What ongoing support do you provide?</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                We offer various support tiers including basic maintenance, 24/7 technical support, regular updates, and
-                continuous improvement services.
+                We offer various support tiers including basic maintenance, 24/7 AI assistance via WhatsApp plus expert
+                support during business hours, regular updates, and continuous improvement services.
               </p>
             </div>
           </div>

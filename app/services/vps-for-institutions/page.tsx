@@ -97,7 +97,7 @@ export default function VPSForInstitutionsPage() {
               <Check className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Expert Support</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                24/7 technical support from academic hosting specialists
+                24/7 AI assistance via WhatsApp, plus expert support during business hours
               </p>
             </div>
             <div className="flex flex-col items-start space-y-2">

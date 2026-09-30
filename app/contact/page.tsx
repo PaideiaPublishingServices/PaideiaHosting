@@ -235,8 +235,7 @@ export default function ContactPage() {
             <div className="space-y-2">
               <h3 className="text-xl font-bold">Do you offer emergency support?</h3>
               <p className="text-gray-500 dark:text-gray-400">
-                Yes, we offer 24/7 emergency support for critical issues for our Professional and Enterprise plan
-                customers.
+                Yes: 24/7 AI assistance via WhatsApp; expert support during business hours.
               </p>
             </div>
 

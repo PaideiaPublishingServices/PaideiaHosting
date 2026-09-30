@@ -23,13 +23,14 @@ export default function RepositoryHostingPage() {
         "50GB Storage",
         "SSL included",
         "Daily Backups | 7 days",
-        "Email Support",
+        "Email support",
         "Additional storage available"
       ],
       conditionalFeatures: [
         { monthly: "Installation fee extra", annual: "Installation included" },
         { monthly: "Migration services fee extra", annual: "Migration services included" }
-      ]
+      ],
+      highlightedFeature: { text: "Crossref membership + Similarity Check included*" }
     },
     {
       name: "Enterprise",
@@ -45,14 +46,13 @@ export default function RepositoryHostingPage() {
         "Mail box included",
         "S3 configuration included (Not included additional fee S3)",
         "Daily Backups | 7 days",
-        "Priority Email Support",
+        "Priority email support",
         "Additional storage available"
       ],
       annualOnlyFeatures: [
-        "Migration services included (Annual only)",
-        "Crossref membership (Annual only)",
-        "Similarity Check (Annual only)"
+        "Migration services included (Annual only)"
       ],
+      highlightedFeature: { text: "Crossref membership + Similarity Check included*" },
       buttonText: "Get Started"
     }
   ]
@@ -137,7 +137,7 @@ export default function RepositoryHostingPage() {
             <div className="flex flex-col items-start space-y-2">
               <Check className="h-10 w-10 text-primary" />
               <h3 className="text-xl font-bold">Expert Support</h3>
-              <p className="text-gray-500 dark:text-gray-400">24/7 technical support from repository specialists</p>
+              <p className="text-gray-500 dark:text-gray-400">24/7 AI assistance via WhatsApp, plus expert support during business hours</p>
             </div>
             <div className="flex flex-col items-start space-y-2">
               <Check className="h-10 w-10 text-primary" />
@@ -155,7 +155,7 @@ export default function RepositoryHostingPage() {
         title="Simple, Transparent Pricing"
         subtitle="Choose the plan that fits your repository needs"
         plans={repositoryPlans}
-        footnote="* Crossref membership and Similarity Check are included only for customers in Latin America and Spain, and do not cover DOI registration or content deposits. Customers in other regions receive Crossref metadata support and service-management assistance, but must hold their own Crossref membership and deposit content directly with Crossref."
+        footnote="*For customers in Latin America and Spain. Included in all plans. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership."
       />
 
       {/* FAQ Section */}
