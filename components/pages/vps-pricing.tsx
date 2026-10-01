@@ -4,9 +4,15 @@ import { useState } from "react"
 import Link from "next/link"
 import { Check } from "lucide-react"
 import { PricingToggle } from "@/components/pricing-toggle"
-import { HighlightedFeatureItem } from "@/components/service-pricing"
+import { HighlightedFeatureItem, type PricingLabels } from "@/components/service-pricing"
+import type { Messages } from "@/lib/i18n/messages"
 
-export function VPSPricing() {
+interface VPSPricingProps {
+  t: Messages["vpsForInstitutions"]["pricing"]
+  labels: PricingLabels
+}
+
+export function VPSPricing({ t, labels }: VPSPricingProps) {
   const [vpsService, setVpsService] = useState("lightsail")
   const [isAnnual, setIsAnnual] = useState(false)
 
@@ -16,89 +22,35 @@ export function VPSPricing() {
 
   const lightsailPlans = [
     {
-      name: "Professional",
-      description: "For academic departments",
+      ...t.lightsail.professional,
       monthlyPrice: 170,
         monthlyUrl: "https://shop.paideiahosting.net/shop/vps-ls-pro-m-vps-lightsail-professional-monthly-166",
         annualUrl: "https://shop.paideiahosting.net/shop/vps-ls-pro-m-vps-lightsail-professional-monthly-166?plan_id=2",
       popular: true,
-      features: [
-        "2 vCPUs",
-        "8GB RAM",
-        "160GB SSD Storage",
-        "5TB Transfer",
-        "Server Support Included",
-        "Application Support (OJS, Moodle, DSpace, AtoM)",
-        "7-Day Snapshots",
-        "Dedicated IP",
-        "Architecture Support"
-      ]
     },
     {
-      name: "Enterprise",
-      description: "For large institutions and research centers",
+      ...t.lightsail.enterprise,
       monthlyPrice: 280,
         monthlyUrl: "https://shop.paideiahosting.net/shop/vps-ls-ent-m-vps-lightsail-enterprise-monthly-167",
         annualUrl: "https://shop.paideiahosting.net/shop/vps-ls-ent-m-vps-lightsail-enterprise-monthly-167?plan_id=2",
-      features: [
-        "4 vCPUs",
-        "16GB RAM",
-        "320GB SSD Storage",
-        "6TB Transfer",
-        "Server Support Included",
-        "Application Support (OJS, Moodle, DSpace, AtoM)",
-        "7-Day Snapshots",
-        "Dedicated IP",
-        "Architecture Support"
-      ],
-      buttonText: "Get Started"
+      popular: false,
     }
   ]
 
   const ec2Plans = [
     {
-      name: "Professional",
-      description: "For academic departments (t3.large)",
+      ...t.ec2.professional,
       monthlyPrice: 190,
         monthlyUrl: "https://shop.paideiahosting.net/shop/vps-ec2-pro-m-vps-ec2-professional-t3large-monthly-170",
         annualUrl: "https://shop.paideiahosting.net/shop/vps-ec2-pro-m-vps-ec2-professional-t3large-monthly-170?plan_id=2",
       popular: true,
-      features: [
-        "2 vCPUs",
-        "8GB RAM",
-        "160GB SSD Storage",
-        "Server Support Included",
-        "Application Support (OJS, Moodle, DSpace, AtoM)",
-        "7-Day Snapshots",
-        "Dedicated IP",
-        "Architecture Support",
-        "Built on AWS EC2 — HIPAA-eligible infrastructure",
-        "Private VPC with custom network security (Security Groups)",
-        "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
-        "Recommended for institutions with strict compliance or data-governance requirements"
-      ]
     },
     {
-      name: "Enterprise",
-      description: "For large institutions (t3.xlarge)",
+      ...t.ec2.enterprise,
       monthlyPrice: 299,
         monthlyUrl: "https://shop.paideiahosting.net/shop/vps-ec2-ent-m-vps-ec2-enterprise-t3xlarge-monthly-171",
         annualUrl: "https://shop.paideiahosting.net/shop/vps-ec2-ent-m-vps-ec2-enterprise-t3xlarge-monthly-171?plan_id=2",
-      features: [
-        "4 vCPUs",
-        "16GB RAM",
-        "320GB SSD Storage",
-        "Server Support Included",
-        "Application Support (OJS, Moodle, DSpace, AtoM)",
-        "7-Day Snapshots",
-        "Dedicated IP",
-        "Architecture Support",
-        "Built on AWS EC2 — HIPAA-eligible infrastructure",
-        "Private VPC with custom network security (Security Groups)",
-        "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
-        "Recommended for institutions with strict compliance or data-governance requirements"
-      ],
-      buttonText: "Get Started"
+      popular: false,
     }
   ]
 
@@ -109,17 +61,17 @@ export function VPSPricing() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Simple, Transparent Pricing</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">{t.title}</h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Choose the VPS plan that fits your institution's needs
+              {t.subtitle}
             </p>
           </div>
         </div>
 
         <div className="flex items-center justify-center mb-6">
           <div className="flex items-center gap-2 text-sm text-gray-600">
-            <span>Hosted on</span>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/330px-Amazon_Web_Services_Logo.svg.png" alt="AWS" className="h-6" />
+            <span>{labels.hostedOn}</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/330px-Amazon_Web_Services_Logo.svg.png" alt={t.logoAlt} className="h-6" />
           </div>
         </div>
 
@@ -148,14 +100,14 @@ export function VPSPricing() {
           </div>
         </div>
 
-        <PricingToggle onToggle={setIsAnnual} />
+        <PricingToggle onToggle={setIsAnnual} labels={labels} />
 
         <div className="mx-auto grid max-w-4xl items-start gap-6 py-12 md:grid-cols-2">
           {currentPlans.map((plan, index) => (
             <div key={index} className={`flex flex-col rounded-lg border bg-background p-6 shadow-sm ${plan.popular ? 'relative' : ''}`}>
               {plan.popular && (
                 <div className="absolute -top-4 left-0 right-0 mx-auto w-fit rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                  Popular
+                  {labels.popular}
                 </div>
               )}
               <div className="space-y-2">
@@ -165,16 +117,16 @@ export function VPSPricing() {
               <div className="mt-4">
                 <div className="flex items-baseline">
                   <span className="text-3xl font-bold">${calculatePrice(plan.monthlyPrice)}</span>
-                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                  <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? labels.billedAnnually : labels.month}</span>
                 </div>
                 {isAnnual && (
                   <div className="text-sm text-gray-400 mt-1">
-                    ${(calculatePrice(plan.monthlyPrice) * 12).toFixed(0)} per year
+                    ${(calculatePrice(plan.monthlyPrice) * 12).toFixed(0)} {t.perYear}
                   </div>
                 )}
               </div>
               <ul className="mt-4 space-y-2 flex-1">
-                <HighlightedFeatureItem text="Crossref membership + Similarity Check included*" />
+                <HighlightedFeatureItem text={t.crossref} />
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-primary" />
@@ -183,21 +135,21 @@ export function VPSPricing() {
                 ))}
               </ul>
               <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
-                {vpsService === "ec2" ? "500 GB transfer included. " : ""}Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.
+                {vpsService === "ec2" ? t.ec2TransferIncluded : ""}{t.transferNote}
               </p>
               <div className="mt-6">
                 <Link
                   href={isAnnual ? plan.annualUrl : plan.monthlyUrl}
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
-                  {plan.buttonText || 'Get Started'}
+                  {labels.getStarted}
                 </Link>
               </div>
             </div>
           ))}
         </div>
         <p className="mx-auto max-w-4xl text-sm text-gray-500 dark:text-gray-400">
-          *For customers in Latin America and Spain. Included in all plans. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.
+          {t.footnote}
         </p>
       </div>
     </section>

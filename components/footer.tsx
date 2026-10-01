@@ -1,14 +1,34 @@
 import Link from "next/link"
 import { Youtube, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Github } from "lucide-react"
+import type { Locale } from "@/lib/i18n/config"
+import type { Messages } from "@/lib/i18n/messages"
+import { localizedHref, type RouteKey } from "@/lib/i18n/routes"
 
-export function Footer() {
+const serviceLinks: Extract<RouteKey, keyof Messages["layout"]["footer"]["services"]>[] = [
+  "ojsHosting",
+  "ompHosting",
+  "repositoryHosting",
+  "atomHosting",
+  "vpsForInstitutions",
+]
+
+export function Footer({ locale, t }: { locale: Locale; t: Messages["layout"]["footer"] }) {
+  const companyLinks = [
+    { href: localizedHref("about", locale), label: t.company.about },
+    { href: localizedHref("pricing", locale), label: t.company.pricing },
+    { href: "/blog", label: t.company.blog },
+    { href: "/affiliates", label: t.company.affiliates },
+    { href: "#", label: t.company.careers },
+    { href: localizedHref("contact", locale), label: t.company.contact },
+  ]
+
   return (
     <footer className="w-full border-t bg-background">
       <div className="container px-4 md:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Paideia Hosting</h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400">Cloud for Science, Solutions for Knowledge</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">{t.tagline}</p>
             <div className="flex space-x-4">
               <Link href="https://www.facebook.com/paideiastudio" className="text-gray-500 hover:text-primary">
                 <Facebook className="h-5 w-5" />
@@ -29,99 +49,46 @@ export function Footer() {
             </div>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Services</h3>
+            <h3 className="text-lg font-bold">{t.servicesTitle}</h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/services/ojs-hosting"
-                  className="text-sm text-gray-500 hover:text-primary dark:text-gray-400"
-                >
-                  OJS Hosting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/omp-hosting"
-                  className="text-sm text-gray-500 hover:text-primary dark:text-gray-400"
-                >
-                  OMP Hosting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/repository-hosting"
-                  className="text-sm text-gray-500 hover:text-primary dark:text-gray-400"
-                >
-                  Repository Hosting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/atom-hosting"
-                  className="text-sm text-gray-500 hover:text-primary dark:text-gray-400"
-                >
-                  AtoM Hosting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/vps-for-institutions"
-                  className="text-sm text-gray-500 hover:text-primary dark:text-gray-400"
-                >
-                  VPS for Institutions
-                </Link>
-              </li>
+              {serviceLinks.map((key) => (
+                <li key={key}>
+                  <Link
+                    href={localizedHref(key, locale)}
+                    className="text-sm text-gray-500 hover:text-primary dark:text-gray-400"
+                  >
+                    {t.services[key]}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Company</h3>
+            <h3 className="text-lg font-bold">{t.companyTitle}</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="/about" className="text-sm text-gray-500 hover:text-primary dark:text-gray-400">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/pricing" className="text-sm text-gray-500 hover:text-primary dark:text-gray-400">
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-sm text-gray-500 hover:text-primary dark:text-gray-400">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/affiliates" className="text-sm text-gray-500 hover:text-primary dark:text-gray-400">
-                  Affiliate Program
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-sm text-gray-500 hover:text-primary dark:text-gray-400">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-sm text-gray-500 hover:text-primary dark:text-gray-400">
-                  Contact
-                </Link>
-              </li>
+              {companyLinks.map((link) => (
+                <li key={link.label}>
+                  <Link href={link.href} className="text-sm text-gray-500 hover:text-primary dark:text-gray-400">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Contact</h3>
+            <h3 className="text-lg font-bold">{t.contactTitle}</h3>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-2">
                   <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-gray-500 dark:text-gray-400" />
                   <div>
-                    <p className="text-sm font-medium">Latin America Office:</p>
+                    <p className="text-sm font-medium">{t.latamOffice}</p>
                     <span className="text-sm text-gray-500 dark:text-gray-400">Italia 147, Córdoba, 6132, Argentina</span>
                   </div>
                 </li>
                 <li className="flex items-start space-x-2">
                   <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 text-gray-500 dark:text-gray-400" />
                   <div>
-                    <p className="text-sm font-medium">US Office:</p>
+                    <p className="text-sm font-medium">{t.usOffice}</p>
                     <span className="text-sm text-gray-500 dark:text-gray-400">2810 North Church Street, Wilmington, DE 19802, US</span>
                   </div>
                 </li>
@@ -136,8 +103,8 @@ export function Footer() {
                     >
                       +1 (302) 415-3857
                     </a>
-                    <span className="block text-xs text-gray-500 dark:text-gray-400">Immediate AI assistance, 24/7</span>
-                    <span className="block text-xs text-gray-500 dark:text-gray-400 mt-1">Business hours: +39 (351) 757-6248</span>
+                    <span className="block text-xs text-gray-500 dark:text-gray-400">{t.aiAssistance}</span>
+                    <span className="block text-xs text-gray-500 dark:text-gray-400 mt-1">{t.businessHours} +39 (351) 757-6248</span>
                   </div>
                 </li>
                 <li className="flex items-center space-x-2">
@@ -149,14 +116,14 @@ export function Footer() {
         </div>
         <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-gray-500 dark:text-gray-400">
-            &copy; 2026 Paideia Hosting. All rights reserved.
+            &copy; 2026 Paideia Hosting. {t.rights}
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="https://paideiahosting.net/legal" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
-              Terms of Service
+              {t.terms}
             </Link>
             <Link href="https://paideiahosting.net/legal" className="text-xs text-gray-500 hover:text-primary dark:text-gray-400">
-              Privacy Policy
+              {t.privacy}
             </Link>
           </div>
         </div>

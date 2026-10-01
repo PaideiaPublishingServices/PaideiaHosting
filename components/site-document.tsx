@@ -16,7 +16,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 // Shared <html> document for every locale's root layout, so <html lang> is set at build time.
 export function SiteDocument({ locale, children }: { locale: Locale; children: React.ReactNode }) {
-  const common = getMessages(locale).common
+  const { common, layout } = getMessages(locale)
   const noticeTexts = Object.fromEntries(locales.map((l) => [l, getMessages(l).common.languageNotice])) as Record<
     Locale,
     typeof common.languageNotice
@@ -50,11 +50,11 @@ export function SiteDocument({ locale, children }: { locale: Locale; children: R
         <ThemeProvider attribute="class" defaultTheme="light">
           <div className="flex min-h-screen flex-col">
             <LanguageNotice locale={locale} texts={noticeTexts} />
-            <Header locale={locale} languageLabel={common.languageSwitcher.label} />
+            <Header locale={locale} t={layout.header} languageLabel={common.languageSwitcher.label} />
             {children}
-            <Footer />
+            <Footer locale={locale} t={layout.footer} />
             {/* <ChatBot /> */}  {/* Flowise chat widget disabled */}
-            <WhatsAppButton />
+            <WhatsAppButton t={layout.whatsapp} />
           </div>
           <Toaster />
         </ThemeProvider>

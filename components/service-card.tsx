@@ -9,9 +9,10 @@ interface ServiceCardProps {
   description: string
   icon: React.ReactNode
   link: string
+  learnMoreLabel?: string
 }
 
-export function ServiceCard({ title, description, icon, link }: ServiceCardProps) {
+export function ServiceCard({ title, description, icon, link, learnMoreLabel = "Learn more" }: ServiceCardProps) {
   return (
     <Card className="flex flex-col h-full">
       <CardHeader>
@@ -23,7 +24,7 @@ export function ServiceCard({ title, description, icon, link }: ServiceCardProps
       </CardContent>
       <CardFooter className="mt-auto">
         <Link href={link} className="inline-flex items-center text-sm font-medium text-primary">
-          Learn more <ArrowRight className="ml-1 h-4 w-4" />
+          {learnMoreLabel} <ArrowRight className="ml-1 h-4 w-4" />
         </Link>
       </CardFooter>
     </Card>

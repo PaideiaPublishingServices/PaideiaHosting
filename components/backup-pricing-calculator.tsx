@@ -2,8 +2,14 @@
 
 import { useState } from "react"
 import { Check } from "lucide-react"
+import type { Messages } from "@/lib/i18n/messages"
 
-export function BackupPricingCalculator() {
+interface BackupPricingCalculatorProps {
+  t: Messages["backupSolutions"]["calculator"]
+  contactHref: string
+}
+
+export function BackupPricingCalculator({ t, contactHref }: BackupPricingCalculatorProps) {
   const [plan, setPlan] = useState<"preservation" | "active">("preservation")
   
   // Preservation Plus state
@@ -94,9 +100,9 @@ export function BackupPricingCalculator() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Calculate Your Price</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">{t.title}</h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Adjust the parameters to see pricing for your specific needs
+              {t.subtitle}
             </p>
           </div>
         </div>
@@ -112,7 +118,7 @@ export function BackupPricingCalculator() {
                   : "text-gray-600 hover:text-gray-900"
               }`}
             >
-              Preservation Plus
+              {t.plans.preservation}
             </button>
             <button 
               onClick={() => setPlan("active")}
@@ -122,7 +128,7 @@ export function BackupPricingCalculator() {
                   : "text-gray-600 hover:text-gray-900"
               }`}
             >
-              Active Guard
+              {t.plans.active}
             </button>
           </div>
         </div>
@@ -134,12 +140,12 @@ export function BackupPricingCalculator() {
               {/* Controls */}
               <div className="space-y-6">
                 <div className="rounded-lg border bg-background p-6 shadow-sm">
-                  <h3 className="text-lg font-bold mb-6">Configure Your Plan</h3>
+                  <h3 className="text-lg font-bold mb-6">{t.configure}</h3>
                   
                   {/* Storage Slider */}
                   <div className="space-y-3 mb-6">
                     <div className="flex justify-between items-center">
-                      <label className="text-sm font-medium">Storage Volume</label>
+                      <label className="text-sm font-medium">{t.storageVolume}</label>
                       <span className="text-lg font-bold text-primary">{preservationGB} GB</span>
                     </div>
                     <input
@@ -152,16 +158,16 @@ export function BackupPricingCalculator() {
                       className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary"
                     />
                     <div className="flex justify-between text-xs text-gray-500">
-                      <span>100 GB</span>
-                      <span>5,000 GB</span>
+                      <span>{t.storageMin}</span>
+                      <span>{t.storageMax}</span>
                     </div>
                   </div>
 
                   {/* Retention Slider */}
                   <div className="space-y-3 mb-6">
                     <div className="flex justify-between items-center">
-                      <label className="text-sm font-medium">Retention Period</label>
-                      <span className="text-lg font-bold text-primary">{preservationRetention} years</span>
+                      <label className="text-sm font-medium">{t.retentionPeriod}</label>
+                      <span className="text-lg font-bold text-primary">{preservationRetention} {t.years}</span>
                     </div>
                     <input
                       type="range"
@@ -173,14 +179,14 @@ export function BackupPricingCalculator() {
                       className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary"
                     />
                     <div className="flex justify-between text-xs text-gray-500">
-                      <span>1 year</span>
-                      <span>10+ years</span>
+                      <span>{t.preservation.retentionMin}</span>
+                      <span>{t.preservation.retentionMax}</span>
                     </div>
                   </div>
 
                   {/* Capture Frequency */}
                   <div className="space-y-3">
-                    <label className="text-sm font-medium">Capture Frequency</label>
+                    <label className="text-sm font-medium">{t.captureFrequency}</label>
                     <div className="grid grid-cols-2 gap-2">
                       <button
                         onClick={() => setPreservationFrequency("monthly")}
@@ -190,7 +196,7 @@ export function BackupPricingCalculator() {
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
-                        Monthly (12/year)
+                        {t.preservation.frequencies.monthly}
                       </button>
                       <button
                         onClick={() => setPreservationFrequency("quarterly")}
@@ -200,7 +206,7 @@ export function BackupPricingCalculator() {
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
-                        Quarterly (4/year)
+                        {t.preservation.frequencies.quarterly}
                       </button>
                       <button
                         onClick={() => setPreservationFrequency("semiannual")}
@@ -210,7 +216,7 @@ export function BackupPricingCalculator() {
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
-                        Semi-annual (2/year)
+                        {t.preservation.frequencies.semiannual}
                       </button>
                       <button
                         onClick={() => setPreservationFrequency("annual")}
@@ -220,7 +226,7 @@ export function BackupPricingCalculator() {
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
-                        Annual (1/year)
+                        {t.preservation.frequencies.annual}
                       </button>
                     </div>
                   </div>
@@ -230,11 +236,11 @@ export function BackupPricingCalculator() {
               {/* Pricing Display */}
               <div className="space-y-4">
                 <div className="rounded-lg border-2 border-primary bg-background p-6 shadow-lg">
-                  <h3 className="text-lg font-bold mb-4">Your Pricing</h3>
+                  <h3 className="text-lg font-bold mb-4">{t.yourPricing}</h3>
                   
                   <div className="space-y-4">
                     <div className="flex justify-between items-baseline pb-3 border-b">
-                      <span className="text-gray-600">Annual Cost</span>
+                      <span className="text-gray-600">{t.annualCost}</span>
                       <span className="text-3xl font-bold text-primary">
                         ${preservationPricing.annual.toLocaleString()}
                       </span>
@@ -242,13 +248,13 @@ export function BackupPricingCalculator() {
 
                     {preservationPricing.setupFee > 0 && (
                       <div className="flex justify-between items-center text-sm">
-                        <span className="text-gray-600">Setup Fee (one-time)</span>
+                        <span className="text-gray-600">{t.setupFee}</span>
                         <span className="font-semibold">+${preservationPricing.setupFee}</span>
                       </div>
                     )}
 
                     <div className="flex justify-between items-center pt-3 border-t">
-                      <span className="font-medium">Total First Year</span>
+                      <span className="font-medium">{t.totalFirstYear}</span>
                       <span className="text-2xl font-bold">
                         ${preservationPricing.totalFirstYear.toLocaleString()}
                       </span>
@@ -257,52 +263,38 @@ export function BackupPricingCalculator() {
 
                   <div className="mt-6 pt-6 border-t space-y-2 text-sm text-gray-600">
                     <div className="flex justify-between">
-                      <span>Price per GB/year:</span>
+                      <span>{t.pricePerGBYear}</span>
                       <span className="font-medium">${preservationPricing.pricePerGB.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Captures per year:</span>
+                      <span>{t.capturesPerYear}</span>
                       <span className="font-medium">{preservationPricing.capturesPerYear}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Total retention:</span>
-                      <span className="font-medium">{preservationRetention} years</span>
+                      <span>{t.totalRetention}</span>
+                      <span className="font-medium">{preservationRetention} {t.years}</span>
                     </div>
                   </div>
 
                   <div className="mt-6">
                     <a
-                      href="/contact"
+                      href={contactHref}
                       className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                     >
-                      Request Quote
+                      {t.requestQuote}
                     </a>
                   </div>
                 </div>
 
                 <div className="rounded-lg border bg-gray-50 p-4">
-                  <p className="text-xs text-gray-600 mb-2 font-medium">Includes:</p>
+                  <p className="text-xs text-gray-600 mb-2 font-medium">{t.includes}</p>
                   <ul className="space-y-1 text-xs text-gray-600">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-3 w-3 text-primary" />
-                      <span>AWS Deep Archive storage</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-3 w-3 text-primary" />
-                      <span>Automated capture schedule</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-3 w-3 text-primary" />
-                      <span>Monthly monitoring reports</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-3 w-3 text-primary" />
-                      <span>1 free recovery every 2 years</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-3 w-3 text-primary" />
-                      <span>72-hour recovery SLA</span>
-                    </li>
+                    {t.preservation.includes.map((item) => (
+                      <li key={item} className="flex items-center gap-2">
+                        <Check className="h-3 w-3 text-primary" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -317,12 +309,12 @@ export function BackupPricingCalculator() {
               {/* Controls */}
               <div className="space-y-6">
                 <div className="rounded-lg border bg-background p-6 shadow-sm">
-                  <h3 className="text-lg font-bold mb-6">Configure Your Plan</h3>
+                  <h3 className="text-lg font-bold mb-6">{t.configure}</h3>
                   
                   {/* Storage Slider */}
                   <div className="space-y-3 mb-6">
                     <div className="flex justify-between items-center">
-                      <label className="text-sm font-medium">Storage Volume</label>
+                      <label className="text-sm font-medium">{t.storageVolume}</label>
                       <span className="text-lg font-bold text-primary">{activeGB} GB</span>
                     </div>
                     <input
@@ -335,14 +327,14 @@ export function BackupPricingCalculator() {
                       className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary"
                     />
                     <div className="flex justify-between text-xs text-gray-500">
-                      <span>100 GB</span>
-                      <span>5,000 GB</span>
+                      <span>{t.storageMin}</span>
+                      <span>{t.storageMax}</span>
                     </div>
                   </div>
 
                   {/* Retention Period */}
                   <div className="space-y-3 mb-6">
-                    <label className="text-sm font-medium">Retention Period</label>
+                    <label className="text-sm font-medium">{t.retentionPeriod}</label>
                     <div className="grid grid-cols-3 gap-2">
                       <button
                         onClick={() => setActiveRetention(6)}
@@ -352,7 +344,7 @@ export function BackupPricingCalculator() {
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
-                        6 months
+                        {t.active.retentions["6"]}
                       </button>
                       <button
                         onClick={() => setActiveRetention(12)}
@@ -362,7 +354,7 @@ export function BackupPricingCalculator() {
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
-                        1 year
+                        {t.active.retentions["12"]}
                       </button>
                       <button
                         onClick={() => setActiveRetention(24)}
@@ -372,14 +364,14 @@ export function BackupPricingCalculator() {
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
-                        2 years
+                        {t.active.retentions["24"]}
                       </button>
                     </div>
                   </div>
 
                   {/* Capture Frequency */}
                   <div className="space-y-3">
-                    <label className="text-sm font-medium">Capture Frequency</label>
+                    <label className="text-sm font-medium">{t.captureFrequency}</label>
                     <div className="space-y-2">
                       <button
                         onClick={() => setActiveCaptureFreq("daily")}
@@ -389,7 +381,7 @@ export function BackupPricingCalculator() {
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
-                        Daily (365/year)
+                        {t.active.frequencies.daily}
                       </button>
                       <button
                         onClick={() => setActiveCaptureFreq("twice-weekly")}
@@ -399,7 +391,7 @@ export function BackupPricingCalculator() {
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
-                        Twice Weekly (104/year)
+                        {t.active.frequencies.twiceWeekly}
                       </button>
                       <button
                         onClick={() => setActiveCaptureFreq("weekly")}
@@ -409,7 +401,7 @@ export function BackupPricingCalculator() {
                             : "border-gray-200 hover:border-gray-300"
                         }`}
                       >
-                        Weekly (52/year)
+                        {t.active.frequencies.weekly}
                       </button>
                     </div>
                   </div>
@@ -419,30 +411,30 @@ export function BackupPricingCalculator() {
               {/* Pricing Display */}
               <div className="space-y-4">
                 <div className="rounded-lg border-2 border-blue-300 bg-background p-6 shadow-lg">
-                  <h3 className="text-lg font-bold mb-4">Your Pricing</h3>
+                  <h3 className="text-lg font-bold mb-4">{t.yourPricing}</h3>
                   
                   <div className="space-y-4">
                     <div className="flex justify-between items-baseline pb-3 border-b">
-                      <span className="text-gray-600">Monthly Cost</span>
+                      <span className="text-gray-600">{t.monthlyCost}</span>
                       <span className="text-3xl font-bold text-primary">
                         ${activePricing.monthly.toLocaleString()}
                       </span>
                     </div>
 
                     <div className="flex justify-between items-center text-sm">
-                      <span className="text-gray-600">Annual Cost</span>
+                      <span className="text-gray-600">{t.annualCost}</span>
                       <span className="font-semibold">${activePricing.annual.toLocaleString()}</span>
                     </div>
 
                     {activePricing.setupFee > 0 && (
                       <div className="flex justify-between items-center text-sm">
-                        <span className="text-gray-600">Setup Fee (one-time)</span>
+                        <span className="text-gray-600">{t.setupFee}</span>
                         <span className="font-semibold">+${activePricing.setupFee}</span>
                       </div>
                     )}
 
                     <div className="flex justify-between items-center pt-3 border-t">
-                      <span className="font-medium">Total First Year</span>
+                      <span className="font-medium">{t.totalFirstYear}</span>
                       <span className="text-2xl font-bold">
                         ${activePricing.totalFirstYear.toLocaleString()}
                       </span>
@@ -451,52 +443,38 @@ export function BackupPricingCalculator() {
 
                   <div className="mt-6 pt-6 border-t space-y-2 text-sm text-gray-600">
                     <div className="flex justify-between">
-                      <span>Price per GB/month:</span>
+                      <span>{t.pricePerGBMonth}</span>
                       <span className="font-medium">${activePricing.pricePerGBMonth.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Captures per year:</span>
+                      <span>{t.capturesPerYear}</span>
                       <span className="font-medium">{activePricing.capturesPerYear}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Total retention:</span>
-                      <span className="font-medium">{activeRetention} months</span>
+                      <span>{t.totalRetention}</span>
+                      <span className="font-medium">{activeRetention} {t.months}</span>
                     </div>
                   </div>
 
                   <div className="mt-6">
                     <a
-                      href="/contact"
+                      href={contactHref}
                       className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                     >
-                      Request Quote
+                      {t.requestQuote}
                     </a>
                   </div>
                 </div>
 
                 <div className="rounded-lg border bg-gray-50 p-4">
-                  <p className="text-xs text-gray-600 mb-2 font-medium">Includes:</p>
+                  <p className="text-xs text-gray-600 mb-2 font-medium">{t.includes}</p>
                   <ul className="space-y-1 text-xs text-gray-600">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-3 w-3 text-primary" />
-                      <span>Intelligent storage tiering</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-3 w-3 text-primary" />
-                      <span>Automated capture schedule</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-3 w-3 text-primary" />
-                      <span>Monthly monitoring reports</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-3 w-3 text-primary" />
-                      <span>Unlimited recent data recovery</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-3 w-3 text-primary" />
-                      <span>30min-2h recovery for recent data</span>
-                    </li>
+                    {t.active.includes.map((item) => (
+                      <li key={item} className="flex items-center gap-2">
+                        <Check className="h-3 w-3 text-primary" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -508,8 +486,7 @@ export function BackupPricingCalculator() {
         <div className="mx-auto max-w-4xl mt-12">
           <div className="rounded-lg bg-blue-50 border border-blue-200 p-6 text-center">
             <p className="text-sm text-gray-700">
-              <strong>Note:</strong> These are standard pricing estimates. Setup fees apply only for volumes under 300 GB. 
-              Multi-year contracts receive additional discounts. Contact us for custom configurations and bundle pricing.
+              <strong>{t.note.label}</strong> {t.note.text}
             </p>
           </div>
         </div>

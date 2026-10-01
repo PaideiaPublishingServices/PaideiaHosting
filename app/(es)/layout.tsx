@@ -1,6 +1,6 @@
 import type React from "react"
 import { SiteDocument } from "@/components/site-document"
-import { SITE_URL } from "@/lib/i18n/config"
+import { SITE_URL, noindexLocales } from "@/lib/i18n/config"
 import { getMessages } from "@/lib/i18n/messages"
 
 const { site } = getMessages("es")
@@ -13,8 +13,8 @@ export const metadata = {
   title: site.title,
   description: site.description,
   generator: "Paideia Studio",
-  // Draft translations: keep Spanish pages out of search results until the copy is reviewed.
-  robots: { index: false, follow: true },
+  // Draft translations stay out of search results until the copy is reviewed (see noindexLocales).
+  robots: noindexLocales.includes("es") ? { index: false, follow: true } : undefined,
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-icon.png',

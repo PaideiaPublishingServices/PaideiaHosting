@@ -23,3 +23,7 @@ export const localeLabel: Record<Locale, string> = {
 export function absoluteUrl(path: string): string {
   return path === "/" ? SITE_URL : `${SITE_URL}${path}`
 }
+
+// Locales whose pages are still draft translations: they get <meta robots="noindex"> and are left out
+// of the sitemap. Remove a locale from here once its copy has been reviewed.
+export const noindexLocales: readonly Locale[] = ["es"]

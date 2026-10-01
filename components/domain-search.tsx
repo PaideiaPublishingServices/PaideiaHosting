@@ -8,7 +8,42 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 
-export function DomainSearch() {
+export interface DomainSearchTexts {
+  placeholder: string
+  search: string
+  registrationBefore: string
+  registrationAfter: string
+  verify: string
+  cost: string
+  note: string
+  viewPlans: string
+  contactTeam: string
+}
+
+const defaultTexts: DomainSearchTexts = {
+  placeholder: "yourdomain.com",
+  search: "Search",
+  registrationBefore: "Domain registration for \"",
+  registrationAfter: "\"",
+  verify:
+    "We will verify availability and register this domain for you. If it's not available, we'll present alternative options.",
+  cost: "💰 Domain cost: $40 USD/year (additional to any hosting plan)",
+  note: "📝 Please leave a note when purchasing your hosting plan or contact our team directly.",
+  viewPlans: "View Hosting Plans",
+  contactTeam: "Contact Team",
+}
+
+interface DomainSearchProps {
+  texts?: DomainSearchTexts
+  pricingHref?: string
+  contactHref?: string
+}
+
+export function DomainSearch({
+  texts = defaultTexts,
+  pricingHref = "/pricing",
+  contactHref = "/contact",
+}: DomainSearchProps = {}) {
   const [domain, setDomain] = useState("")
   const [showMessage, setShowMessage] = useState(false)
 
@@ -26,14 +61,14 @@ export function DomainSearch() {
           <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
           <Input
             type="text"
-            placeholder="yourdomain.com"
+            placeholder={texts.placeholder}
             className="pl-8"
             value={domain}
             onChange={(e) => setDomain(e.target.value.toLowerCase().trim())}
           />
         </div>
         <Button type="submit">
-          Search
+          {texts.search}
         </Button>
       </form>
 
@@ -45,31 +80,31 @@ export function DomainSearch() {
               <div className="space-y-3 flex-1">
                 <div>
                   <p className="font-semibold text-blue-900">
-                    Domain registration for "{domain}"
+                    {texts.registrationBefore}{domain}{texts.registrationAfter}
                   </p>
                   <p className="text-sm text-blue-700 mt-2">
-                    We will verify availability and register this domain for you. If it's not available, we'll present alternative options.
+                    {texts.verify}
                   </p>
                 </div>
                 
                 <div className="p-3 bg-white border border-blue-200 rounded-md space-y-2">
                   <p className="text-sm font-medium text-gray-900">
-                    💰 Domain cost: $40 USD/year (additional to any hosting plan)
+                    {texts.cost}
                   </p>
                   <p className="text-sm text-gray-700">
-                    📝 Please leave a note when purchasing your hosting plan or contact our team directly.
+                    {texts.note}
                   </p>
                 </div>
 
                 <div className="flex gap-2 pt-2">
-                  <Link href="/pricing" className="flex-1">
+                  <Link href={pricingHref} className="flex-1">
                     <Button className="w-full">
-                      View Hosting Plans
+                      {texts.viewPlans}
                     </Button>
                   </Link>
-                  <Link href="/contact" className="flex-1">
+                  <Link href={contactHref} className="flex-1">
                     <Button variant="outline" className="w-full">
-                      Contact Team
+                      {texts.contactTeam}
                     </Button>
                   </Link>
                 </div>

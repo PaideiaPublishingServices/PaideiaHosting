@@ -171,5 +171,1949 @@
     "text": "La página que buscas no existe o fue movida.",
     "home": "Ir al inicio",
     "contact": "Contáctanos"
+  },
+  "layout": {
+    "header": {
+      "logoAlt": "Paideia Hosting",
+      "nav": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "plugins": "Plugins",
+        "pricing": "Precios",
+        "about": "Nosotros",
+        "contact": "Contacto"
+      },
+      "logIn": "Iniciar sesión",
+      "getStarted": "Comenzar",
+      "toggleMenu": "Abrir menú",
+      "menu": "Menú"
+    },
+    "footer": {
+      "tagline": "Nube para la ciencia, soluciones para el conocimiento",
+      "servicesTitle": "Servicios",
+      "services": {
+        "ojsHosting": "Hosting OJS",
+        "ompHosting": "Hosting OMP",
+        "repositoryHosting": "Hosting de repositorios",
+        "atomHosting": "Hosting AtoM",
+        "vpsForInstitutions": "VPS institucional"
+      },
+      "companyTitle": "Empresa",
+      "company": {
+        "about": "Nosotros",
+        "pricing": "Precios",
+        "blog": "Blog",
+        "affiliates": "Programa de afiliados",
+        "careers": "Trabaja con nosotros",
+        "contact": "Contacto"
+      },
+      "contactTitle": "Contacto",
+      "latamOffice": "Oficina Latinoamérica:",
+      "usOffice": "Oficina EE. UU.:",
+      "aiAssistance": "Asistencia inmediata con IA, 24/7",
+      "businessHours": "Horario laboral:",
+      "rights": "Todos los derechos reservados.",
+      "terms": "Términos del servicio",
+      "privacy": "Política de privacidad"
+    },
+    "whatsapp": {
+      "ariaLabel": "Chatea con nuestro asistente de IA por WhatsApp",
+      "label": "Chat con IA · 24/7"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About Us - Paideia Hosting",
+      "description": "Learn about Paideia Hosting, our mission, values, and how we're part of the larger Paideia Publishing Services ecosystem."
+    },
+    "hero": {
+      "title": "About Paideia Hosting",
+      "subtitle": "Specialized hosting solutions for academic institutions, part of the Paideia Publishing Services ecosystem.",
+      "imageAlt": "Paideia Hosting Team"
+    },
+    "story": {
+      "title": "Our Story",
+      "subtitle": "How we became leaders in academic hosting solutions",
+      "paragraphs": [
+        "Paideia Hosting was founded with a clear mission: to provide specialized hosting solutions for academic institutions and scholarly publishing. Born from the needs we observed while working with universities, research centers, and academic publishers, we recognized that standard hosting solutions weren't meeting the unique requirements of scholarly communication platforms.",
+        "As part of the larger Paideia Publishing Services ecosystem, we leverage our deep understanding of academic workflows and publishing processes to create hosting environments that are optimized for platforms like Open Journal Systems (OJS), Open Monograph Press (OMP), Dataverse, and Access to Memory (AtoM).",
+        "Our team combines expertise in both information technology and scholarly publishing, allowing us to bridge the gap between technical requirements and academic needs. This unique perspective has enabled us to grow from a small hosting provider to a trusted partner for academic institutions across Latin America and beyond."
+      ],
+      "imageAlt": "Paideia Hosting History"
+    },
+    "values": {
+      "title": "Our Mission & Values",
+      "subtitle": "The principles that guide our work",
+      "items": {
+        "academicExcellence": {
+          "title": "Academic Excellence",
+          "description": "We're committed to supporting the highest standards of academic publishing and research data management through reliable, secure hosting solutions."
+        },
+        "accessibility": {
+          "title": "Accessibility",
+          "description": "We believe in making advanced hosting solutions accessible to academic institutions of all sizes, from small journals to large research universities."
+        },
+        "openKnowledge": {
+          "title": "Open Knowledge",
+          "description": "We support the open access movement and open source academic software by providing optimized hosting environments for these platforms."
+        },
+        "technicalExcellence": {
+          "title": "Technical Excellence",
+          "description": "We maintain the highest standards of technical performance, security, and reliability in all our hosting solutions."
+        },
+        "academicFocus": {
+          "title": "Academic Focus",
+          "description": "We specialize exclusively in academic and research hosting, allowing us to develop deep expertise in the unique needs of this sector."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We continuously explore new technologies and approaches to improve our hosting solutions for the evolving needs of academic institutions."
+        }
+      }
+    },
+    "ecosystem": {
+      "title": "The Paideia Ecosystem",
+      "subtitle": "Paideia Hosting is part of a comprehensive suite of services for academic publishing",
+      "items": {
+        "publishingServices": {
+          "description": "Our parent organization that provides comprehensive editorial services for academic institutions, including journal management, editorial workflow optimization, and publishing consultancy.",
+          "link": "Visit Paideia Publishing Services"
+        },
+        "studio": {
+          "description": "Our creative and development arm that specializes in website design, custom development, and digital solutions for academic publishers and institutions.",
+          "link": "Visit Paideia Studio"
+        },
+        "editorial": {
+          "description": "Our editorial division that provides copyediting, proofreading, layout, and design services for academic publications, ensuring the highest quality of published content.",
+          "link": "Visit Paideia Editorial"
+        },
+        "latarxiv": {
+          "description": "Our preprint server for Latin American research, providing a platform for researchers to share their work before formal peer review and publication.",
+          "link": "Visit LATarxiv Preprints"
+        }
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Meet the experts behind Paideia Hosting",
+      "members": {
+        "pantaleo": {
+          "role": "Founder & CEO",
+          "bio": "OJS specialist and Open Access advisor. History graduate (UNRC) with a postgraduate degree in Philosophy (UCC). Founded and directed Kimün in 2015. Since then, he has been dedicated to editorial and academic consulting."
+        },
+        "suruguay": {
+          "role": "Developer",
+          "bio": "FullStack Web Developer and QA Automation Engineer. Has specialization in sales and marketing. Has coordinated ventures and developments in different countries."
+        },
+        "trujillo": {
+          "role": "Copywriting & SEO",
+          "bio": "Writer, Copywriter and SEO Writer. Graduated as a Spanish, literature and Latin teacher; has a master's degree in ELE teaching. Currently dedicated to digital content writing and virtual assistance for SMEs and Latin American entrepreneurs."
+        },
+        "ortellado": {
+          "role": "Developer",
+          "bio": "Database and server specialist. At Paideia Studio supports server updates and management."
+        },
+        "esposito": {
+          "role": "Editorial Advisor - Open Access - OJS",
+          "bio": "Dedicated to supporting editorial teams in policy services and index applications. Specialist in OJS, OMP and Crossref services management."
+        },
+        "austrich": {
+          "role": "XML-JATS Specialist",
+          "bio": "XML-JATS specialist and academic content structuring expert for digital publications."
+        }
+      }
+    },
+    "clients": {
+      "title": "Our Clients & Partners",
+      "subtitle": "Trusted by leading academic institutions across Latin America and beyond"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join the growing community of academic institutions using Paideia Hosting",
+      "contact": "Contact Us",
+      "services": "Explore Our Services"
+    }
+  },
+  "atomHosting": {
+    "meta": {
+      "title": "AtoM Hosting - Paideia Hosting",
+      "description": "Professional hosting for Access to Memory (AtoM) archival software. Ideal for libraries, archives, and cultural institutions."
+    },
+    "hero": {
+      "title": "AtoM Hosting Solutions",
+      "subtitle": "Professional hosting for Access to Memory (AtoM) archival software. Ideal for libraries, archives, and cultural institutions.",
+      "viewPricing": "View Pricing",
+      "contactSales": "Contact Sales",
+      "imageAlt": "AtoM Hosting"
+    },
+    "features": {
+      "title": "AtoM Hosting Features",
+      "subtitle": "Everything you need for your archival management system",
+      "versions": {
+        "title": "Latest AtoM Version",
+        "text": "Support for the latest AtoM versions with seamless upgrades"
+      },
+      "performance": {
+        "title": "Optimized Performance",
+        "text": "Servers configured specifically for AtoM requirements"
+      },
+      "storage": {
+        "title": "Secure Storage",
+        "text": "Encrypted storage with regular backups"
+      },
+      "tools": {
+        "title": "Import/Export Tools",
+        "text": "Enhanced tools for data migration and management"
+      },
+      "support": {
+        "title": "Expert Support",
+        "text": "24/7 AI assistance via WhatsApp, plus expert support during business hours"
+      },
+      "theming": {
+        "title": "Custom Theming",
+        "text": "Customize the interface with your institution's branding"
+      }
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that fits your archival needs",
+      "installation": {
+        "monthly": "Installation fee extra",
+        "annual": "Installation included"
+      },
+      "migration": {
+        "monthly": "Migration services fee extra",
+        "annual": "Migration services included"
+      },
+      "plans": {
+        "professional": {
+          "name": "Professional",
+          "description": "For archives and cultural institutions",
+          "features": [
+            "AtoM Installation",
+            "50GB Storage",
+            "SSL included",
+            "Daily Backups | 7 days",
+            "Email support",
+            "Additional storage available"
+          ]
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "For large institutions and national archives",
+          "features": [
+            "AtoM Installation",
+            "Installation included",
+            "100GB Storage",
+            "SSL included",
+            "Mail box included",
+            "S3 configuration included (Not included additional fee S3)",
+            "Daily Backups | 7 days",
+            "Priority email support",
+            "Additional storage available"
+          ],
+          "annualOnly": [
+            "Migration services included (Annual only)"
+          ]
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our AtoM hosting services",
+      "items": [
+        {
+          "q": "What versions of AtoM do you support?",
+          "a": "We support the latest stable versions of AtoM and can help you migrate from older versions."
+        },
+        {
+          "q": "Can I migrate my existing AtoM installation?",
+          "a": "Yes, we offer migration services to help you move your existing AtoM installation to our hosting platform."
+        },
+        {
+          "q": "How is archival data security handled?",
+          "a": "We implement multiple layers of security including encrypted storage, regular security audits, and compliance with archival data protection standards."
+        },
+        {
+          "q": "Do you support multilingual interfaces?",
+          "a": "Yes, we fully support AtoM's multilingual capabilities, allowing you to present your archives in multiple languages."
+        },
+        {
+          "q": "Can I customize the AtoM interface?",
+          "a": "Yes, our Professional and Enterprise plans allow for custom theming and interface modifications to match your institution's identity."
+        },
+        {
+          "q": "What import formats are supported?",
+          "a": "AtoM supports various import formats including EAD, MODS, Dublin Core, CSV, and more. We can help you with data migration and import."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join the growing community of archives and cultural institutions using Paideia Hosting",
+      "contact": "Contact Us",
+      "services": "Explore Other Services"
+    }
+  },
+  "backupSolutions": {
+    "meta": {
+      "title": "AWS Backup Solutions - Paideia Hosting",
+      "description": "Professional backup and digital preservation solutions for academic institutions. Powered by AWS infrastructure with flexible retention policies."
+    },
+    "hero": {
+      "title": "AWS Backup & Preservation Solutions",
+      "subtitle": "Enterprise-grade backup and digital preservation for academic institutions. Secure, scalable, and compliant with institutional requirements.",
+      "viewPricing": "View Pricing",
+      "contactSales": "Contact Sales",
+      "imageAlt": "AWS Backup Solutions"
+    },
+    "features": {
+      "title": "Powered by AWS Infrastructure",
+      "subtitle": "Enterprise-grade backup solutions built on Amazon Web Services",
+      "hostedOn": "Hosted on",
+      "logoAlt": "AWS",
+      "security": {
+        "title": "Enterprise Security",
+        "description": "Multi-layer security with encryption at rest and in transit"
+      },
+      "storage": {
+        "title": "Intelligent Storage",
+        "description": "Automatic lifecycle management reduces costs over time"
+      },
+      "preservation": {
+        "title": "Long-term Preservation",
+        "description": "Designed for archival storage from 1 to 10+ years"
+      },
+      "recovery": {
+        "title": "Flexible Recovery",
+        "description": "Recovery times from minutes to hours based on your needs"
+      },
+      "compliance": {
+        "title": "Compliance Ready",
+        "description": "Immutability options for regulatory compliance"
+      },
+      "monitoring": {
+        "title": "Monitoring Included",
+        "description": "Automated monitoring with monthly reports"
+      }
+    },
+    "plans": {
+      "title": "Two Plans for Different Needs",
+      "subtitle": "Choose the solution that fits your institutional requirements",
+      "preservation": {
+        "name": "Preservation Plus",
+        "description": "Long-term digital preservation and archival storage",
+        "items": [
+          {
+            "title": "Archival Storage",
+            "description": "AWS Deep Archive for maximum cost efficiency"
+          },
+          {
+            "title": "Flexible Capture Schedule",
+            "description": "Monthly, quarterly, semi-annual, or annual backups"
+          },
+          {
+            "title": "Long-term Retention",
+            "description": "1 to 10+ years retention policies"
+          },
+          {
+            "title": "Recovery Time",
+            "description": "72 business hours standard recovery"
+          },
+          {
+            "title": "Ideal For",
+            "description": "Doctoral theses, historical archives, institutional records"
+          }
+        ],
+        "price": "Starting at $10/GB/year",
+        "priceNote": "· Setup fee applies for volumes under 300 GB"
+      },
+      "active": {
+        "name": "Active Guard",
+        "description": "Operational backup with rapid recovery",
+        "items": [
+          {
+            "title": "Intelligent Tiering",
+            "description": "S3 Standard → Glacier IR → Deep Archive lifecycle"
+          },
+          {
+            "title": "Frequent Backups",
+            "description": "Daily, twice-weekly, or weekly capture schedules"
+          },
+          {
+            "title": "Operational Retention",
+            "description": "6 months to 2 years retention"
+          },
+          {
+            "title": "Fast Recovery",
+            "description": "30 minutes to 2 hours for recent data"
+          },
+          {
+            "title": "Ideal For",
+            "description": "OJS servers, DSpace repositories, production databases"
+          }
+        ],
+        "price": "Starting at $0.46/GB/month",
+        "priceNote": "· Setup fee applies for volumes under 300 GB"
+      }
+    },
+    "calculator": {
+      "title": "Calculate Your Price",
+      "subtitle": "Adjust the parameters to see pricing for your specific needs",
+      "plans": {
+        "preservation": "Preservation Plus",
+        "active": "Active Guard"
+      },
+      "configure": "Configure Your Plan",
+      "storageVolume": "Storage Volume",
+      "storageMin": "100 GB",
+      "storageMax": "5,000 GB",
+      "retentionPeriod": "Retention Period",
+      "captureFrequency": "Capture Frequency",
+      "years": "years",
+      "months": "months",
+      "yourPricing": "Your Pricing",
+      "monthlyCost": "Monthly Cost",
+      "annualCost": "Annual Cost",
+      "setupFee": "Setup Fee (one-time)",
+      "totalFirstYear": "Total First Year",
+      "pricePerGBYear": "Price per GB/year:",
+      "pricePerGBMonth": "Price per GB/month:",
+      "capturesPerYear": "Captures per year:",
+      "totalRetention": "Total retention:",
+      "requestQuote": "Request Quote",
+      "includes": "Includes:",
+      "preservation": {
+        "retentionMin": "1 year",
+        "retentionMax": "10+ years",
+        "frequencies": {
+          "monthly": "Monthly (12/year)",
+          "quarterly": "Quarterly (4/year)",
+          "semiannual": "Semi-annual (2/year)",
+          "annual": "Annual (1/year)"
+        },
+        "includes": [
+          "AWS Deep Archive storage",
+          "Automated capture schedule",
+          "Monthly monitoring reports",
+          "1 free recovery every 2 years",
+          "72-hour recovery SLA"
+        ]
+      },
+      "active": {
+        "retentions": {
+          "6": "6 months",
+          "12": "1 year",
+          "24": "2 years"
+        },
+        "frequencies": {
+          "daily": "Daily (365/year)",
+          "twiceWeekly": "Twice Weekly (104/year)",
+          "weekly": "Weekly (52/year)"
+        },
+        "includes": [
+          "Intelligent storage tiering",
+          "Automated capture schedule",
+          "Monthly monitoring reports",
+          "Unlimited recent data recovery",
+          "30min-2h recovery for recent data"
+        ]
+      },
+      "note": {
+        "label": "Note:",
+        "text": "These are standard pricing estimates. Setup fees apply only for volumes under 300 GB. Multi-year contracts receive additional discounts. Contact us for custom configurations and bundle pricing."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our AWS backup solutions",
+      "items": [
+        {
+          "question": "What types of data can I backup?",
+          "answer": "Any type of institutional data: research databases, OJS journals, DSpace repositories, Dataverse datasets, AtoM archives, and general server backups."
+        },
+        {
+          "question": "How is data security handled?",
+          "answer": "All data is encrypted both in transit and at rest using AWS encryption standards. Optional Object Lock provides immutability for compliance requirements."
+        },
+        {
+          "question": "Can I change my retention period later?",
+          "answer": "Yes, you can adjust retention policies at contract renewal. However, existing backups will follow their original retention schedule."
+        },
+        {
+          "question": "What happens if I exceed my contracted storage?",
+          "answer": "We'll notify you at 80% and 95% of your quota. You can upgrade your plan anytime, or we'll discuss options when you reach the limit."
+        },
+        {
+          "question": "How do I restore my data?",
+          "answer": "Simply contact our support team with your restoration request. We'll initiate the recovery process and provide a secure download link once ready."
+        },
+        {
+          "question": "Is there a setup fee?",
+          "answer": "Setup fees apply only for volumes under 300 GB ($600 for Preservation Plus, $800 for Active Guard). Volumes of 300 GB or more include free setup."
+        },
+        {
+          "question": "Can I combine both plans?",
+          "answer": "Yes! Many institutions use Active Guard for operational servers and Preservation Plus for long-term archival storage. Contact us for bundled pricing."
+        },
+        {
+          "question": "What payment terms are available?",
+          "answer": "We offer annual payment terms only. Multi-year contracts (2-10 years) receive discounted rates for Preservation Plus."
+        },
+        {
+          "question": "Do you offer geographic replication?",
+          "answer": "Yes, as an add-on service. Your data can be replicated across multiple AWS regions for enhanced disaster recovery (+50% on base price)."
+        },
+        {
+          "question": "What monitoring and reporting is included?",
+          "answer": "All plans include automated monitoring with monthly email reports showing storage usage, backup status, and quota utilization. Premium reporting available as an add-on."
+        },
+        {
+          "question": "Can you help us migrate existing backups?",
+          "answer": "Yes, we offer migration services to transfer your existing backups to our AWS infrastructure. Contact our sales team for migration assistance and pricing."
+        },
+        {
+          "question": "What SLAs do you provide?",
+          "answer": "Preservation Plus: 72 business hours recovery. Active Guard: 30 minutes to 2 hours for recent data, 24-48 hours for archived data. SLA 99.9% uptime available as add-on."
+        }
+      ]
+    },
+    "addons": {
+      "title": "Optional Add-ons",
+      "subtitle": "Enhance your backup solution with additional features",
+      "items": [
+        {
+          "title": "Object Lock (Immutability)",
+          "price": "+$300-360/year",
+          "description": "WORM protection prevents deletion or modification for compliance requirements",
+          "bullets": [
+            "Ransomware protection",
+            "Regulatory compliance",
+            "Audit-ready archives"
+          ]
+        },
+        {
+          "title": "Geographic Replication",
+          "price": "+50% on base",
+          "description": "Replicate your backups to a second AWS region for disaster recovery",
+          "bullets": [
+            "Multi-region redundancy",
+            "Enhanced disaster recovery",
+            "Compliance requirements"
+          ]
+        },
+        {
+          "title": "Versioning",
+          "price": "+30% on base",
+          "description": "Keep multiple versions of each backup for point-in-time recovery",
+          "bullets": [
+            "Multiple restore points",
+            "Accidental change protection",
+            "Granular recovery options"
+          ]
+        },
+        {
+          "title": "Premium Reporting",
+          "price": "+$300-500/year",
+          "description": "Detailed analytics, trend analysis, and executive reports",
+          "bullets": [
+            "Weekly detailed reports",
+            "Trend analysis",
+            "Custom dashboards"
+          ]
+        },
+        {
+          "title": "24/7 Monitoring",
+          "price": "+$400-3,600/year",
+          "description": "Round-the-clock monitoring with proactive issue detection",
+          "bullets": [
+            "Continuous monitoring",
+            "Immediate alerts",
+            "Priority support"
+          ]
+        },
+        {
+          "title": "Annual Audit",
+          "price": "+$600/year",
+          "description": "Comprehensive annual review with formal documentation",
+          "bullets": [
+            "Full architecture review",
+            "Compliance verification",
+            "Executive report"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Secure Your Data?",
+      "subtitle": "Join academic institutions worldwide trusting their data to our AWS-powered backup solutions",
+      "primary": "Request a Quote",
+      "secondary": "Explore Other Services"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact Us - Paideia Hosting",
+      "description": "Get in touch with our team for inquiries about our academic hosting services, support, or custom solutions."
+    },
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Have questions about our services? Our team is here to help you find the perfect hosting solution for your academic institution."
+    },
+    "getInTouch": {
+      "title": "Get in Touch",
+      "subtitle": "We're here to answer any questions you have about our academic hosting services.",
+      "email": {
+        "title": "Email Us",
+        "general": "For general inquiries:",
+        "support": "For technical support:"
+      },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "assistance": "Immediate AI assistance, available 24/7",
+        "businessHours": "Business hours (Mon–Fri, 09am–3pm UTC−03:00):"
+      },
+      "office": {
+        "title": "Office",
+        "country": "United States"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": "Monday - Friday: 09:00 AM - 3:00 PM UTC−03:00",
+        "weekend": "Saturday - Sunday: Closed"
+      },
+      "mapAlt": "Office Location Map"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "fields": {
+        "name": {
+          "label": "Full Name",
+          "placeholder": "John Doe"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "john.doe@example.com"
+        },
+        "whatsapp": {
+          "label": "WhatsApp",
+          "placeholder": "+1 (555) 123-4567"
+        },
+        "inquiryType": {
+          "label": "Inquiry Type",
+          "placeholder": "Select an inquiry type"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Please describe your inquiry in detail..."
+        }
+      },
+      "inquiryTypes": {
+        "general": "General Inquiry",
+        "sales": "Sales",
+        "support": "Technical Support",
+        "custom": "Custom Solutions",
+        "billing": "Billing"
+      },
+      "validation": {
+        "name": "Name must be at least 2 characters.",
+        "email": "Please enter a valid email address.",
+        "inquiryType": "Please select an inquiry type.",
+        "message": "Message must be at least 10 characters."
+      },
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "status": {
+        "label": "Form status:",
+        "submitting": "Submitting...",
+        "ready": "Ready"
+      },
+      "toast": {
+        "successTitle": "Message sent successfully!",
+        "successDescription": "We'll get back to you as soon as possible. Check your email for confirmation.",
+        "errorTitle": "Error sending message",
+        "errorDescription": "Failed to send message. Please try again or contact us at contact@paideiahosting.net"
+      }
+    },
+    "departments": {
+      "title": "Department Contacts",
+      "subtitle": "Connect with the right team for your specific needs",
+      "assistance": "Immediate AI assistance, 24/7",
+      "businessHours": "Business hours:",
+      "items": {
+        "sales": {
+          "title": "Sales & New Accounts",
+          "description": "For inquiries about our services, pricing, and setting up new accounts."
+        },
+        "support": {
+          "title": "Technical Support",
+          "description": "For assistance with existing services, technical issues, or account management."
+        },
+        "custom": {
+          "title": "Custom Solutions",
+          "description": "For discussing tailored hosting solutions for your specific academic needs."
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Quick answers to common questions about contacting us",
+      "items": [
+        {
+          "question": "What is your typical response time?",
+          "answer": "We aim to respond to all inquiries within 24 hours during business days. For urgent technical support, our response time is typically under 12 hours."
+        },
+        {
+          "question": "Do you offer emergency support?",
+          "answer": "Yes: 24/7 AI assistance via WhatsApp; expert support during business hours."
+        },
+        {
+          "question": "Can I schedule a consultation call?",
+          "answer": "You can request a consultation call through our contact form or by emailing contact@paideiahosting.net with your preferred date and time."
+        },
+        {
+          "question": "How do I report a technical issue?",
+          "answer": "Existing customers can report technical issues through our customer portal, by emailing support@paideiahosting.net, or by calling our technical support line."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join the growing community of academic institutions using Paideia Hosting",
+      "services": "Explore Services",
+      "pricing": "View Pricing"
+    }
+  },
+  "customSolutions": {
+    "meta": {
+      "title": "Custom Solutions - Paideia Hosting",
+      "description": "Tailored hosting solutions for specific academic needs. Custom development, integration, and specialized academic software hosting."
+    },
+    "hero": {
+      "title": "Custom Hosting Solutions",
+      "subtitle": "Tailored hosting solutions for specific academic needs. Custom development, integration, and specialized academic software hosting.",
+      "exploreServices": "Explore Services",
+      "contactSales": "Contact Sales",
+      "imageAlt": "Custom Solutions"
+    },
+    "aws": {
+      "title": "AWS-Powered Custom Solutions",
+      "subtitle": "Tailored hosting solutions for specific academic needs",
+      "poweredBy": "Powered by",
+      "logoAlt": "AWS",
+      "items": [
+        {
+          "title": "High-Performance VPS",
+          "description": "Enterprise-grade instances for demanding workloads",
+          "features": [
+            "EC2 instances up to 96 vCPUs",
+            "Up to 768GB RAM",
+            "GPU instances available",
+            "Auto-scaling capabilities"
+          ]
+        },
+        {
+          "title": "Storage & CDN",
+          "description": "Scalable storage and global content delivery",
+          "features": [
+            "S3 integration & management",
+            "CloudFront CDN setup",
+            "Unlimited storage capacity",
+            "Global edge locations"
+          ]
+        },
+        {
+          "title": "Load Balancing",
+          "description": "High availability and traffic distribution",
+          "features": [
+            "Application Load Balancer",
+            "Multi-AZ deployment",
+            "Health monitoring",
+            "SSL termination"
+          ]
+        },
+        {
+          "title": "Database Services",
+          "description": "Managed database solutions",
+          "features": [
+            "RDS (MySQL, PostgreSQL)",
+            "DynamoDB NoSQL",
+            "Automated backups",
+            "Read replicas"
+          ]
+        },
+        {
+          "title": "AI Integration",
+          "description": "Advanced AI and machine learning capabilities",
+          "features": [
+            "Amazon Q integration",
+            "Bedrock AI models",
+            "Custom AI workflows",
+            "Research data analysis"
+          ]
+        },
+        {
+          "title": "Enterprise Solutions",
+          "description": "Complete infrastructure management",
+          "features": [
+            "VPC custom networks",
+            "Security compliance",
+            "24/7 monitoring",
+            "Disaster recovery"
+          ]
+        }
+      ],
+      "pricing": {
+        "title": "Custom Pricing",
+        "description": "All solutions are tailored to your specific requirements. Pricing varies based on usage, scale, and selected AWS services.",
+        "cta": "Request a Quote"
+      }
+    },
+    "additional": {
+      "title": "Additional Custom Services",
+      "subtitle": "Specialized solutions tailored to your academic institution's unique requirements",
+      "items": {
+        "development": {
+          "title": "Custom Development",
+          "description": "Bespoke software development for academic and research applications"
+        },
+        "integration": {
+          "title": "System Integration",
+          "description": "Seamless integration of academic systems and databases"
+        },
+        "specialized": {
+          "title": "Specialized Software Hosting",
+          "description": "Hosting for unique academic and research applications"
+        },
+        "migration": {
+          "title": "Migration Services",
+          "description": "Expert migration of existing academic systems"
+        },
+        "consulting": {
+          "title": "Consulting Services",
+          "description": "Strategic guidance for academic IT infrastructure"
+        },
+        "managed": {
+          "title": "Managed Solutions",
+          "description": "Fully managed custom hosting environments"
+        }
+      }
+    },
+    "approach": {
+      "title": "Our Approach",
+      "subtitle": "How we develop custom solutions for your academic institution",
+      "steps": [
+        {
+          "title": "Discovery & Analysis",
+          "description": "We begin by understanding your specific needs, challenges, and goals through in-depth consultation."
+        },
+        {
+          "title": "Solution Design",
+          "description": "Our experts design a tailored solution that addresses your unique requirements and academic context."
+        },
+        {
+          "title": "Implementation",
+          "description": "We develop and deploy your custom solution with minimal disruption to your academic operations."
+        },
+        {
+          "title": "Ongoing Support",
+          "description": "We provide continuous support, maintenance, and optimization to ensure your solution evolves with your needs."
+        }
+      ]
+    },
+    "stories": {
+      "title": "Success Stories",
+      "subtitle": "How our custom solutions have helped academic institutions",
+      "items": [
+        {
+          "title": "National Research University",
+          "description": "Developed a custom research data management platform that integrated with their existing systems, improving data accessibility and collaboration across departments."
+        },
+        {
+          "title": "Medical School Consortium",
+          "description": "Created a specialized hosting environment for sensitive medical research data with enhanced security protocols and compliance with healthcare regulations."
+        },
+        {
+          "title": "Liberal Arts College",
+          "description": "Implemented a custom digital humanities platform that allowed for innovative teaching methods and student research projects."
+        },
+        {
+          "title": "University Library System",
+          "description": "Developed an integrated digital repository solution that connected multiple campus libraries and archives into a unified search and access system."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Common questions about our custom solutions",
+      "items": [
+        {
+          "question": "How long does it take to develop a custom solution?",
+          "answer": "Timeline varies based on complexity, but typically ranges from 4-12 weeks. We provide detailed project timelines during the consultation phase."
+        },
+        {
+          "question": "What is the typical investment for a custom solution?",
+          "answer": "Pricing depends on your specific requirements. We offer flexible pricing models including one-time development costs and ongoing hosting/maintenance fees."
+        },
+        {
+          "question": "Can you integrate with our existing systems?",
+          "answer": "Yes, we specialize in integrating with existing academic systems including LMS platforms, library systems, research databases, and administrative software."
+        },
+        {
+          "question": "Who owns the intellectual property of custom solutions?",
+          "answer": "In most cases, you retain full ownership of custom-developed solutions. We provide clear IP terms in all our agreements."
+        },
+        {
+          "question": "Do you provide training for our staff?",
+          "answer": "Yes, we offer comprehensive training programs to ensure your team can effectively use and manage your custom solution."
+        },
+        {
+          "question": "What ongoing support do you provide?",
+          "answer": "We offer various support tiers including basic maintenance, 24/7 AI assistance via WhatsApp plus expert support during business hours, regular updates, and continuous improvement services."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Discuss Your Custom Solution?",
+      "subtitle": "Our team of academic hosting experts is ready to help you develop the perfect solution for your institution",
+      "primary": "Schedule a Consultation",
+      "secondary": "Explore Other Services"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Paideia Hosting - Cloud for Science, Solutions for Knowledge",
+      "description": "Specialized hosting for academic applications. Reliable, secure, and optimized for research and educational institutions."
+    },
+    "hero": {
+      "title": "Cloud for Science, Solutions for Knowledge",
+      "subtitle": "Specialized hosting for academic applications. Reliable, secure, and optimized for research and educational institutions.",
+      "exploreServices": "Explore Services",
+      "contactSales": "Contact Sales",
+      "imageAlt": "Paideia Hosting",
+      "photoCredit": "Photo by NASA on Unsplash"
+    },
+    "domain": {
+      "title": "Find Your Perfect Domain",
+      "subtitle": "Start your academic project with the right domain name"
+    },
+    "domainSearch": {
+      "placeholder": "yourdomain.com",
+      "search": "Search",
+      "registrationBefore": "Domain registration for \"",
+      "registrationAfter": "\"",
+      "verify": "We will verify availability and register this domain for you. If it's not available, we'll present alternative options.",
+      "cost": "💰 Domain cost: $40 USD/year (additional to any hosting plan)",
+      "note": "📝 Please leave a note when purchasing your hosting plan or contact our team directly.",
+      "viewPlans": "View Hosting Plans",
+      "contactTeam": "Contact Team"
+    },
+    "services": {
+      "title": "Specialized Academic Hosting",
+      "subtitle": "Tailored solutions for research and educational institutions",
+      "learnMore": "Learn more",
+      "items": {
+        "ojs": {
+          "title": "OJS Hosting",
+          "description": "Optimized hosting for Open Journal Systems. Perfect for academic publishing."
+        },
+        "omp": {
+          "title": "OMP Hosting",
+          "description": "Specialized hosting for Open Monograph Press. Ideal for book publishing."
+        },
+        "repository": {
+          "title": "Repository Hosting",
+          "description": "Secure and reliable hosting for research data repositories (Dataverse & DSpace)."
+        },
+        "atom": {
+          "title": "AtoM Hosting",
+          "description": "Professional hosting for Access to Memory archival software."
+        },
+        "vps": {
+          "title": "VPS for Institutions",
+          "description": "Customizable virtual private servers for educational institutions."
+        },
+        "custom": {
+          "title": "Custom Solutions",
+          "description": "Tailored hosting solutions for specific academic needs."
+        },
+        "backup": {
+          "title": "Backup Solutions",
+          "description": "Enterprise-grade backup and digital preservation powered by AWS."
+        },
+        "plugins": {
+          "title": "Plugins & Themes",
+          "description": "Premium plugins and themes for OJS and OMP platforms."
+        }
+      }
+    },
+    "features": {
+      "title": "Why Choose Paideia Hosting?",
+      "description": "We understand the unique needs of academic institutions and provide specialized solutions to meet them. Powered by Paideia Publishing Services and enriched by the expertise from Paideia Studio, Paideia Editorial, and LatArXiv environments.",
+      "items": [
+        "Specialized in academic applications",
+        "24/7 AI assistance via WhatsApp, plus expert support during business hours",
+        "Regular backups and security updates",
+        "Optimized for academic workflows",
+        "Scalable solutions for growing institutions"
+      ],
+      "learnMore": "Learn More",
+      "imageAlt": "Paideia Hosting Features"
+    },
+    "testimonials": {
+      "title": "Trusted by Academic Institutions",
+      "subtitle": "See what our clients say about our services",
+      "items": [
+        {
+          "quote": "We have been working with Paideia from Spain for a few months now.\n                We are delighted with the service. Despite the time difference, they always respond very quickly, they are agile in the resolution of requests and development of the work.\n                The truth is, there couldn't be a better service. We trust their judgment (...)",
+          "author": "Carolina Murabe",
+          "institution": "Asociación Española de Personalismo"
+        },
+        {
+          "quote": "In Paideia Studio they are always very attentive and very quick to answer any questions that may arise regarding editorial issues. They give you personalized attention to your situation. I highly recommend them!",
+          "author": "Elias Ruiz Hernandez",
+          "institution": "Instituto Tecnológico Superior del Oriente del Estado de Hidalgo"
+        },
+        {
+          "quote": "We have worked with Paideia Studio in the migration of our Journals Portal in OJS 2 to the latest version of this software. It is a portal with a lot of content and all the information was migrated perfectly. They also provided us with access to training courses for our editors (...)",
+          "author": "Claudia Fernandez",
+          "institution": "Universidad Católica Argentina"
+        }
+      ],
+      "trustpilot": "Trustpilot"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join the growing community of academic institutions trusting Paideia Hosting",
+      "contact": "Contact Us",
+      "pricing": "View Pricing"
+    }
+  },
+  "ompHosting": {
+    "meta": {
+      "title": "OMP Hosting - Paideia Hosting",
+      "description": "Specialized hosting for Open Monograph Press (OMP). Ideal for academic book publishing and management."
+    },
+    "hero": {
+      "title": "OMP Hosting Solutions",
+      "subtitle": "Specialized hosting for Open Monograph Press. Ideal for academic book publishing and management.",
+      "viewPricing": "View Pricing",
+      "contactSales": "Contact Sales",
+      "imageAlt": "OMP Hosting"
+    },
+    "features": {
+      "title": "OMP Hosting Features",
+      "subtitle": "Everything you need for your academic book publishing",
+      "versions": {
+        "title": "OMP Version Support",
+        "text": "Support for the latest OMP versions with seamless upgrades"
+      },
+      "performance": {
+        "title": "Optimized Performance",
+        "text": "Servers configured specifically for OMP requirements"
+      },
+      "backups": {
+        "title": "Daily Backups",
+        "text": "Automatic daily backups, with 5 to 7-day retention depending on plan"
+      },
+      "security": {
+        "title": "Security Updates",
+        "text": "Regular security patches and updates"
+      },
+      "support": {
+        "title": "Technical Support",
+        "text": "24/7 AI assistance via WhatsApp, plus OMP expert support during business hours"
+      },
+      "domain": {
+        "title": "Custom Domain",
+        "text": "Use your own domain or subdomain"
+      }
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that fits your publishing needs",
+      "footnote": "*For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+      "migration": {
+        "monthly": "Migration services fee extra",
+        "annual": "Migration services included"
+      },
+      "plans": {
+        "basic": {
+          "name": "Basic",
+          "description": "For emerging publishers",
+          "features": [
+            "Single Press",
+            "10GB Storage",
+            "Daily Backups | 5 days",
+            "1 mail box",
+            "SSL included",
+            "Email support",
+            "Free Installation"
+          ]
+        },
+        "professional": {
+          "name": "Professional",
+          "description": "For established academic publishers",
+          "features": [
+            "Multi-press in 1 OMP Installation",
+            "20GB Storage",
+            "Daily Backups | 7 days",
+            "5 mail box",
+            "SSL included",
+            "Priority email support",
+            "Free Installation",
+            "1 Upgrade per year"
+          ],
+          "crossref": "Crossref membership + Similarity Check available on request*"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "For institutions with multiple publications",
+          "features": [
+            "Multi-press in Multi-installations",
+            "30GB Storage",
+            "Daily Backups | 7 days",
+            "Unlimited mailbox",
+            "SSL included",
+            "Priority email and phone support",
+            "Free Installation",
+            "1 Upgrade per year"
+          ],
+          "annualOnly": [
+            "PrePrints server memberships (Annual only)"
+          ],
+          "crossref": "Crossref membership + Similarity Check included (annual plan)*"
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our OMP hosting services",
+      "items": [
+        {
+          "q": "What versions of OMP do you support?",
+          "a": "We support the latest stable versions of OMP and can help you migrate from older versions."
+        },
+        {
+          "q": "Can I migrate my existing OMP installation?",
+          "a": "Yes, we offer migration services to help you move your existing OMP installation to our hosting platform."
+        },
+        {
+          "q": "Do you offer SSL certificates?",
+          "a": "Yes, all our hosting plans include free SSL certificates to ensure your publishing platform is secure."
+        },
+        {
+          "q": "How often do you update OMP?",
+          "a": "We apply security updates as soon as they're available. Major version upgrades are scheduled with your approval."
+        },
+        {
+          "q": "Can I use my own domain name?",
+          "a": "Yes, all plans let you use your own domain or subdomain."
+        },
+        {
+          "q": "What kind of support do you offer?",
+          "a": "All plans include 24/7 AI assistance via WhatsApp, plus OMP expert support during business hours: email support on Basic, priority email support on Professional, and priority email and phone support on Enterprise."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join the growing community of academic publishers using Paideia Hosting",
+      "contact": "Contact Us",
+      "services": "Explore Other Services"
+    }
+  },
+  "pricing": {
+    "meta": {
+      "title": "Pricing - Paideia Hosting",
+      "description": "Transparent pricing plans for our academic hosting services. Choose the plan that fits your institution's needs."
+    },
+    "hero": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that fits your academic institution's needs. No hidden fees, just straightforward pricing."
+    },
+    "tabs": {
+      "triggers": {
+        "ojs": "OJS",
+        "omp": "OMP",
+        "dataverse": "Repository",
+        "atom": "AtoM",
+        "vps": "VPS",
+        "custom": "Custom"
+      },
+      "annualNotice": "Switch to Annual billing for exclusive benefits and save 10%",
+      "perYear": "per year",
+      "awsAlt": "AWS",
+      "migration": {
+        "included": "Migration services included",
+        "extra": "Migration services fee extra"
+      },
+      "installation": {
+        "included": "Installation included",
+        "extra": "Installation fee extra"
+      },
+      "crossref": {
+        "onRequest": "Crossref membership + Similarity Check available on request*",
+        "annualPlan": "Crossref membership + Similarity Check included (annual plan)*",
+        "included": "Crossref membership + Similarity Check included*"
+      },
+      "preprints": "PrePrints server memberships (Annual only)",
+      "footnotes": {
+        "journals": "*For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+        "allPlans": "*For customers in Latin America and Spain. Included in all plans. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership."
+      },
+      "ojs": {
+        "title": "OJS Hosting Plans",
+        "subtitle": "Specialized hosting for Open Journal Systems",
+        "plans": {
+          "basic": {
+            "name": "Basic",
+            "description": "For emerging journals",
+            "features": [
+              "Single Journal",
+              "10GB Storage",
+              "Daily Backups | 5 days",
+              "1 mail box",
+              "SSL included",
+              "Email support",
+              "Free Installation"
+            ]
+          },
+          "professional": {
+            "name": "Professional",
+            "description": "For established academic journals",
+            "features": [
+              "Multi-journal in 1 OJS Installations",
+              "20GB Storage",
+              "Daily Backups | 7 days",
+              "5 mail box",
+              "SSL included",
+              "Priority email support",
+              "Free Installation",
+              "1 Upgrade per year"
+            ]
+          },
+          "enterprise": {
+            "name": "Enterprise",
+            "description": "For institutions with multiple journals",
+            "features": [
+              "Multi-journal in Multi-installations",
+              "30GB Storage",
+              "Daily Backups | 7 days",
+              "Unlimited mailbox",
+              "SSL included",
+              "Priority email and phone support",
+              "Free Installation",
+              "1 Upgrade per year"
+            ]
+          }
+        }
+      },
+      "omp": {
+        "title": "OMP Hosting Plans",
+        "subtitle": "Specialized hosting for Open Monograph Press",
+        "plans": {
+          "basic": {
+            "name": "Basic",
+            "description": "For emerging publishers",
+            "features": [
+              "Single Press",
+              "10GB Storage",
+              "Daily Backups | 5 days",
+              "1 mail box",
+              "SSL included",
+              "Email support",
+              "Free Installation"
+            ]
+          },
+          "professional": {
+            "name": "Professional",
+            "description": "For established academic publishers",
+            "features": [
+              "Multi-press in 1 OMP Installation",
+              "20GB Storage",
+              "Daily Backups | 7 days",
+              "5 mail box",
+              "SSL included",
+              "Priority email support",
+              "Free Installation",
+              "1 Upgrade per year"
+            ]
+          },
+          "enterprise": {
+            "name": "Enterprise",
+            "description": "For institutions with multiple publications",
+            "features": [
+              "Multi-press in Multi-installations",
+              "30GB Storage",
+              "Daily Backups | 7 days",
+              "Unlimited mailbox",
+              "SSL included",
+              "Priority email and phone support",
+              "Free Installation",
+              "1 Upgrade per year"
+            ]
+          }
+        }
+      },
+      "repository": {
+        "title": "Repository Hosting Plans",
+        "subtitle": "Secure and reliable hosting for research data repositories (Dataverse & DSpace) on AWS infrastructure",
+        "plans": {
+          "professional": {
+            "name": "Professional",
+            "description": "For research departments",
+            "features": [
+              "Repository (Dataverse or DSpace)",
+              "50GB Storage",
+              "SSL included",
+              "Daily Backups | 7 days",
+              "Email support",
+              "Additional storage available"
+            ]
+          },
+          "enterprise": {
+            "name": "Enterprise",
+            "description": "For institutions and large research centers",
+            "features": [
+              "Repository (Dataverse or DSpace)",
+              "Installation included",
+              "100GB Storage",
+              "SSL included",
+              "Mail box included",
+              "S3 configuration included (Not included additional fee S3)",
+              "Daily Backups | 7 days",
+              "Priority email support",
+              "Additional storage available"
+            ]
+          }
+        }
+      },
+      "atom": {
+        "title": "AtoM Hosting Plans",
+        "subtitle": "Professional hosting for Access to Memory archival software",
+        "plans": {
+          "professional": {
+            "name": "Professional",
+            "description": "For archives and cultural institutions",
+            "features": [
+              "AtoM Installation",
+              "50GB Storage",
+              "SSL included",
+              "Daily Backups | 7 days",
+              "Email support",
+              "Additional storage available"
+            ]
+          },
+          "enterprise": {
+            "name": "Enterprise",
+            "description": "For large institutions and national archives",
+            "features": [
+              "AtoM Installation",
+              "Installation included",
+              "100GB Storage",
+              "SSL included",
+              "Mail box included",
+              "S3 configuration included (Not included additional fee S3)",
+              "Daily Backups | 7 days",
+              "Priority email support",
+              "Additional storage available"
+            ]
+          }
+        }
+      },
+      "vps": {
+        "title": "VPS for Institutions",
+        "subtitle": "Customizable virtual private servers for educational institutions",
+        "lightsail": {
+          "note": "Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.",
+          "plans": {
+            "professional": {
+              "name": "Professional",
+              "description": "For academic departments",
+              "features": [
+                "2 vCPUs",
+                "8GB RAM",
+                "160GB SSD Storage",
+                "5TB Transfer",
+                "Server Support Included",
+                "Application Support (OJS, Moodle, DSpace, AtoM)",
+                "7-Day Snapshots",
+                "Dedicated IP",
+                "Architecture Support"
+              ]
+            },
+            "enterprise": {
+              "name": "Enterprise",
+              "description": "For large institutions and research centers",
+              "features": [
+                "4 vCPUs",
+                "16GB RAM",
+                "320GB SSD Storage",
+                "6TB Transfer",
+                "Server Support Included",
+                "Application Support (OJS, Moodle, DSpace, AtoM)",
+                "7-Day Snapshots",
+                "Dedicated IP",
+                "Architecture Support"
+              ]
+            }
+          }
+        },
+        "ec2": {
+          "note": "500 GB transfer included. Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.",
+          "plans": {
+            "professional": {
+              "name": "Professional",
+              "description": "For academic departments (t3.large)",
+              "features": [
+                "2 vCPUs",
+                "8GB RAM",
+                "160GB SSD Storage",
+                "Server Support Included",
+                "Application Support (OJS, Moodle, DSpace, AtoM)",
+                "7-Day Snapshots",
+                "Dedicated IP",
+                "Architecture Support",
+                "Built on AWS EC2 — HIPAA-eligible infrastructure",
+                "Private VPC with custom network security (Security Groups)",
+                "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
+                "Recommended for institutions with strict compliance or data-governance requirements"
+              ]
+            },
+            "enterprise": {
+              "name": "Enterprise",
+              "description": "For large institutions (t3.xlarge)",
+              "features": [
+                "4 vCPUs",
+                "16GB RAM",
+                "320GB SSD Storage",
+                "Server Support Included",
+                "Application Support (OJS, Moodle, DSpace, AtoM)",
+                "7-Day Snapshots",
+                "Dedicated IP",
+                "Architecture Support",
+                "Built on AWS EC2 — HIPAA-eligible infrastructure",
+                "Private VPC with custom network security (Security Groups)",
+                "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
+                "Recommended for institutions with strict compliance or data-governance requirements"
+              ]
+            }
+          }
+        }
+      },
+      "custom": {
+        "title": "Custom Solutions",
+        "subtitle": "Tailored hosting solutions for specific academic needs",
+        "poweredBy": "Powered by",
+        "cards": [
+          {
+            "title": "High-Performance VPS",
+            "description": "Enterprise-grade instances for demanding workloads",
+            "features": [
+              "EC2 instances up to 96 vCPUs",
+              "Up to 768GB RAM",
+              "GPU instances available",
+              "Auto-scaling capabilities"
+            ]
+          },
+          {
+            "title": "Storage & CDN",
+            "description": "Scalable storage and global content delivery",
+            "features": [
+              "S3 integration & management",
+              "CloudFront CDN setup",
+              "Unlimited storage capacity",
+              "Global edge locations"
+            ]
+          },
+          {
+            "title": "Load Balancing",
+            "description": "High availability and traffic distribution",
+            "features": [
+              "Application Load Balancer",
+              "Multi-AZ deployment",
+              "Health monitoring",
+              "SSL termination"
+            ]
+          },
+          {
+            "title": "Database Services",
+            "description": "Managed database solutions",
+            "features": [
+              "RDS (MySQL, PostgreSQL)",
+              "DynamoDB NoSQL",
+              "Automated backups",
+              "Read replicas"
+            ]
+          },
+          {
+            "title": "AI Integration",
+            "description": "Advanced AI and machine learning capabilities",
+            "features": [
+              "Amazon Q integration",
+              "Bedrock AI models",
+              "Custom AI workflows",
+              "Research data analysis"
+            ]
+          },
+          {
+            "title": "Enterprise Solutions",
+            "description": "Complete infrastructure management",
+            "features": [
+              "VPC custom networks",
+              "Security compliance",
+              "24/7 monitoring",
+              "Disaster recovery"
+            ]
+          }
+        ],
+        "pricing": {
+          "title": "Custom Pricing",
+          "text": "All solutions are tailored to your specific requirements. Pricing varies based on usage, scale, and selected AWS services.",
+          "cta": "Request a Quote"
+        }
+      }
+    },
+    "comparison": {
+      "title": "Plan Comparison",
+      "subtitle": "Compare our plans to find the right fit for your institution",
+      "tabs": {
+        "ojsOmp": "OJS & OMP",
+        "repositoryAtom": "Repository & AtoM"
+      },
+      "headers": {
+        "feature": "Feature",
+        "basic": "Basic",
+        "professional": "Professional",
+        "enterprise": "Enterprise"
+      },
+      "rows": {
+        "priceMonthly": "Price (Monthly)",
+        "storage": "Storage",
+        "installations": "Installations",
+        "installation": "Installation",
+        "backups": "Backups",
+        "emailSupport": "Email Support",
+        "prioritySupport": "Priority Support",
+        "phoneSupport": "Phone Support",
+        "ssl": "SSL Certificate",
+        "migrationAnnual": "Migration Services (Annual)",
+        "crossref": "Crossref Membership*",
+        "similarityCheck": "Similarity Check*",
+        "mailBox": "Mail Box",
+        "s3": "S3 Configuration",
+        "installationAnnual": "Installation (Annual)"
+      },
+      "values": {
+        "singleJournalPress": "Single Journal/Press",
+        "multiIn1": "Multi in 1 Installation",
+        "multiInstallations": "Multi-installations",
+        "backups5": "Daily | 5 days",
+        "backups7": "Daily | 7 days",
+        "onRequest": "On request",
+        "annualPlan": "Annual plan",
+        "repositoryAtom": "Repository/AtoM"
+      },
+      "footnote": "*For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Common questions about our pricing and plans",
+      "items": [
+        {
+          "question": "Can I upgrade my plan later?",
+          "answer": "Yes, you can upgrade your plan at any time. The price difference will be prorated for the remainder of your billing cycle."
+        },
+        {
+          "question": "Do you offer discounts for educational institutions?",
+          "answer": "Yes, we offer special pricing for educational institutions. Contact our sales team to learn about our academic discount program."
+        },
+        {
+          "question": "What payment methods do you accept?",
+          "answer": "We accept major credit cards, PayPal, and bank transfers. For educational institutions, we also offer purchase order and invoice payment options."
+        },
+        {
+          "question": "Is there a setup fee?",
+          "answer": "No, there are no setup fees for our standard plans. Custom solutions may include a one-time setup fee depending on the complexity of the implementation."
+        },
+        {
+          "question": "Can I cancel my subscription at any time?",
+          "answer": "Yes, you can cancel your subscription at any time. We offer a 30-day money-back guarantee for all our plans."
+        },
+        {
+          "question": "Do you offer a free trial?",
+          "answer": "Yes, we offer a 14-day free trial for all our standard plans. Contact us to set up your trial environment."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join the growing community of academic institutions using Paideia Hosting",
+      "contact": "Contact Us",
+      "services": "Explore Services"
+    }
+  },
+  "repositoryHosting": {
+    "meta": {
+      "title": "Repository Hosting - Paideia Hosting",
+      "description": "Secure and reliable hosting for research data repositories including Dataverse and DSpace. Perfect for academic institutions and research centers."
+    },
+    "hero": {
+      "title": "Repository Hosting Solutions",
+      "subtitle": "Secure and reliable hosting for research data repositories including Dataverse and DSpace. Perfect for academic institutions and research centers.",
+      "viewPricing": "View Pricing",
+      "contactSales": "Contact Sales",
+      "imageAlt": "Dataverse Hosting"
+    },
+    "features": {
+      "title": "Repository Hosting Features",
+      "subtitle": "Everything you need for your research data repository",
+      "platforms": {
+        "title": "Dataverse & DSpace Support",
+        "text": "Support for the latest Dataverse and DSpace versions with seamless upgrades"
+      },
+      "performance": {
+        "title": "High Performance",
+        "text": "Optimized servers for handling large datasets"
+      },
+      "storage": {
+        "title": "Secure Storage",
+        "text": "Encrypted storage with regular backups"
+      },
+      "doi": {
+        "title": "DOI Integration",
+        "text": "Built-in support for DOI assignment"
+      },
+      "support": {
+        "title": "Expert Support",
+        "text": "24/7 AI assistance via WhatsApp, plus expert support during business hours"
+      },
+      "branding": {
+        "title": "Custom Branding",
+        "text": "Customize the interface with your institution's branding"
+      }
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that fits your repository needs",
+      "footnote": "*For customers in Latin America and Spain. Included in all plans. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+      "installation": {
+        "monthly": "Installation fee extra",
+        "annual": "Installation included"
+      },
+      "migration": {
+        "monthly": "Migration services fee extra",
+        "annual": "Migration services included"
+      },
+      "plans": {
+        "professional": {
+          "name": "Professional",
+          "description": "For research departments",
+          "features": [
+            "Repository (Dataverse or DSpace)",
+            "50GB Storage",
+            "SSL included",
+            "Daily Backups | 7 days",
+            "Email support",
+            "Additional storage available"
+          ],
+          "crossref": "Crossref membership + Similarity Check included*"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "For institutions and large research centers",
+          "features": [
+            "Repository (Dataverse or DSpace)",
+            "Installation included",
+            "100GB Storage",
+            "SSL included",
+            "Mail box included",
+            "S3 configuration included (Not included additional fee S3)",
+            "Daily Backups | 7 days",
+            "Priority email support",
+            "Additional storage available"
+          ],
+          "annualOnly": [
+            "Migration services included (Annual only)"
+          ],
+          "crossref": "Crossref membership + Similarity Check included*"
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our repository hosting services",
+      "items": [
+        {
+          "q": "What repository platforms do you support?",
+          "a": "We support the latest stable versions of Dataverse and DSpace, and can help you migrate from older versions or other platforms."
+        },
+        {
+          "q": "Can I migrate my existing repository?",
+          "a": "Yes, we offer migration services to help you move your existing Dataverse, DSpace, or other repository to our hosting platform."
+        },
+        {
+          "q": "How is data security handled?",
+          "a": "We implement multiple layers of security including encrypted storage, regular security audits, and compliance with academic data protection standards."
+        },
+        {
+          "q": "Do you support DOI integration?",
+          "a": "Yes, we provide full support for DOI integration with services like Crossref to ensure your datasets are properly cited."
+        },
+        {
+          "q": "Can I customize the repository interface?",
+          "a": "Yes, our Professional and Enterprise plans allow for custom branding and interface modifications to match your institution's identity for both Dataverse and DSpace."
+        },
+        {
+          "q": "What happens if I exceed my storage limit?",
+          "a": "We'll notify you when you approach your storage limit, and you can easily upgrade your plan or add additional storage as needed."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join the growing community of research institutions using Paideia Hosting for their data repositories",
+      "contact": "Contact Us",
+      "services": "Explore Other Services"
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Academic Hosting Services - Paideia Hosting",
+      "description": "Explore our specialized hosting services for academic institutions. From OJS and OMP to Dataverse, AtoM, VPS, and custom solutions."
+    },
+    "hero": {
+      "title": "Our Academic Hosting Services",
+      "subtitle": "Specialized hosting solutions designed for research and educational institutions"
+    },
+    "learnMore": "Learn More",
+    "items": {
+      "ojs": {
+        "title": "OJS Hosting",
+        "imageAlt": "OJS Hosting",
+        "description": "Specialized hosting for Open Journal Systems (OJS). Perfect for academic publishing and journal management."
+      },
+      "omp": {
+        "title": "OMP Hosting",
+        "imageAlt": "OMP Hosting",
+        "description": "Specialized hosting for Open Monograph Press (OMP). Ideal for academic book publishing and management."
+      },
+      "repository": {
+        "title": "Repository Hosting",
+        "imageAlt": "Repository Hosting",
+        "description": "Secure and reliable hosting for research data repositories (Dataverse & DSpace) on AWS infrastructure."
+      },
+      "atom": {
+        "title": "AtoM Hosting",
+        "imageAlt": "AtoM Hosting",
+        "description": "Professional hosting for Access to Memory (AtoM) archival software on AWS infrastructure."
+      },
+      "vps": {
+        "title": "VPS for Institutions",
+        "imageAlt": "VPS for Institutions",
+        "description": "Customizable virtual private servers for educational institutions. Reliable, secure, and optimized for academic needs."
+      },
+      "custom": {
+        "title": "Custom Solutions",
+        "imageAlt": "Custom Solutions",
+        "description": "Tailored hosting solutions for specific academic needs. Custom development, integration, and specialized academic software hosting."
+      },
+      "backup": {
+        "title": "Backup Solutions",
+        "imageAlt": "Backup Solutions",
+        "description": "Enterprise-grade backup and digital preservation solutions powered by AWS infrastructure with flexible retention policies."
+      },
+      "plugins": {
+        "title": "Plugins & Themes",
+        "imageAlt": "Plugins & Themes",
+        "description": "Premium plugins and themes for OJS and OMP. Enhance your academic publishing platform with professional solutions."
+      }
+    },
+    "cta": {
+      "title": "Need a Custom Solution?",
+      "subtitle": "Our team of experts can help you find the perfect hosting solution for your academic institution",
+      "contact": "Contact Us",
+      "pricing": "View Pricing"
+    }
+  },
+  "vpsForInstitutions": {
+    "meta": {
+      "title": "VPS for Institutions - Paideia Hosting",
+      "description": "Customizable virtual private servers for educational institutions. Reliable, secure, and optimized for academic needs."
+    },
+    "hero": {
+      "title": "VPS Solutions for Institutions",
+      "subtitle": "Customizable virtual private servers designed specifically for educational institutions. Reliable, secure, and optimized for academic needs.",
+      "viewPricing": "View Pricing",
+      "contactSales": "Contact Sales",
+      "imageAlt": "VPS for Institutions"
+    },
+    "features": {
+      "title": "VPS Features for Institutions",
+      "subtitle": "Powerful virtual servers tailored for academic and research needs",
+      "performance": {
+        "title": "High Performance",
+        "description": "Powerful servers with dedicated resources for optimal performance"
+      },
+      "scalable": {
+        "title": "Scalable Resources",
+        "description": "Easily scale CPU, RAM, and storage as your needs grow"
+      },
+      "security": {
+        "title": "Secure Environment",
+        "description": "Enhanced security measures for academic data protection"
+      },
+      "managed": {
+        "title": "Managed Services",
+        "description": "Optional management services for maintenance and updates"
+      },
+      "support": {
+        "title": "Expert Support",
+        "description": "24/7 AI assistance via WhatsApp, plus expert support during business hours"
+      },
+      "backups": {
+        "title": "Backup Solutions",
+        "description": "Automated backup systems with easy restoration options"
+      }
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the VPS plan that fits your institution's needs",
+      "logoAlt": "AWS",
+      "perYear": "per year",
+      "crossref": "Crossref membership + Similarity Check included*",
+      "ec2TransferIncluded": "500 GB transfer included. ",
+      "transferNote": "Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.",
+      "footnote": "*For customers in Latin America and Spain. Included in all plans. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+      "lightsail": {
+        "professional": {
+          "name": "Professional",
+          "description": "For academic departments",
+          "features": [
+            "2 vCPUs",
+            "8GB RAM",
+            "160GB SSD Storage",
+            "5TB Transfer",
+            "Server Support Included",
+            "Application Support (OJS, Moodle, DSpace, AtoM)",
+            "7-Day Snapshots",
+            "Dedicated IP",
+            "Architecture Support"
+          ]
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "For large institutions and research centers",
+          "features": [
+            "4 vCPUs",
+            "16GB RAM",
+            "320GB SSD Storage",
+            "6TB Transfer",
+            "Server Support Included",
+            "Application Support (OJS, Moodle, DSpace, AtoM)",
+            "7-Day Snapshots",
+            "Dedicated IP",
+            "Architecture Support"
+          ]
+        }
+      },
+      "ec2": {
+        "professional": {
+          "name": "Professional",
+          "description": "For academic departments (t3.large)",
+          "features": [
+            "2 vCPUs",
+            "8GB RAM",
+            "160GB SSD Storage",
+            "Server Support Included",
+            "Application Support (OJS, Moodle, DSpace, AtoM)",
+            "7-Day Snapshots",
+            "Dedicated IP",
+            "Architecture Support",
+            "Built on AWS EC2 — HIPAA-eligible infrastructure",
+            "Private VPC with custom network security (Security Groups)",
+            "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
+            "Recommended for institutions with strict compliance or data-governance requirements"
+          ]
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "For large institutions (t3.xlarge)",
+          "features": [
+            "4 vCPUs",
+            "16GB RAM",
+            "320GB SSD Storage",
+            "Server Support Included",
+            "Application Support (OJS, Moodle, DSpace, AtoM)",
+            "7-Day Snapshots",
+            "Dedicated IP",
+            "Architecture Support",
+            "Built on AWS EC2 — HIPAA-eligible infrastructure",
+            "Private VPC with custom network security (Security Groups)",
+            "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
+            "Recommended for institutions with strict compliance or data-governance requirements"
+          ]
+        }
+      }
+    },
+    "useCases": {
+      "title": "Academic Use Cases",
+      "subtitle": "How educational institutions are using our VPS solutions",
+      "items": [
+        {
+          "title": "Research Computing",
+          "description": "Dedicated VPS environments for computational research, data analysis, and simulation workloads."
+        },
+        {
+          "title": "Web Applications",
+          "description": "Hosting for institutional websites, learning management systems, and custom academic applications."
+        },
+        {
+          "title": "Development Environments",
+          "description": "Secure environments for student programming projects, software development, and testing."
+        },
+        {
+          "title": "Database Hosting",
+          "description": "Optimized servers for research databases, institutional repositories, and data collections."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our VPS solutions for institutions",
+      "items": [
+        {
+          "question": "What operating systems do you support?",
+          "answer": "We support a wide range of Linux distributions (Ubuntu, CentOS, Debian) and Windows Server options to meet your specific requirements."
+        },
+        {
+          "question": "Can we get custom configurations?",
+          "answer": "Yes, we offer custom VPS configurations tailored to your specific academic and research needs. Contact our sales team for details."
+        },
+        {
+          "question": "How is data security handled?",
+          "answer": "We implement multiple security layers including firewalls, intrusion detection, regular security patches, and encrypted storage options."
+        },
+        {
+          "question": "Do you offer managed services?",
+          "answer": "Yes, we offer optional managed services including system updates, security monitoring, performance optimization, and technical support."
+        },
+        {
+          "question": "Can we upgrade our plan as we grow?",
+          "answer": "Absolutely. Our VPS solutions are designed to scale with your needs. You can easily upgrade CPU, RAM, storage, and bandwidth as required."
+        },
+        {
+          "question": "Are there educational discounts available?",
+          "answer": "Yes, we offer special pricing for educational institutions. Contact our sales team to learn about our academic discount program."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join the growing community of educational institutions using Paideia Hosting VPS solutions",
+      "primary": "Contact Us",
+      "secondary": "Explore Other Services"
+    }
   }
 }

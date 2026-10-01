@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
@@ -13,27 +13,66 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { useToast } from "@/hooks/use-toast"
 
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Name must be at least 2 characters.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  whatsapp: z.string().optional(),
-  inquiryType: z.string().min(1, {
-    message: "Please select an inquiry type.",
-  }),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
-  }),
-})
+export interface ContactFormTexts {
+  fields: {
+    name: { label: string; placeholder: string }
+    email: { label: string; placeholder: string }
+    whatsapp: { label: string; placeholder: string }
+    inquiryType: { label: string; placeholder: string }
+    message: { label: string; placeholder: string }
+  }
+  inquiryTypes: {
+    general: string
+    sales: string
+    support: string
+    custom: string
+    billing: string
+  }
+  validation: {
+    name: string
+    email: string
+    inquiryType: string
+    message: string
+  }
+  submit: string
+  sending: string
+  status: { label: string; submitting: string; ready: string }
+  toast: {
+    successTitle: string
+    successDescription: string
+    errorTitle: string
+    errorDescription: string
+  }
+}
 
-type FormValues = z.infer<typeof formSchema>
+function createFormSchema(validation: ContactFormTexts["validation"]) {
+  return z.object({
+    name: z.string().min(2, {
+      message: validation.name,
+    }),
+    email: z.string().email({
+      message: validation.email,
+    }),
+    whatsapp: z.string().optional(),
+    inquiryType: z.string().min(1, {
+      message: validation.inquiryType,
+    }),
+    message: z.string().min(10, {
+      message: validation.message,
+    }),
+  })
+}
 
-export function ContactForm() {
+type FormValues = z.infer<ReturnType<typeof createFormSchema>>
+
+interface ContactFormProps {
+  texts: ContactFormTexts
+}
+
+export function ContactForm({ texts }: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const { toast } = useToast()
+  const formSchema = useMemo(() => createFormSchema(texts.validation), [texts.validation])
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -77,8 +116,8 @@ export function ContactForm() {
       if (response.ok && result.success) {
         form.reset()
         toast({
-          title: "Message sent successfully!",
-          description: "We'll get back to you as soon as possible. Check your email for confirmation.",
+          title: texts.toast.successTitle,
+          description: texts.toast.successDescription,
         })
       } else {
         throw new Error(result.message || 'Failed to send message')
@@ -87,8 +126,8 @@ export function ContactForm() {
     } catch (error: any) {
       console.error('Error sending form:', error)
       toast({
-        title: "Error sending message",
-        description: "Failed to send message. Please try again or contact us at contact@paideiahosting.net",
+        title: texts.toast.errorTitle,
+        description: texts.toast.errorDescription,
         variant: "destructive",
       })
     } finally {
@@ -104,9 +143,9 @@ export function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Full Name</FormLabel>
+              <FormLabel>{texts.fields.name.label}</FormLabel>
               <FormControl>
-                <Input placeholder="John Doe" {...field} />
+                <Input placeholder={texts.fields.name.placeholder} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -118,9 +157,9 @@ export function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>{texts.fields.email.label}</FormLabel>
               <FormControl>
-                <Input placeholder="john.doe@example.com" {...field} />
+                <Input placeholder={texts.fields.email.placeholder} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -132,9 +171,9 @@ export function ContactForm() {
           name="whatsapp"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>WhatsApp</FormLabel>
+              <FormLabel>{texts.fields.whatsapp.label}</FormLabel>
               <FormControl>
-                <Input placeholder="+1 (555) 123-4567" {...field} />
+                <Input placeholder={texts.fields.whatsapp.placeholder} {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -146,19 +185,19 @@ export function ContactForm() {
           name="inquiryType"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Inquiry Type</FormLabel>
+              <FormLabel>{texts.fields.inquiryType.label}</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value}>
                 <FormControl>
                   <SelectTrigger>
-                    <SelectValue placeholder="Select an inquiry type" />
+                    <SelectValue placeholder={texts.fields.inquiryType.placeholder} />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>
-                  <SelectItem value="general">General Inquiry</SelectItem>
-                  <SelectItem value="sales">Sales</SelectItem>
-                  <SelectItem value="support">Technical Support</SelectItem>
-                  <SelectItem value="custom">Custom Solutions</SelectItem>
-                  <SelectItem value="billing">Billing</SelectItem>
+                  <SelectItem value="general">{texts.inquiryTypes.general}</SelectItem>
+                  <SelectItem value="sales">{texts.inquiryTypes.sales}</SelectItem>
+                  <SelectItem value="support">{texts.inquiryTypes.support}</SelectItem>
+                  <SelectItem value="custom">{texts.inquiryTypes.custom}</SelectItem>
+                  <SelectItem value="billing">{texts.inquiryTypes.billing}</SelectItem>
                 </SelectContent>
               </Select>
               <FormMessage />
@@ -171,10 +210,10 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>{texts.fields.message.label}</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Please describe your inquiry in detail..."
+                  placeholder={texts.fields.message.placeholder}
                   className="min-h-[120px]"
                   {...field}
                 />
@@ -188,16 +227,16 @@ export function ContactForm() {
           {isSubmitting ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Sending...
+              {texts.sending}
             </>
           ) : (
-            "Send Message"
+            texts.submit
           )}
         </Button>
         
         {/* Debug info - remove in production */}
         <div className="text-xs text-muted-foreground text-center">
-          Form status: {isSubmitting ? 'Submitting...' : 'Ready'}
+          {texts.status.label} {isSubmitting ? texts.status.submitting : texts.status.ready}
         </div>
       </form>
     </Form>
