@@ -2,12 +2,15 @@ import Link from "next/link"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from "@/components/ui/sheet"
+import { LanguageSwitcher } from "@/components/language-switcher"
+import type { Locale } from "@/lib/i18n/config"
+import { localizedHref } from "@/lib/i18n/routes"
 
-export function Header() {
+export function Header({ locale, languageLabel }: { locale: Locale; languageLabel: string }) {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
-      <Link href="/" className="flex items-center ml-4">
+      <Link href={localizedHref("home", locale)} className="flex items-center ml-4">
           <div className="relative h-10 w-auto">
             <img 
               src="/logo.png" 
@@ -38,6 +41,7 @@ export function Header() {
           </Link>
         </nav>
         <div className="ml-auto md:ml-4 flex items-center gap-4">
+          <LanguageSwitcher locale={locale} label={languageLabel} />
           <Link href="https://shop.paideiahosting.net/my" className="text-sm font-medium transition-colors hover:text-primary hidden md:block">
             Log in
           </Link>

@@ -46,14 +46,38 @@ interface PricingPlan {
   annualUrl?: string
 }
 
+export interface PricingLabels {
+  popular: string
+  hostedOn: string
+  month: string
+  billedAnnually: string
+  getStarted: string
+  monthly: string
+  annual: string
+  save: string
+}
+
+const defaultLabels: PricingLabels = {
+  popular: "Popular",
+  hostedOn: "Hosted on",
+  month: "month",
+  billedAnnually: "billed annually",
+  getStarted: "Get Started",
+  monthly: "Monthly",
+  annual: "Annual",
+  save: "Save 10%",
+}
+
 interface ServicePricingProps {
   title: string
   subtitle: string
   plans: PricingPlan[]
   footnote?: string
+  // UI strings; English by default so pages that don't pass them are unchanged.
+  labels?: PricingLabels
 }
 
-export function ServicePricing({ title, subtitle, plans, footnote }: ServicePricingProps) {
+export function ServicePricing({ title, subtitle, plans, footnote, labels = defaultLabels }: ServicePricingProps) {
   const [isAnnual, setIsAnnual] = useState(false)
 
   const calculatePrice = (monthlyPrice: number) => {
@@ -70,12 +94,12 @@ export function ServicePricing({ title, subtitle, plans, footnote }: ServicePric
               {subtitle}
             </p>
           </div>
-          <PricingToggle onToggle={setIsAnnual} className="mt-6" />
+          <PricingToggle onToggle={setIsAnnual} className="mt-6" labels={labels} />
         </div>
         
         <div className="flex items-center justify-center mb-6 mt-10">
           <div className="flex items-center gap-2 text-sm text-gray-600">
-            <span>Hosted on</span>
+            <span>{labels.hostedOn}</span>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/330px-Amazon_Web_Services_Logo.svg.png" alt="AWS" className="h-6" />
           </div>
         </div>
@@ -84,7 +108,7 @@ export function ServicePricing({ title, subtitle, plans, footnote }: ServicePric
             <div key={index} className={`flex flex-col rounded-lg border bg-background p-6 shadow-sm ${plan.popular ? 'relative' : ''}`}>
               {plan.popular && (
                 <div className="absolute -top-4 left-0 right-0 mx-auto w-fit rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                  Popular
+                  {labels.popular}
                 </div>
               )}
               <div className="space-y-2">
@@ -93,7 +117,7 @@ export function ServicePricing({ title, subtitle, plans, footnote }: ServicePric
               </div>
               <div className="mt-4 flex items-baseline">
                 <span className="text-3xl font-bold">${calculatePrice(plan.monthlyPrice)}</span>
-                <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? 'billed annually' : 'month'}</span>
+                <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? labels.billedAnnually : labels.month}</span>
               </div>
               <ul className="mt-4 space-y-2 flex-1">
                 {plan.highlightedFeature?.variant !== "optional" && plan.highlightedFeature && (
@@ -128,7 +152,7 @@ export function ServicePricing({ title, subtitle, plans, footnote }: ServicePric
                   href={plan.monthlyUrl && plan.annualUrl ? (isAnnual ? plan.annualUrl : plan.monthlyUrl) : "/contact"}
                   className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
                 >
-                  {plan.buttonText || 'Get Started'}
+                  {plan.buttonText || labels.getStarted}
                 </Link>
               </div>
             </div>

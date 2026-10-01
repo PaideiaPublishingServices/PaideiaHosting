@@ -6,9 +6,14 @@ import { Button } from "@/components/ui/button"
 interface PricingToggleProps {
   onToggle: (isAnnual: boolean) => void
   className?: string
+  labels?: { monthly: string; annual: string; save: string }
 }
 
-export function PricingToggle({ onToggle, className = "" }: PricingToggleProps) {
+export function PricingToggle({
+  onToggle,
+  className = "",
+  labels = { monthly: "Monthly", annual: "Annual", save: "Save 10%" },
+}: PricingToggleProps) {
   const [isAnnual, setIsAnnual] = useState(false)
 
   const handleToggle = (annual: boolean) => {
@@ -24,7 +29,7 @@ export function PricingToggle({ onToggle, className = "" }: PricingToggleProps) 
         onClick={() => handleToggle(false)}
         className="px-4 py-2"
       >
-        Monthly
+        {labels.monthly}
       </Button>
       <Button
         variant={isAnnual ? "default" : "outline"}
@@ -32,9 +37,9 @@ export function PricingToggle({ onToggle, className = "" }: PricingToggleProps) 
         onClick={() => handleToggle(true)}
         className="px-4 py-2"
       >
-        Annual
+        {labels.annual}
         <span className="ml-1 text-xs bg-green-100 text-green-800 px-1.5 py-0.5 rounded-full">
-          Save 10%
+          {labels.save}
         </span>
       </Button>
     </div>

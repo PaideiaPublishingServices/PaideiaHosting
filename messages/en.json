@@ -1,0 +1,164 @@
+{
+  "site": {
+    "title": "Paideia Hosting - Cloud for Science, Solutions for Knowledge",
+    "description": "Specialized hosting for academic applications. Reliable, secure, and optimized for research and educational institutions."
+  },
+  "common": {
+    "languageSwitcher": {
+      "label": "Language"
+    },
+    "languageNotice": {
+      "page": "This page is also available in English.",
+      "site": "This site is also available in English.",
+      "action": "View in English",
+      "dismiss": "Dismiss"
+    },
+    "pricing": {
+      "popular": "Popular",
+      "hostedOn": "Hosted on",
+      "month": "month",
+      "billedAnnually": "billed annually",
+      "getStarted": "Get Started",
+      "monthly": "Monthly",
+      "annual": "Annual",
+      "save": "Save 10%"
+    }
+  },
+  "ojsHosting": {
+    "meta": {
+      "title": "Managed OJS Hosting | Open Journal Systems on AWS | Paideia Hosting",
+      "description": "Managed hosting for Open Journal Systems (OJS 3.3–3.5 LTS) on AWS. Daily backups, WAF security, upgrades, and Crossref membership on Enterprise annual plans for Latin America and Spain."
+    },
+    "hero": {
+      "title": "OJS Hosting Solutions",
+      "subtitle": "Specialized hosting for Open Journal Systems. Perfect for academic publishing and journal management.",
+      "trust": "Trusted by 188+ academic institutions across Latin America and Spain",
+      "viewPricing": "View Pricing",
+      "contactSales": "Contact Sales",
+      "imageAlt": "OJS Hosting"
+    },
+    "features": {
+      "title": "OJS Hosting Features",
+      "subtitle": "Everything you need for your academic journal publishing",
+      "versions": {
+        "title": "OJS Version Support",
+        "text": "Support for OJS 3.3, 3.4 and 3.5 LTS, with managed upgrades"
+      },
+      "performance": {
+        "title": "Optimized Performance",
+        "text": "Servers configured specifically for OJS requirements"
+      },
+      "backups": {
+        "title": "Daily Backups",
+        "text": "Automatic daily backups, with 5 to 7-day retention depending on plan"
+      },
+      "security": {
+        "title": "Security Updates",
+        "text": "Regular security patches and updates"
+      },
+      "support": {
+        "title": "Technical Support",
+        "text": "24/7 AI assistance via WhatsApp, plus OJS expert support during business hours"
+      },
+      "domain": {
+        "title": "Custom Domain",
+        "text": "Use your own domain or subdomain"
+      },
+      "waf": {
+        "title": "Web Application Firewall",
+        "text": "ModSecurity with OWASP Core Rule Set and Cloudflare protection against malicious uploads, spam injection and bot attacks."
+      }
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that fits your journal's needs",
+      "footnote": "*For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+      "migration": {
+        "monthly": "Migration services fee extra",
+        "annual": "Migration services included"
+      },
+      "plans": {
+        "basic": {
+          "name": "Basic",
+          "description": "For emerging journals",
+          "features": [
+            "Single Journal",
+            "10GB Storage",
+            "Daily Backups | 5 days",
+            "1 mail box",
+            "SSL included",
+            "Email support",
+            "Free Installation"
+          ]
+        },
+        "professional": {
+          "name": "Professional",
+          "description": "For established academic journals",
+          "features": [
+            "Multi-journal in 1 OJS Installations",
+            "20GB Storage",
+            "Daily Backups | 7 days",
+            "5 mail box",
+            "SSL included",
+            "Priority email support",
+            "Free Installation",
+            "1 Upgrade per year"
+          ],
+          "crossref": "Crossref membership + Similarity Check available on request*"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "description": "For institutions with multiple journals",
+          "features": [
+            "Multi-journal in Multi-installations",
+            "30GB Storage",
+            "Daily Backups | 7 days",
+            "Unlimited mailbox",
+            "SSL included",
+            "Priority email and phone support",
+            "Free Installation",
+            "1 Upgrade per year"
+          ],
+          "annualOnly": ["PrePrints server memberships (Annual only)"],
+          "crossref": "Crossref membership + Similarity Check included (annual plan)*"
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our OJS hosting services",
+      "items": [
+        {
+          "q": "What versions of OJS do you support?",
+          "a": "We support OJS 3.3, 3.4 and 3.5 (LTS since June 2026). We can also help you migrate from earlier versions, including OJS 2.x."
+        },
+        {
+          "q": "Can I migrate my existing OJS installation?",
+          "a": "Yes, we offer migration services to help you move your existing OJS installation to our hosting platform."
+        },
+        {
+          "q": "Do you offer SSL certificates?",
+          "a": "Yes, all our hosting plans include free SSL certificates to ensure your journal is secure."
+        },
+        {
+          "q": "How often do you update OJS?",
+          "a": "We apply security updates as soon as they're available. Major version upgrades are scheduled with your approval."
+        },
+        {
+          "q": "Can I use my own domain name?",
+          "a": "Yes, all plans let you use your own domain or subdomain."
+        },
+        {
+          "q": "What kind of support do you offer?",
+          "a": "All plans include 24/7 AI assistance via WhatsApp, plus OJS expert support during business hours: email support on Basic, priority email support on Professional, and priority email and phone support on Enterprise."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join the growing community of academic journals using Paideia Hosting",
+      "contact": "Contact Us",
+      "services": "Explore Other Services"
+    }
+  }
+}

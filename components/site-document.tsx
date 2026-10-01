@@ -6,36 +6,24 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 // import { ChatBot } from "@/components/chat-bot" // Flowise chat widget disabled
 import { WhatsAppButton } from "@/components/whatsapp-button"
+import { LanguageNotice } from "@/components/language-notice"
 import { Toaster } from "@/components/ui/toaster"
 import Script from "next/script" // Importa el componente Script
+import { htmlLang, locales, type Locale } from "@/lib/i18n/config"
+import { getMessages } from "@/lib/i18n/messages"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata = {
-  metadataBase: new URL("https://paideiahosting.net"),
-  // "./" resolves to each route's own pathname (no query string), so every page
-  // emits an absolute https canonical unless it overrides `alternates`.
-  alternates: {
-    canonical: "./",
-  },
-  title: "Paideia Hosting - Cloud for Science, Solutions for Knowledge",
-  description:
-    "Specialized hosting for academic applications. Reliable, secure, and optimized for research and educational institutions.",
-  generator: "Paideia Studio",
-  icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-icon.png',
-    shortcut: '/favicon-16x16.png'
-  }
-}
+// Shared <html> document for every locale's root layout, so <html lang> is set at build time.
+export function SiteDocument({ locale, children }: { locale: Locale; children: React.ReactNode }) {
+  const common = getMessages(locale).common
+  const noticeTexts = Object.fromEntries(locales.map((l) => [l, getMessages(l).common.languageNotice])) as Record<
+    Locale,
+    typeof common.languageNotice
+  >
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={htmlLang[locale]} suppressHydrationWarning>
       <head>
         {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
@@ -61,7 +49,8 @@ export default function RootLayout({
 
         <ThemeProvider attribute="class" defaultTheme="light">
           <div className="flex min-h-screen flex-col">
-            <Header />
+            <LanguageNotice locale={locale} texts={noticeTexts} />
+            <Header locale={locale} languageLabel={common.languageSwitcher.label} />
             {children}
             <Footer />
             {/* <ChatBot /> */}  {/* Flowise chat widget disabled */}
