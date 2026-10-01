@@ -119,7 +119,9 @@
             "Instalación gratuita",
             "1 actualización por año"
           ],
-          "annualOnly": ["Membresías de servidor de preprints (solo anual)"],
+          "annualOnly": [
+            "Membresías de servidor de preprints (solo anual)"
+          ],
           "crossref": "Membresía Crossref + Similarity Check incluida (plan anual)*"
         }
       }
@@ -160,5 +162,14 @@
       "contact": "Contáctanos",
       "services": "Ver otros servicios"
     }
+  },
+  "notFound": {
+    "meta": {
+      "title": "Página no encontrada | Paideia Hosting"
+    },
+    "title": "Página no encontrada",
+    "text": "La página que buscas no existe o fue movida.",
+    "home": "Ir al inicio",
+    "contact": "Contáctanos"
   }
 }

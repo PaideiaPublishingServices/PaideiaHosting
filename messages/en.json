@@ -119,7 +119,9 @@
             "Free Installation",
             "1 Upgrade per year"
           ],
-          "annualOnly": ["PrePrints server memberships (Annual only)"],
+          "annualOnly": [
+            "PrePrints server memberships (Annual only)"
+          ],
           "crossref": "Crossref membership + Similarity Check included (annual plan)*"
         }
       }
@@ -160,5 +162,14 @@
       "contact": "Contact Us",
       "services": "Explore Other Services"
     }
+  },
+  "notFound": {
+    "meta": {
+      "title": "Page not found | Paideia Hosting"
+    },
+    "title": "Page not found",
+    "text": "The page you are looking for doesn't exist or has been moved.",
+    "home": "Go to homepage",
+    "contact": "Contact us"
   }
 }

@@ -36,7 +36,12 @@ jobs:
         
       - name: Build with Next.js
         run: pnpm build
-        
+
+      # Next's default 404 has no site layout with multiple root layouts (app/(en), app/(es)…);
+      # GitHub Pages serves out/404.html for unknown paths, so use the site-styled page instead.
+      - name: Use site-styled 404 page
+        run: cp out/page-not-found.html out/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

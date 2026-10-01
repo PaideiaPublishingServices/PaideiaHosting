@@ -15,7 +15,8 @@ export interface LanguageNoticeText {
   dismiss: string
 }
 
-// Stores the visitor's explicit choice; once set, the notice is never shown again.
+// Stores the visitor's explicit language choice (switcher, notice link or dismiss). It takes
+// precedence over the browser language on every page of the site.
 export function rememberLocale(locale: Locale) {
   try {
     localStorage.setItem(STORAGE_KEY, locale)
@@ -24,9 +25,10 @@ export function rememberLocale(locale: Locale) {
   }
 }
 
-function storedLocale(): string | null {
+function storedLocale(): Locale | null {
   try {
-    return localStorage.getItem(STORAGE_KEY)
+    const value = localStorage.getItem(STORAGE_KEY)
+    return locales.find((l) => l === value) ?? null
   } catch {
     return null
   }
@@ -47,20 +49,25 @@ interface LanguageNoticeProps {
   texts: Record<Locale, LanguageNoticeText>
 }
 
-// Suggests the browser's language when it differs from the page's. No automatic redirects.
+// Suggests the visitor's language (saved choice, else browser) when it differs from the page's.
+// No automatic redirects.
 export function LanguageNotice({ locale, texts }: LanguageNoticeProps) {
   const pathname = usePathname()
   const [suggestion, setSuggestion] = useState<{ locale: Locale; href: string; samePage: boolean } | null>(null)
 
   useEffect(() => {
-    if (storedLocale()) return
-    const preferred = browserLocale()
+    const stored = storedLocale()
+    const preferred = stored ?? browserLocale()
     if (!preferred || preferred === locale) return
     const href = alternatePath(pathname, preferred)
     if (!href) return
     // A link to the other locale's home is only "this page" when we are already on a home.
     const onHome = locales.some((l) => routes.home[l] === pathname)
-    setSuggestion({ locale: preferred, href, samePage: onHome || href !== routes.home[preferred] })
+    const samePage = onHome || href !== routes.home[preferred]
+    // With a saved choice, only offer an exact translation, so untranslated pages (e.g. the blog)
+    // don't keep asking; the home fallback is for first-time visitors.
+    if (stored && !samePage) return
+    setSuggestion({ locale: preferred, href, samePage })
   }, [locale, pathname])
 
   if (!suggestion) return null
