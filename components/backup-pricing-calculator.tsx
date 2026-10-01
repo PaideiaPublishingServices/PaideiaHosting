@@ -167,7 +167,7 @@ export function BackupPricingCalculator({ t, contactHref }: BackupPricingCalcula
                   <div className="space-y-3 mb-6">
                     <div className="flex justify-between items-center">
                       <label className="text-sm font-medium">{t.retentionPeriod}</label>
-                      <span className="text-lg font-bold text-primary">{preservationRetention} {t.years}</span>
+                      <span className="text-lg font-bold text-primary">{preservationRetention} {preservationRetention === 1 ? t.year : t.years}</span>
                     </div>
                     <input
                       type="range"
@@ -272,7 +272,7 @@ export function BackupPricingCalculator({ t, contactHref }: BackupPricingCalcula
                     </div>
                     <div className="flex justify-between">
                       <span>{t.totalRetention}</span>
-                      <span className="font-medium">{preservationRetention} {t.years}</span>
+                      <span className="font-medium">{preservationRetention} {preservationRetention === 1 ? t.year : t.years}</span>
                     </div>
                   </div>
 

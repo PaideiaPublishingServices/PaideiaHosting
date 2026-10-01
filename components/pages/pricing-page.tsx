@@ -71,7 +71,7 @@ export function PricingPage({ locale, t, common }: PricingPageProps) {
                     <tr className="border-b">
                       <td className="p-4 font-medium">{rows.priceMonthly}</td>
                       <td className="p-4 text-center">$42</td>
-                      <td className="p-4 text-center">$79</td>
+                      <td className="p-4 text-center">$60</td>
                       <td className="p-4 text-center">$99</td>
                     </tr>
                     <tr className="border-b">

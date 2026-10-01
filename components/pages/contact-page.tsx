@@ -57,7 +57,7 @@ export function ContactPage({ locale, t }: ContactPageProps) {
                   <div>
                     <h3 className="font-bold">{getInTouch.email.title}</h3>
                     <p className="text-gray-500 dark:text-gray-400">{getInTouch.email.general}</p>
-                    <a href="mailto:info@paideiahosting.net" className="text-primary hover:underline">
+                    <a href="mailto:contact@paideiahosting.net" className="text-primary hover:underline">
                       contact@paideiahosting.net
                     </a>
                     <p className="text-gray-500 dark:text-gray-400 mt-2">{getInTouch.email.support}</p>

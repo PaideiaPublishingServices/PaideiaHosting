@@ -289,7 +289,7 @@
         },
         "latarxiv": {
           "description": "Our preprint server for Latin American research, providing a platform for researchers to share their work before formal peer review and publication.",
-          "link": "Visit LATarxiv Preprints"
+          "link": "Visit LatArXiv Preprints"
         }
       }
     },
@@ -570,6 +570,7 @@
       "storageMax": "5,000 GB",
       "retentionPeriod": "Retention Period",
       "captureFrequency": "Capture Frequency",
+      "year": "year",
       "years": "years",
       "months": "months",
       "yourPricing": "Your Pricing",
@@ -1740,10 +1741,6 @@
         {
           "question": "Can I cancel my subscription at any time?",
           "answer": "Yes, you can cancel your subscription at any time. We offer a 30-day money-back guarantee for all our plans."
-        },
-        {
-          "question": "Do you offer a free trial?",
-          "answer": "Yes, we offer a 14-day free trial for all our standard plans. Contact us to set up your trial environment."
         }
       ]
     },
@@ -2085,7 +2082,7 @@
       "items": [
         {
           "question": "What operating systems do you support?",
-          "answer": "We support a wide range of Linux distributions (Ubuntu, CentOS, Debian) and Windows Server options to meet your specific requirements."
+          "answer": "We support a wide range of Linux distributions (Ubuntu, Debian) and Windows Server options to meet your specific requirements."
         },
         {
           "question": "Can we get custom configurations?",

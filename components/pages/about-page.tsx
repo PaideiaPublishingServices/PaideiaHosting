@@ -77,7 +77,7 @@ export function AboutPage({ locale, t }: AboutPageProps) {
     { icon: BookOpen, title: "Paideia Publishing Services", href: "https://paideiastudio.net", ...ecosystem.publishingServices },
     { icon: Code, title: "Paideia Studio", href: "https://paideiastudio.net", ...ecosystem.studio },
     { icon: BookMarked, title: "Paideia Editorial", href: "https://paideiaeditorial.net", ...ecosystem.editorial },
-    { icon: Database, title: "LATarxiv Preprints", href: "https://preprints.latarxiv.org", ...ecosystem.latarxiv },
+    { icon: Database, title: "LatArXiv Preprints", href: "https://preprints.latarxiv.org", ...ecosystem.latarxiv },
   ]
 
   const members = t.team.members
