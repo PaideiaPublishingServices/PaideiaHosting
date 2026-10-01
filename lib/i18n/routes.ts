@@ -33,18 +33,18 @@ export type RouteKey = keyof typeof routes
 // Locales that are actually built for each route. This single list drives hreflang, the sitemap,
 // the language switcher and the language notice, so a locale must be added here only once its page exists.
 export const publishedLocales: Record<RouteKey, readonly Locale[]> = {
-  home: ["en", "es"],
-  services: ["en", "es"],
-  ojsHosting: ["en", "es"],
-  ompHosting: ["en", "es"],
-  repositoryHosting: ["en", "es"],
-  atomHosting: ["en", "es"],
-  vpsForInstitutions: ["en", "es"],
-  backupSolutions: ["en", "es"],
-  customSolutions: ["en", "es"],
-  pricing: ["en", "es"],
-  about: ["en", "es"],
-  contact: ["en", "es"],
+  home: ["en", "es", "pt"],
+  services: ["en", "es", "pt"],
+  ojsHosting: ["en", "es", "pt"],
+  ompHosting: ["en", "es", "pt"],
+  repositoryHosting: ["en", "es", "pt"],
+  atomHosting: ["en", "es", "pt"],
+  vpsForInstitutions: ["en", "es", "pt"],
+  backupSolutions: ["en", "es", "pt"],
+  customSolutions: ["en", "es", "pt"],
+  pricing: ["en", "es", "pt"],
+  about: ["en", "es", "pt"],
+  contact: ["en", "es", "pt"],
 }
 
 export function isPublished(key: RouteKey, locale: Locale): boolean {

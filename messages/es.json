@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Paideia Hosting - Nube para la ciencia, soluciones para el conocimiento",
+    "title": "Paideia Hosting - Cloud for Science, Solutions for Knowledge",
     "description": "Hosting especializado para aplicaciones académicas. Confiable, seguro y optimizado para instituciones de investigación y educación."
   },
   "common": {
@@ -189,7 +189,7 @@
       "menu": "Menú"
     },
     "footer": {
-      "tagline": "Nube para la ciencia, soluciones para el conocimiento",
+      "tagline": "Cloud for Science, Solutions for Knowledge",
       "servicesTitle": "Servicios",
       "services": {
         "ojsHosting": "Hosting OJS",
@@ -1083,11 +1083,11 @@
   },
   "home": {
     "meta": {
-      "title": "Paideia Hosting - Nube para la ciencia, soluciones para el conocimiento",
+      "title": "Paideia Hosting - Cloud for Science, Solutions for Knowledge",
       "description": "Hosting especializado para aplicaciones académicas. Confiable, seguro y optimizado para instituciones de investigación y educación."
     },
     "hero": {
-      "title": "Nube para la ciencia, soluciones para el conocimiento",
+      "title": "Cloud for Science, Solutions for Knowledge",
       "subtitle": "Hosting especializado para aplicaciones académicas. Confiable, seguro y optimizado para instituciones de investigación y educación.",
       "exploreServices": "Ver servicios",
       "contactSales": "Contactar a ventas",

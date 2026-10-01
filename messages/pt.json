@@ -1,799 +1,799 @@
 {
   "site": {
     "title": "Paideia Hosting - Cloud for Science, Solutions for Knowledge",
-    "description": "Specialized hosting for academic applications. Reliable, secure, and optimized for research and educational institutions."
+    "description": "Hospedagem especializada para aplicações acadêmicas. Confiável, segura e otimizada para instituições de pesquisa e ensino."
   },
   "common": {
     "languageSwitcher": {
-      "label": "Language"
+      "label": "Idioma"
     },
     "languageNotice": {
-      "page": "This page is also available in English.",
-      "site": "This site is also available in English.",
-      "action": "View in English",
-      "dismiss": "Dismiss"
+      "page": "Esta página também está disponível em português.",
+      "site": "Este site também está disponível em português.",
+      "action": "Ver em português",
+      "dismiss": "Fechar"
     },
     "pricing": {
       "popular": "Popular",
-      "hostedOn": "Hosted on",
-      "month": "month",
-      "billedAnnually": "billed annually",
-      "getStarted": "Get Started",
-      "monthly": "Monthly",
-      "annual": "Annual",
-      "save": "Save 10%"
+      "hostedOn": "Hospedado na",
+      "month": "mês",
+      "billedAnnually": "cobrado anualmente",
+      "getStarted": "Começar",
+      "monthly": "Mensal",
+      "annual": "Anual",
+      "save": "Economize 10%"
     }
   },
   "ojsHosting": {
     "meta": {
-      "title": "Managed OJS Hosting | Open Journal Systems on AWS | Paideia Hosting",
-      "description": "Managed hosting for Open Journal Systems (OJS 3.3–3.5 LTS) on AWS. Daily backups, WAF security, upgrades, and Crossref membership on Enterprise annual plans for Latin America and Spain."
+      "title": "Hospedagem OJS gerenciada | Open Journal Systems na AWS | Paideia Hosting",
+      "description": "Hospedagem gerenciada de OJS 3.3–3.5 LTS na AWS: backups diários, WAF, atualizações e associação Crossref nos planos Enterprise anuais (América Latina e Espanha)."
     },
     "hero": {
-      "title": "OJS Hosting Solutions",
-      "subtitle": "Specialized hosting for Open Journal Systems. Perfect for academic publishing and journal management.",
-      "trust": "Trusted by 188+ academic institutions across Latin America and Spain",
-      "viewPricing": "View Pricing",
-      "contactSales": "Contact Sales",
-      "imageAlt": "OJS Hosting"
+      "title": "Soluções de hospedagem OJS",
+      "subtitle": "Hospedagem especializada para Open Journal Systems. Ideal para publicação acadêmica e gestão de revistas.",
+      "trust": "Mais de 188 instituições acadêmicas da América Latina e da Espanha confiam em nós",
+      "viewPricing": "Ver preços",
+      "contactSales": "Falar com vendas",
+      "imageAlt": "Hospedagem OJS"
     },
     "features": {
-      "title": "OJS Hosting Features",
-      "subtitle": "Everything you need for your academic journal publishing",
+      "title": "Recursos da hospedagem OJS",
+      "subtitle": "Tudo o que você precisa para publicar sua revista acadêmica",
       "versions": {
-        "title": "OJS Version Support",
-        "text": "Support for OJS 3.3, 3.4 and 3.5 LTS, with managed upgrades"
+        "title": "Suporte às versões do OJS",
+        "text": "Suporte para OJS 3.3, 3.4 e 3.5 LTS, com atualizações gerenciadas"
       },
       "performance": {
-        "title": "Optimized Performance",
-        "text": "Servers configured specifically for OJS requirements"
+        "title": "Desempenho otimizado",
+        "text": "Servidores configurados especificamente para os requisitos do OJS"
       },
       "backups": {
-        "title": "Daily Backups",
-        "text": "Automatic daily backups, with 5 to 7-day retention depending on plan"
+        "title": "Backups diários",
+        "text": "Backups diários automáticos, com retenção de 5 a 7 dias conforme o plano"
       },
       "security": {
-        "title": "Security Updates",
-        "text": "Regular security patches and updates"
+        "title": "Atualizações de segurança",
+        "text": "Correções e atualizações de segurança regulares"
       },
       "support": {
-        "title": "Technical Support",
-        "text": "24/7 AI assistance via WhatsApp, plus OJS expert support during business hours"
+        "title": "Suporte técnico",
+        "text": "Assistência com IA 24/7 pelo WhatsApp, além de suporte de especialistas em OJS em horário comercial"
       },
       "domain": {
-        "title": "Custom Domain",
-        "text": "Use your own domain or subdomain"
+        "title": "Domínio próprio",
+        "text": "Use seu próprio domínio ou subdomínio"
       },
       "waf": {
         "title": "Web Application Firewall",
-        "text": "ModSecurity with OWASP Core Rule Set and Cloudflare protection against malicious uploads, spam injection and bot attacks."
+        "text": "ModSecurity com OWASP Core Rule Set e proteção Cloudflare contra uploads maliciosos, injeção de spam e ataques de bots."
       }
     },
     "pricing": {
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Choose the plan that fits your journal's needs",
-      "footnote": "*For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+      "title": "Preços simples e transparentes",
+      "subtitle": "Escolha o plano que atende às necessidades da sua revista",
+      "footnote": "*Para clientes da América Latina e da Espanha. Incluída nos planos Enterprise anuais. Sob consulta nos planos Professional, sujeita a disponibilidade; as condições são confirmadas no momento da contratação. Não cobre as taxas de registro de DOI nem de depósito de conteúdo. Clientes de outras regiões recebem suporte de metadados Crossref e devem ter sua própria associação Crossref.",
       "migration": {
-        "monthly": "Migration services fee extra",
-        "annual": "Migration services included"
+        "monthly": "Migração com custo adicional",
+        "annual": "Migração incluída"
       },
       "plans": {
         "basic": {
           "name": "Basic",
-          "description": "For emerging journals",
+          "description": "Para revistas em início de trajetória",
           "features": [
-            "Single Journal",
-            "10GB Storage",
-            "Daily Backups | 5 days",
-            "1 mail box",
-            "SSL included",
-            "Email support",
-            "Free Installation"
+            "Uma revista",
+            "10 GB de armazenamento",
+            "Backups diários | 5 dias",
+            "1 caixa de e-mail",
+            "SSL incluído",
+            "Suporte por e-mail",
+            "Instalação gratuita"
           ]
         },
         "professional": {
           "name": "Professional",
-          "description": "For established academic journals",
+          "description": "Para revistas acadêmicas consolidadas",
           "features": [
-            "Multi-journal in 1 OJS Installations",
-            "20GB Storage",
-            "Daily Backups | 7 days",
-            "5 mail box",
-            "SSL included",
-            "Priority email support",
-            "Free Installation",
-            "1 Upgrade per year"
+            "Várias revistas em 1 instalação do OJS",
+            "20 GB de armazenamento",
+            "Backups diários | 7 dias",
+            "5 caixas de e-mail",
+            "SSL incluído",
+            "Suporte prioritário por e-mail",
+            "Instalação gratuita",
+            "1 atualização por ano"
           ],
-          "crossref": "Crossref membership + Similarity Check available on request*"
+          "crossref": "Associação Crossref + Similarity Check sob consulta*"
         },
         "enterprise": {
           "name": "Enterprise",
-          "description": "For institutions with multiple journals",
+          "description": "Para instituições com várias revistas",
           "features": [
-            "Multi-journal in Multi-installations",
-            "30GB Storage",
-            "Daily Backups | 7 days",
-            "Unlimited mailbox",
-            "SSL included",
-            "Priority email and phone support",
-            "Free Installation",
-            "1 Upgrade per year"
+            "Várias revistas em várias instalações",
+            "30 GB de armazenamento",
+            "Backups diários | 7 dias",
+            "Caixas de e-mail ilimitadas",
+            "SSL incluído",
+            "Suporte prioritário por e-mail e telefone",
+            "Instalação gratuita",
+            "1 atualização por ano"
           ],
           "annualOnly": [
-            "PrePrints server memberships (Annual only)"
+            "Associações de servidor de preprints (somente anual)"
           ],
-          "crossref": "Crossref membership + Similarity Check included (annual plan)*"
+          "crossref": "Associação Crossref + Similarity Check incluída (plano anual)*"
         }
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know about our OJS hosting services",
+      "title": "Perguntas frequentes",
+      "subtitle": "Tudo o que você precisa saber sobre nossos serviços de hospedagem OJS",
       "items": [
         {
-          "q": "What versions of OJS do you support?",
-          "a": "We support OJS 3.3, 3.4 and 3.5 (LTS since June 2026). We can also help you migrate from earlier versions, including OJS 2.x."
+          "q": "Quais versões do OJS vocês suportam?",
+          "a": "Suportamos OJS 3.3, 3.4 e 3.5 (LTS desde junho de 2026). Também podemos ajudar você a migrar de versões anteriores, incluindo o OJS 2.x."
         },
         {
-          "q": "Can I migrate my existing OJS installation?",
-          "a": "Yes, we offer migration services to help you move your existing OJS installation to our hosting platform."
+          "q": "Posso migrar minha instalação OJS atual?",
+          "a": "Sim, oferecemos serviços de migração para ajudar você a transferir sua instalação OJS atual para nossa plataforma de hospedagem."
         },
         {
-          "q": "Do you offer SSL certificates?",
-          "a": "Yes, all our hosting plans include free SSL certificates to ensure your journal is secure."
+          "q": "Vocês oferecem certificados SSL?",
+          "a": "Sim, todos os nossos planos de hospedagem incluem certificados SSL gratuitos para garantir a segurança da sua revista."
         },
         {
-          "q": "How often do you update OJS?",
-          "a": "We apply security updates as soon as they're available. Major version upgrades are scheduled with your approval."
+          "q": "Com que frequência vocês atualizam o OJS?",
+          "a": "Aplicamos as atualizações de segurança assim que são disponibilizadas. As atualizações de versão principal são agendadas com a sua aprovação."
         },
         {
-          "q": "Can I use my own domain name?",
-          "a": "Yes, all plans let you use your own domain or subdomain."
+          "q": "Posso usar meu próprio domínio?",
+          "a": "Sim, todos os planos permitem usar seu próprio domínio ou subdomínio."
         },
         {
-          "q": "What kind of support do you offer?",
-          "a": "All plans include 24/7 AI assistance via WhatsApp, plus OJS expert support during business hours: email support on Basic, priority email support on Professional, and priority email and phone support on Enterprise."
+          "q": "Que tipo de suporte vocês oferecem?",
+          "a": "Todos os planos incluem assistência com IA 24/7 pelo WhatsApp, além de suporte de especialistas em OJS em horário comercial: suporte por e-mail no Basic, suporte prioritário por e-mail no Professional e suporte prioritário por e-mail e telefone no Enterprise."
         }
       ]
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Join the growing community of academic journals using Paideia Hosting",
-      "contact": "Contact Us",
-      "services": "Explore Other Services"
+      "title": "Vamos começar?",
+      "subtitle": "Junte-se à crescente comunidade de revistas acadêmicas que usam a Paideia Hosting",
+      "contact": "Fale conosco",
+      "services": "Conheça outros serviços"
     }
   },
   "notFound": {
     "meta": {
-      "title": "Page not found | Paideia Hosting"
+      "title": "Página não encontrada | Paideia Hosting"
     },
-    "title": "Page not found",
-    "text": "The page you are looking for doesn't exist or has been moved.",
-    "home": "Go to homepage",
-    "contact": "Contact us"
+    "title": "Página não encontrada",
+    "text": "A página que você procura não existe ou foi movida.",
+    "home": "Ir para a página inicial",
+    "contact": "Fale conosco"
   },
   "layout": {
     "header": {
       "logoAlt": "Paideia Hosting",
       "nav": {
-        "home": "Home",
-        "services": "Services",
+        "home": "Início",
+        "services": "Serviços",
         "plugins": "Plugins",
-        "pricing": "Pricing",
-        "about": "About",
-        "contact": "Contact"
+        "pricing": "Preços",
+        "about": "Sobre nós",
+        "contact": "Contato"
       },
-      "logIn": "Log in",
-      "getStarted": "Get Started",
-      "toggleMenu": "Toggle menu",
+      "logIn": "Entrar",
+      "getStarted": "Começar",
+      "toggleMenu": "Abrir ou fechar menu",
       "menu": "Menu"
     },
     "footer": {
       "tagline": "Cloud for Science, Solutions for Knowledge",
-      "servicesTitle": "Services",
+      "servicesTitle": "Serviços",
       "services": {
-        "ojsHosting": "OJS Hosting",
-        "ompHosting": "OMP Hosting",
-        "repositoryHosting": "Repository Hosting",
-        "atomHosting": "AtoM Hosting",
-        "vpsForInstitutions": "VPS for Institutions"
+        "ojsHosting": "Hospedagem OJS",
+        "ompHosting": "Hospedagem OMP",
+        "repositoryHosting": "Hospedagem de repositórios",
+        "atomHosting": "Hospedagem AtoM",
+        "vpsForInstitutions": "VPS para instituições"
       },
-      "companyTitle": "Company",
+      "companyTitle": "Empresa",
       "company": {
-        "about": "About Us",
-        "pricing": "Pricing",
+        "about": "Sobre nós",
+        "pricing": "Preços",
         "blog": "Blog",
-        "affiliates": "Affiliate Program",
-        "careers": "Careers",
-        "contact": "Contact"
+        "affiliates": "Programa de afiliados",
+        "careers": "Trabalhe conosco",
+        "contact": "Contato"
       },
-      "contactTitle": "Contact",
-      "latamOffice": "Latin America Office:",
-      "usOffice": "US Office:",
-      "aiAssistance": "Immediate AI assistance, 24/7",
-      "businessHours": "Business hours:",
-      "rights": "All rights reserved.",
-      "terms": "Terms of Service",
-      "privacy": "Privacy Policy"
+      "contactTitle": "Contato",
+      "latamOffice": "Escritório América Latina:",
+      "usOffice": "Escritório Estados Unidos:",
+      "aiAssistance": "Assistência imediata com IA, 24/7",
+      "businessHours": "Horário comercial:",
+      "rights": "Todos os direitos reservados.",
+      "terms": "Termos de serviço",
+      "privacy": "Política de privacidade"
     },
     "whatsapp": {
-      "ariaLabel": "Chat with our AI assistant on WhatsApp",
-      "label": "Chat with AI · 24/7"
+      "ariaLabel": "Converse com nosso assistente de IA pelo WhatsApp",
+      "label": "Fale com a IA · 24/7"
     }
   },
   "about": {
     "meta": {
-      "title": "About Us - Paideia Hosting",
-      "description": "Learn about Paideia Hosting, our mission, values, and how we're part of the larger Paideia Publishing Services ecosystem."
+      "title": "Quem somos - Paideia Hosting",
+      "description": "Conheça a Paideia Hosting, nossa missão, nossos valores e como fazemos parte do ecossistema da Paideia Publishing Services."
     },
     "hero": {
-      "title": "About Paideia Hosting",
-      "subtitle": "Specialized hosting solutions for academic institutions, part of the Paideia Publishing Services ecosystem.",
-      "imageAlt": "Paideia Hosting Team"
+      "title": "Sobre a Paideia Hosting",
+      "subtitle": "Soluções de hospedagem especializadas para instituições acadêmicas, como parte do ecossistema da Paideia Publishing Services.",
+      "imageAlt": "Equipe da Paideia Hosting"
     },
     "story": {
-      "title": "Our Story",
-      "subtitle": "How we became leaders in academic hosting solutions",
+      "title": "Nossa história",
+      "subtitle": "Como nos tornamos referência em hospedagem acadêmica",
       "paragraphs": [
-        "Paideia Hosting was founded with a clear mission: to provide specialized hosting solutions for academic institutions and scholarly publishing. Born from the needs we observed while working with universities, research centers, and academic publishers, we recognized that standard hosting solutions weren't meeting the unique requirements of scholarly communication platforms.",
-        "As part of the larger Paideia Publishing Services ecosystem, we leverage our deep understanding of academic workflows and publishing processes to create hosting environments that are optimized for platforms like Open Journal Systems (OJS), Open Monograph Press (OMP), Dataverse, and Access to Memory (AtoM).",
-        "Our team combines expertise in both information technology and scholarly publishing, allowing us to bridge the gap between technical requirements and academic needs. This unique perspective has enabled us to grow from a small hosting provider to a trusted partner for academic institutions across Latin America and beyond."
+        "A Paideia Hosting nasceu com uma missão clara: oferecer soluções de hospedagem especializadas para instituições acadêmicas e para a publicação científica. Ela surgiu das necessidades que observamos ao trabalhar com universidades, centros de pesquisa e editoras acadêmicas, quando percebemos que as soluções de hospedagem convencionais não atendiam aos requisitos específicos das plataformas de comunicação científica.",
+        "Como parte do ecossistema da Paideia Publishing Services, aproveitamos nosso profundo conhecimento dos fluxos de trabalho acadêmicos e dos processos editoriais para criar ambientes de hospedagem otimizados para plataformas como Open Journal Systems (OJS), Open Monograph Press (OMP), Dataverse e Access to Memory (AtoM).",
+        "Nossa equipe reúne experiência em tecnologia da informação e em publicação científica, o que nos permite aproximar os requisitos técnicos das necessidades acadêmicas. Essa perspectiva única nos permitiu crescer de um pequeno provedor de hospedagem para um parceiro de confiança de instituições acadêmicas da América Latina e de outras regiões."
       ],
-      "imageAlt": "Paideia Hosting History"
+      "imageAlt": "História da Paideia Hosting"
     },
     "values": {
-      "title": "Our Mission & Values",
-      "subtitle": "The principles that guide our work",
+      "title": "Nossa missão e nossos valores",
+      "subtitle": "Os princípios que orientam nosso trabalho",
       "items": {
         "academicExcellence": {
-          "title": "Academic Excellence",
-          "description": "We're committed to supporting the highest standards of academic publishing and research data management through reliable, secure hosting solutions."
+          "title": "Excelência acadêmica",
+          "description": "Temos o compromisso de apoiar os mais altos padrões da publicação acadêmica e da gestão de dados de pesquisa com soluções de hospedagem confiáveis e seguras."
         },
         "accessibility": {
-          "title": "Accessibility",
-          "description": "We believe in making advanced hosting solutions accessible to academic institutions of all sizes, from small journals to large research universities."
+          "title": "Acessibilidade",
+          "description": "Acreditamos em tornar soluções de hospedagem avançadas acessíveis a instituições acadêmicas de todos os portes, de pequenas revistas a grandes universidades de pesquisa."
         },
         "openKnowledge": {
-          "title": "Open Knowledge",
-          "description": "We support the open access movement and open source academic software by providing optimized hosting environments for these platforms."
+          "title": "Conhecimento aberto",
+          "description": "Apoiamos o movimento de acesso aberto e o software acadêmico de código aberto, oferecendo ambientes de hospedagem otimizados para essas plataformas."
         },
         "technicalExcellence": {
-          "title": "Technical Excellence",
-          "description": "We maintain the highest standards of technical performance, security, and reliability in all our hosting solutions."
+          "title": "Excelência técnica",
+          "description": "Mantemos os mais altos padrões de desempenho técnico, segurança e confiabilidade em todas as nossas soluções de hospedagem."
         },
         "academicFocus": {
-          "title": "Academic Focus",
-          "description": "We specialize exclusively in academic and research hosting, allowing us to develop deep expertise in the unique needs of this sector."
+          "title": "Foco acadêmico",
+          "description": "Somos especializados exclusivamente em hospedagem acadêmica e de pesquisa, o que nos permite desenvolver um conhecimento profundo das necessidades específicas desse setor."
         },
         "innovation": {
-          "title": "Innovation",
-          "description": "We continuously explore new technologies and approaches to improve our hosting solutions for the evolving needs of academic institutions."
+          "title": "Inovação",
+          "description": "Exploramos continuamente novas tecnologias e abordagens para aprimorar nossas soluções de hospedagem diante das necessidades em constante evolução das instituições acadêmicas."
         }
       }
     },
     "ecosystem": {
-      "title": "The Paideia Ecosystem",
-      "subtitle": "Paideia Hosting is part of a comprehensive suite of services for academic publishing",
+      "title": "O ecossistema Paideia",
+      "subtitle": "A Paideia Hosting faz parte de um conjunto completo de serviços para a publicação acadêmica",
       "items": {
         "publishingServices": {
-          "description": "Our parent organization that provides comprehensive editorial services for academic institutions, including journal management, editorial workflow optimization, and publishing consultancy.",
-          "link": "Visit Paideia Publishing Services"
+          "description": "Nossa organização matriz, que oferece serviços editoriais completos para instituições acadêmicas, incluindo gestão de revistas, otimização do fluxo editorial e consultoria em publicação.",
+          "link": "Visitar Paideia Publishing Services"
         },
         "studio": {
-          "description": "Our creative and development arm that specializes in website design, custom development, and digital solutions for academic publishers and institutions.",
-          "link": "Visit Paideia Studio"
+          "description": "Nossa área criativa e de desenvolvimento, especializada em design de sites, desenvolvimento sob medida e soluções digitais para editoras e instituições acadêmicas.",
+          "link": "Visitar Paideia Studio"
         },
         "editorial": {
-          "description": "Our editorial division that provides copyediting, proofreading, layout, and design services for academic publications, ensuring the highest quality of published content.",
-          "link": "Visit Paideia Editorial"
+          "description": "Nossa divisão editorial, que oferece serviços de preparação de texto, revisão de provas, diagramação e design para publicações acadêmicas, garantindo a máxima qualidade do conteúdo publicado.",
+          "link": "Visitar Paideia Editorial"
         },
         "latarxiv": {
-          "description": "Our preprint server for Latin American research, providing a platform for researchers to share their work before formal peer review and publication.",
-          "link": "Visit LatArXiv Preprints"
+          "description": "Nosso servidor de preprints para a pesquisa latino-americana, uma plataforma para que a comunidade de pesquisa compartilhe seus trabalhos antes da avaliação por pares e da publicação formal.",
+          "link": "Visitar LatArXiv Preprints"
         }
       }
     },
     "team": {
-      "title": "Our Team",
-      "subtitle": "Meet the experts behind Paideia Hosting",
+      "title": "Nossa equipe",
+      "subtitle": "Conheça os especialistas por trás da Paideia Hosting",
       "members": {
         "pantaleo": {
-          "role": "Founder & CEO",
-          "bio": "OJS specialist and Open Access advisor. History graduate (UNRC) with a postgraduate degree in Philosophy (UCC). Founded and directed Kimün in 2015. Since then, he has been dedicated to editorial and academic consulting."
+          "role": "Fundação e direção geral (CEO)",
+          "bio": "Especialista em OJS e em assessoria de acesso aberto. Graduação em História (UNRC) e pós-graduação em Filosofia (UCC). Fundou e dirigiu a Kimün em 2015. Desde então, dedica-se à consultoria editorial e acadêmica."
         },
         "suruguay": {
-          "role": "Developer",
-          "bio": "FullStack Web Developer and QA Automation Engineer. Has specialization in sales and marketing. Has coordinated ventures and developments in different countries."
+          "role": "Desenvolvimento",
+          "bio": "Desenvolvimento web FullStack e engenharia de QA Automation. Possui especialização em vendas e marketing. Coordenou empreendimentos e projetos de desenvolvimento em diferentes países."
         },
         "trujillo": {
-          "role": "Copywriting & SEO",
-          "bio": "Writer, Copywriter and SEO Writer. Graduated as a Spanish, literature and Latin teacher; has a master's degree in ELE teaching. Currently dedicated to digital content writing and virtual assistance for SMEs and Latin American entrepreneurs."
+          "role": "Copywriting e SEO",
+          "bio": "Redação, copywriting e redação SEO. Formação docente em Língua Espanhola, Literatura e Latim, com mestrado em ensino de espanhol como língua estrangeira (ELE). Atualmente, dedica-se à redação de conteúdo digital e à assistência virtual para PMEs e pessoas empreendedoras da América Latina."
         },
         "ortellado": {
-          "role": "Developer",
-          "bio": "Database and server specialist. At Paideia Studio supports server updates and management."
+          "role": "Desenvolvimento",
+          "bio": "Especialista em bancos de dados e servidores. Na Paideia Studio, apoia a atualização e a gestão de servidores."
         },
         "esposito": {
-          "role": "Editorial Advisor - Open Access - OJS",
-          "bio": "Dedicated to supporting editorial teams in policy services and index applications. Specialist in OJS, OMP and Crossref services management."
+          "role": "Assessoria editorial - Acesso aberto - OJS",
+          "bio": "Apoia equipes editoriais em serviços de políticas editoriais e candidaturas a indexadores. Especialista em OJS, OMP e gestão de serviços Crossref."
         },
         "austrich": {
-          "role": "XML-JATS Specialist",
-          "bio": "XML-JATS specialist and academic content structuring expert for digital publications."
+          "role": "Especialista em XML-JATS",
+          "bio": "Especialista em XML-JATS e em estruturação de conteúdo acadêmico para publicações digitais."
         }
       }
     },
     "clients": {
-      "title": "Our Clients & Partners",
-      "subtitle": "Trusted by leading academic institutions across Latin America and beyond"
+      "title": "Nossos clientes e parceiros",
+      "subtitle": "Instituições acadêmicas de referência da América Latina e de outras regiões confiam em nós"
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Join the growing community of academic institutions using Paideia Hosting",
-      "contact": "Contact Us",
-      "services": "Explore Our Services"
+      "title": "Vamos começar?",
+      "subtitle": "Junte-se à crescente comunidade de instituições acadêmicas que usam a Paideia Hosting",
+      "contact": "Fale conosco",
+      "services": "Conheça nossos serviços"
     }
   },
   "atomHosting": {
     "meta": {
-      "title": "AtoM Hosting - Paideia Hosting",
-      "description": "Professional hosting for Access to Memory (AtoM) archival software. Ideal for libraries, archives, and cultural institutions."
+      "title": "Hospedagem AtoM - Paideia Hosting",
+      "description": "Hospedagem profissional para o software arquivístico Access to Memory (AtoM). Ideal para bibliotecas, arquivos e instituições culturais."
     },
     "hero": {
-      "title": "AtoM Hosting Solutions",
-      "subtitle": "Professional hosting for Access to Memory (AtoM) archival software. Ideal for libraries, archives, and cultural institutions.",
-      "viewPricing": "View Pricing",
-      "contactSales": "Contact Sales",
-      "imageAlt": "AtoM Hosting"
+      "title": "Soluções de hospedagem AtoM",
+      "subtitle": "Hospedagem profissional para o software arquivístico Access to Memory (AtoM). Ideal para bibliotecas, arquivos e instituições culturais.",
+      "viewPricing": "Ver preços",
+      "contactSales": "Falar com vendas",
+      "imageAlt": "Hospedagem AtoM"
     },
     "features": {
-      "title": "AtoM Hosting Features",
-      "subtitle": "Everything you need for your archival management system",
+      "title": "Recursos da hospedagem AtoM",
+      "subtitle": "Tudo o que você precisa para o seu sistema de gestão arquivística",
       "versions": {
-        "title": "Latest AtoM Version",
-        "text": "Support for the latest AtoM versions with seamless upgrades"
+        "title": "Versão mais recente do AtoM",
+        "text": "Suporte às versões mais recentes do AtoM, com atualizações sem interrupções"
       },
       "performance": {
-        "title": "Optimized Performance",
-        "text": "Servers configured specifically for AtoM requirements"
+        "title": "Desempenho otimizado",
+        "text": "Servidores configurados especificamente para os requisitos do AtoM"
       },
       "storage": {
-        "title": "Secure Storage",
-        "text": "Encrypted storage with regular backups"
+        "title": "Armazenamento seguro",
+        "text": "Armazenamento criptografado com backups regulares"
       },
       "tools": {
-        "title": "Import/Export Tools",
-        "text": "Enhanced tools for data migration and management"
+        "title": "Ferramentas de importação/exportação",
+        "text": "Ferramentas aprimoradas para migração e gestão de dados"
       },
       "support": {
-        "title": "Expert Support",
-        "text": "24/7 AI assistance via WhatsApp, plus expert support during business hours"
+        "title": "Suporte de especialistas",
+        "text": "Assistência com IA 24/7 pelo WhatsApp e suporte de especialistas em horário comercial"
       },
       "theming": {
-        "title": "Custom Theming",
-        "text": "Customize the interface with your institution's branding"
+        "title": "Tema personalizado",
+        "text": "Personalize a interface com a identidade visual da sua instituição"
       }
     },
     "pricing": {
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Choose the plan that fits your archival needs",
+      "title": "Preços simples e transparentes",
+      "subtitle": "Escolha o plano que atende às necessidades do seu arquivo",
       "installation": {
-        "monthly": "Installation fee extra",
-        "annual": "Installation included"
+        "monthly": "Instalação com custo adicional",
+        "annual": "Instalação incluída"
       },
       "migration": {
-        "monthly": "Migration services fee extra",
-        "annual": "Migration services included"
+        "monthly": "Migração com custo adicional",
+        "annual": "Migração incluída"
       },
       "plans": {
         "professional": {
           "name": "Professional",
-          "description": "For archives and cultural institutions",
+          "description": "Para arquivos e instituições culturais",
           "features": [
-            "AtoM Installation",
-            "50GB Storage",
-            "SSL included",
-            "Daily Backups | 7 days",
-            "Email support",
-            "Additional storage available"
+            "Instalação do AtoM",
+            "50 GB de armazenamento",
+            "SSL incluído",
+            "Backups diários | 7 dias",
+            "Suporte por e-mail",
+            "Armazenamento adicional disponível"
           ]
         },
         "enterprise": {
           "name": "Enterprise",
-          "description": "For large institutions and national archives",
+          "description": "Para grandes instituições e arquivos nacionais",
           "features": [
-            "AtoM Installation",
-            "Installation included",
-            "100GB Storage",
-            "SSL included",
-            "Mail box included",
-            "S3 configuration included (Not included additional fee S3)",
-            "Daily Backups | 7 days",
-            "Priority email support",
-            "Additional storage available"
+            "Instalação do AtoM",
+            "Instalação incluída",
+            "100 GB de armazenamento",
+            "SSL incluído",
+            "Caixa de e-mail incluída",
+            "Configuração do S3 incluída (o custo do S3 é cobrado à parte)",
+            "Backups diários | 7 dias",
+            "Suporte prioritário por e-mail",
+            "Armazenamento adicional disponível"
           ],
           "annualOnly": [
-            "Migration services included (Annual only)"
+            "Migração incluída (somente anual)"
           ]
         }
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know about our AtoM hosting services",
+      "title": "Perguntas frequentes",
+      "subtitle": "Tudo o que você precisa saber sobre nossos serviços de hospedagem AtoM",
       "items": [
         {
-          "q": "What versions of AtoM do you support?",
-          "a": "We support the latest stable versions of AtoM and can help you migrate from older versions."
+          "q": "Quais versões do AtoM vocês suportam?",
+          "a": "Suportamos as versões estáveis mais recentes do AtoM e podemos ajudar você a migrar de versões anteriores."
         },
         {
-          "q": "Can I migrate my existing AtoM installation?",
-          "a": "Yes, we offer migration services to help you move your existing AtoM installation to our hosting platform."
+          "q": "Posso migrar minha instalação atual do AtoM?",
+          "a": "Sim, oferecemos serviços de migração para ajudar você a transferir sua instalação atual do AtoM para a nossa plataforma de hospedagem."
         },
         {
-          "q": "How is archival data security handled?",
-          "a": "We implement multiple layers of security including encrypted storage, regular security audits, and compliance with archival data protection standards."
+          "q": "Como é tratada a segurança dos dados arquivísticos?",
+          "a": "Implementamos várias camadas de segurança, incluindo armazenamento criptografado, auditorias de segurança periódicas e conformidade com as normas de proteção de dados arquivísticos."
         },
         {
-          "q": "Do you support multilingual interfaces?",
-          "a": "Yes, we fully support AtoM's multilingual capabilities, allowing you to present your archives in multiple languages."
+          "q": "Vocês oferecem interfaces multilíngues?",
+          "a": "Sim, oferecemos suporte completo aos recursos multilíngues do AtoM, para que você possa apresentar seus acervos em vários idiomas."
         },
         {
-          "q": "Can I customize the AtoM interface?",
-          "a": "Yes, our Professional and Enterprise plans allow for custom theming and interface modifications to match your institution's identity."
+          "q": "Posso personalizar a interface do AtoM?",
+          "a": "Sim, nossos planos Professional e Enterprise permitem personalizar o tema e modificar a interface para refletir a identidade da sua instituição."
         },
         {
-          "q": "What import formats are supported?",
-          "a": "AtoM supports various import formats including EAD, MODS, Dublin Core, CSV, and more. We can help you with data migration and import."
+          "q": "Quais formatos de importação são suportados?",
+          "a": "O AtoM aceita diversos formatos de importação, como EAD, MODS, Dublin Core, CSV e outros. Podemos ajudar você com a migração e a importação de dados."
         }
       ]
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Join the growing community of archives and cultural institutions using Paideia Hosting",
-      "contact": "Contact Us",
-      "services": "Explore Other Services"
+      "title": "Vamos começar?",
+      "subtitle": "Junte-se à crescente comunidade de arquivos e instituições culturais que usam o Paideia Hosting",
+      "contact": "Fale conosco",
+      "services": "Conheça outros serviços"
     }
   },
   "backupSolutions": {
     "meta": {
-      "title": "AWS Backup Solutions - Paideia Hosting",
-      "description": "Professional backup and digital preservation solutions for academic institutions. Powered by AWS infrastructure with flexible retention policies."
+      "title": "Soluções de backup na AWS - Paideia Hosting",
+      "description": "Soluções profissionais de backup e preservação digital para instituições acadêmicas, com infraestrutura AWS e políticas de retenção flexíveis."
     },
     "hero": {
-      "title": "AWS Backup & Preservation Solutions",
-      "subtitle": "Enterprise-grade backup and digital preservation for academic institutions. Secure, scalable, and compliant with institutional requirements.",
-      "viewPricing": "View Pricing",
-      "contactSales": "Contact Sales",
-      "imageAlt": "AWS Backup Solutions"
+      "title": "Soluções de backup e preservação na AWS",
+      "subtitle": "Backup e preservação digital de nível empresarial para instituições acadêmicas. Seguro, escalável e em conformidade com os requisitos institucionais.",
+      "viewPricing": "Ver preços",
+      "contactSales": "Falar com vendas",
+      "imageAlt": "Soluções de backup na AWS"
     },
     "features": {
-      "title": "Powered by AWS Infrastructure",
-      "subtitle": "Enterprise-grade backup solutions built on Amazon Web Services",
-      "hostedOn": "Hosted on",
+      "title": "Com a infraestrutura da AWS",
+      "subtitle": "Soluções de backup de nível empresarial construídas sobre a Amazon Web Services",
+      "hostedOn": "Hospedado na",
       "logoAlt": "AWS",
       "security": {
-        "title": "Enterprise Security",
-        "description": "Multi-layer security with encryption at rest and in transit"
+        "title": "Segurança empresarial",
+        "description": "Segurança em várias camadas, com criptografia em repouso e em trânsito"
       },
       "storage": {
-        "title": "Intelligent Storage",
-        "description": "Automatic lifecycle management reduces costs over time"
+        "title": "Armazenamento inteligente",
+        "description": "O gerenciamento automático do ciclo de vida reduz os custos ao longo do tempo"
       },
       "preservation": {
-        "title": "Long-term Preservation",
-        "description": "Designed for archival storage from 1 to 10+ years"
+        "title": "Preservação de longo prazo",
+        "description": "Projetado para armazenamento de arquivamento de 1 a mais de 10 anos"
       },
       "recovery": {
-        "title": "Flexible Recovery",
-        "description": "Recovery times from minutes to hours based on your needs"
+        "title": "Recuperação flexível",
+        "description": "Tempos de recuperação de minutos a horas, conforme suas necessidades"
       },
       "compliance": {
-        "title": "Compliance Ready",
-        "description": "Immutability options for regulatory compliance"
+        "title": "Pronto para conformidade",
+        "description": "Opções de imutabilidade para conformidade regulatória"
       },
       "monitoring": {
-        "title": "Monitoring Included",
-        "description": "Automated monitoring with monthly reports"
+        "title": "Monitoramento incluído",
+        "description": "Monitoramento automatizado com relatórios mensais"
       }
     },
     "plans": {
-      "title": "Two Plans for Different Needs",
-      "subtitle": "Choose the solution that fits your institutional requirements",
+      "title": "Dois planos para necessidades diferentes",
+      "subtitle": "Escolha a solução que atende aos requisitos da sua instituição",
       "preservation": {
         "name": "Preservation Plus",
-        "description": "Long-term digital preservation and archival storage",
+        "description": "Preservação digital de longo prazo e armazenamento de arquivamento",
         "items": [
           {
-            "title": "Archival Storage",
-            "description": "AWS Deep Archive for maximum cost efficiency"
+            "title": "Armazenamento de arquivamento",
+            "description": "AWS Deep Archive para máxima eficiência de custos"
           },
           {
-            "title": "Flexible Capture Schedule",
-            "description": "Monthly, quarterly, semi-annual, or annual backups"
+            "title": "Calendário de captura flexível",
+            "description": "Backups mensais, trimestrais, semestrais ou anuais"
           },
           {
-            "title": "Long-term Retention",
-            "description": "1 to 10+ years retention policies"
+            "title": "Retenção de longo prazo",
+            "description": "Políticas de retenção de 1 a mais de 10 anos"
           },
           {
-            "title": "Recovery Time",
-            "description": "72 business hours standard recovery"
+            "title": "Tempo de recuperação",
+            "description": "Recuperação padrão em 72 horas úteis"
           },
           {
-            "title": "Ideal For",
-            "description": "Doctoral theses, historical archives, institutional records"
+            "title": "Ideal para",
+            "description": "Teses de doutorado, arquivos históricos, registros institucionais"
           }
         ],
-        "price": "Starting at $10/GB/year",
-        "priceNote": "· Setup fee applies for volumes under 300 GB"
+        "price": "A partir de $10/GB/ano",
+        "priceNote": "· Taxa de configuração para volumes abaixo de 300 GB"
       },
       "active": {
         "name": "Active Guard",
-        "description": "Operational backup with rapid recovery",
+        "description": "Backup operacional com recuperação rápida",
         "items": [
           {
-            "title": "Intelligent Tiering",
-            "description": "S3 Standard → Glacier IR → Deep Archive lifecycle"
+            "title": "Camadas inteligentes",
+            "description": "Ciclo de vida S3 Standard → Glacier IR → Deep Archive"
           },
           {
-            "title": "Frequent Backups",
-            "description": "Daily, twice-weekly, or weekly capture schedules"
+            "title": "Backups frequentes",
+            "description": "Calendários de captura diários, duas vezes por semana ou semanais"
           },
           {
-            "title": "Operational Retention",
-            "description": "6 months to 2 years retention"
+            "title": "Retenção operacional",
+            "description": "Retenção de 6 meses a 2 anos"
           },
           {
-            "title": "Fast Recovery",
-            "description": "30 minutes to 2 hours for recent data"
+            "title": "Recuperação rápida",
+            "description": "De 30 minutos a 2 horas para dados recentes"
           },
           {
-            "title": "Ideal For",
-            "description": "OJS servers, DSpace repositories, production databases"
+            "title": "Ideal para",
+            "description": "Servidores OJS, repositórios DSpace, bancos de dados de produção"
           }
         ],
-        "price": "Starting at $0.46/GB/month",
-        "priceNote": "· Setup fee applies for volumes under 300 GB"
+        "price": "A partir de $0.46/GB/mês",
+        "priceNote": "· Taxa de configuração para volumes abaixo de 300 GB"
       }
     },
     "calculator": {
-      "title": "Calculate Your Price",
-      "subtitle": "Adjust the parameters to see pricing for your specific needs",
+      "title": "Calcule seu preço",
+      "subtitle": "Ajuste os parâmetros para ver o preço de acordo com suas necessidades",
       "plans": {
         "preservation": "Preservation Plus",
         "active": "Active Guard"
       },
-      "configure": "Configure Your Plan",
-      "storageVolume": "Storage Volume",
+      "configure": "Configure seu plano",
+      "storageVolume": "Volume de armazenamento",
       "storageMin": "100 GB",
       "storageMax": "5,000 GB",
-      "retentionPeriod": "Retention Period",
-      "captureFrequency": "Capture Frequency",
-      "year": "year",
-      "years": "years",
-      "months": "months",
-      "yourPricing": "Your Pricing",
-      "monthlyCost": "Monthly Cost",
-      "annualCost": "Annual Cost",
-      "setupFee": "Setup Fee (one-time)",
-      "totalFirstYear": "Total First Year",
-      "pricePerGBYear": "Price per GB/year:",
-      "pricePerGBMonth": "Price per GB/month:",
-      "capturesPerYear": "Captures per year:",
-      "totalRetention": "Total retention:",
-      "requestQuote": "Request Quote",
-      "includes": "Includes:",
+      "retentionPeriod": "Período de retenção",
+      "captureFrequency": "Frequência de captura",
+      "year": "ano",
+      "years": "anos",
+      "months": "meses",
+      "yourPricing": "Seu preço",
+      "monthlyCost": "Custo mensal",
+      "annualCost": "Custo anual",
+      "setupFee": "Taxa de configuração (única)",
+      "totalFirstYear": "Total do primeiro ano",
+      "pricePerGBYear": "Preço por GB/ano:",
+      "pricePerGBMonth": "Preço por GB/mês:",
+      "capturesPerYear": "Capturas por ano:",
+      "totalRetention": "Retenção total:",
+      "requestQuote": "Solicitar orçamento",
+      "includes": "Inclui:",
       "preservation": {
-        "retentionMin": "1 year",
-        "retentionMax": "10+ years",
+        "retentionMin": "1 ano",
+        "retentionMax": "Mais de 10 anos",
         "frequencies": {
-          "monthly": "Monthly (12/year)",
-          "quarterly": "Quarterly (4/year)",
-          "semiannual": "Semi-annual (2/year)",
-          "annual": "Annual (1/year)"
+          "monthly": "Mensal (12/ano)",
+          "quarterly": "Trimestral (4/ano)",
+          "semiannual": "Semestral (2/ano)",
+          "annual": "Anual (1/ano)"
         },
         "includes": [
-          "AWS Deep Archive storage",
-          "Automated capture schedule",
-          "Monthly monitoring reports",
-          "1 free recovery every 2 years",
-          "72-hour recovery SLA"
+          "Armazenamento no AWS Deep Archive",
+          "Calendário de captura automatizado",
+          "Relatórios mensais de monitoramento",
+          "1 recuperação gratuita a cada 2 anos",
+          "SLA de recuperação de 72 horas"
         ]
       },
       "active": {
         "retentions": {
-          "6": "6 months",
-          "12": "1 year",
-          "24": "2 years"
+          "6": "6 meses",
+          "12": "1 ano",
+          "24": "2 anos"
         },
         "frequencies": {
-          "daily": "Daily (365/year)",
-          "twiceWeekly": "Twice Weekly (104/year)",
-          "weekly": "Weekly (52/year)"
+          "daily": "Diária (365/ano)",
+          "twiceWeekly": "Duas vezes por semana (104/ano)",
+          "weekly": "Semanal (52/ano)"
         },
         "includes": [
-          "Intelligent storage tiering",
-          "Automated capture schedule",
-          "Monthly monitoring reports",
-          "Unlimited recent data recovery",
-          "30min-2h recovery for recent data"
+          "Camadas de armazenamento inteligentes",
+          "Calendário de captura automatizado",
+          "Relatórios mensais de monitoramento",
+          "Recuperação ilimitada de dados recentes",
+          "Recuperação de 30 min a 2 h para dados recentes"
         ]
       },
       "note": {
-        "label": "Note:",
-        "text": "These are standard pricing estimates. Setup fees apply only for volumes under 300 GB. Multi-year contracts receive additional discounts. Contact us for custom configurations and bundle pricing."
+        "label": "Observação:",
+        "text": "Estes são preços-padrão estimados. As taxas de configuração se aplicam apenas a volumes abaixo de 300 GB. Contratos plurianuais recebem descontos adicionais. Fale conosco para configurações personalizadas e preços de pacotes."
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know about our AWS backup solutions",
+      "title": "Perguntas frequentes",
+      "subtitle": "Tudo o que você precisa saber sobre nossas soluções de backup na AWS",
       "items": [
         {
-          "question": "What types of data can I backup?",
-          "answer": "Any type of institutional data: research databases, OJS journals, DSpace repositories, Dataverse datasets, AtoM archives, and general server backups."
+          "question": "Que tipos de dados posso incluir no backup?",
+          "answer": "Qualquer tipo de dado institucional: bancos de dados de pesquisa, revistas OJS, repositórios DSpace, conjuntos de dados do Dataverse, arquivos AtoM e backups gerais de servidores."
         },
         {
-          "question": "How is data security handled?",
-          "answer": "All data is encrypted both in transit and at rest using AWS encryption standards. Optional Object Lock provides immutability for compliance requirements."
+          "question": "Como a segurança dos dados é tratada?",
+          "answer": "Todos os dados são criptografados em trânsito e em repouso, com os padrões de criptografia da AWS. O Object Lock opcional oferece imutabilidade para requisitos de conformidade."
         },
         {
-          "question": "Can I change my retention period later?",
-          "answer": "Yes, you can adjust retention policies at contract renewal. However, existing backups will follow their original retention schedule."
+          "question": "Posso alterar o período de retenção depois?",
+          "answer": "Sim, você pode ajustar as políticas de retenção na renovação do contrato. No entanto, os backups existentes seguirão o calendário de retenção original."
         },
         {
-          "question": "What happens if I exceed my contracted storage?",
-          "answer": "We'll notify you at 80% and 95% of your quota. You can upgrade your plan anytime, or we'll discuss options when you reach the limit."
+          "question": "O que acontece se eu ultrapassar o armazenamento contratado?",
+          "answer": "Avisaremos você ao atingir 80% e 95% da sua cota. Você pode ampliar seu plano a qualquer momento, ou conversaremos sobre as opções quando o limite for atingido."
         },
         {
-          "question": "How do I restore my data?",
-          "answer": "Simply contact our support team with your restoration request. We'll initiate the recovery process and provide a secure download link once ready."
+          "question": "Como restauro meus dados?",
+          "answer": "Basta entrar em contato com nossa equipe de suporte com sua solicitação de restauração. Iniciaremos o processo de recuperação e enviaremos um link de download seguro assim que estiver pronto."
         },
         {
-          "question": "Is there a setup fee?",
-          "answer": "Setup fees apply only for volumes under 300 GB ($600 for Preservation Plus, $800 for Active Guard). Volumes of 300 GB or more include free setup."
+          "question": "Existe taxa de configuração?",
+          "answer": "As taxas de configuração se aplicam apenas a volumes abaixo de 300 GB ($600 para Preservation Plus, $800 para Active Guard). Volumes de 300 GB ou mais incluem configuração gratuita."
         },
         {
-          "question": "Can I combine both plans?",
-          "answer": "Yes! Many institutions use Active Guard for operational servers and Preservation Plus for long-term archival storage. Contact us for bundled pricing."
+          "question": "Posso combinar os dois planos?",
+          "answer": "Sim! Muitas instituições usam o Active Guard para servidores operacionais e o Preservation Plus para armazenamento de arquivamento de longo prazo. Fale conosco para preços de pacotes."
         },
         {
-          "question": "What payment terms are available?",
-          "answer": "We offer annual payment terms only. Multi-year contracts (2-10 years) receive discounted rates for Preservation Plus."
+          "question": "Quais condições de pagamento estão disponíveis?",
+          "answer": "Oferecemos somente pagamento anual. Contratos plurianuais (2 a 10 anos) recebem tarifas com desconto no Preservation Plus."
         },
         {
-          "question": "Do you offer geographic replication?",
-          "answer": "Yes, as an add-on service. Your data can be replicated across multiple AWS regions for enhanced disaster recovery (+50% on base price)."
+          "question": "Vocês oferecem replicação geográfica?",
+          "answer": "Sim, como serviço adicional. Seus dados podem ser replicados em várias regiões da AWS para uma recuperação de desastres mais robusta (+50% sobre o preço base)."
         },
         {
-          "question": "What monitoring and reporting is included?",
-          "answer": "All plans include automated monitoring with monthly email reports showing storage usage, backup status, and quota utilization. Premium reporting available as an add-on."
+          "question": "Que monitoramento e relatórios estão incluídos?",
+          "answer": "Todos os planos incluem monitoramento automatizado com relatórios mensais por e-mail que mostram o uso do armazenamento, o status dos backups e a utilização da cota. Relatórios premium disponíveis como adicional."
         },
         {
-          "question": "Can you help us migrate existing backups?",
-          "answer": "Yes, we offer migration services to transfer your existing backups to our AWS infrastructure. Contact our sales team for migration assistance and pricing."
+          "question": "Vocês podem nos ajudar a migrar backups existentes?",
+          "answer": "Sim, oferecemos serviços de migração para transferir seus backups existentes para nossa infraestrutura AWS. Fale com nossa equipe de vendas para obter assistência e preços de migração."
         },
         {
-          "question": "What SLAs do you provide?",
-          "answer": "Preservation Plus: 72 business hours recovery. Active Guard: 30 minutes to 2 hours for recent data, 24-48 hours for archived data. SLA 99.9% uptime available as add-on."
+          "question": "Quais SLAs vocês oferecem?",
+          "answer": "Preservation Plus: recuperação em 72 horas úteis. Active Guard: de 30 minutos a 2 horas para dados recentes e de 24 a 48 horas para dados arquivados. SLA de 99.9% de disponibilidade disponível como adicional."
         }
       ]
     },
     "addons": {
-      "title": "Optional Add-ons",
-      "subtitle": "Enhance your backup solution with additional features",
+      "title": "Adicionais opcionais",
+      "subtitle": "Amplie sua solução de backup com recursos adicionais",
       "items": [
         {
-          "title": "Object Lock (Immutability)",
-          "price": "+$300-360/year",
-          "description": "WORM protection prevents deletion or modification for compliance requirements",
+          "title": "Object Lock (imutabilidade)",
+          "price": "+$300-360/ano",
+          "description": "A proteção WORM impede a exclusão ou modificação, atendendo a requisitos de conformidade",
           "bullets": [
-            "Ransomware protection",
-            "Regulatory compliance",
-            "Audit-ready archives"
+            "Proteção contra ransomware",
+            "Conformidade regulatória",
+            "Arquivos prontos para auditoria"
           ]
         },
         {
-          "title": "Geographic Replication",
-          "price": "+50% on base",
-          "description": "Replicate your backups to a second AWS region for disaster recovery",
+          "title": "Replicação geográfica",
+          "price": "+50% sobre o preço base",
+          "description": "Replique seus backups em uma segunda região da AWS para recuperação de desastres",
           "bullets": [
-            "Multi-region redundancy",
-            "Enhanced disaster recovery",
-            "Compliance requirements"
+            "Redundância multirregional",
+            "Recuperação de desastres mais robusta",
+            "Requisitos de conformidade"
           ]
         },
         {
-          "title": "Versioning",
-          "price": "+30% on base",
-          "description": "Keep multiple versions of each backup for point-in-time recovery",
+          "title": "Versionamento",
+          "price": "+30% sobre o preço base",
+          "description": "Mantenha várias versões de cada backup para recuperação a um ponto no tempo",
           "bullets": [
-            "Multiple restore points",
-            "Accidental change protection",
-            "Granular recovery options"
+            "Vários pontos de restauração",
+            "Proteção contra alterações acidentais",
+            "Opções de recuperação granulares"
           ]
         },
         {
-          "title": "Premium Reporting",
-          "price": "+$300-500/year",
-          "description": "Detailed analytics, trend analysis, and executive reports",
+          "title": "Relatórios premium",
+          "price": "+$300-500/ano",
+          "description": "Análises detalhadas, análise de tendências e relatórios executivos",
           "bullets": [
-            "Weekly detailed reports",
-            "Trend analysis",
-            "Custom dashboards"
+            "Relatórios semanais detalhados",
+            "Análise de tendências",
+            "Painéis personalizados"
           ]
         },
         {
-          "title": "24/7 Monitoring",
-          "price": "+$400-3,600/year",
-          "description": "Round-the-clock monitoring with proactive issue detection",
+          "title": "Monitoramento 24/7",
+          "price": "+$400-3,600/ano",
+          "description": "Monitoramento ininterrupto com detecção proativa de problemas",
           "bullets": [
-            "Continuous monitoring",
-            "Immediate alerts",
-            "Priority support"
+            "Monitoramento contínuo",
+            "Alertas imediatos",
+            "Suporte prioritário"
           ]
         },
         {
-          "title": "Annual Audit",
-          "price": "+$600/year",
-          "description": "Comprehensive annual review with formal documentation",
+          "title": "Auditoria anual",
+          "price": "+$600/ano",
+          "description": "Revisão anual completa com documentação formal",
           "bullets": [
-            "Full architecture review",
-            "Compliance verification",
-            "Executive report"
+            "Revisão completa da arquitetura",
+            "Verificação de conformidade",
+            "Relatório executivo"
           ]
         }
       ]
     },
     "cta": {
-      "title": "Ready to Secure Your Data?",
-      "subtitle": "Join academic institutions worldwide trusting their data to our AWS-powered backup solutions",
-      "primary": "Request a Quote",
-      "secondary": "Explore Other Services"
+      "title": "Pronto para proteger seus dados?",
+      "subtitle": "Junte-se às instituições acadêmicas de todo o mundo que confiam seus dados às nossas soluções de backup com tecnologia AWS",
+      "primary": "Solicitar orçamento",
+      "secondary": "Conheça outros serviços"
     }
   },
   "contact": {
     "meta": {
-      "title": "Contact Us - Paideia Hosting",
-      "description": "Get in touch with our team for inquiries about our academic hosting services, support, or custom solutions."
+      "title": "Fale conosco - Paideia Hosting",
+      "description": "Entre em contato com nossa equipe para dúvidas sobre nossos serviços de hospedagem acadêmica, suporte ou soluções sob medida."
     },
     "hero": {
-      "title": "Contact Us",
-      "subtitle": "Have questions about our services? Our team is here to help you find the perfect hosting solution for your academic institution."
+      "title": "Fale conosco",
+      "subtitle": "Tem dúvidas sobre nossos serviços? Nossa equipe está aqui para ajudar você a encontrar a solução de hospedagem ideal para sua instituição acadêmica."
     },
     "getInTouch": {
-      "title": "Get in Touch",
-      "subtitle": "We're here to answer any questions you have about our academic hosting services.",
+      "title": "Entre em contato",
+      "subtitle": "Estamos aqui para responder a qualquer dúvida sobre nossos serviços de hospedagem acadêmica.",
       "email": {
-        "title": "Email Us",
-        "general": "For general inquiries:",
-        "support": "For technical support:"
+        "title": "Envie um e-mail",
+        "general": "Para dúvidas gerais:",
+        "support": "Para suporte técnico:"
       },
       "whatsapp": {
         "title": "WhatsApp",
-        "assistance": "Immediate AI assistance, available 24/7",
-        "businessHours": "Business hours (Mon–Fri, 09am–3pm UTC−03:00):"
+        "assistance": "Assistência imediata com IA, disponível 24/7",
+        "businessHours": "Horário comercial (seg.–sex., 09h–15h UTC−03:00):"
       },
       "office": {
-        "title": "Office",
-        "country": "United States"
+        "title": "Escritório",
+        "country": "Estados Unidos"
       },
       "hours": {
-        "title": "Business Hours",
-        "weekdays": "Monday - Friday: 09:00 AM - 3:00 PM UTC−03:00",
-        "weekend": "Saturday - Sunday: Closed"
+        "title": "Horário de atendimento",
+        "weekdays": "Segunda a sexta: 09h00 - 15h00 UTC−03:00",
+        "weekend": "Sábado e domingo: fechado"
       },
-      "mapAlt": "Office Location Map"
+      "mapAlt": "Mapa da localização do escritório"
     },
     "form": {
-      "title": "Send Us a Message",
+      "title": "Envie uma mensagem",
       "fields": {
         "name": {
-          "label": "Full Name",
-          "placeholder": "John Doe"
+          "label": "Nome completo",
+          "placeholder": "João Silva"
         },
         "email": {
-          "label": "Email",
+          "label": "E-mail",
           "placeholder": "john.doe@example.com"
         },
         "whatsapp": {
@@ -801,382 +801,382 @@
           "placeholder": "+1 (555) 123-4567"
         },
         "inquiryType": {
-          "label": "Inquiry Type",
-          "placeholder": "Select an inquiry type"
+          "label": "Tipo de solicitação",
+          "placeholder": "Selecione um tipo de solicitação"
         },
         "message": {
-          "label": "Message",
-          "placeholder": "Please describe your inquiry in detail..."
+          "label": "Mensagem",
+          "placeholder": "Descreva sua solicitação em detalhes..."
         }
       },
       "inquiryTypes": {
-        "general": "General Inquiry",
-        "sales": "Sales",
-        "support": "Technical Support",
-        "custom": "Custom Solutions",
-        "billing": "Billing"
+        "general": "Dúvida geral",
+        "sales": "Vendas",
+        "support": "Suporte técnico",
+        "custom": "Soluções sob medida",
+        "billing": "Faturamento"
       },
       "validation": {
-        "name": "Name must be at least 2 characters.",
-        "email": "Please enter a valid email address.",
-        "inquiryType": "Please select an inquiry type.",
-        "message": "Message must be at least 10 characters."
+        "name": "O nome deve ter pelo menos 2 caracteres.",
+        "email": "Informe um endereço de e-mail válido.",
+        "inquiryType": "Selecione um tipo de solicitação.",
+        "message": "A mensagem deve ter pelo menos 10 caracteres."
       },
-      "submit": "Send Message",
-      "sending": "Sending...",
+      "submit": "Enviar mensagem",
+      "sending": "Enviando...",
       "status": {
-        "label": "Form status:",
-        "submitting": "Submitting...",
-        "ready": "Ready"
+        "label": "Status do formulário:",
+        "submitting": "Enviando...",
+        "ready": "Pronto"
       },
       "toast": {
-        "successTitle": "Message sent successfully!",
-        "successDescription": "We'll get back to you as soon as possible. Check your email for confirmation.",
-        "errorTitle": "Error sending message",
-        "errorDescription": "Failed to send message. Please try again or contact us at contact@paideiahosting.net"
+        "successTitle": "Mensagem enviada com sucesso!",
+        "successDescription": "Responderemos o quanto antes. Verifique seu e-mail para ver a confirmação.",
+        "errorTitle": "Erro ao enviar a mensagem",
+        "errorDescription": "Não foi possível enviar a mensagem. Tente novamente ou escreva para contact@paideiahosting.net"
       }
     },
     "departments": {
-      "title": "Department Contacts",
-      "subtitle": "Connect with the right team for your specific needs",
-      "assistance": "Immediate AI assistance, 24/7",
-      "businessHours": "Business hours:",
+      "title": "Contatos por área",
+      "subtitle": "Fale com a equipe certa para o que você precisa",
+      "assistance": "Assistência imediata com IA, 24/7",
+      "businessHours": "Horário comercial:",
       "items": {
         "sales": {
-          "title": "Sales & New Accounts",
-          "description": "For inquiries about our services, pricing, and setting up new accounts."
+          "title": "Vendas e novas contas",
+          "description": "Para dúvidas sobre nossos serviços, preços e abertura de novas contas."
         },
         "support": {
-          "title": "Technical Support",
-          "description": "For assistance with existing services, technical issues, or account management."
+          "title": "Suporte técnico",
+          "description": "Para assistência com serviços contratados, problemas técnicos ou gestão de contas."
         },
         "custom": {
-          "title": "Custom Solutions",
-          "description": "For discussing tailored hosting solutions for your specific academic needs."
+          "title": "Soluções sob medida",
+          "description": "Para conversar sobre soluções de hospedagem adaptadas às necessidades específicas da sua instituição acadêmica."
         }
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Quick answers to common questions about contacting us",
+      "title": "Perguntas frequentes",
+      "subtitle": "Respostas rápidas para dúvidas comuns sobre como entrar em contato",
       "items": [
         {
-          "question": "What is your typical response time?",
-          "answer": "We aim to respond to all inquiries within 24 hours during business days. For urgent technical support, our response time is typically under 12 hours."
+          "question": "Qual é o prazo habitual de resposta?",
+          "answer": "Procuramos responder a todas as solicitações em até 24 horas em dias úteis. Para suporte técnico urgente, nosso tempo de resposta costuma ser inferior a 12 horas."
         },
         {
-          "question": "Do you offer emergency support?",
-          "answer": "Yes: 24/7 AI assistance via WhatsApp; expert support during business hours."
+          "question": "Vocês oferecem suporte emergencial?",
+          "answer": "Sim: assistência com IA 24/7 pelo WhatsApp e suporte de especialistas em horário comercial."
         },
         {
-          "question": "Can I schedule a consultation call?",
-          "answer": "You can request a consultation call through our contact form or by emailing contact@paideiahosting.net with your preferred date and time."
+          "question": "Posso agendar uma chamada de consultoria?",
+          "answer": "Você pode solicitar uma chamada de consultoria pelo nosso formulário de contato ou enviando um e-mail para contact@paideiahosting.net com a data e o horário de sua preferência."
         },
         {
-          "question": "How do I report a technical issue?",
-          "answer": "Existing customers can report technical issues through our customer portal, by emailing support@paideiahosting.net, or by calling our technical support line."
+          "question": "Como informo um problema técnico?",
+          "answer": "Clientes atuais podem informar problemas técnicos pelo nosso portal do cliente, enviando um e-mail para support@paideiahosting.net ou ligando para nossa linha de suporte técnico."
         }
       ]
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Join the growing community of academic institutions using Paideia Hosting",
-      "services": "Explore Services",
-      "pricing": "View Pricing"
+      "title": "Vamos começar?",
+      "subtitle": "Junte-se à crescente comunidade de instituições acadêmicas que usam a Paideia Hosting",
+      "services": "Conheça os serviços",
+      "pricing": "Ver preços"
     }
   },
   "customSolutions": {
     "meta": {
-      "title": "Custom Solutions - Paideia Hosting",
-      "description": "Tailored hosting solutions for specific academic needs. Custom development, integration, and specialized academic software hosting."
+      "title": "Soluções personalizadas - Paideia Hosting",
+      "description": "Soluções de hospedagem sob medida para necessidades acadêmicas específicas. Desenvolvimento personalizado, integração e hospedagem de software acadêmico especializado."
     },
     "hero": {
-      "title": "Custom Hosting Solutions",
-      "subtitle": "Tailored hosting solutions for specific academic needs. Custom development, integration, and specialized academic software hosting.",
-      "exploreServices": "Explore Services",
-      "contactSales": "Contact Sales",
-      "imageAlt": "Custom Solutions"
+      "title": "Soluções de hospedagem personalizadas",
+      "subtitle": "Soluções de hospedagem sob medida para necessidades acadêmicas específicas. Desenvolvimento personalizado, integração e hospedagem de software acadêmico especializado.",
+      "exploreServices": "Conheça os serviços",
+      "contactSales": "Falar com vendas",
+      "imageAlt": "Soluções sob medida"
     },
     "aws": {
-      "title": "AWS-Powered Custom Solutions",
-      "subtitle": "Tailored hosting solutions for specific academic needs",
-      "poweredBy": "Powered by",
+      "title": "Soluções personalizadas com AWS",
+      "subtitle": "Soluções de hospedagem sob medida para necessidades acadêmicas específicas",
+      "poweredBy": "Com tecnologia",
       "logoAlt": "AWS",
       "items": [
         {
-          "title": "High-Performance VPS",
-          "description": "Enterprise-grade instances for demanding workloads",
+          "title": "VPS de alto desempenho",
+          "description": "Instâncias de nível empresarial para cargas de trabalho exigentes",
           "features": [
-            "EC2 instances up to 96 vCPUs",
-            "Up to 768GB RAM",
-            "GPU instances available",
-            "Auto-scaling capabilities"
+            "Instâncias EC2 com até 96 vCPUs",
+            "Até 768 GB de RAM",
+            "Instâncias com GPU disponíveis",
+            "Recursos de escalonamento automático"
           ]
         },
         {
-          "title": "Storage & CDN",
-          "description": "Scalable storage and global content delivery",
+          "title": "Armazenamento e CDN",
+          "description": "Armazenamento escalável e distribuição global de conteúdo",
           "features": [
-            "S3 integration & management",
-            "CloudFront CDN setup",
-            "Unlimited storage capacity",
-            "Global edge locations"
+            "Integração e gerenciamento do S3",
+            "Configuração de CDN CloudFront",
+            "Capacidade de armazenamento ilimitada",
+            "Pontos de presença (edge) globais"
           ]
         },
         {
-          "title": "Load Balancing",
-          "description": "High availability and traffic distribution",
+          "title": "Balanceamento de carga",
+          "description": "Alta disponibilidade e distribuição de tráfego",
           "features": [
             "Application Load Balancer",
-            "Multi-AZ deployment",
-            "Health monitoring",
-            "SSL termination"
+            "Implantação Multi-AZ",
+            "Monitoramento de integridade",
+            "Terminação SSL"
           ]
         },
         {
-          "title": "Database Services",
-          "description": "Managed database solutions",
+          "title": "Serviços de banco de dados",
+          "description": "Soluções de banco de dados gerenciadas",
           "features": [
             "RDS (MySQL, PostgreSQL)",
             "DynamoDB NoSQL",
-            "Automated backups",
-            "Read replicas"
+            "Backups automáticos",
+            "Réplicas de leitura"
           ]
         },
         {
-          "title": "AI Integration",
-          "description": "Advanced AI and machine learning capabilities",
+          "title": "Integração de IA",
+          "description": "Recursos avançados de IA e aprendizado de máquina",
           "features": [
-            "Amazon Q integration",
-            "Bedrock AI models",
-            "Custom AI workflows",
-            "Research data analysis"
+            "Integração com Amazon Q",
+            "Modelos de IA do Bedrock",
+            "Fluxos de trabalho de IA personalizados",
+            "Análise de dados de pesquisa"
           ]
         },
         {
-          "title": "Enterprise Solutions",
-          "description": "Complete infrastructure management",
+          "title": "Soluções empresariais",
+          "description": "Gerenciamento completo da infraestrutura",
           "features": [
-            "VPC custom networks",
-            "Security compliance",
-            "24/7 monitoring",
-            "Disaster recovery"
+            "Redes VPC personalizadas",
+            "Conformidade de segurança",
+            "Monitoramento 24/7",
+            "Recuperação de desastres"
           ]
         }
       ],
       "pricing": {
-        "title": "Custom Pricing",
-        "description": "All solutions are tailored to your specific requirements. Pricing varies based on usage, scale, and selected AWS services.",
-        "cta": "Request a Quote"
+        "title": "Preços sob medida",
+        "description": "Todas as soluções são adaptadas aos seus requisitos específicos. O preço varia conforme o uso, a escala e os serviços da AWS selecionados.",
+        "cta": "Solicitar orçamento"
       }
     },
     "additional": {
-      "title": "Additional Custom Services",
-      "subtitle": "Specialized solutions tailored to your academic institution's unique requirements",
+      "title": "Outros serviços personalizados",
+      "subtitle": "Soluções especializadas adaptadas aos requisitos específicos da sua instituição acadêmica",
       "items": {
         "development": {
-          "title": "Custom Development",
-          "description": "Bespoke software development for academic and research applications"
+          "title": "Desenvolvimento personalizado",
+          "description": "Desenvolvimento de software sob medida para aplicações acadêmicas e de pesquisa"
         },
         "integration": {
-          "title": "System Integration",
-          "description": "Seamless integration of academic systems and databases"
+          "title": "Integração de sistemas",
+          "description": "Integração sem interrupções de sistemas e bancos de dados acadêmicos"
         },
         "specialized": {
-          "title": "Specialized Software Hosting",
-          "description": "Hosting for unique academic and research applications"
+          "title": "Hospedagem de software especializado",
+          "description": "Hospedagem para aplicações acadêmicas e de pesquisa específicas"
         },
         "migration": {
-          "title": "Migration Services",
-          "description": "Expert migration of existing academic systems"
+          "title": "Serviços de migração",
+          "description": "Migração especializada de sistemas acadêmicos existentes"
         },
         "consulting": {
-          "title": "Consulting Services",
-          "description": "Strategic guidance for academic IT infrastructure"
+          "title": "Serviços de consultoria",
+          "description": "Orientação estratégica para a infraestrutura de TI acadêmica"
         },
         "managed": {
-          "title": "Managed Solutions",
-          "description": "Fully managed custom hosting environments"
+          "title": "Soluções gerenciadas",
+          "description": "Ambientes de hospedagem personalizados totalmente gerenciados"
         }
       }
     },
     "approach": {
-      "title": "Our Approach",
-      "subtitle": "How we develop custom solutions for your academic institution",
+      "title": "Nossa abordagem",
+      "subtitle": "Como desenvolvemos soluções personalizadas para a sua instituição acadêmica",
       "steps": [
         {
-          "title": "Discovery & Analysis",
-          "description": "We begin by understanding your specific needs, challenges, and goals through in-depth consultation."
+          "title": "Levantamento e análise",
+          "description": "Começamos entendendo suas necessidades, desafios e objetivos específicos por meio de uma consulta aprofundada."
         },
         {
-          "title": "Solution Design",
-          "description": "Our experts design a tailored solution that addresses your unique requirements and academic context."
+          "title": "Projeto da solução",
+          "description": "Nossos especialistas projetam uma solução sob medida que atende aos seus requisitos específicos e ao seu contexto acadêmico."
         },
         {
-          "title": "Implementation",
-          "description": "We develop and deploy your custom solution with minimal disruption to your academic operations."
+          "title": "Implementação",
+          "description": "Desenvolvemos e implantamos sua solução personalizada com o mínimo de interrupção nas suas atividades acadêmicas."
         },
         {
-          "title": "Ongoing Support",
-          "description": "We provide continuous support, maintenance, and optimization to ensure your solution evolves with your needs."
+          "title": "Suporte contínuo",
+          "description": "Oferecemos suporte, manutenção e otimização contínuos para que sua solução evolua junto com suas necessidades."
         }
       ]
     },
     "stories": {
-      "title": "Success Stories",
-      "subtitle": "How our custom solutions have helped academic institutions",
+      "title": "Casos de sucesso",
+      "subtitle": "Como nossas soluções personalizadas ajudaram instituições acadêmicas",
       "items": [
         {
-          "title": "National Research University",
-          "description": "Developed a custom research data management platform that integrated with their existing systems, improving data accessibility and collaboration across departments."
+          "title": "Universidade nacional de pesquisa",
+          "description": "Desenvolvemos uma plataforma personalizada de gestão de dados de pesquisa, integrada aos sistemas existentes, que melhorou o acesso aos dados e a colaboração entre departamentos."
         },
         {
-          "title": "Medical School Consortium",
-          "description": "Created a specialized hosting environment for sensitive medical research data with enhanced security protocols and compliance with healthcare regulations."
+          "title": "Consórcio de escolas de medicina",
+          "description": "Criamos um ambiente de hospedagem especializado para dados sensíveis de pesquisa médica, com protocolos de segurança reforçados e conformidade com a regulamentação da área da saúde."
         },
         {
-          "title": "Liberal Arts College",
-          "description": "Implemented a custom digital humanities platform that allowed for innovative teaching methods and student research projects."
+          "title": "College de artes liberais",
+          "description": "Implementamos uma plataforma personalizada de humanidades digitais que possibilitou métodos de ensino inovadores e projetos de pesquisa estudantis."
         },
         {
-          "title": "University Library System",
-          "description": "Developed an integrated digital repository solution that connected multiple campus libraries and archives into a unified search and access system."
+          "title": "Sistema de bibliotecas universitárias",
+          "description": "Desenvolvemos uma solução integrada de repositório digital que conectou várias bibliotecas e arquivos do campus em um sistema unificado de busca e acesso."
         }
       ]
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Common questions about our custom solutions",
+      "title": "Perguntas frequentes",
+      "subtitle": "Dúvidas comuns sobre nossas soluções personalizadas",
       "items": [
         {
-          "question": "How long does it take to develop a custom solution?",
-          "answer": "Timeline varies based on complexity, but typically ranges from 4-12 weeks. We provide detailed project timelines during the consultation phase."
+          "question": "Quanto tempo leva para desenvolver uma solução personalizada?",
+          "answer": "O prazo varia conforme a complexidade, mas normalmente fica entre 4 e 12 semanas. Apresentamos um cronograma detalhado do projeto durante a fase de consulta."
         },
         {
-          "question": "What is the typical investment for a custom solution?",
-          "answer": "Pricing depends on your specific requirements. We offer flexible pricing models including one-time development costs and ongoing hosting/maintenance fees."
+          "question": "Qual é o investimento típico em uma solução personalizada?",
+          "answer": "O preço depende dos seus requisitos específicos. Oferecemos modelos de preço flexíveis, que incluem custos únicos de desenvolvimento e taxas recorrentes de hospedagem e manutenção."
         },
         {
-          "question": "Can you integrate with our existing systems?",
-          "answer": "Yes, we specialize in integrating with existing academic systems including LMS platforms, library systems, research databases, and administrative software."
+          "question": "Vocês podem integrar com nossos sistemas existentes?",
+          "answer": "Sim, somos especializados na integração com sistemas acadêmicos existentes, incluindo plataformas LMS, sistemas de bibliotecas, bancos de dados de pesquisa e software administrativo."
         },
         {
-          "question": "Who owns the intellectual property of custom solutions?",
-          "answer": "In most cases, you retain full ownership of custom-developed solutions. We provide clear IP terms in all our agreements."
+          "question": "A quem pertence a propriedade intelectual das soluções personalizadas?",
+          "answer": "Na maioria dos casos, você mantém a propriedade integral das soluções desenvolvidas sob medida. Todos os nossos contratos trazem termos claros sobre propriedade intelectual."
         },
         {
-          "question": "Do you provide training for our staff?",
-          "answer": "Yes, we offer comprehensive training programs to ensure your team can effectively use and manage your custom solution."
+          "question": "Vocês oferecem treinamento para nossa equipe?",
+          "answer": "Sim, oferecemos programas de treinamento completos para que sua equipe possa usar e gerenciar com eficácia sua solução personalizada."
         },
         {
-          "question": "What ongoing support do you provide?",
-          "answer": "We offer various support tiers including basic maintenance, 24/7 AI assistance via WhatsApp plus expert support during business hours, regular updates, and continuous improvement services."
+          "question": "Que suporte contínuo vocês oferecem?",
+          "answer": "Oferecemos diversos níveis de suporte, incluindo manutenção básica, assistência com IA 24/7 pelo WhatsApp e suporte de especialistas em horário comercial, atualizações regulares e serviços de melhoria contínua."
         }
       ]
     },
     "cta": {
-      "title": "Ready to Discuss Your Custom Solution?",
-      "subtitle": "Our team of academic hosting experts is ready to help you develop the perfect solution for your institution",
-      "primary": "Schedule a Consultation",
-      "secondary": "Explore Other Services"
+      "title": "Pronto para conversar sobre sua solução personalizada?",
+      "subtitle": "Nossa equipe de especialistas em hospedagem acadêmica está pronta para ajudar você a desenvolver a solução ideal para a sua instituição",
+      "primary": "Agendar uma consulta",
+      "secondary": "Conheça outros serviços"
     }
   },
   "home": {
     "meta": {
       "title": "Paideia Hosting - Cloud for Science, Solutions for Knowledge",
-      "description": "Specialized hosting for academic applications. Reliable, secure, and optimized for research and educational institutions."
+      "description": "Hospedagem especializada para aplicações acadêmicas. Confiável, segura e otimizada para instituições de pesquisa e ensino."
     },
     "hero": {
       "title": "Cloud for Science, Solutions for Knowledge",
-      "subtitle": "Specialized hosting for academic applications. Reliable, secure, and optimized for research and educational institutions.",
-      "exploreServices": "Explore Services",
-      "contactSales": "Contact Sales",
+      "subtitle": "Hospedagem especializada para aplicações acadêmicas. Confiável, segura e otimizada para instituições de pesquisa e ensino.",
+      "exploreServices": "Conheça os serviços",
+      "contactSales": "Falar com vendas",
       "imageAlt": "Paideia Hosting",
-      "photoCredit": "Photo by NASA on Unsplash"
+      "photoCredit": "Foto de NASA no Unsplash"
     },
     "domain": {
-      "title": "Find Your Perfect Domain",
-      "subtitle": "Start your academic project with the right domain name"
+      "title": "Encontre o domínio ideal",
+      "subtitle": "Comece seu projeto acadêmico com o nome de domínio certo"
     },
     "domainSearch": {
-      "placeholder": "yourdomain.com",
-      "search": "Search",
-      "registrationBefore": "Domain registration for \"",
+      "placeholder": "seudominio.com",
+      "search": "Buscar",
+      "registrationBefore": "Registro do domínio \"",
       "registrationAfter": "\"",
-      "verify": "We will verify availability and register this domain for you. If it's not available, we'll present alternative options.",
-      "cost": "💰 Domain cost: $40 USD/year (additional to any hosting plan)",
-      "note": "📝 Please leave a note when purchasing your hosting plan or contact our team directly.",
-      "viewPlans": "View Hosting Plans",
-      "contactTeam": "Contact Team"
+      "verify": "Verificaremos a disponibilidade e registraremos este domínio para você. Se não estiver disponível, apresentaremos alternativas.",
+      "cost": "💰 Custo do domínio: $40 USD/ano (adicional a qualquer plano de hospedagem)",
+      "note": "📝 Deixe uma observação ao contratar seu plano de hospedagem ou entre em contato diretamente com nossa equipe.",
+      "viewPlans": "Ver planos de hospedagem",
+      "contactTeam": "Falar com a equipe"
     },
     "services": {
-      "title": "Specialized Academic Hosting",
-      "subtitle": "Tailored solutions for research and educational institutions",
-      "learnMore": "Learn more",
+      "title": "Hospedagem acadêmica especializada",
+      "subtitle": "Soluções sob medida para instituições de pesquisa e ensino",
+      "learnMore": "Saiba mais",
       "items": {
         "ojs": {
-          "title": "OJS Hosting",
-          "description": "Optimized hosting for Open Journal Systems. Perfect for academic publishing."
+          "title": "Hospedagem OJS",
+          "description": "Hospedagem otimizada para Open Journal Systems. Ideal para publicação acadêmica."
         },
         "omp": {
-          "title": "OMP Hosting",
-          "description": "Specialized hosting for Open Monograph Press. Ideal for book publishing."
+          "title": "Hospedagem OMP",
+          "description": "Hospedagem especializada para Open Monograph Press. Ideal para publicação de livros."
         },
         "repository": {
-          "title": "Repository Hosting",
-          "description": "Secure and reliable hosting for research data repositories (Dataverse & DSpace)."
+          "title": "Hospedagem de repositórios",
+          "description": "Hospedagem segura e confiável para repositórios de dados de pesquisa (Dataverse e DSpace)."
         },
         "atom": {
-          "title": "AtoM Hosting",
-          "description": "Professional hosting for Access to Memory archival software."
+          "title": "Hospedagem AtoM",
+          "description": "Hospedagem profissional para o software arquivístico Access to Memory."
         },
         "vps": {
-          "title": "VPS for Institutions",
-          "description": "Customizable virtual private servers for educational institutions."
+          "title": "VPS para instituições",
+          "description": "Servidores privados virtuais personalizáveis para instituições de ensino."
         },
         "custom": {
-          "title": "Custom Solutions",
-          "description": "Tailored hosting solutions for specific academic needs."
+          "title": "Soluções sob medida",
+          "description": "Soluções de hospedagem adaptadas a necessidades acadêmicas específicas."
         },
         "backup": {
-          "title": "Backup Solutions",
-          "description": "Enterprise-grade backup and digital preservation powered by AWS."
+          "title": "Soluções de backup",
+          "description": "Backup e preservação digital de nível empresarial com tecnologia AWS."
         },
         "plugins": {
-          "title": "Plugins & Themes",
-          "description": "Premium plugins and themes for OJS and OMP platforms."
+          "title": "Plugins e temas",
+          "description": "Plugins e temas premium para as plataformas OJS e OMP."
         }
       }
     },
     "features": {
-      "title": "Why Choose Paideia Hosting?",
-      "description": "We understand the unique needs of academic institutions and provide specialized solutions to meet them. Powered by Paideia Publishing Services and enriched by the expertise from Paideia Studio, Paideia Editorial, and LatArXiv environments.",
+      "title": "Por que escolher a Paideia Hosting?",
+      "description": "Entendemos as necessidades específicas das instituições acadêmicas e oferecemos soluções especializadas para atendê-las. Um serviço da Paideia Publishing Services, enriquecido pela experiência dos ambientes Paideia Studio, Paideia Editorial e LatArXiv.",
       "items": [
-        "Specialized in academic applications",
-        "24/7 AI assistance via WhatsApp, plus expert support during business hours",
-        "Regular backups and security updates",
-        "Optimized for academic workflows",
-        "Scalable solutions for growing institutions"
+        "Especializados em aplicações acadêmicas",
+        "Assistência com IA 24/7 pelo WhatsApp e suporte de especialistas em horário comercial",
+        "Backups regulares e atualizações de segurança",
+        "Otimizado para os fluxos de trabalho acadêmicos",
+        "Soluções escaláveis para instituições em crescimento"
       ],
-      "learnMore": "Learn More",
-      "imageAlt": "Paideia Hosting Features"
+      "learnMore": "Saiba mais",
+      "imageAlt": "Recursos da Paideia Hosting"
     },
     "testimonials": {
-      "title": "Trusted by Academic Institutions",
-      "subtitle": "See what our clients say about our services",
+      "title": "A confiança de instituições acadêmicas",
+      "subtitle": "Veja o que nossos clientes dizem sobre nossos serviços",
       "items": [
         {
-          "quote": "We have been working with Paideia from Spain for a few months now.\n                We are delighted with the service. Despite the time difference, they always respond very quickly, they are agile in the resolution of requests and development of the work.\n                The truth is, there couldn't be a better service. We trust their judgment (...)",
+          "quote": "Da Espanha, trabalhamos com a Paideia há alguns meses. Estamos encantados com o serviço. Apesar da diferença de fuso horário, eles sempre respondem muito rápido e são ágeis na resolução das solicitações e no desenvolvimento do trabalho. Na verdade, não poderia haver um serviço melhor. Confiamos no critério deles (...)",
           "author": "Carolina Murabe",
           "institution": "Asociación Española de Personalismo"
         },
         {
-          "quote": "In Paideia Studio they are always very attentive and very quick to answer any questions that may arise regarding editorial issues. They give you personalized attention to your situation. I highly recommend them!",
+          "quote": "Na Paideia Studio, eles são sempre muito atenciosos e respondem muito rápido a qualquer dúvida que surja sobre questões editoriais. Oferecem um atendimento personalizado de acordo com a sua situação. Recomendo muito!",
           "author": "Elias Ruiz Hernandez",
           "institution": "Instituto Tecnológico Superior del Oriente del Estado de Hidalgo"
         },
         {
-          "quote": "We have worked with Paideia Studio in the migration of our Journals Portal in OJS 2 to the latest version of this software. It is a portal with a lot of content and all the information was migrated perfectly. They also provided us with access to training courses for our editors (...)",
+          "quote": "Trabalhamos com a Paideia Studio na migração do nosso Portal de Revistas em OJS 2 para a versão mais recente desse software. É um portal com muito conteúdo, e todas as informações foram migradas perfeitamente. Eles também nos deram acesso a cursos de capacitação para nossos editores (...)",
           "author": "Claudia Fernandez",
           "institution": "Universidad Católica Argentina"
         }
@@ -1184,933 +1184,933 @@
       "trustpilot": "Trustpilot"
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Join the growing community of academic institutions trusting Paideia Hosting",
-      "contact": "Contact Us",
-      "pricing": "View Pricing"
+      "title": "Vamos começar?",
+      "subtitle": "Junte-se à crescente comunidade de instituições acadêmicas que confiam na Paideia Hosting",
+      "contact": "Fale conosco",
+      "pricing": "Ver preços"
     }
   },
   "ompHosting": {
     "meta": {
-      "title": "OMP Hosting - Paideia Hosting",
-      "description": "Specialized hosting for Open Monograph Press (OMP). Ideal for academic book publishing and management."
+      "title": "Hospedagem OMP - Paideia Hosting",
+      "description": "Hospedagem especializada para Open Monograph Press (OMP). Ideal para a publicação e a gestão de livros acadêmicos."
     },
     "hero": {
-      "title": "OMP Hosting Solutions",
-      "subtitle": "Specialized hosting for Open Monograph Press. Ideal for academic book publishing and management.",
-      "viewPricing": "View Pricing",
-      "contactSales": "Contact Sales",
-      "imageAlt": "OMP Hosting"
+      "title": "Soluções de hospedagem OMP",
+      "subtitle": "Hospedagem especializada para Open Monograph Press. Ideal para a publicação e a gestão de livros acadêmicos.",
+      "viewPricing": "Ver preços",
+      "contactSales": "Falar com vendas",
+      "imageAlt": "Hospedagem OMP"
     },
     "features": {
-      "title": "OMP Hosting Features",
-      "subtitle": "Everything you need for your academic book publishing",
+      "title": "Recursos da hospedagem OMP",
+      "subtitle": "Tudo o que você precisa para publicar seus livros acadêmicos",
       "versions": {
-        "title": "OMP Version Support",
-        "text": "Support for the latest OMP versions with seamless upgrades"
+        "title": "Versões do OMP",
+        "text": "Suporte às versões mais recentes do OMP, com atualizações sem interrupções"
       },
       "performance": {
-        "title": "Optimized Performance",
-        "text": "Servers configured specifically for OMP requirements"
+        "title": "Desempenho otimizado",
+        "text": "Servidores configurados especificamente para os requisitos do OMP"
       },
       "backups": {
-        "title": "Daily Backups",
-        "text": "Automatic daily backups, with 5 to 7-day retention depending on plan"
+        "title": "Backups diários",
+        "text": "Backups diários automáticos, com retenção de 5 a 7 dias conforme o plano"
       },
       "security": {
-        "title": "Security Updates",
-        "text": "Regular security patches and updates"
+        "title": "Atualizações de segurança",
+        "text": "Correções e atualizações de segurança regulares"
       },
       "support": {
-        "title": "Technical Support",
-        "text": "24/7 AI assistance via WhatsApp, plus OMP expert support during business hours"
+        "title": "Suporte técnico",
+        "text": "Assistência com IA 24/7 pelo WhatsApp e suporte de especialistas em OMP em horário comercial"
       },
       "domain": {
-        "title": "Custom Domain",
-        "text": "Use your own domain or subdomain"
+        "title": "Domínio próprio",
+        "text": "Use seu próprio domínio ou subdomínio"
       }
     },
     "pricing": {
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Choose the plan that fits your publishing needs",
-      "footnote": "*For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+      "title": "Preços simples e transparentes",
+      "subtitle": "Escolha o plano que atende às necessidades da sua editora",
+      "footnote": "*Para clientes da América Latina e da Espanha. Incluída nos planos Enterprise anuais. Sob consulta nos planos Professional, sujeita a disponibilidade; as condições são confirmadas no momento da contratação. Não cobre as taxas de registro de DOI nem de depósito de conteúdo. Clientes de outras regiões recebem suporte de metadados Crossref e devem ter sua própria associação Crossref.",
       "migration": {
-        "monthly": "Migration services fee extra",
-        "annual": "Migration services included"
+        "monthly": "Migração com custo adicional",
+        "annual": "Migração incluída"
       },
       "plans": {
         "basic": {
           "name": "Basic",
-          "description": "For emerging publishers",
+          "description": "Para editoras em início de trajetória",
           "features": [
-            "Single Press",
-            "10GB Storage",
-            "Daily Backups | 5 days",
-            "1 mail box",
-            "SSL included",
-            "Email support",
-            "Free Installation"
+            "Uma editora",
+            "10 GB de armazenamento",
+            "Backups diários | 5 dias",
+            "1 caixa de e-mail",
+            "SSL incluído",
+            "Suporte por e-mail",
+            "Instalação gratuita"
           ]
         },
         "professional": {
           "name": "Professional",
-          "description": "For established academic publishers",
+          "description": "Para editoras acadêmicas consolidadas",
           "features": [
-            "Multi-press in 1 OMP Installation",
-            "20GB Storage",
-            "Daily Backups | 7 days",
-            "5 mail box",
-            "SSL included",
-            "Priority email support",
-            "Free Installation",
-            "1 Upgrade per year"
+            "Várias editoras em 1 instalação do OMP",
+            "20 GB de armazenamento",
+            "Backups diários | 7 dias",
+            "5 caixas de e-mail",
+            "SSL incluído",
+            "Suporte prioritário por e-mail",
+            "Instalação gratuita",
+            "1 atualização por ano"
           ],
-          "crossref": "Crossref membership + Similarity Check available on request*"
+          "crossref": "Associação Crossref + Similarity Check sob consulta*"
         },
         "enterprise": {
           "name": "Enterprise",
-          "description": "For institutions with multiple publications",
+          "description": "Para instituições com várias publicações",
           "features": [
-            "Multi-press in Multi-installations",
-            "30GB Storage",
-            "Daily Backups | 7 days",
-            "Unlimited mailbox",
-            "SSL included",
-            "Priority email and phone support",
-            "Free Installation",
-            "1 Upgrade per year"
+            "Várias editoras em várias instalações",
+            "30 GB de armazenamento",
+            "Backups diários | 7 dias",
+            "Caixas de e-mail ilimitadas",
+            "SSL incluído",
+            "Suporte prioritário por e-mail e telefone",
+            "Instalação gratuita",
+            "1 atualização por ano"
           ],
           "annualOnly": [
-            "PrePrints server memberships (Annual only)"
+            "Associações de servidor de preprints (somente anual)"
           ],
-          "crossref": "Crossref membership + Similarity Check included (annual plan)*"
+          "crossref": "Associação Crossref + Similarity Check incluída (plano anual)*"
         }
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know about our OMP hosting services",
+      "title": "Perguntas frequentes",
+      "subtitle": "Tudo o que você precisa saber sobre nossos serviços de hospedagem OMP",
       "items": [
         {
-          "q": "What versions of OMP do you support?",
-          "a": "We support the latest stable versions of OMP and can help you migrate from older versions."
+          "q": "Quais versões do OMP vocês suportam?",
+          "a": "Suportamos as versões estáveis mais recentes do OMP e podemos ajudar você a migrar de versões anteriores."
         },
         {
-          "q": "Can I migrate my existing OMP installation?",
-          "a": "Yes, we offer migration services to help you move your existing OMP installation to our hosting platform."
+          "q": "Posso migrar minha instalação atual do OMP?",
+          "a": "Sim, oferecemos serviços de migração para ajudar você a transferir sua instalação atual do OMP para a nossa plataforma de hospedagem."
         },
         {
-          "q": "Do you offer SSL certificates?",
-          "a": "Yes, all our hosting plans include free SSL certificates to ensure your publishing platform is secure."
+          "q": "Vocês oferecem certificados SSL?",
+          "a": "Sim, todos os nossos planos de hospedagem incluem certificados SSL gratuitos para garantir a segurança da sua plataforma editorial."
         },
         {
-          "q": "How often do you update OMP?",
-          "a": "We apply security updates as soon as they're available. Major version upgrades are scheduled with your approval."
+          "q": "Com que frequência vocês atualizam o OMP?",
+          "a": "Aplicamos as atualizações de segurança assim que são disponibilizadas. As atualizações de versão principal são agendadas com a sua aprovação."
         },
         {
-          "q": "Can I use my own domain name?",
-          "a": "Yes, all plans let you use your own domain or subdomain."
+          "q": "Posso usar meu próprio domínio?",
+          "a": "Sim, todos os planos permitem usar seu próprio domínio ou subdomínio."
         },
         {
-          "q": "What kind of support do you offer?",
-          "a": "All plans include 24/7 AI assistance via WhatsApp, plus OMP expert support during business hours: email support on Basic, priority email support on Professional, and priority email and phone support on Enterprise."
+          "q": "Que tipo de suporte vocês oferecem?",
+          "a": "Todos os planos incluem assistência com IA 24/7 pelo WhatsApp e suporte de especialistas em OMP em horário comercial: suporte por e-mail no Basic, suporte prioritário por e-mail no Professional e suporte prioritário por e-mail e telefone no Enterprise."
         }
       ]
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Join the growing community of academic publishers using Paideia Hosting",
-      "contact": "Contact Us",
-      "services": "Explore Other Services"
+      "title": "Vamos começar?",
+      "subtitle": "Junte-se à crescente comunidade de editoras acadêmicas que usam o Paideia Hosting",
+      "contact": "Fale conosco",
+      "services": "Conheça outros serviços"
     }
   },
   "pricing": {
     "meta": {
-      "title": "Pricing - Paideia Hosting",
-      "description": "Transparent pricing plans for our academic hosting services. Choose the plan that fits your institution's needs."
+      "title": "Preços - Paideia Hosting",
+      "description": "Planos com preços transparentes para nossos serviços de hospedagem acadêmica. Escolha o plano ideal para as necessidades da sua instituição."
     },
     "hero": {
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Choose the plan that fits your academic institution's needs. No hidden fees, just straightforward pricing."
+      "title": "Preços simples e transparentes",
+      "subtitle": "Escolha o plano ideal para as necessidades da sua instituição acadêmica. Sem taxas ocultas, apenas preços claros."
     },
     "tabs": {
       "triggers": {
         "ojs": "OJS",
         "omp": "OMP",
-        "dataverse": "Repository",
+        "dataverse": "Repositório",
         "atom": "AtoM",
         "vps": "VPS",
         "custom": "Custom"
       },
-      "annualNotice": "Switch to Annual billing for exclusive benefits and save 10%",
-      "perYear": "per year",
+      "annualNotice": "Mude para o faturamento anual, tenha benefícios exclusivos e economize 10%",
+      "perYear": "por ano",
       "awsAlt": "AWS",
       "migration": {
-        "included": "Migration services included",
-        "extra": "Migration services fee extra"
+        "included": "Migração incluída",
+        "extra": "Migração com custo adicional"
       },
       "installation": {
-        "included": "Installation included",
-        "extra": "Installation fee extra"
+        "included": "Instalação incluída",
+        "extra": "Instalação com custo adicional"
       },
       "crossref": {
-        "onRequest": "Crossref membership + Similarity Check available on request*",
-        "annualPlan": "Crossref membership + Similarity Check included (annual plan)*",
-        "included": "Crossref membership + Similarity Check included*"
+        "onRequest": "Associação Crossref + Similarity Check sob consulta*",
+        "annualPlan": "Associação Crossref + Similarity Check incluída (plano anual)*",
+        "included": "Associação Crossref + Similarity Check incluída*"
       },
-      "preprints": "PrePrints server memberships (Annual only)",
+      "preprints": "Associações de servidor de preprints (somente anual)",
       "footnotes": {
-        "journals": "*For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
-        "allPlans": "*For customers in Latin America and Spain. Included in all plans. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership."
+        "journals": "*Para clientes da América Latina e da Espanha. Incluída nos planos Enterprise anuais. Sob consulta nos planos Professional, sujeita a disponibilidade; as condições são confirmadas no momento da contratação. Não cobre as taxas de registro de DOI nem de depósito de conteúdo. Clientes de outras regiões recebem suporte de metadados Crossref e devem ter sua própria associação Crossref.",
+        "allPlans": "*Para clientes da América Latina e da Espanha. Incluída em todos os planos. Não cobre as taxas de registro de DOI nem de depósito de conteúdo. Clientes de outras regiões recebem suporte de metadados Crossref e devem ter sua própria associação Crossref."
       },
       "ojs": {
-        "title": "OJS Hosting Plans",
-        "subtitle": "Specialized hosting for Open Journal Systems",
+        "title": "Planos de hospedagem OJS",
+        "subtitle": "Hospedagem especializada para Open Journal Systems",
         "plans": {
           "basic": {
             "name": "Basic",
-            "description": "For emerging journals",
+            "description": "Para revistas em início de trajetória",
             "features": [
-              "Single Journal",
-              "10GB Storage",
-              "Daily Backups | 5 days",
-              "1 mail box",
-              "SSL included",
-              "Email support",
-              "Free Installation"
+              "Uma revista",
+              "10 GB de armazenamento",
+              "Backups diários | 5 dias",
+              "1 caixa de e-mail",
+              "SSL incluído",
+              "Suporte por e-mail",
+              "Instalação gratuita"
             ]
           },
           "professional": {
             "name": "Professional",
-            "description": "For established academic journals",
+            "description": "Para revistas acadêmicas consolidadas",
             "features": [
-              "Multi-journal in 1 OJS Installations",
-              "20GB Storage",
-              "Daily Backups | 7 days",
-              "5 mail box",
-              "SSL included",
-              "Priority email support",
-              "Free Installation",
-              "1 Upgrade per year"
+              "Várias revistas em 1 instalação do OJS",
+              "20 GB de armazenamento",
+              "Backups diários | 7 dias",
+              "5 caixas de e-mail",
+              "SSL incluído",
+              "Suporte prioritário por e-mail",
+              "Instalação gratuita",
+              "1 atualização por ano"
             ]
           },
           "enterprise": {
             "name": "Enterprise",
-            "description": "For institutions with multiple journals",
+            "description": "Para instituições com várias revistas",
             "features": [
-              "Multi-journal in Multi-installations",
-              "30GB Storage",
-              "Daily Backups | 7 days",
-              "Unlimited mailbox",
-              "SSL included",
-              "Priority email and phone support",
-              "Free Installation",
-              "1 Upgrade per year"
+              "Várias revistas em várias instalações",
+              "30 GB de armazenamento",
+              "Backups diários | 7 dias",
+              "Caixas de e-mail ilimitadas",
+              "SSL incluído",
+              "Suporte prioritário por e-mail e telefone",
+              "Instalação gratuita",
+              "1 atualização por ano"
             ]
           }
         }
       },
       "omp": {
-        "title": "OMP Hosting Plans",
-        "subtitle": "Specialized hosting for Open Monograph Press",
+        "title": "Planos de hospedagem OMP",
+        "subtitle": "Hospedagem especializada para Open Monograph Press",
         "plans": {
           "basic": {
             "name": "Basic",
-            "description": "For emerging publishers",
+            "description": "Para editoras em início de trajetória",
             "features": [
-              "Single Press",
-              "10GB Storage",
-              "Daily Backups | 5 days",
-              "1 mail box",
-              "SSL included",
-              "Email support",
-              "Free Installation"
+              "Uma editora",
+              "10 GB de armazenamento",
+              "Backups diários | 5 dias",
+              "1 caixa de e-mail",
+              "SSL incluído",
+              "Suporte por e-mail",
+              "Instalação gratuita"
             ]
           },
           "professional": {
             "name": "Professional",
-            "description": "For established academic publishers",
+            "description": "Para editoras acadêmicas consolidadas",
             "features": [
-              "Multi-press in 1 OMP Installation",
-              "20GB Storage",
-              "Daily Backups | 7 days",
-              "5 mail box",
-              "SSL included",
-              "Priority email support",
-              "Free Installation",
-              "1 Upgrade per year"
+              "Várias editoras em 1 instalação do OMP",
+              "20 GB de armazenamento",
+              "Backups diários | 7 dias",
+              "5 caixas de e-mail",
+              "SSL incluído",
+              "Suporte prioritário por e-mail",
+              "Instalação gratuita",
+              "1 atualização por ano"
             ]
           },
           "enterprise": {
             "name": "Enterprise",
-            "description": "For institutions with multiple publications",
+            "description": "Para instituições com várias publicações",
             "features": [
-              "Multi-press in Multi-installations",
-              "30GB Storage",
-              "Daily Backups | 7 days",
-              "Unlimited mailbox",
-              "SSL included",
-              "Priority email and phone support",
-              "Free Installation",
-              "1 Upgrade per year"
+              "Várias editoras em várias instalações",
+              "30 GB de armazenamento",
+              "Backups diários | 7 dias",
+              "Caixas de e-mail ilimitadas",
+              "SSL incluído",
+              "Suporte prioritário por e-mail e telefone",
+              "Instalação gratuita",
+              "1 atualização por ano"
             ]
           }
         }
       },
       "repository": {
-        "title": "Repository Hosting Plans",
-        "subtitle": "Secure and reliable hosting for research data repositories (Dataverse & DSpace) on AWS infrastructure",
+        "title": "Planos de hospedagem de repositórios",
+        "subtitle": "Hospedagem segura e confiável para repositórios de dados de pesquisa (Dataverse e DSpace) em infraestrutura AWS",
         "plans": {
           "professional": {
             "name": "Professional",
-            "description": "For research departments",
+            "description": "Para departamentos de pesquisa",
             "features": [
-              "Repository (Dataverse or DSpace)",
-              "50GB Storage",
-              "SSL included",
-              "Daily Backups | 7 days",
-              "Email support",
-              "Additional storage available"
+              "Repositório (Dataverse ou DSpace)",
+              "50 GB de armazenamento",
+              "SSL incluído",
+              "Backups diários | 7 dias",
+              "Suporte por e-mail",
+              "Armazenamento adicional disponível"
             ]
           },
           "enterprise": {
             "name": "Enterprise",
-            "description": "For institutions and large research centers",
+            "description": "Para instituições e grandes centros de pesquisa",
             "features": [
-              "Repository (Dataverse or DSpace)",
-              "Installation included",
-              "100GB Storage",
-              "SSL included",
-              "Mail box included",
-              "S3 configuration included (Not included additional fee S3)",
-              "Daily Backups | 7 days",
-              "Priority email support",
-              "Additional storage available"
+              "Repositório (Dataverse ou DSpace)",
+              "Instalação incluída",
+              "100 GB de armazenamento",
+              "SSL incluído",
+              "Caixa de e-mail incluída",
+              "Configuração do S3 incluída (o custo do S3 é cobrado à parte)",
+              "Backups diários | 7 dias",
+              "Suporte prioritário por e-mail",
+              "Armazenamento adicional disponível"
             ]
           }
         }
       },
       "atom": {
-        "title": "AtoM Hosting Plans",
-        "subtitle": "Professional hosting for Access to Memory archival software",
+        "title": "Planos de hospedagem AtoM",
+        "subtitle": "Hospedagem profissional para o software arquivístico Access to Memory",
         "plans": {
           "professional": {
             "name": "Professional",
-            "description": "For archives and cultural institutions",
+            "description": "Para arquivos e instituições culturais",
             "features": [
-              "AtoM Installation",
-              "50GB Storage",
-              "SSL included",
-              "Daily Backups | 7 days",
-              "Email support",
-              "Additional storage available"
+              "Instalação do AtoM",
+              "50 GB de armazenamento",
+              "SSL incluído",
+              "Backups diários | 7 dias",
+              "Suporte por e-mail",
+              "Armazenamento adicional disponível"
             ]
           },
           "enterprise": {
             "name": "Enterprise",
-            "description": "For large institutions and national archives",
+            "description": "Para grandes instituições e arquivos nacionais",
             "features": [
-              "AtoM Installation",
-              "Installation included",
-              "100GB Storage",
-              "SSL included",
-              "Mail box included",
-              "S3 configuration included (Not included additional fee S3)",
-              "Daily Backups | 7 days",
-              "Priority email support",
-              "Additional storage available"
+              "Instalação do AtoM",
+              "Instalação incluída",
+              "100 GB de armazenamento",
+              "SSL incluído",
+              "Caixa de e-mail incluída",
+              "Configuração do S3 incluída (o custo do S3 é cobrado à parte)",
+              "Backups diários | 7 dias",
+              "Suporte prioritário por e-mail",
+              "Armazenamento adicional disponível"
             ]
           }
         }
       },
       "vps": {
-        "title": "VPS for Institutions",
-        "subtitle": "Customizable virtual private servers for educational institutions",
+        "title": "VPS para instituições",
+        "subtitle": "Servidores privados virtuais configuráveis para instituições de ensino",
         "lightsail": {
-          "note": "Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.",
+          "note": "A transferência adicional é cobrada a $0.18 USD/GB. Ampliações de armazenamento e CPU disponíveis sob demanda.",
           "plans": {
             "professional": {
               "name": "Professional",
-              "description": "For academic departments",
+              "description": "Para departamentos acadêmicos",
               "features": [
                 "2 vCPUs",
-                "8GB RAM",
-                "160GB SSD Storage",
-                "5TB Transfer",
-                "Server Support Included",
-                "Application Support (OJS, Moodle, DSpace, AtoM)",
-                "7-Day Snapshots",
-                "Dedicated IP",
-                "Architecture Support"
+                "8 GB de RAM",
+                "160 GB de armazenamento SSD",
+                "5 TB de transferência",
+                "Suporte de servidor incluído",
+                "Suporte a aplicações (OJS, Moodle, DSpace, AtoM)",
+                "Snapshots de 7 dias",
+                "IP dedicado",
+                "Suporte de arquitetura"
               ]
             },
             "enterprise": {
               "name": "Enterprise",
-              "description": "For large institutions and research centers",
+              "description": "Para grandes instituições e centros de pesquisa",
               "features": [
                 "4 vCPUs",
-                "16GB RAM",
-                "320GB SSD Storage",
-                "6TB Transfer",
-                "Server Support Included",
-                "Application Support (OJS, Moodle, DSpace, AtoM)",
-                "7-Day Snapshots",
-                "Dedicated IP",
-                "Architecture Support"
+                "16 GB de RAM",
+                "320 GB de armazenamento SSD",
+                "6 TB de transferência",
+                "Suporte de servidor incluído",
+                "Suporte a aplicações (OJS, Moodle, DSpace, AtoM)",
+                "Snapshots de 7 dias",
+                "IP dedicado",
+                "Suporte de arquitetura"
               ]
             }
           }
         },
         "ec2": {
-          "note": "500 GB transfer included. Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.",
+          "note": "500 GB de transferência incluídos. A transferência adicional é cobrada a $0.18 USD/GB. Ampliações de armazenamento e CPU disponíveis sob demanda.",
           "plans": {
             "professional": {
               "name": "Professional",
-              "description": "For academic departments (t3.large)",
+              "description": "Para departamentos acadêmicos (t3.large)",
               "features": [
                 "2 vCPUs",
-                "8GB RAM",
-                "160GB SSD Storage",
-                "Server Support Included",
-                "Application Support (OJS, Moodle, DSpace, AtoM)",
-                "7-Day Snapshots",
-                "Dedicated IP",
-                "Architecture Support",
-                "Built on AWS EC2 — HIPAA-eligible infrastructure",
-                "Private VPC with custom network security (Security Groups)",
-                "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
-                "Recommended for institutions with strict compliance or data-governance requirements"
+                "8 GB de RAM",
+                "160 GB de armazenamento SSD",
+                "Suporte de servidor incluído",
+                "Suporte a aplicações (OJS, Moodle, DSpace, AtoM)",
+                "Snapshots de 7 dias",
+                "IP dedicado",
+                "Suporte de arquitetura",
+                "Baseado em AWS EC2 — infraestrutura elegível para HIPAA",
+                "VPC privada com segurança de rede personalizada (Security Groups)",
+                "Arquitetura escalável — pronta para Auto Scaling e Load Balancing conforme você cresce",
+                "Recomendado para instituições com requisitos rigorosos de conformidade ou governança de dados"
               ]
             },
             "enterprise": {
               "name": "Enterprise",
-              "description": "For large institutions (t3.xlarge)",
+              "description": "Para grandes instituições (t3.xlarge)",
               "features": [
                 "4 vCPUs",
-                "16GB RAM",
-                "320GB SSD Storage",
-                "Server Support Included",
-                "Application Support (OJS, Moodle, DSpace, AtoM)",
-                "7-Day Snapshots",
-                "Dedicated IP",
-                "Architecture Support",
-                "Built on AWS EC2 — HIPAA-eligible infrastructure",
-                "Private VPC with custom network security (Security Groups)",
-                "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
-                "Recommended for institutions with strict compliance or data-governance requirements"
+                "16 GB de RAM",
+                "320 GB de armazenamento SSD",
+                "Suporte de servidor incluído",
+                "Suporte a aplicações (OJS, Moodle, DSpace, AtoM)",
+                "Snapshots de 7 dias",
+                "IP dedicado",
+                "Suporte de arquitetura",
+                "Baseado em AWS EC2 — infraestrutura elegível para HIPAA",
+                "VPC privada com segurança de rede personalizada (Security Groups)",
+                "Arquitetura escalável — pronta para Auto Scaling e Load Balancing conforme você cresce",
+                "Recomendado para instituições com requisitos rigorosos de conformidade ou governança de dados"
               ]
             }
           }
         }
       },
       "custom": {
-        "title": "Custom Solutions",
-        "subtitle": "Tailored hosting solutions for specific academic needs",
-        "poweredBy": "Powered by",
+        "title": "Soluções sob medida",
+        "subtitle": "Soluções de hospedagem sob medida para necessidades acadêmicas específicas",
+        "poweredBy": "Com tecnologia",
         "cards": [
           {
-            "title": "High-Performance VPS",
-            "description": "Enterprise-grade instances for demanding workloads",
+            "title": "VPS de alto desempenho",
+            "description": "Instâncias de nível empresarial para cargas de trabalho exigentes",
             "features": [
-              "EC2 instances up to 96 vCPUs",
-              "Up to 768GB RAM",
-              "GPU instances available",
-              "Auto-scaling capabilities"
+              "Instâncias EC2 com até 96 vCPUs",
+              "Até 768 GB de RAM",
+              "Instâncias com GPU disponíveis",
+              "Recursos de escalonamento automático"
             ]
           },
           {
-            "title": "Storage & CDN",
-            "description": "Scalable storage and global content delivery",
+            "title": "Armazenamento e CDN",
+            "description": "Armazenamento escalável e distribuição global de conteúdo",
             "features": [
-              "S3 integration & management",
-              "CloudFront CDN setup",
-              "Unlimited storage capacity",
-              "Global edge locations"
+              "Integração e gerenciamento do S3",
+              "Configuração de CDN CloudFront",
+              "Capacidade de armazenamento ilimitada",
+              "Pontos de presença (edge) globais"
             ]
           },
           {
-            "title": "Load Balancing",
-            "description": "High availability and traffic distribution",
+            "title": "Balanceamento de carga",
+            "description": "Alta disponibilidade e distribuição de tráfego",
             "features": [
               "Application Load Balancer",
-              "Multi-AZ deployment",
-              "Health monitoring",
-              "SSL termination"
+              "Implantação Multi-AZ",
+              "Monitoramento de integridade",
+              "Terminação SSL"
             ]
           },
           {
-            "title": "Database Services",
-            "description": "Managed database solutions",
+            "title": "Serviços de banco de dados",
+            "description": "Soluções de banco de dados gerenciadas",
             "features": [
               "RDS (MySQL, PostgreSQL)",
               "DynamoDB NoSQL",
-              "Automated backups",
-              "Read replicas"
+              "Backups automáticos",
+              "Réplicas de leitura"
             ]
           },
           {
-            "title": "AI Integration",
-            "description": "Advanced AI and machine learning capabilities",
+            "title": "Integração de IA",
+            "description": "Recursos avançados de IA e aprendizado de máquina",
             "features": [
-              "Amazon Q integration",
-              "Bedrock AI models",
-              "Custom AI workflows",
-              "Research data analysis"
+              "Integração com Amazon Q",
+              "Modelos de IA do Bedrock",
+              "Fluxos de trabalho de IA personalizados",
+              "Análise de dados de pesquisa"
             ]
           },
           {
-            "title": "Enterprise Solutions",
-            "description": "Complete infrastructure management",
+            "title": "Soluções empresariais",
+            "description": "Gerenciamento completo da infraestrutura",
             "features": [
-              "VPC custom networks",
-              "Security compliance",
-              "24/7 monitoring",
-              "Disaster recovery"
+              "Redes VPC personalizadas",
+              "Conformidade de segurança",
+              "Monitoramento 24/7",
+              "Recuperação de desastres"
             ]
           }
         ],
         "pricing": {
-          "title": "Custom Pricing",
-          "text": "All solutions are tailored to your specific requirements. Pricing varies based on usage, scale, and selected AWS services.",
-          "cta": "Request a Quote"
+          "title": "Preços sob medida",
+          "text": "Todas as soluções são adaptadas aos seus requisitos específicos. O preço varia conforme o uso, a escala e os serviços da AWS selecionados.",
+          "cta": "Solicitar orçamento"
         }
       }
     },
     "comparison": {
-      "title": "Plan Comparison",
-      "subtitle": "Compare our plans to find the right fit for your institution",
+      "title": "Comparação de planos",
+      "subtitle": "Compare nossos planos e encontre o ideal para a sua instituição",
       "tabs": {
-        "ojsOmp": "OJS & OMP",
-        "repositoryAtom": "Repository & AtoM"
+        "ojsOmp": "OJS e OMP",
+        "repositoryAtom": "Repositório e AtoM"
       },
       "headers": {
-        "feature": "Feature",
+        "feature": "Recurso",
         "basic": "Basic",
         "professional": "Professional",
         "enterprise": "Enterprise"
       },
       "rows": {
-        "priceMonthly": "Price (Monthly)",
-        "storage": "Storage",
-        "installations": "Installations",
-        "installation": "Installation",
+        "priceMonthly": "Preço (mensal)",
+        "storage": "Armazenamento",
+        "installations": "Instalações",
+        "installation": "Instalação",
         "backups": "Backups",
-        "emailSupport": "Email Support",
-        "prioritySupport": "Priority Support",
-        "phoneSupport": "Phone Support",
-        "ssl": "SSL Certificate",
-        "migrationAnnual": "Migration Services (Annual)",
-        "crossref": "Crossref Membership*",
+        "emailSupport": "Suporte por e-mail",
+        "prioritySupport": "Suporte prioritário",
+        "phoneSupport": "Suporte por telefone",
+        "ssl": "Certificado SSL",
+        "migrationAnnual": "Migração (anual)",
+        "crossref": "Associação Crossref*",
         "similarityCheck": "Similarity Check*",
-        "mailBox": "Mail Box",
-        "s3": "S3 Configuration",
-        "installationAnnual": "Installation (Annual)"
+        "mailBox": "Caixa de e-mail",
+        "s3": "Configuração do S3",
+        "installationAnnual": "Instalação (anual)"
       },
       "values": {
-        "singleJournalPress": "Single Journal/Press",
-        "multiIn1": "Multi in 1 Installation",
-        "multiInstallations": "Multi-installations",
-        "backups5": "Daily | 5 days",
-        "backups7": "Daily | 7 days",
-        "onRequest": "On request",
-        "annualPlan": "Annual plan",
-        "repositoryAtom": "Repository/AtoM"
+        "singleJournalPress": "Uma revista/editora",
+        "multiIn1": "Várias em 1 instalação",
+        "multiInstallations": "Várias instalações",
+        "backups5": "Diários | 5 dias",
+        "backups7": "Diários | 7 dias",
+        "onRequest": "Sob consulta",
+        "annualPlan": "Plano anual",
+        "repositoryAtom": "Repositório/AtoM"
       },
-      "footnote": "*For customers in Latin America and Spain. Included in Enterprise annual plans. Available on request for Professional plans, subject to availability; conditions are confirmed at the time of contracting. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership."
+      "footnote": "*Para clientes da América Latina e da Espanha. Incluída nos planos Enterprise anuais. Sob consulta nos planos Professional, sujeita a disponibilidade; as condições são confirmadas no momento da contratação. Não cobre as taxas de registro de DOI nem de depósito de conteúdo. Clientes de outras regiões recebem suporte de metadados Crossref e devem ter sua própria associação Crossref."
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Common questions about our pricing and plans",
+      "title": "Perguntas frequentes",
+      "subtitle": "Dúvidas comuns sobre nossos preços e planos",
       "items": [
         {
-          "question": "Can I upgrade my plan later?",
-          "answer": "Yes, you can upgrade your plan at any time. The price difference will be prorated for the remainder of your billing cycle."
+          "question": "Posso mudar para um plano superior depois?",
+          "answer": "Sim, você pode mudar para um plano superior a qualquer momento. A diferença de preço será cobrada proporcionalmente ao restante do seu ciclo de faturamento."
         },
         {
-          "question": "Do you offer discounts for educational institutions?",
-          "answer": "Yes, we offer special pricing for educational institutions. Contact our sales team to learn about our academic discount program."
+          "question": "Vocês oferecem descontos para instituições de ensino?",
+          "answer": "Sim, oferecemos preços especiais para instituições de ensino. Fale com nossa equipe de vendas para conhecer nosso programa de descontos acadêmicos."
         },
         {
-          "question": "What payment methods do you accept?",
-          "answer": "We accept major credit cards, PayPal, and bank transfers. For educational institutions, we also offer purchase order and invoice payment options."
+          "question": "Quais formas de pagamento vocês aceitam?",
+          "answer": "Aceitamos os principais cartões de crédito, PayPal e transferências bancárias. Para instituições de ensino, também oferecemos pagamento mediante ordem de compra e fatura."
         },
         {
-          "question": "Is there a setup fee?",
-          "answer": "No, there are no setup fees for our standard plans. Custom solutions may include a one-time setup fee depending on the complexity of the implementation."
+          "question": "Existe taxa de configuração?",
+          "answer": "Não, nossos planos padrão não têm taxa de configuração. Soluções sob medida podem incluir uma taxa de configuração única, dependendo da complexidade da implementação."
         },
         {
-          "question": "Can I cancel my subscription at any time?",
-          "answer": "Yes, you can cancel your subscription at any time. We offer a 30-day money-back guarantee for all our plans."
+          "question": "Posso cancelar minha assinatura a qualquer momento?",
+          "answer": "Sim, você pode cancelar sua assinatura a qualquer momento. Oferecemos garantia de reembolso de 30 dias em todos os nossos planos."
         }
       ]
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Join the growing community of academic institutions using Paideia Hosting",
-      "contact": "Contact Us",
-      "services": "Explore Services"
+      "title": "Vamos começar?",
+      "subtitle": "Junte-se à crescente comunidade de instituições acadêmicas que usam a Paideia Hosting",
+      "contact": "Fale conosco",
+      "services": "Conheça os serviços"
     }
   },
   "repositoryHosting": {
     "meta": {
-      "title": "Repository Hosting - Paideia Hosting",
-      "description": "Secure and reliable hosting for research data repositories including Dataverse and DSpace. Perfect for academic institutions and research centers."
+      "title": "Hospedagem de repositórios - Paideia Hosting",
+      "description": "Hospedagem segura e confiável para repositórios de dados de pesquisa, incluindo Dataverse e DSpace. Ideal para instituições acadêmicas e centros de pesquisa."
     },
     "hero": {
-      "title": "Repository Hosting Solutions",
-      "subtitle": "Secure and reliable hosting for research data repositories including Dataverse and DSpace. Perfect for academic institutions and research centers.",
-      "viewPricing": "View Pricing",
-      "contactSales": "Contact Sales",
-      "imageAlt": "Dataverse Hosting"
+      "title": "Soluções de hospedagem de repositórios",
+      "subtitle": "Hospedagem segura e confiável para repositórios de dados de pesquisa, incluindo Dataverse e DSpace. Ideal para instituições acadêmicas e centros de pesquisa.",
+      "viewPricing": "Ver preços",
+      "contactSales": "Falar com vendas",
+      "imageAlt": "Hospedagem Dataverse"
     },
     "features": {
-      "title": "Repository Hosting Features",
-      "subtitle": "Everything you need for your research data repository",
+      "title": "Recursos da hospedagem de repositórios",
+      "subtitle": "Tudo o que você precisa para o seu repositório de dados de pesquisa",
       "platforms": {
-        "title": "Dataverse & DSpace Support",
-        "text": "Support for the latest Dataverse and DSpace versions with seamless upgrades"
+        "title": "Suporte a Dataverse e DSpace",
+        "text": "Suporte às versões mais recentes do Dataverse e do DSpace, com atualizações sem interrupções"
       },
       "performance": {
-        "title": "High Performance",
-        "text": "Optimized servers for handling large datasets"
+        "title": "Alto desempenho",
+        "text": "Servidores otimizados para lidar com grandes conjuntos de dados"
       },
       "storage": {
-        "title": "Secure Storage",
-        "text": "Encrypted storage with regular backups"
+        "title": "Armazenamento seguro",
+        "text": "Armazenamento criptografado com backups regulares"
       },
       "doi": {
-        "title": "DOI Integration",
-        "text": "Built-in support for DOI assignment"
+        "title": "Integração com DOI",
+        "text": "Suporte integrado para a atribuição de DOI"
       },
       "support": {
-        "title": "Expert Support",
-        "text": "24/7 AI assistance via WhatsApp, plus expert support during business hours"
+        "title": "Suporte de especialistas",
+        "text": "Assistência com IA 24/7 pelo WhatsApp e suporte de especialistas em horário comercial"
       },
       "branding": {
-        "title": "Custom Branding",
-        "text": "Customize the interface with your institution's branding"
+        "title": "Identidade visual personalizada",
+        "text": "Personalize a interface com a identidade visual da sua instituição"
       }
     },
     "pricing": {
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Choose the plan that fits your repository needs",
-      "footnote": "*For customers in Latin America and Spain. Included in all plans. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+      "title": "Preços simples e transparentes",
+      "subtitle": "Escolha o plano que atende às necessidades do seu repositório",
+      "footnote": "*Para clientes da América Latina e da Espanha. Incluída em todos os planos. Não cobre as taxas de registro de DOI nem de depósito de conteúdo. Clientes de outras regiões recebem suporte de metadados Crossref e devem ter sua própria associação Crossref.",
       "installation": {
-        "monthly": "Installation fee extra",
-        "annual": "Installation included"
+        "monthly": "Instalação com custo adicional",
+        "annual": "Instalação incluída"
       },
       "migration": {
-        "monthly": "Migration services fee extra",
-        "annual": "Migration services included"
+        "monthly": "Migração com custo adicional",
+        "annual": "Migração incluída"
       },
       "plans": {
         "professional": {
           "name": "Professional",
-          "description": "For research departments",
+          "description": "Para departamentos de pesquisa",
           "features": [
-            "Repository (Dataverse or DSpace)",
-            "50GB Storage",
-            "SSL included",
-            "Daily Backups | 7 days",
-            "Email support",
-            "Additional storage available"
+            "Repositório (Dataverse ou DSpace)",
+            "50 GB de armazenamento",
+            "SSL incluído",
+            "Backups diários | 7 dias",
+            "Suporte por e-mail",
+            "Armazenamento adicional disponível"
           ],
-          "crossref": "Crossref membership + Similarity Check included*"
+          "crossref": "Associação Crossref + Similarity Check incluída*"
         },
         "enterprise": {
           "name": "Enterprise",
-          "description": "For institutions and large research centers",
+          "description": "Para instituições e grandes centros de pesquisa",
           "features": [
-            "Repository (Dataverse or DSpace)",
-            "Installation included",
-            "100GB Storage",
-            "SSL included",
-            "Mail box included",
-            "S3 configuration included (Not included additional fee S3)",
-            "Daily Backups | 7 days",
-            "Priority email support",
-            "Additional storage available"
+            "Repositório (Dataverse ou DSpace)",
+            "Instalação incluída",
+            "100 GB de armazenamento",
+            "SSL incluído",
+            "Caixa de e-mail incluída",
+            "Configuração do S3 incluída (o custo do S3 é cobrado à parte)",
+            "Backups diários | 7 dias",
+            "Suporte prioritário por e-mail",
+            "Armazenamento adicional disponível"
           ],
           "annualOnly": [
-            "Migration services included (Annual only)"
+            "Migração incluída (somente anual)"
           ],
-          "crossref": "Crossref membership + Similarity Check included*"
+          "crossref": "Associação Crossref + Similarity Check incluída*"
         }
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know about our repository hosting services",
+      "title": "Perguntas frequentes",
+      "subtitle": "Tudo o que você precisa saber sobre nossos serviços de hospedagem de repositórios",
       "items": [
         {
-          "q": "What repository platforms do you support?",
-          "a": "We support the latest stable versions of Dataverse and DSpace, and can help you migrate from older versions or other platforms."
+          "q": "Quais plataformas de repositório vocês suportam?",
+          "a": "Suportamos as versões estáveis mais recentes do Dataverse e do DSpace e podemos ajudar você a migrar de versões anteriores ou de outras plataformas."
         },
         {
-          "q": "Can I migrate my existing repository?",
-          "a": "Yes, we offer migration services to help you move your existing Dataverse, DSpace, or other repository to our hosting platform."
+          "q": "Posso migrar meu repositório atual?",
+          "a": "Sim, oferecemos serviços de migração para ajudar você a transferir seu repositório atual em Dataverse, DSpace ou outra plataforma para a nossa plataforma de hospedagem."
         },
         {
-          "q": "How is data security handled?",
-          "a": "We implement multiple layers of security including encrypted storage, regular security audits, and compliance with academic data protection standards."
+          "q": "Como a segurança dos dados é tratada?",
+          "a": "Implementamos várias camadas de segurança, incluindo armazenamento criptografado, auditorias de segurança periódicas e conformidade com as normas de proteção de dados acadêmicos."
         },
         {
-          "q": "Do you support DOI integration?",
-          "a": "Yes, we provide full support for DOI integration with services like Crossref to ensure your datasets are properly cited."
+          "q": "Vocês oferecem integração com DOI?",
+          "a": "Sim, oferecemos suporte completo à integração de DOI com serviços como o Crossref, para garantir que seus conjuntos de dados sejam citados corretamente."
         },
         {
-          "q": "Can I customize the repository interface?",
-          "a": "Yes, our Professional and Enterprise plans allow for custom branding and interface modifications to match your institution's identity for both Dataverse and DSpace."
+          "q": "Posso personalizar a interface do repositório?",
+          "a": "Sim, nossos planos Professional e Enterprise permitem personalizar a identidade visual e modificar a interface para refletir a identidade da sua instituição, tanto no Dataverse quanto no DSpace."
         },
         {
-          "q": "What happens if I exceed my storage limit?",
-          "a": "We'll notify you when you approach your storage limit, and you can easily upgrade your plan or add additional storage as needed."
+          "q": "O que acontece se eu ultrapassar meu limite de armazenamento?",
+          "a": "Avisaremos você quando estiver se aproximando do limite de armazenamento, e você poderá facilmente mudar para um plano superior ou contratar armazenamento adicional conforme a necessidade."
         }
       ]
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Join the growing community of research institutions using Paideia Hosting for their data repositories",
-      "contact": "Contact Us",
-      "services": "Explore Other Services"
+      "title": "Vamos começar?",
+      "subtitle": "Junte-se à crescente comunidade de instituições de pesquisa que usam o Paideia Hosting para seus repositórios de dados",
+      "contact": "Fale conosco",
+      "services": "Conheça outros serviços"
     }
   },
   "services": {
     "meta": {
-      "title": "Academic Hosting Services - Paideia Hosting",
-      "description": "Explore our specialized hosting services for academic institutions. From OJS and OMP to Dataverse, AtoM, VPS, and custom solutions."
+      "title": "Serviços de hospedagem acadêmica - Paideia Hosting",
+      "description": "Conheça nossos serviços de hospedagem especializada para instituições acadêmicas: de OJS e OMP a Dataverse, AtoM, VPS e soluções personalizadas."
     },
     "hero": {
-      "title": "Our Academic Hosting Services",
-      "subtitle": "Specialized hosting solutions designed for research and educational institutions"
+      "title": "Nossos serviços de hospedagem acadêmica",
+      "subtitle": "Soluções de hospedagem especializadas, pensadas para instituições de pesquisa e ensino"
     },
-    "learnMore": "Learn More",
+    "learnMore": "Saiba mais",
     "items": {
       "ojs": {
-        "title": "OJS Hosting",
-        "imageAlt": "OJS Hosting",
-        "description": "Specialized hosting for Open Journal Systems (OJS). Perfect for academic publishing and journal management."
+        "title": "Hospedagem OJS",
+        "imageAlt": "Hospedagem OJS",
+        "description": "Hospedagem especializada para Open Journal Systems (OJS). Ideal para publicação acadêmica e gestão de revistas."
       },
       "omp": {
-        "title": "OMP Hosting",
-        "imageAlt": "OMP Hosting",
-        "description": "Specialized hosting for Open Monograph Press (OMP). Ideal for academic book publishing and management."
+        "title": "Hospedagem OMP",
+        "imageAlt": "Hospedagem OMP",
+        "description": "Hospedagem especializada para Open Monograph Press (OMP). Ideal para a publicação e a gestão de livros acadêmicos."
       },
       "repository": {
-        "title": "Repository Hosting",
-        "imageAlt": "Repository Hosting",
-        "description": "Secure and reliable hosting for research data repositories (Dataverse & DSpace) on AWS infrastructure."
+        "title": "Hospedagem de repositórios",
+        "imageAlt": "Hospedagem de repositórios",
+        "description": "Hospedagem segura e confiável para repositórios de dados de pesquisa (Dataverse e DSpace) em infraestrutura AWS."
       },
       "atom": {
-        "title": "AtoM Hosting",
-        "imageAlt": "AtoM Hosting",
-        "description": "Professional hosting for Access to Memory (AtoM) archival software on AWS infrastructure."
+        "title": "Hospedagem AtoM",
+        "imageAlt": "Hospedagem AtoM",
+        "description": "Hospedagem profissional para o software arquivístico Access to Memory (AtoM) em infraestrutura AWS."
       },
       "vps": {
-        "title": "VPS for Institutions",
-        "imageAlt": "VPS for Institutions",
-        "description": "Customizable virtual private servers for educational institutions. Reliable, secure, and optimized for academic needs."
+        "title": "VPS para instituições",
+        "imageAlt": "VPS para instituições",
+        "description": "Servidores privados virtuais personalizáveis para instituições de ensino. Confiáveis, seguros e otimizados para as necessidades acadêmicas."
       },
       "custom": {
-        "title": "Custom Solutions",
-        "imageAlt": "Custom Solutions",
-        "description": "Tailored hosting solutions for specific academic needs. Custom development, integration, and specialized academic software hosting."
+        "title": "Soluções sob medida",
+        "imageAlt": "Soluções sob medida",
+        "description": "Soluções de hospedagem sob medida para necessidades acadêmicas específicas. Desenvolvimento personalizado, integração e hospedagem de software acadêmico especializado."
       },
       "backup": {
-        "title": "Backup Solutions",
-        "imageAlt": "Backup Solutions",
-        "description": "Enterprise-grade backup and digital preservation solutions powered by AWS infrastructure with flexible retention policies."
+        "title": "Soluções de backup",
+        "imageAlt": "Soluções de backup",
+        "description": "Soluções de backup e preservação digital de nível corporativo, com infraestrutura AWS e políticas de retenção flexíveis."
       },
       "plugins": {
-        "title": "Plugins & Themes",
-        "imageAlt": "Plugins & Themes",
-        "description": "Premium plugins and themes for OJS and OMP. Enhance your academic publishing platform with professional solutions."
+        "title": "Plugins e temas",
+        "imageAlt": "Plugins e temas",
+        "description": "Plugins e temas premium para OJS e OMP. Aprimore sua plataforma de publicação acadêmica com soluções profissionais."
       }
     },
     "cta": {
-      "title": "Need a Custom Solution?",
-      "subtitle": "Our team of experts can help you find the perfect hosting solution for your academic institution",
-      "contact": "Contact Us",
-      "pricing": "View Pricing"
+      "title": "Precisa de uma solução personalizada?",
+      "subtitle": "Nossa equipe de especialistas pode ajudar você a encontrar a solução de hospedagem ideal para sua instituição acadêmica",
+      "contact": "Fale conosco",
+      "pricing": "Ver preços"
     }
   },
   "vpsForInstitutions": {
     "meta": {
-      "title": "VPS for Institutions - Paideia Hosting",
-      "description": "Customizable virtual private servers for educational institutions. Reliable, secure, and optimized for academic needs."
+      "title": "VPS para instituições - Paideia Hosting",
+      "description": "Servidores privados virtuais personalizáveis para instituições de ensino. Confiáveis, seguros e otimizados para as necessidades acadêmicas."
     },
     "hero": {
-      "title": "VPS Solutions for Institutions",
-      "subtitle": "Customizable virtual private servers designed specifically for educational institutions. Reliable, secure, and optimized for academic needs.",
-      "viewPricing": "View Pricing",
-      "contactSales": "Contact Sales",
-      "imageAlt": "VPS for Institutions"
+      "title": "Soluções VPS para instituições",
+      "subtitle": "Servidores privados virtuais configuráveis, projetados especificamente para instituições de ensino. Confiáveis, seguros e otimizados para necessidades acadêmicas.",
+      "viewPricing": "Ver preços",
+      "contactSales": "Falar com vendas",
+      "imageAlt": "VPS para instituições"
     },
     "features": {
-      "title": "VPS Features for Institutions",
-      "subtitle": "Powerful virtual servers tailored for academic and research needs",
+      "title": "Recursos de VPS para instituições",
+      "subtitle": "Servidores virtuais potentes, adaptados às necessidades acadêmicas e de pesquisa",
       "performance": {
-        "title": "High Performance",
-        "description": "Powerful servers with dedicated resources for optimal performance"
+        "title": "Alto desempenho",
+        "description": "Servidores potentes com recursos dedicados para um desempenho ideal"
       },
       "scalable": {
-        "title": "Scalable Resources",
-        "description": "Easily scale CPU, RAM, and storage as your needs grow"
+        "title": "Recursos escaláveis",
+        "description": "Amplie facilmente CPU, RAM e armazenamento à medida que suas necessidades crescem"
       },
       "security": {
-        "title": "Secure Environment",
-        "description": "Enhanced security measures for academic data protection"
+        "title": "Ambiente seguro",
+        "description": "Medidas de segurança reforçadas para proteger os dados acadêmicos"
       },
       "managed": {
-        "title": "Managed Services",
-        "description": "Optional management services for maintenance and updates"
+        "title": "Serviços gerenciados",
+        "description": "Serviços de gerenciamento opcionais para manutenção e atualizações"
       },
       "support": {
-        "title": "Expert Support",
-        "description": "24/7 AI assistance via WhatsApp, plus expert support during business hours"
+        "title": "Suporte de especialistas",
+        "description": "Assistência com IA 24/7 pelo WhatsApp e suporte de especialistas em horário comercial"
       },
       "backups": {
-        "title": "Backup Solutions",
-        "description": "Automated backup systems with easy restoration options"
+        "title": "Soluções de backup",
+        "description": "Sistemas de backup automáticos com opções de restauração simples"
       }
     },
     "pricing": {
-      "title": "Simple, Transparent Pricing",
-      "subtitle": "Choose the VPS plan that fits your institution's needs",
+      "title": "Preços simples e transparentes",
+      "subtitle": "Escolha o plano VPS que atende às necessidades da sua instituição",
       "logoAlt": "AWS",
-      "perYear": "per year",
-      "crossref": "Crossref membership + Similarity Check included*",
-      "ec2TransferIncluded": "500 GB transfer included. ",
-      "transferNote": "Additional transfer billed at $0.18 USD/GB. Storage and CPU upgrades available on demand.",
-      "footnote": "*For customers in Latin America and Spain. Included in all plans. Does not cover DOI registration or content deposit fees. Customers in other regions receive Crossref metadata support and must hold their own Crossref membership.",
+      "perYear": "por ano",
+      "crossref": "Associação Crossref + Similarity Check incluída*",
+      "ec2TransferIncluded": "500 GB de transferência incluídos. ",
+      "transferNote": "A transferência adicional é cobrada a $0.18 USD/GB. Ampliações de armazenamento e CPU disponíveis sob demanda.",
+      "footnote": "*Para clientes da América Latina e da Espanha. Incluída em todos os planos. Não cobre as taxas de registro de DOI nem de depósito de conteúdo. Clientes de outras regiões recebem suporte de metadados Crossref e devem ter sua própria associação Crossref.",
       "lightsail": {
         "professional": {
           "name": "Professional",
-          "description": "For academic departments",
+          "description": "Para departamentos acadêmicos",
           "features": [
             "2 vCPUs",
-            "8GB RAM",
-            "160GB SSD Storage",
-            "5TB Transfer",
-            "Server Support Included",
-            "Application Support (OJS, Moodle, DSpace, AtoM)",
-            "7-Day Snapshots",
-            "Dedicated IP",
-            "Architecture Support"
+            "8 GB de RAM",
+            "160 GB de armazenamento SSD",
+            "5 TB de transferência",
+            "Suporte de servidor incluído",
+            "Suporte a aplicações (OJS, Moodle, DSpace, AtoM)",
+            "Snapshots de 7 dias",
+            "IP dedicado",
+            "Suporte de arquitetura"
           ]
         },
         "enterprise": {
           "name": "Enterprise",
-          "description": "For large institutions and research centers",
+          "description": "Para grandes instituições e centros de pesquisa",
           "features": [
             "4 vCPUs",
-            "16GB RAM",
-            "320GB SSD Storage",
-            "6TB Transfer",
-            "Server Support Included",
-            "Application Support (OJS, Moodle, DSpace, AtoM)",
-            "7-Day Snapshots",
-            "Dedicated IP",
-            "Architecture Support"
+            "16 GB de RAM",
+            "320 GB de armazenamento SSD",
+            "6 TB de transferência",
+            "Suporte de servidor incluído",
+            "Suporte a aplicações (OJS, Moodle, DSpace, AtoM)",
+            "Snapshots de 7 dias",
+            "IP dedicado",
+            "Suporte de arquitetura"
           ]
         }
       },
       "ec2": {
         "professional": {
           "name": "Professional",
-          "description": "For academic departments (t3.large)",
+          "description": "Para departamentos acadêmicos (t3.large)",
           "features": [
             "2 vCPUs",
-            "8GB RAM",
-            "160GB SSD Storage",
-            "Server Support Included",
-            "Application Support (OJS, Moodle, DSpace, AtoM)",
-            "7-Day Snapshots",
-            "Dedicated IP",
-            "Architecture Support",
-            "Built on AWS EC2 — HIPAA-eligible infrastructure",
-            "Private VPC with custom network security (Security Groups)",
-            "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
-            "Recommended for institutions with strict compliance or data-governance requirements"
+            "8 GB de RAM",
+            "160 GB de armazenamento SSD",
+            "Suporte de servidor incluído",
+            "Suporte a aplicações (OJS, Moodle, DSpace, AtoM)",
+            "Snapshots de 7 dias",
+            "IP dedicado",
+            "Suporte de arquitetura",
+            "Baseado em AWS EC2 — infraestrutura elegível para HIPAA",
+            "VPC privada com segurança de rede personalizada (Security Groups)",
+            "Arquitetura escalável — pronta para Auto Scaling e Load Balancing conforme você cresce",
+            "Recomendado para instituições com requisitos rigorosos de conformidade ou governança de dados"
           ]
         },
         "enterprise": {
           "name": "Enterprise",
-          "description": "For large institutions (t3.xlarge)",
+          "description": "Para grandes instituições (t3.xlarge)",
           "features": [
             "4 vCPUs",
-            "16GB RAM",
-            "320GB SSD Storage",
-            "Server Support Included",
-            "Application Support (OJS, Moodle, DSpace, AtoM)",
-            "7-Day Snapshots",
-            "Dedicated IP",
-            "Architecture Support",
-            "Built on AWS EC2 — HIPAA-eligible infrastructure",
-            "Private VPC with custom network security (Security Groups)",
-            "Scalable architecture — ready for Auto Scaling & Load Balancing as you grow",
-            "Recommended for institutions with strict compliance or data-governance requirements"
+            "16 GB de RAM",
+            "320 GB de armazenamento SSD",
+            "Suporte de servidor incluído",
+            "Suporte a aplicações (OJS, Moodle, DSpace, AtoM)",
+            "Snapshots de 7 dias",
+            "IP dedicado",
+            "Suporte de arquitetura",
+            "Baseado em AWS EC2 — infraestrutura elegível para HIPAA",
+            "VPC privada com segurança de rede personalizada (Security Groups)",
+            "Arquitetura escalável — pronta para Auto Scaling e Load Balancing conforme você cresce",
+            "Recomendado para instituições com requisitos rigorosos de conformidade ou governança de dados"
           ]
         }
       }
     },
     "useCases": {
-      "title": "Academic Use Cases",
-      "subtitle": "How educational institutions are using our VPS solutions",
+      "title": "Casos de uso acadêmicos",
+      "subtitle": "Como as instituições de ensino usam nossas soluções VPS",
       "items": [
         {
-          "title": "Research Computing",
-          "description": "Dedicated VPS environments for computational research, data analysis, and simulation workloads."
+          "title": "Computação para pesquisa",
+          "description": "Ambientes VPS dedicados para pesquisa computacional, análise de dados e cargas de trabalho de simulação."
         },
         {
-          "title": "Web Applications",
-          "description": "Hosting for institutional websites, learning management systems, and custom academic applications."
+          "title": "Aplicações web",
+          "description": "Hospedagem para sites institucionais, sistemas de gestão de aprendizagem e aplicações acadêmicas personalizadas."
         },
         {
-          "title": "Development Environments",
-          "description": "Secure environments for student programming projects, software development, and testing."
+          "title": "Ambientes de desenvolvimento",
+          "description": "Ambientes seguros para projetos de programação de estudantes, desenvolvimento de software e testes."
         },
         {
-          "title": "Database Hosting",
-          "description": "Optimized servers for research databases, institutional repositories, and data collections."
+          "title": "Hospedagem de bancos de dados",
+          "description": "Servidores otimizados para bancos de dados de pesquisa, repositórios institucionais e coleções de dados."
         }
       ]
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know about our VPS solutions for institutions",
+      "title": "Perguntas frequentes",
+      "subtitle": "Tudo o que você precisa saber sobre nossas soluções VPS para instituições",
       "items": [
         {
-          "question": "What operating systems do you support?",
-          "answer": "We support a wide range of Linux distributions (Ubuntu, Debian) and Windows Server options to meet your specific requirements."
+          "question": "Quais sistemas operacionais vocês suportam?",
+          "answer": "Suportamos uma ampla variedade de distribuições Linux (Ubuntu, Debian) e opções de Windows Server para atender aos seus requisitos específicos."
         },
         {
-          "question": "Can we get custom configurations?",
-          "answer": "Yes, we offer custom VPS configurations tailored to your specific academic and research needs. Contact our sales team for details."
+          "question": "Podemos ter configurações personalizadas?",
+          "answer": "Sim, oferecemos configurações de VPS personalizadas, adaptadas às suas necessidades acadêmicas e de pesquisa. Fale com nossa equipe de vendas para mais detalhes."
         },
         {
-          "question": "How is data security handled?",
-          "answer": "We implement multiple security layers including firewalls, intrusion detection, regular security patches, and encrypted storage options."
+          "question": "Como a segurança dos dados é tratada?",
+          "answer": "Implementamos várias camadas de segurança, incluindo firewalls, detecção de intrusões, patches de segurança regulares e opções de armazenamento criptografado."
         },
         {
-          "question": "Do you offer managed services?",
-          "answer": "Yes, we offer optional managed services including system updates, security monitoring, performance optimization, and technical support."
+          "question": "Vocês oferecem serviços gerenciados?",
+          "answer": "Sim, oferecemos serviços gerenciados opcionais, incluindo atualizações do sistema, monitoramento de segurança, otimização de desempenho e suporte técnico."
         },
         {
-          "question": "Can we upgrade our plan as we grow?",
-          "answer": "Absolutely. Our VPS solutions are designed to scale with your needs. You can easily upgrade CPU, RAM, storage, and bandwidth as required."
+          "question": "Podemos fazer upgrade do nosso plano conforme crescemos?",
+          "answer": "Com certeza. Nossas soluções VPS foram projetadas para escalar junto com suas necessidades. Você pode ampliar facilmente CPU, RAM, armazenamento e largura de banda conforme necessário."
         },
         {
-          "question": "Are there educational discounts available?",
-          "answer": "Yes, we offer special pricing for educational institutions. Contact our sales team to learn about our academic discount program."
+          "question": "Há descontos para instituições de ensino?",
+          "answer": "Sim, oferecemos preços especiais para instituições de ensino. Fale com nossa equipe de vendas para conhecer nosso programa de descontos acadêmicos."
         }
       ]
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Join the growing community of educational institutions using Paideia Hosting VPS solutions",
-      "primary": "Contact Us",
-      "secondary": "Explore Other Services"
+      "title": "Vamos começar?",
+      "subtitle": "Junte-se à crescente comunidade de instituições de ensino que usam as soluções VPS da Paideia Hosting",
+      "primary": "Fale conosco",
+      "secondary": "Conheça outros serviços"
     }
   }
 }
