@@ -21,7 +21,8 @@
       "getStarted": "Comenzar",
       "monthly": "Mensual",
       "annual": "Anual",
-      "save": "Ahorra 10%"
+      "save": "Ahorra 10 %",
+      "currency": "USD "
     }
   },
   "ojsHosting": {
@@ -95,7 +96,7 @@
           "name": "Professional",
           "description": "Para revistas académicas consolidadas",
           "features": [
-            "Varias revistas en 1 instalación de OJS",
+            "Varias revistas en una instalación de OJS",
             "20 GB de almacenamiento",
             "Backups diarios | 7 días",
             "5 casillas de correo",
@@ -131,8 +132,8 @@
       "subtitle": "Todo lo que necesitas saber sobre nuestro servicio de hosting OJS",
       "items": [
         {
-          "q": "¿Qué versiones de OJS soportan?",
-          "a": "Soportamos OJS 3.3, 3.4 y 3.5 (LTS desde junio de 2026). También te ayudamos a migrar desde versiones anteriores, incluida OJS 2.x."
+          "q": "¿Con qué versiones de OJS trabajan?",
+          "a": "Trabajamos con OJS 3.3, 3.4 y 3.5 (LTS desde junio de 2026). También te ayudamos a migrar desde versiones anteriores, incluida OJS 2.x."
         },
         {
           "q": "¿Puedo migrar mi instalación actual de OJS?",
@@ -423,8 +424,8 @@
       "subtitle": "Todo lo que necesitas saber sobre nuestro servicio de hosting AtoM",
       "items": [
         {
-          "q": "¿Qué versiones de AtoM soportan?",
-          "a": "Soportamos las últimas versiones estables de AtoM y te ayudamos a migrar desde versiones anteriores."
+          "q": "¿Con qué versiones de AtoM trabajan?",
+          "a": "Trabajamos con las últimas versiones estables de AtoM y te ayudamos a migrar desde versiones anteriores."
         },
         {
           "q": "¿Puedo migrar mi instalación actual de AtoM?",
@@ -435,8 +436,8 @@
           "a": "Implementamos varias capas de seguridad, como almacenamiento cifrado, auditorías de seguridad periódicas y cumplimiento de los estándares de protección de datos archivísticos."
         },
         {
-          "q": "¿Soportan interfaces multilingües?",
-          "a": "Sí, soportamos plenamente las capacidades multilingües de AtoM, para que puedas presentar tus archivos en varios idiomas."
+          "q": "¿Admiten interfaces multilingües?",
+          "a": "Sí, ofrecemos soporte completo para las capacidades multilingües de AtoM, para que puedas presentar tus archivos en varios idiomas."
         },
         {
           "q": "¿Puedo personalizar la interfaz de AtoM?",
@@ -525,7 +526,7 @@
             "description": "Tesis doctorales, archivos históricos, registros institucionales"
           }
         ],
-        "price": "Desde $10/GB/año",
+        "price": "Desde USD 10/GB/año",
         "priceNote": "· Se aplica un cargo de configuración para volúmenes menores de 300 GB"
       },
       "active": {
@@ -553,7 +554,7 @@
             "description": "Servidores OJS, repositorios DSpace, bases de datos en producción"
           }
         ],
-        "price": "Desde $0.46/GB/mes",
+        "price": "Desde USD 0.46/GB/mes",
         "priceNote": "· Se aplica un cargo de configuración para volúmenes menores de 300 GB"
       }
     },
@@ -643,7 +644,7 @@
         },
         {
           "question": "¿Qué pasa si supero el almacenamiento contratado?",
-          "answer": "Te avisaremos al llegar al 80% y al 95% de tu cuota. Puedes ampliar tu plan en cualquier momento, o analizaremos opciones contigo cuando alcances el límite."
+          "answer": "Te avisaremos al llegar al 80 % y al 95 % de tu cuota. Puedes ampliar tu plan en cualquier momento, o analizaremos opciones contigo cuando alcances el límite."
         },
         {
           "question": "¿Cómo restauro mis datos?",
@@ -651,7 +652,7 @@
         },
         {
           "question": "¿Hay un cargo de configuración?",
-          "answer": "Los cargos de configuración se aplican solo a volúmenes menores de 300 GB ($600 para Preservation Plus, $800 para Active Guard). Los volúmenes de 300 GB o más incluyen la configuración sin cargo."
+          "answer": "Los cargos de configuración se aplican solo a volúmenes menores de 300 GB (USD 600 para Preservation Plus, USD 800 para Active Guard). Los volúmenes de 300 GB o más incluyen la configuración sin cargo."
         },
         {
           "question": "¿Puedo combinar ambos planes?",
@@ -663,7 +664,7 @@
         },
         {
           "question": "¿Ofrecen replicación geográfica?",
-          "answer": "Sí, como servicio adicional. Tus datos pueden replicarse en varias regiones de AWS para mejorar la recuperación ante desastres (+50% sobre el precio base)."
+          "answer": "Sí, como servicio adicional. Tus datos pueden replicarse en varias regiones de AWS para mejorar la recuperación ante desastres (+50 % sobre el precio base)."
         },
         {
           "question": "¿Qué monitoreo e informes se incluyen?",
@@ -675,7 +676,7 @@
         },
         {
           "question": "¿Qué SLA ofrecen?",
-          "answer": "Preservation Plus: recuperación en 72 horas hábiles. Active Guard: de 30 minutos a 2 horas para datos recientes y de 24 a 48 horas para datos archivados. SLA de disponibilidad del 99.9% disponible como complemento."
+          "answer": "Preservation Plus: recuperación en 72 horas hábiles. Active Guard: de 30 minutos a 2 horas para datos recientes y de 24 a 48 horas para datos archivados. SLA de disponibilidad del 99.9 % disponible como complemento."
         }
       ]
     },
@@ -685,7 +686,7 @@
       "items": [
         {
           "title": "Object Lock (inmutabilidad)",
-          "price": "+$300-360/año",
+          "price": "+USD 300-360/año",
           "description": "La protección WORM impide la eliminación o modificación para cumplir requisitos normativos",
           "bullets": [
             "Protección contra ransomware",
@@ -695,7 +696,7 @@
         },
         {
           "title": "Replicación geográfica",
-          "price": "+50% sobre el precio base",
+          "price": "+50 % sobre el precio base",
           "description": "Replica tus backups en una segunda región de AWS para la recuperación ante desastres",
           "bullets": [
             "Redundancia multirregión",
@@ -705,7 +706,7 @@
         },
         {
           "title": "Versionado",
-          "price": "+30% sobre el precio base",
+          "price": "+30 % sobre el precio base",
           "description": "Conserva varias versiones de cada backup para recuperar el estado de un momento determinado",
           "bullets": [
             "Varios puntos de restauración",
@@ -715,7 +716,7 @@
         },
         {
           "title": "Informes premium",
-          "price": "+$300-500/año",
+          "price": "+USD 300-500/año",
           "description": "Analítica detallada, análisis de tendencias e informes ejecutivos",
           "bullets": [
             "Informes semanales detallados",
@@ -725,7 +726,7 @@
         },
         {
           "title": "Monitoreo 24/7",
-          "price": "+$400-3,600/año",
+          "price": "+USD 400-3,600/año",
           "description": "Monitoreo permanente con detección proactiva de incidencias",
           "bullets": [
             "Monitoreo continuo",
@@ -735,7 +736,7 @@
         },
         {
           "title": "Auditoría anual",
-          "price": "+$600/año",
+          "price": "+USD 600/año",
           "description": "Revisión anual integral con documentación formal",
           "bullets": [
             "Revisión completa de la arquitectura",
@@ -1083,11 +1084,12 @@
   },
   "home": {
     "meta": {
-      "title": "Paideia Hosting - Cloud for Science, Solutions for Knowledge",
+      "title": "Paideia Hosting | Hosting académico para OJS, OMP, DSpace y AtoM",
       "description": "Hosting especializado para aplicaciones académicas. Confiable, seguro y optimizado para instituciones de investigación y educación."
     },
     "hero": {
-      "title": "Cloud for Science, Solutions for Knowledge",
+      "title": "Hosting académico especializado para OJS, OMP, DSpace y AtoM",
+      "brandLine": "Cloud for Science, Solutions for Knowledge",
       "subtitle": "Hosting especializado para aplicaciones académicas. Confiable, seguro y optimizado para instituciones de investigación y educación.",
       "exploreServices": "Ver servicios",
       "contactSales": "Contactar a ventas",
@@ -1104,7 +1106,7 @@
       "registrationBefore": "Registro del dominio \"",
       "registrationAfter": "\"",
       "verify": "Verificaremos la disponibilidad y registraremos este dominio por ti. Si no está disponible, te presentaremos alternativas.",
-      "cost": "💰 Costo del dominio: $40 USD/año (adicional a cualquier plan de hosting)",
+      "cost": "💰 Costo del dominio: USD 40/año (adicional a cualquier plan de hosting)",
       "note": "📝 Deja una nota al contratar tu plan de hosting o contacta directamente a nuestro equipo.",
       "viewPlans": "Ver planes de hosting",
       "contactTeam": "Contactar al equipo"
@@ -1256,7 +1258,7 @@
           "name": "Professional",
           "description": "Para editoriales académicas consolidadas",
           "features": [
-            "Varias editoriales en 1 instalación de OMP",
+            "Varias editoriales en una instalación de OMP",
             "20 GB de almacenamiento",
             "Backups diarios | 7 días",
             "5 casillas de correo",
@@ -1292,8 +1294,8 @@
       "subtitle": "Todo lo que necesitas saber sobre nuestro servicio de hosting OMP",
       "items": [
         {
-          "q": "¿Qué versiones de OMP soportan?",
-          "a": "Soportamos las últimas versiones estables de OMP y te ayudamos a migrar desde versiones anteriores."
+          "q": "¿Con qué versiones de OMP trabajan?",
+          "a": "Trabajamos con las últimas versiones estables de OMP y te ayudamos a migrar desde versiones anteriores."
         },
         {
           "q": "¿Puedo migrar mi instalación actual de OMP?",
@@ -1326,7 +1328,7 @@
   },
   "pricing": {
     "meta": {
-      "title": "Precios - Paideia Hosting",
+      "title": "Precios de hosting OJS, OMP y repositorios | Paideia Hosting",
       "description": "Planes con precios transparentes para nuestros servicios de hosting académico. Elige el plan que se ajusta a las necesidades de tu institución."
     },
     "hero": {
@@ -1340,9 +1342,9 @@
         "dataverse": "Repositorio",
         "atom": "AtoM",
         "vps": "VPS",
-        "custom": "Custom"
+        "custom": "A medida"
       },
-      "annualNotice": "Pasa a la facturación anual para acceder a beneficios exclusivos y ahorra un 10%",
+      "annualNotice": "Pasa a la facturación anual para acceder a beneficios exclusivos y ahorra un 10 %",
       "perYear": "por año",
       "awsAlt": "AWS",
       "migration": {
@@ -1384,7 +1386,7 @@
             "name": "Professional",
             "description": "Para revistas académicas consolidadas",
             "features": [
-              "Varias revistas en 1 instalación de OJS",
+              "Varias revistas en una instalación de OJS",
               "20 GB de almacenamiento",
               "Backups diarios | 7 días",
               "5 casillas de correo",
@@ -1431,7 +1433,7 @@
             "name": "Professional",
             "description": "Para editoriales académicas consolidadas",
             "features": [
-              "Varias editoriales en 1 instalación de OMP",
+              "Varias editoriales en una instalación de OMP",
               "20 GB de almacenamiento",
               "Backups diarios | 7 días",
               "5 casillas de correo",
@@ -1527,7 +1529,7 @@
         "title": "VPS para instituciones",
         "subtitle": "Servidores privados virtuales configurables para instituciones educativas",
         "lightsail": {
-          "note": "La transferencia adicional se factura a $0.18 USD/GB. Ampliaciones de almacenamiento y CPU disponibles a pedido.",
+          "note": "La transferencia adicional se factura a USD 0.18/GB. Ampliaciones de almacenamiento y CPU disponibles a pedido.",
           "plans": {
             "professional": {
               "name": "Professional",
@@ -1562,7 +1564,7 @@
           }
         },
         "ec2": {
-          "note": "500 GB de transferencia incluidos. La transferencia adicional se factura a $0.18 USD/GB. Ampliaciones de almacenamiento y CPU disponibles a pedido.",
+          "note": "500 GB de transferencia incluidos. La transferencia adicional se factura a USD 0.18/GB. Ampliaciones de almacenamiento y CPU disponibles a pedido.",
           "plans": {
             "professional": {
               "name": "Professional",
@@ -1708,7 +1710,7 @@
       },
       "values": {
         "singleJournalPress": "Una revista/editorial",
-        "multiIn1": "Varias en 1 instalación",
+        "multiIn1": "Varias en una instalación",
         "multiInstallations": "Varias instalaciones",
         "backups5": "Diarios | 5 días",
         "backups7": "Diarios | 7 días",
@@ -1843,8 +1845,8 @@
       "subtitle": "Todo lo que necesitas saber sobre nuestro servicio de hosting de repositorios",
       "items": [
         {
-          "q": "¿Qué plataformas de repositorio soportan?",
-          "a": "Soportamos las últimas versiones estables de Dataverse y DSpace, y te ayudamos a migrar desde versiones anteriores u otras plataformas."
+          "q": "¿Con qué plataformas de repositorio trabajan?",
+          "a": "Trabajamos con las últimas versiones estables de Dataverse y DSpace, y te ayudamos a migrar desde versiones anteriores u otras plataformas."
         },
         {
           "q": "¿Puedo migrar mi repositorio actual?",
@@ -1855,7 +1857,7 @@
           "a": "Implementamos varias capas de seguridad, como almacenamiento cifrado, auditorías de seguridad periódicas y cumplimiento de los estándares académicos de protección de datos."
         },
         {
-          "q": "¿Soportan la integración con DOI?",
+          "q": "¿Ofrecen integración con DOI?",
           "a": "Sí, ofrecemos soporte completo para la integración con DOI mediante servicios como Crossref, para que tus conjuntos de datos se citen correctamente."
         },
         {
@@ -1981,7 +1983,7 @@
       "perYear": "por año",
       "crossref": "Membresía Crossref + Similarity Check incluida*",
       "ec2TransferIncluded": "500 GB de transferencia incluidos. ",
-      "transferNote": "La transferencia adicional se factura a $0.18 USD/GB. Ampliaciones de almacenamiento y CPU disponibles a pedido.",
+      "transferNote": "La transferencia adicional se factura a USD 0.18/GB. Ampliaciones de almacenamiento y CPU disponibles a pedido.",
       "footnote": "*Para clientes de Latinoamérica y España. Incluido en todos los planes. No cubre los costos de registro de DOI ni de depósito de contenidos. Los clientes de otras regiones reciben soporte de metadatos Crossref y deben tener su propia membresía Crossref.",
       "lightsail": {
         "professional": {
@@ -2081,8 +2083,8 @@
       "subtitle": "Todo lo que necesitas saber sobre nuestras soluciones VPS para instituciones",
       "items": [
         {
-          "question": "¿Qué sistemas operativos soportan?",
-          "answer": "Soportamos una amplia variedad de distribuciones Linux (Ubuntu, Debian) y opciones de Windows Server para responder a tus requisitos específicos."
+          "question": "¿Con qué sistemas operativos trabajan?",
+          "answer": "Trabajamos con una amplia variedad de distribuciones Linux (Ubuntu, Debian) y opciones de Windows Server para responder a tus requisitos específicos."
         },
         {
           "question": "¿Podemos obtener configuraciones a medida?",
@@ -2111,6 +2113,21 @@
       "subtitle": "Únete a la creciente comunidad de instituciones educativas que usan las soluciones VPS de Paideia Hosting",
       "primary": "Contáctanos",
       "secondary": "Ver otros servicios"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog - Paideia Hosting",
+      "description": "Artículos y recursos sobre hosting académico, OJS, repositorios institucionales y publicación científica en acceso abierto."
+    },
+    "title": "Blog",
+    "subtitle": "Recursos, guías y novedades sobre hosting académico, OJS, repositorios institucionales y publicación en acceso abierto.",
+    "empty": "Todavía no hay artículos publicados.",
+    "readMore": "Leer más →",
+    "cta": {
+      "title": "¿Necesitas hosting académico?",
+      "text": "Contáctanos sin compromiso. Tenemos planes para OJS, OMP, repositorios y más.",
+      "button": "Contáctanos"
     }
   }
 }

@@ -21,7 +21,8 @@
       "getStarted": "Get Started",
       "monthly": "Monthly",
       "annual": "Annual",
-      "save": "Save 10%"
+      "save": "Save 10%",
+      "currency": "$"
     }
   },
   "ojsHosting": {
@@ -1088,6 +1089,7 @@
     },
     "hero": {
       "title": "Cloud for Science, Solutions for Knowledge",
+      "brandLine": "",
       "subtitle": "Specialized hosting for academic applications. Reliable, secure, and optimized for research and educational institutions.",
       "exploreServices": "Explore Services",
       "contactSales": "Contact Sales",
@@ -2111,6 +2113,21 @@
       "subtitle": "Join the growing community of educational institutions using Paideia Hosting VPS solutions",
       "primary": "Contact Us",
       "secondary": "Explore Other Services"
+    }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog - Paideia Hosting",
+      "description": "Articles and resources about academic hosting, OJS, institutional repositories, and open access scholarly publishing."
+    },
+    "title": "Blog",
+    "subtitle": "Resources, guides, and updates on academic hosting, OJS, institutional repositories, and open access publishing.",
+    "empty": "No articles published yet.",
+    "readMore": "Read more →",
+    "cta": {
+      "title": "Need academic hosting?",
+      "text": "Get in touch with no obligation. We have plans for OJS, OMP, repositories, and more.",
+      "button": "Contact us"
     }
   }
 }

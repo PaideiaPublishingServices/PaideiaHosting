@@ -26,6 +26,8 @@ export const routes = {
   pricing: { en: "/pricing", es: "/es/precios", pt: "/pt/precos" },
   about: { en: "/about", es: "/es/nosotros", pt: "/pt/sobre" },
   contact: { en: "/contact", es: "/es/contacto", pt: "/pt/contato" },
+  // Only the blog index is localized; posts stay at /blog/<slug> in their original language.
+  blog: { en: "/blog", es: "/es/blog", pt: "/pt/blog" },
 } as const satisfies Record<string, Record<Locale, string>>
 
 export type RouteKey = keyof typeof routes
@@ -45,6 +47,7 @@ export const publishedLocales: Record<RouteKey, readonly Locale[]> = {
   pricing: ["en", "es", "pt"],
   about: ["en", "es", "pt"],
   contact: ["en", "es", "pt"],
+  blog: ["en", "es", "pt"],
 }
 
 export function isPublished(key: RouteKey, locale: Locale): boolean {

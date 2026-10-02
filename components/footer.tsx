@@ -16,7 +16,7 @@ export function Footer({ locale, t }: { locale: Locale; t: Messages["layout"]["f
   const companyLinks = [
     { href: localizedHref("about", locale), label: t.company.about },
     { href: localizedHref("pricing", locale), label: t.company.pricing },
-    { href: "/blog", label: t.company.blog },
+    { href: localizedHref("blog", locale), label: t.company.blog },
     { href: "/affiliates", label: t.company.affiliates },
     { href: "#", label: t.company.careers },
     { href: localizedHref("contact", locale), label: t.company.contact },

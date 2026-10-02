@@ -21,6 +21,7 @@ const translatable: Record<RouteKey, Seo> = {
   vpsForInstitutions: { lastModified: "2026-09-30", changeFrequency: "monthly", priority: 0.8 },
   customSolutions: { lastModified: "2026-09-30", changeFrequency: "monthly", priority: 0.7 },
   backupSolutions: { changeFrequency: "monthly", priority: 0.7 },
+  blog: { changeFrequency: "weekly", priority: 0.8 },
 }
 
 // English-only pages (no translations planned in this stage).
@@ -28,7 +29,6 @@ const englishOnly: (Seo & { path: string })[] = [
   { path: "/affiliates", lastModified: "2026-07-29", changeFrequency: "monthly", priority: 0.6 },
   { path: "/plugins", changeFrequency: "monthly", priority: 0.7 },
   { path: "/plugins/academic-theme-omp", lastModified: "2026-09-30", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
 ]
 
 function indexableLocales(key: RouteKey): Locale[] {

@@ -116,12 +116,12 @@ export function VPSPricing({ t, labels }: VPSPricingProps) {
               </div>
               <div className="mt-4">
                 <div className="flex items-baseline">
-                  <span className="text-3xl font-bold">${calculatePrice(plan.monthlyPrice)}</span>
+                  <span className="text-3xl font-bold">{labels.currency}{calculatePrice(plan.monthlyPrice)}</span>
                   <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? labels.billedAnnually : labels.month}</span>
                 </div>
                 {isAnnual && (
                   <div className="text-sm text-gray-400 mt-1">
-                    ${(calculatePrice(plan.monthlyPrice) * 12).toFixed(0)} {t.perYear}
+                    {labels.currency}{(calculatePrice(plan.monthlyPrice) * 12).toFixed(0)} {t.perYear}
                   </div>
                 )}
               </div>

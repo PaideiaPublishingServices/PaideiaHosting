@@ -55,8 +55,8 @@ export function getPost(slug: string): Post {
   }
 }
 
-export function formatDate(dateString: string): string {
-  return new Intl.DateTimeFormat('es-AR', {
+export function formatDate(dateString: string, intlLocale = 'es-AR'): string {
+  return new Intl.DateTimeFormat(intlLocale, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',

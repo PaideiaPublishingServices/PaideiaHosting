@@ -3,10 +3,10 @@ import { getAllPosts } from "@/lib/posts"
 import { getMessages } from "@/lib/i18n/messages"
 import { localizedMetadata } from "@/lib/i18n/metadata"
 
-const messages = getMessages("en")
+const messages = getMessages("pt")
 
-export const metadata = localizedMetadata("blog", "en", messages.blog.meta)
+export const metadata = localizedMetadata("blog", "pt", messages.blog.meta)
 
 export default function Page() {
-  return <BlogPage locale="en" t={messages.blog} posts={getAllPosts()} />
+  return <BlogPage locale="pt" t={messages.blog} posts={getAllPosts()} />
 }

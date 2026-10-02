@@ -7,9 +7,10 @@ import type { Messages } from "@/lib/i18n/messages"
 interface BackupPricingCalculatorProps {
   t: Messages["backupSolutions"]["calculator"]
   contactHref: string
+  currency: string
 }
 
-export function BackupPricingCalculator({ t, contactHref }: BackupPricingCalculatorProps) {
+export function BackupPricingCalculator({ t, contactHref, currency }: BackupPricingCalculatorProps) {
   const [plan, setPlan] = useState<"preservation" | "active">("preservation")
   
   // Preservation Plus state
@@ -242,21 +243,21 @@ export function BackupPricingCalculator({ t, contactHref }: BackupPricingCalcula
                     <div className="flex justify-between items-baseline pb-3 border-b">
                       <span className="text-gray-600">{t.annualCost}</span>
                       <span className="text-3xl font-bold text-primary">
-                        ${preservationPricing.annual.toLocaleString()}
+                        {currency}{preservationPricing.annual.toLocaleString()}
                       </span>
                     </div>
 
                     {preservationPricing.setupFee > 0 && (
                       <div className="flex justify-between items-center text-sm">
                         <span className="text-gray-600">{t.setupFee}</span>
-                        <span className="font-semibold">+${preservationPricing.setupFee}</span>
+                        <span className="font-semibold">+{currency}{preservationPricing.setupFee}</span>
                       </div>
                     )}
 
                     <div className="flex justify-between items-center pt-3 border-t">
                       <span className="font-medium">{t.totalFirstYear}</span>
                       <span className="text-2xl font-bold">
-                        ${preservationPricing.totalFirstYear.toLocaleString()}
+                        {currency}{preservationPricing.totalFirstYear.toLocaleString()}
                       </span>
                     </div>
                   </div>
@@ -264,7 +265,7 @@ export function BackupPricingCalculator({ t, contactHref }: BackupPricingCalcula
                   <div className="mt-6 pt-6 border-t space-y-2 text-sm text-gray-600">
                     <div className="flex justify-between">
                       <span>{t.pricePerGBYear}</span>
-                      <span className="font-medium">${preservationPricing.pricePerGB.toFixed(2)}</span>
+                      <span className="font-medium">{currency}{preservationPricing.pricePerGB.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between">
                       <span>{t.capturesPerYear}</span>
@@ -417,26 +418,26 @@ export function BackupPricingCalculator({ t, contactHref }: BackupPricingCalcula
                     <div className="flex justify-between items-baseline pb-3 border-b">
                       <span className="text-gray-600">{t.monthlyCost}</span>
                       <span className="text-3xl font-bold text-primary">
-                        ${activePricing.monthly.toLocaleString()}
+                        {currency}{activePricing.monthly.toLocaleString()}
                       </span>
                     </div>
 
                     <div className="flex justify-between items-center text-sm">
                       <span className="text-gray-600">{t.annualCost}</span>
-                      <span className="font-semibold">${activePricing.annual.toLocaleString()}</span>
+                      <span className="font-semibold">{currency}{activePricing.annual.toLocaleString()}</span>
                     </div>
 
                     {activePricing.setupFee > 0 && (
                       <div className="flex justify-between items-center text-sm">
                         <span className="text-gray-600">{t.setupFee}</span>
-                        <span className="font-semibold">+${activePricing.setupFee}</span>
+                        <span className="font-semibold">+{currency}{activePricing.setupFee}</span>
                       </div>
                     )}
 
                     <div className="flex justify-between items-center pt-3 border-t">
                       <span className="font-medium">{t.totalFirstYear}</span>
                       <span className="text-2xl font-bold">
-                        ${activePricing.totalFirstYear.toLocaleString()}
+                        {currency}{activePricing.totalFirstYear.toLocaleString()}
                       </span>
                     </div>
                   </div>
@@ -444,7 +445,7 @@ export function BackupPricingCalculator({ t, contactHref }: BackupPricingCalcula
                   <div className="mt-6 pt-6 border-t space-y-2 text-sm text-gray-600">
                     <div className="flex justify-between">
                       <span>{t.pricePerGBMonth}</span>
-                      <span className="font-medium">${activePricing.pricePerGBMonth.toFixed(2)}</span>
+                      <span className="font-medium">{currency}{activePricing.pricePerGBMonth.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between">
                       <span>{t.capturesPerYear}</span>

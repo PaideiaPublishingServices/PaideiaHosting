@@ -9,9 +9,10 @@ import { localizedHref } from "@/lib/i18n/routes"
 interface BackupSolutionsPageProps {
   locale: Locale
   t: Messages["backupSolutions"]
+  currency: string
 }
 
-export function BackupSolutionsPage({ locale, t }: BackupSolutionsPageProps) {
+export function BackupSolutionsPage({ locale, t, currency }: BackupSolutionsPageProps) {
   const contactHref = localizedHref("contact", locale)
   const features = [
     { icon: Shield, ...t.features.security },
@@ -146,7 +147,7 @@ export function BackupSolutionsPage({ locale, t }: BackupSolutionsPageProps) {
       </section>
 
       {/* Interactive Pricing Section */}
-      <BackupPricingCalculator t={t.calculator} contactHref={contactHref} />
+      <BackupPricingCalculator t={t.calculator} contactHref={contactHref} currency={currency} />
 
       {/* FAQ Section */}
       <section className="w-full py-12 md:py-24 lg:py-32">

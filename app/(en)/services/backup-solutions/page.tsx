@@ -7,5 +7,5 @@ const messages = getMessages("en")
 export const metadata = localizedMetadata("backupSolutions", "en", messages.backupSolutions.meta)
 
 export default function Page() {
-  return <BackupSolutionsPage locale="en" t={messages.backupSolutions} />
+  return <BackupSolutionsPage locale="en" t={messages.backupSolutions} currency={messages.common.pricing.currency} />
 }

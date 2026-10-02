@@ -70,9 +70,9 @@ export function PricingPage({ locale, t, common }: PricingPageProps) {
                   <tbody>
                     <tr className="border-b">
                       <td className="p-4 font-medium">{rows.priceMonthly}</td>
-                      <td className="p-4 text-center">$42</td>
-                      <td className="p-4 text-center">$60</td>
-                      <td className="p-4 text-center">$99</td>
+                      <td className="p-4 text-center">{common.pricing.currency}42</td>
+                      <td className="p-4 text-center">{common.pricing.currency}60</td>
+                      <td className="p-4 text-center">{common.pricing.currency}99</td>
                     </tr>
                     <tr className="border-b">
                       <td className="p-4 font-medium">{rows.storage}</td>
@@ -185,8 +185,8 @@ export function PricingPage({ locale, t, common }: PricingPageProps) {
                   <tbody>
                     <tr className="border-b">
                       <td className="p-4 font-medium">{rows.priceMonthly}</td>
-                      <td className="p-4 text-center">$170</td>
-                      <td className="p-4 text-center">$280</td>
+                      <td className="p-4 text-center">{common.pricing.currency}170</td>
+                      <td className="p-4 text-center">{common.pricing.currency}280</td>
                     </tr>
                     <tr className="border-b">
                       <td className="p-4 font-medium">{rows.storage}</td>

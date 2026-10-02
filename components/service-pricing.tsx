@@ -47,6 +47,8 @@ interface PricingPlan {
 }
 
 export interface PricingLabels {
+  // Prefix before amounts: "$" in English, "USD " / "US$ " in Spanish / Portuguese.
+  currency: string
   popular: string
   hostedOn: string
   month: string
@@ -58,6 +60,7 @@ export interface PricingLabels {
 }
 
 const defaultLabels: PricingLabels = {
+  currency: "$",
   popular: "Popular",
   hostedOn: "Hosted on",
   month: "month",
@@ -116,7 +119,7 @@ export function ServicePricing({ title, subtitle, plans, footnote, labels = defa
                 <p className="text-gray-500 dark:text-gray-400">{plan.description}</p>
               </div>
               <div className="mt-4 flex items-baseline">
-                <span className="text-3xl font-bold">${calculatePrice(plan.monthlyPrice)}</span>
+                <span className="text-3xl font-bold">{labels.currency}{calculatePrice(plan.monthlyPrice)}</span>
                 <span className="ml-1 text-gray-500 dark:text-gray-400">/{isAnnual ? labels.billedAnnually : labels.month}</span>
               </div>
               <ul className="mt-4 space-y-2 flex-1">

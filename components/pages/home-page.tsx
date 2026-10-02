@@ -38,6 +38,9 @@ export function HomePage({ locale, t }: HomePageProps) {
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     {t.hero.title}
                   </h1>
+                  {t.hero.brandLine && (
+                    <p className="text-lg font-medium text-gray-600 dark:text-gray-300">{t.hero.brandLine}</p>
+                  )}
                   <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
                     {t.hero.subtitle}
                   </p>

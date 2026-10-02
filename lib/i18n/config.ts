@@ -26,4 +26,4 @@ export function absoluteUrl(path: string): string {
 
 // Locales whose pages are still draft translations: they get <meta robots="noindex"> and are left out
 // of the sitemap. Remove a locale from here once its copy has been reviewed.
-export const noindexLocales: readonly Locale[] = ["es", "pt"]
+export const noindexLocales: readonly Locale[] = []
