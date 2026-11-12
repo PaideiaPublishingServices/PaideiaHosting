@@ -82,7 +82,8 @@ export default function PluginsPage() {
               </div>
               <div className="mt-6 flex flex-col gap-2">
                 <div className="text-sm text-gray-500 dark:text-gray-400">
-                  <span className="text-2xl font-bold text-primary">Free</span> · optional annual support
+                  <span className="text-2xl font-bold text-primary">Free</span> · optional support{" "}
+                  <span className="font-semibold text-gray-700 dark:text-gray-300">$99</span>/year
                 </div>
                 <Link
                   href="/plugins/paideia-theme"
