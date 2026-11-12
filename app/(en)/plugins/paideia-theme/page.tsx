@@ -4,7 +4,7 @@ import { ArrowRight, BookOpen, Check, Download, ExternalLink, Github, LifeBuoy, 
 export const metadata = {
   title: "Paideia Theme for OJS 3.4 & 3.5 - Free Theme with Optional Support | Paideia Hosting",
   description:
-    "Paideia Theme is a free GPL v3 theme for Open Journal Systems 3.4 and 3.5: article page for indexed journals, HTML full text, continuous publication, indexing block and SEO metadata. Optional annual support plan.",
+    "Paideia Theme is a free GPL v3 theme for Open Journal Systems 3.4 and 3.5: article page for indexed journals, HTML full text, continuous publication, indexing block and SEO metadata. Optional annual support plan for $99/year.",
 }
 
 const DOCS_URL = "https://paideiapublishingservices.github.io/paideiaTheme/en/"
@@ -92,7 +92,7 @@ export default function PaideiaThemePage() {
                   className="inline-flex h-11 items-center justify-center rounded-md border border-input bg-background px-6 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
                 >
                   <LifeBuoy className="mr-2 h-4 w-4" />
-                  Get annual support
+                  Annual support · $99/year
                 </a>
               </div>
               <a href={DEMO_URL} className="inline-flex items-center text-sm font-medium text-primary hover:underline">
@@ -203,6 +203,10 @@ export default function PaideiaThemePage() {
             <p className="md:text-lg opacity-90">
               Get the annual support plan if you want help keeping your journal running smoothly with Paideia Theme.
             </p>
+            <div>
+              <span className="text-4xl font-bold">$99</span>
+              <span className="opacity-90"> / year</span>
+            </div>
             <ul className="space-y-2 text-left">
               {supportIncludes.map((item) => (
                 <li key={item} className="flex items-center gap-2">
@@ -216,7 +220,7 @@ export default function PaideiaThemePage() {
                 href={SUPPORT_URL}
                 className="inline-flex h-11 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-gray-100"
               >
-                Buy annual support
+                Buy annual support · $99
                 <ExternalLink className="ml-2 h-4 w-4" />
               </a>
               <Link
