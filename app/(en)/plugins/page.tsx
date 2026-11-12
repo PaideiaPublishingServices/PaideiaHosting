@@ -3,9 +3,9 @@ import Image from "next/image"
 import { Palette, Code } from "lucide-react"
 
 export const metadata = {
-  title: "Plugins & Themes - Paideia Hosting",
+  title: "Plugins & Themes for OJS and OMP - Paideia Hosting",
   description:
-    "Premium plugins and themes for OJS and OMP. Enhance your academic publishing platform with our professional solutions.",
+    "Plugins and themes for OJS and OMP, including the free Paideia Theme for OJS 3.4 and 3.5. Enhance your academic publishing platform.",
 }
 
 export default function PluginsPage() {
@@ -17,7 +17,7 @@ export default function PluginsPage() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                Premium Plugins & Themes
+                Plugins & Themes
               </h1>
               <p className="max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                 Professional solutions to enhance your OJS and OMP academic publishing platform
@@ -40,6 +40,59 @@ export default function PluginsPage() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {/* Paideia Theme (OJS) */}
+            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
+              <div className="flex items-center gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                  <Palette className="h-6 w-6 text-primary" />
+                </div>
+                <h2 className="text-2xl font-bold">Paideia Theme OJS</h2>
+              </div>
+              <div className="mt-4">
+                <Image
+                  src="https://paideiapublishingservices.github.io/paideiaTheme/img/home.jpg"
+                  width={400}
+                  height={200}
+                  alt="Paideia Theme for OJS"
+                  className="rounded-lg object-cover object-top w-full h-48"
+                />
+              </div>
+              <div className="mt-4 flex-1">
+                <p className="text-gray-500 dark:text-gray-400 mb-4">
+                  Free theme for OJS 3.4 and 3.5, built for indexed journals.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-0.5">✓</span>
+                    <span>Complete article page and HTML full text</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-0.5">✓</span>
+                    <span>Indexing block and continuous publication</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-0.5">✓</span>
+                    <span>SEO metadata for Google Scholar</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-0.5">✓</span>
+                    <span>Dark mode, mobile and print layouts</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="mt-6 flex flex-col gap-2">
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  <span className="text-2xl font-bold text-primary">Free</span> · optional annual support
+                </div>
+                <Link
+                  href="/plugins/paideia-theme"
+                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  Details & Download
+                </Link>
+              </div>
+            </div>
+
             {/* Academic Theme OMP */}
             <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm">
               <div className="flex items-center gap-4">
@@ -104,38 +157,6 @@ export default function PluginsPage() {
               <div className="mt-4">
                 <Image
                   src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=200&fit=crop"
-                  width={400}
-                  height={200}
-                  alt="Coming Soon"
-                  className="rounded-lg object-cover w-full h-48 opacity-50"
-                />
-              </div>
-              <div className="mt-4 flex-1">
-                <p className="text-gray-400">
-                  We are developing more plugins and themes to enhance your OJS and OMP experience.
-                </p>
-              </div>
-              <div className="mt-6">
-                <button
-                  disabled
-                  className="inline-flex h-10 w-full items-center justify-center rounded-md bg-gray-200 px-8 text-sm font-medium text-gray-400 shadow cursor-not-allowed"
-                >
-                  Coming Soon
-                </button>
-              </div>
-            </div>
-
-            {/* Another placeholder */}
-            <div className="flex flex-col rounded-lg border bg-background p-6 shadow-sm opacity-60">
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
-                  <Code className="h-6 w-6 text-gray-400" />
-                </div>
-                <h2 className="text-2xl font-bold text-gray-400">Coming Soon</h2>
-              </div>
-              <div className="mt-4">
-                <Image
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=200&fit=crop"
                   width={400}
                   height={200}
                   alt="Coming Soon"

@@ -28,6 +28,7 @@ const translatable: Record<RouteKey, Seo> = {
 const englishOnly: (Seo & { path: string })[] = [
   { path: "/affiliates", lastModified: "2026-07-29", changeFrequency: "monthly", priority: 0.6 },
   { path: "/plugins", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/plugins/paideia-theme", lastModified: "2026-11-12", changeFrequency: "monthly", priority: 0.7 },
   { path: "/plugins/academic-theme-omp", lastModified: "2026-09-30", changeFrequency: "monthly", priority: 0.7 },
 ]
 
