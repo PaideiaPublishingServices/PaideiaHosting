@@ -26,14 +26,13 @@ export const metadata = {
 }
 
 const MAILTO_SUBJECT = "Affiliate%20Program%20-%20Application"
-const STUDIO_MAILTO = `mailto:contact@paideiastudio.net?subject=${MAILTO_SUBJECT}`
-const HOSTING_MAILTO = `mailto:contact@paideiahosting.net?subject=${MAILTO_SUBJECT}`
+const AFFILIATE_MAILTO = `mailto:contact@paideiahosting.net?subject=${MAILTO_SUBJECT}`
 
 const steps = [
   {
     icon: Mail,
     title: "Write to us",
-    body: "Send an email to contact@paideiastudio.net or contact@paideiahosting.net telling us how you plan to recommend Paideia Hosting — your journal network, your institution, your colleagues.",
+    body: "Send an email to contact@paideiahosting.net telling us how you plan to recommend Paideia Hosting — your journal network, your institution, your colleagues.",
   },
   {
     icon: Tag,
@@ -121,7 +120,7 @@ const faqs = [
   {
     question: "How do I sign up?",
     answer:
-      "By email. Write to contact@paideiastudio.net or contact@paideiahosting.net telling us who you are and how you plan to recommend Paideia Hosting. Our team reviews your message, registers you as an affiliate in our system, and sends you your personal discount code along with anything you need to present our services accurately.",
+      "By email. Write to contact@paideiahosting.net telling us who you are and how you plan to recommend Paideia Hosting. Our team reviews your message, registers you as an affiliate in our system, and sends you your personal discount code along with anything you need to present our services accurately.",
   },
   {
     question: "How much do I earn per sale?",
@@ -163,21 +162,15 @@ export default function AffiliatesPage() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <a
-                href={STUDIO_MAILTO}
+                href={AFFILIATE_MAILTO}
                 className="inline-flex h-11 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
-                contact@paideiastudio.net
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-              <a
-                href={HOSTING_MAILTO}
-                className="inline-flex h-11 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring dark:hover:bg-gray-800"
-              >
                 contact@paideiahosting.net
+                <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </div>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Write to either address to request your affiliate sign-up. No website and no minimum sales required.
+              Write to this address to request your affiliate sign-up. No website and no minimum sales required.
             </p>
           </div>
         </div>
@@ -217,7 +210,7 @@ export default function AffiliatesPage() {
             <p className="text-gray-500 dark:text-gray-400">
               Your code works the same way for a single journal or for an institution hosting several platforms.
             </p>
-            <a href={STUDIO_MAILTO} className="text-primary hover:underline inline-flex items-center font-medium">
+            <a href={AFFILIATE_MAILTO} className="text-primary hover:underline inline-flex items-center font-medium">
               Request your affiliate code
               <ArrowRight className="ml-1 h-4 w-4" />
             </a>
@@ -248,7 +241,7 @@ export default function AffiliatesPage() {
                 ))}
               </div>
 
-              <a href={STUDIO_MAILTO} className="text-primary hover:underline inline-flex items-center font-medium">
+              <a href={AFFILIATE_MAILTO} className="text-primary hover:underline inline-flex items-center font-medium">
                 Join the affiliate program
                 <ArrowRight className="ml-1 h-4 w-4" />
               </a>
@@ -438,21 +431,13 @@ export default function AffiliatesPage() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Request Your Affiliate Sign-Up</h2>
               <p className="mx-auto max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                These two addresses are the only channels to join the program. Write to either one — they both reach our
-                team.
+                This address is the only channel to join the program. Write to us and our team will get back to you.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <a
-                href={STUDIO_MAILTO}
+                href={AFFILIATE_MAILTO}
                 className="inline-flex h-11 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              >
-                <Mail className="mr-2 h-4 w-4" />
-                contact@paideiastudio.net
-              </a>
-              <a
-                href={HOSTING_MAILTO}
-                className="inline-flex h-11 items-center justify-center rounded-md border border-white bg-transparent px-8 text-sm font-medium text-white shadow-sm transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
                 <Mail className="mr-2 h-4 w-4" />
                 contact@paideiahosting.net

@@ -3,3 +3,7 @@ node_modules
 out
 v0-user-next.config.mjs
 *.tsbuildinfo
+
+# env files
+.env*
+!.env.example
